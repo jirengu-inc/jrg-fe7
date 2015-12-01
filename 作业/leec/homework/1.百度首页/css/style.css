@@ -49,7 +49,6 @@ body {
 	color: #999;
 }
 
-
 /* nav */
 .head {
 	position: absolute;
@@ -58,6 +57,7 @@ body {
 	/* width: 493px; */
 	font-size: 13px;
 }
+
 .head .nav li{
 	display: inline-block;
 	margin: 19px 0px 6px 20px;
@@ -85,7 +85,6 @@ body {
 }
 
 /* search bar */
-
 .wrap {
 	margin: 43px auto;
 	text-align: center;
@@ -109,7 +108,6 @@ body {
 	font-size: 22px;
 }
 
-
 #sub {
 	margin-left: -3px;
 	width: 99px;
@@ -127,8 +125,7 @@ body {
 	cursor: pointer;
 }
 
-/* foot */
-
+/* foot */s
 .foot {
 	margin-top: 230px;
 	text-align: center;
