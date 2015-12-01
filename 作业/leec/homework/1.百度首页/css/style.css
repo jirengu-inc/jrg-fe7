@@ -1,0 +1,172 @@
+/* reset */
+html, body, div, ul, li, span, a, input {
+	margin: 0;
+	padding: 0;
+} 
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/* global */
+body {
+	font: 12px arial;
+	overflow: scroll;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+
+.clearfix:after{
+	clear:both;
+	overflow:hidden;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.bd {
+	font-weight: bold;
+}
+
+.grey {
+	color: #999;
+}
+
+
+/* nav */
+.head {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* width: 493px; */
+	font-size: 13px;
+}
+.head .nav li{
+	display: inline-block;
+	margin: 19px 0px 6px 20px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.head .nav span {
+	margin: 19px 10px 6px 24px;
+	padding: 0 5px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	background: #38f;
+}
+
+.head .nav span a {
+	color: white;
+}
+
+.head .nav li a:hover {
+	color: blue;
+}
+
+/* search bar */
+
+.wrap {
+	margin: 43px auto;
+	text-align: center;
+}
+
+.wrap .log img {
+	display: inline-block;
+	width: 270px;
+	height: 129px;
+}
+
+.wrap .searchbox {
+	margin: 22px auto 0;
+}
+
+#st {
+	width: 539px;
+	height: 35px;
+	border: 1px solid #b6b6b6;
+	vertical-align: top;
+	font-size: 22px;
+}
+
+
+#sub {
+	margin-left: -3px;
+	width: 99px;
+	height: 37px;
+	background: #3385ff;
+	border: 1px solid #2d78f4;
+	font-size: 15px;
+	color: white;
+	letter-spacing: 1px;
+	vertical-align: top;
+}
+
+#sub:hover {
+	cursor: pointer;
+}
+
+/* foot */
+
+.foot {
+	margin-top: 230px;
+	text-align: center;
+}
+
+.foot .dc {
+	display: inline-block;
+}
+
+.foot .dc  li {
+	display: inline-block;
+	margin-right: 40px;
+	padding-left: 70px;
+	background: #fff url(../images/weix.png) no-repeat 0 0;
+}
+
+.foot .dc  li span {
+	display: block;
+	line-height: 30px;
+}
+
+.foot .foot-nav {
+	display: inline-block;
+}
+
+.foot .foot-nav li{
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 24px;
+	text-decoration: underline;
+}
+
+.foot .foot-nav p {
+	color: #666;
+}
+
+.foot .foot-nav p a {
+	color: #666;
+	text-decoration: underline;
+}
