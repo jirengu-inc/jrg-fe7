@@ -125,6 +125,7 @@ body {
 }
 
 #sub:hover {
+	background: #2d78f4;
 	cursor: pointer;
 }
 
