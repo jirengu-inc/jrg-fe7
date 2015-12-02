@@ -37,6 +37,11 @@
 			float: right;
 			text-align: right;
 		}
+		.title-1{
+			display: inline-block;
+			margin-left: 6px;
+			margin-right: 6px;
+		}
 		/* 搜索栏 */
 		#search{
 			margin-top: 50px;
@@ -53,14 +58,15 @@
 			border: 1px solid #B3B3B3;
 		}
 		.baidu-btn{
+			position: relative;
 			background-color: #38f;
 			height: 37px;
 			width: 102px;
 			border: 1px solid #2868c8;
 			font-size: 16px;
 			color: white;
-			margin-left: -9px;
-			padding: 0px;
+			bottom: -1px;
+			right: 9px;
 		}
 		.baidu-btn:hover{
 			background-color: #317EF3;
@@ -72,12 +78,23 @@
 		}
 		/* foot */
 		#foot{
-			margin-top: 30px;
-			font-size: 12px;
+			width: 1920px;
+			
 			text-align: center;
 			color: #999999;
-			}
-
+		}
+		.foot-sub{
+			display: inline-block;
+			font-size: 12px;
+			margin-right: 8px;
+		}
+		.sub{
+			color: #0079F5;
+		}
+		.sub-1:hover{
+			text-decoration: underline;
+		}
+		
 	</style>
 </head>
 <body>
@@ -85,7 +102,8 @@
 		<div class="head-left">
 		<ul >
 			<li><a href="#">上海 15°C 中度 197</a></li>
-			<li><a href="#">&nbsp;宝箱</a></li>
+			<li class="title-1"><a href="#">|</a></li></li>
+			<li><a href="#">宝箱</a></li>
 			<li><a href="#">&nbsp;换肤</a></li>
 			<li><a href="#">&nbsp;消息</a></li>
 		</ul>
@@ -114,11 +132,11 @@
 		</form>
 	</div>
 	<div id="foot">
-		<a href="#" >设为首页</a>
-		<p >@2015Baidu</p>
-		<a href="#" >使用百度前必读</a>
-		<a href="#" >意见反馈</a>
-		<p >京ICP证030173号</p>
+		<div class="foot-sub"><a href="#" class="sub-1 sub">设为首页</a></div>
+		<div class="foot-sub"><p >@2015Baidu</p></div>
+		<div class="foot-sub"><a href="#" class="sub-1">使用百度前必读</a></div>
+		<div class="foot-sub"><a href="#" class="sub-1">意见反馈</a></div>
+		<div class="foot-sub"><p >京ICP证030173号</p></div>
 	</div>
 </body>
 </html>
