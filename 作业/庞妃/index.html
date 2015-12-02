@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+    <style type="text/css">
+       body,p,ul,li{
+	                margin: 0;
+	                padding: 0;
+                 }
+         body{
+	          font-family:arial;
+	          font-size: 12px;
+	          line-height: 1.5;
+          }
+
+          #header{
+          	   height:48px;
+          }
+
+
+         }
+
+          li{
+         	list-style:none；
+         }
+
+         .navbar li,.ft_message li{
+         	padding: 10px;
+         	display:inline-block;
+         }
+
+         .navbar{
+         	float: right;
+         }
+
+        .img1{
+        	height: 150px;
+        	text-align:center;
+        }
+
+         .mainer{
+         	height:300px;
+         	text-align:center;
+         }
+
+         #footer{
+         	height:130px;
+         	text-align:center;
+         }
+         a{
+         	color:black;
+         }
+         a.bd{
+         	font-weight:bold;
+         }
+         a.more{
+         	padding:8px;
+         	text-decoration:none;
+         	color:white;
+         	background-color:#3385ff;
+         }
+         .bd_search{
+         	display:inline-block;
+         	margin-right:-4px;
+         	width:540px;
+         	height:36px;
+         	border:1px solid #3385ff;
+         }
+         .search{
+         	border:none;
+         	padding:10px;
+         	background:#3385ff;
+         	width:100px;
+         	height:40px;
+         	color:white;
+         	font-size:15px;
+         	border-bottom:4px solid #3385ff;
+         }
+
+	</style>
+
+</head>
+<body>
+
+	<div id="header">
+		<ul class="navbar">
+			<li><a href="#" class="bd">糯米</a></li>
+			<li><a href="#" class="bd">新闻</a></li>
+			<li><a href="#" class="bd">hao123</a></li>
+			<li><a href="#" class="bd">地图</a></li>
+			<li><a href="#" class="bd">视频</a></li>
+			<li><a href="#" class="bd">贴吧</a></li>
+			<li><a href="#">登录</a></li>
+			<li><a href="#">设置</a></li>
+			<li><a href="#" class="more">更多产品</a></li>
+		</ul>
+	</div>
+	<div id="content">
+	        <div class="img1">
+		       <img src="images/bd_logo1.png" alt="bd_logo" width="270"; height="129">
+	        </div>
+	        <div class="mainer">
+		        <form id="form">	
+			        <input type="text" name="bd_search" class="bd_search">
+			        <input type="submit" name="search"  value="百度一下" class="search">
+		        </form>
+	        </div>
+	</div>
+	<div id="footer">
+         <ul class="ft_message">
+             <li><a href="#">把百度设为主页</a></li>
+             <li><a href="#">关于百度</a></li>
+             <li><a href="#">About Baidu</a></li>
+         </ul>
+        <p>
+        &copy 2015 baidu 
+        <a href="#">使用百度前必读</a> 
+        <a href="#">意见反馈</a> 
+        京ICP证030173号
+        </p> 
+	</div>
+</body>
+</html>
