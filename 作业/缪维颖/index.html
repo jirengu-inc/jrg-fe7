@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>baidu</title>
+	<style>
+	    body{
+            font-size: 12px;
+            font-family: "黑体","Microsoft YaHei",Arial;
+            padding:0px;
+            margin:0px;
+            }
+            #header{
+         	width:100%;
+         	height:32px;
+            border-bottom:1px solid #eee;
+         }
+         #header-left{
+            width:300px;
+            text-align: center;
+            display:inline-block;
+            padding-top:7px;
+         }
+         #header-right{
+            width:590px;
+            text-align: right;
+            display:inline;
+            float: right;
+         }
+        .weather-a{
+            text-decoration: none;
+         }
+         .weather-img{
+            height:20px;
+            width:20px;
+            vertical-align: middle;
+         }
+         .word{ 
+            color:#333;
+            display: inline;
+            padding:0px 2px 0px 2px;
+         }
+         .good{
+            color:#3385FF;
+         }
+         .tophref{
+            color:#333;
+         }
+         
+         .tophref-list{
+            padding:6px 0px 6px 0px;
+            list-style: none;
+            display:inline;
+         }
+         .tophref-list>li{
+            display:inline;
+            padding:0px 10px 0px 10px;
+            margin: 0;
+         }
+         #weather{
+            display:inline;
+         }
+         #weather-r{
+            display:inline;
+         }
+         .otherproduct{
+            background: #3385FF;
+            display:inline-block;
+            width:80px;
+            height:32px;
+            padding:0px;
+            text-align: center;
+         }
+         .tophrefproduct{
+         	padding:0px;
+         	display:inline-block;
+            text-decoration: none;
+            color:white;
+            line-height: 32px;
+         }
+         
+         .wordweight{
+            font-weight: bolder;
+         }
+    </style>
+    <style type="text/css">
+        #content{
+        	height:666px;
+        	width:100%;
+        }
+        #inputbox{
+        	text-align: center;
+        	padding:0px;
+        	margin:0px;
+        }
+        #newsboxdiv{
+            width:100%;
+            height:405px;
+        }
+        .logoimg{
+        	width:100%;
+        	height:150px;
+        }
+        #logo{
+        	width:270px; 
+        	height:129px;
+        }
+        .searchdiv{
+        	height:40px;
+        	width:638px;
+        	float:center;
+        	margin:auto;
+        }
+        .search-box{
+        	height:36px;
+        	width:532px;
+        	border:1px solid #ccc;
+        	font-size: 14px;
+        	float:left;
+        	  }
+        .searchbutton{
+            height:40px;
+            width:102px;
+            color:white;
+            font-size: 14px;
+            line-height:40px;
+            transition: background 0.3s;
+            background:#3385FF;
+            display:block;
+            float:right;
+            text-decoration: none;
+        }
+        .searchbutton:hover{
+            background:#2d76e3;
+        }
+        .box01{
+        	height:72px;
+        }
+        .newsbox{
+        	margin:0 auto;
+        	border:1px solid #ddd;
+        	height: 405px;
+        	width:895px;
+        }
+        .newsbar{
+        	height:41px;
+        	border-bottom:1px solid #ddd;
+        }
+      
+        #foryou{
+        	color:white;
+        	font-weight: bolder;
+        	background:#999;
+        }
+        .newsbarul{
+        	list-style: none;
+        	display:inline;
+        	padding:0px;
+        }
+        .newsbara{
+        	float: left;
+            padding:0px 10px 0px 10px;
+            margin: 0;
+        	height:41px;
+        	line-height: 41px;
+        	font-size: 14px;
+        	width:60px;
+        	text-align: center;
+        	text-decoration: none;
+        	color:#444;
+        }
+        .newsbara:hover{
+        	background:#bbb;
+        	color:white;
+        } 
+         .newsbarul>li{
+            display:inline;
+            margin: 0;
+         }
+        #menimg{
+        	height:16px;
+        	width:18px;
+        	padding-right:3px;
+        }
+        #mylove{
+        	width:100px;
+        }
+        .newsleft{
+        	width:538px;
+            height:363px;
+            float:left;
+        }
+        .newsright{
+        	width:357px;
+            height:363px;
+            float:right;
+        }
+        .newsforyou{
+        	height:38px;
+        	width:513px;
+        	margin-left:25px;
+        	text-align: center;
+        	color:#888;
+        }
+        .newsforyou-side{
+        	height:auto;
+        	width:172px;
+        	border-bottom: 1px solid #ddd;
+        	display:inline-block;
+        	padding-top:25px;
+        }
+        .newsforyou>span{
+        	line-height: 16px;
+        	height: 16px;
+        	padding:8px;
+        }
+        .news{
+        	height:146px;
+        	width:513px;
+        	margin-left:25px;
+        	border-bottom:1px solid #ddd;
+        }
+        .news a{
+            text-decoration: none;
+            color:black;
+        }
+        .newsh2{
+        	width:310px;
+        	height:auto;
+        	margin: 0px;
+        	padding-top: 20px;
+        	float: left;
+        }
+        .newsimg{
+        	float:right;
+        	padding-top:20px;
+        }
+        .newsspan{
+        	font-size: 14px;
+        	display: block;
+        	padding-top: 110px;
+        }
+        .newsspan>a{
+            color:#888;
+        }
+        .newsright-title{
+            width:300px;
+            height:30px;
+            margin-left: 32px;
+            margin-top: 10px;
+        } 
+        .newsright-title>h3{
+        	line-height: 30px;
+        	display:inline;
+        }
+        .newsright-title>a{
+        	text-decoration: none;
+        	color: black;
+        	font-size:14px;
+        	float:right;
+        	line-height: 30px;
+        }
+        .newsright-title>a>img{
+        	width:20px;
+        	height:17px;
+        	display:inline;
+        }
+        .newsright>ul{
+        	display: inline-block;
+        	font-size: 14px;
+        }
+        .newsright>ul>li{
+        	line-height: 33px;
+        }
+        .newsright>ul>li>a{
+            text-decoration: none;
+            color:#444;
+        }
+    </style>
+    <style type="text/css">
+        #footer{
+        	height:70px;
+        	width:100%;
+        	text-align: center;
+        }
+        .footercontent{
+        	display:inline-block;
+        	margin-top:45px;
+        	color:#aaa;
+        }
+        #home{
+        	color:#444;
+        }
+       
+    </style>     
+</head>
+<body>
+    <div id="header">
+    	<div id="header-left">
+    		<div id="weather">
+    			<a class="weather-a" href="https://www.baidu.com/s?tn=baidutop10&rsv_idx=2&wd=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5" target="_blank">
+    			    <span class="word">北京：</span>
+    			    <img class="weather-img" src="./img/a0.jpg"/>
+      			    <span class="word">0℃</span>
+    			    <span class="word good">优</span>
+    			    <span class="word">26</span>
+    			</a>
+    		</div>
+            <p class="word">  |  </p>
+            <div id="weather-r">
+                <ul class="tophref-list">
+                    <li>
+                        <a class="tophref" href="#">宝箱</a>
+                    </li>
+                    <li>
+                        <a class="tophref" href="#">换肤</a>
+                    </li>
+                    <li>
+                        <a class="tophref" href="#">消息</a>
+                    </li>
+                </ul>  
+            </div>
+    	</div>
+    	<div id="header-right">
+            <ul class="tophref-list">
+                    <li>
+                        <a class="tophref wordweight" href="#">糯米</a>
+                    </li>
+                    <li>
+                        <a class="tophref wordweight" href="#">新闻</a>
+                    </li>
+                    <li>
+                        <a class="tophref wordweight" href="#">hao123</a>
+                    </li>
+                    <li>
+                        <a class="tophref wordweight" href="#">地图</a>
+                    </li>
+                    <li>
+                        <a class="tophref wordweight" href="#">视频</a>
+                    </li>
+                    <li>
+                        <a class="tophref wordweight" href="#">贴吧</a>
+                    </li>
+                    <li>
+                        <a class="tophref" href="#">登录</a>
+                    </li>
+                    <li>
+                        <a class="tophref" href="#">设置</a>
+                    </li>
+            </ul>
+            <a class="tophrefproduct" href="#">
+                    <div class="otherproduct">
+                    更多产品
+                    </div>  
+            </a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="inputbox">
+            <div class="logoimg">
+        	    <img id="logo" src="./img/bd_logo1.png">
+        	</div>
+        	<div class="searchdiv">
+                <form  name="search" action="" method="post">
+                	<input class="search-box" name="searchcontent" type="text" maxlength="38" >
+                </form>
+                <a href="#" class="searchbutton">
+            	    百度一下
+                </a>
+            </div>
+        </div>
+        <div class="box01"></div>
+        <div id="newsboxdiv">
+        	<div class="newsbox">
+        		<div class="newsbar">
+        			<ul class="newsbarul">
+        				<li>
+        				    <a class="newsbara" id="mylove" href="#">
+        				        <img id="menimg" src="./img/men.png">
+        				        我的关注
+        				    </a>
+        				</li>
+        				<li>
+        				    <a class="newsbara"  id="foryou" href="#">推荐</a>
+        				</li>
+        				<li>
+        				    <a class="newsbara" href="#">导航</a>
+        				</li>
+        				<li>
+        				    <a class="newsbara" href="#">视频</a>
+        				</li>
+        				<li>
+        				    <a class="newsbara" href="#">购物</a>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="newsleft">
+        			<div class="newsforyou">
+        			    <div class="newsforyou-side"></div>
+        			    <span>
+        			        以下信息根据您的兴趣推荐
+        			    </span>
+        			    <div class="newsforyou-side"></div>
+        			    
+        			</div>
+        			<div class="news">
+        				<h2 class="newsh2"><a href="#">赵薇羡慕《一年级》学生：有这机会早红了</a></h2>
+        				<img class="newsimg" src="./img/newsimage-1.jpg">
+        				<span class="newsspan"><a href="#">网易娱乐  12-05  08:00</a></span>
+        		    </div>
+        			<div class="news">
+        				<h2 class="newsh2"><a href="#">土耳其总理改变态度对俄示好 划出两条底线</a></h2>
+        				<img class="newsimg" src="./img/newsimage-2.jpg">
+        				<span class="newsspan"><a href="#">新浪娱乐  12-04  11:09</a></span>
+        		    </div>
+        			
+        		</div>
+        		<div class="newsright">
+        		    <div class="newsright-title">
+        		    	<h3>实时热点</h3>	
+        		    	<a href="#">
+        		    	    <img src="./img/refresh.png">
+        		    	    换一换
+        		    	    </a>
+        		    </div> 
+        		    <ul>
+        		    	<li><a href="#">林志颖喜得双胞胎</a></li>
+        		    	<li><a href="#">ps不雅照敲诈</a></li>
+        		    	<li><a href="#">太空拍地球见北京</a></li>	
+        		    	<li><a href="#">韩国白菜卖出天价</a></li>
+        		    	<li><a href="#">电影票房破400亿</a></li>
+        		    	<li><a href="#">范冰冰霸气封面照</a></li>
+        		    	<li><a href="#">机器人扮女服务员</a></li>
+        		    	<li><a href="#">邓超否认郑恺发飙</a></li>
+        		    </ul>
+        		    <ul>
+        		    	<li><a href="#">阿塞拜疆平台着火</a></li>
+        		    	<li><a href="#">最美警察被举报</a></li>
+        		    	<li><a href="#">英国轰炸is油田</a></li>	
+        		    	<li><a href="#">陆毅自曝片酬50</a></li>
+        		    	<li><a href="#">张柏芝素颜逛菜场</a></li>
+        		    	<li><a href="#">第四次单身潮来袭</a></li>
+        		    	<li><a href="#">李湘晒14年前照</a></li>
+        		    	<li><a href="#">何俊雄患肺癌病危</a></li>
+        		    </ul>
+        		</div>	
+        	</div>	
+        </div>
+    </div>
+    <div id="footer">
+    	<a id="home" class="footercontent" href="#">设为首页</a>
+    	<p class="footercontent">@2015 Baidu</p>
+    	<a class="footercontent" href="#">使用百度前必读</a>
+    	<a class="footercontent" href="#">意见反馈</a>
+    	<p class="footercontent">京ICP证030173号</p>
+    </div>
+</body>
+</html>
