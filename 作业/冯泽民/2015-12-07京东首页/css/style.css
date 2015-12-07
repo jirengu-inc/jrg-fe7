@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*头部*/
+
+.header {
+	background-color: #f1f1f1;
+	height: 30px;
+	line-height: 30px;
+}
+
+.header .menu {
+	margin: 0 auto;
+}
+
+
+/*头部-左菜单*/
+
+.header .menu-l {}
+
+
+/*头部-右菜单*/
+
+.header .menu-r {}
+
+.header .menu-r li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.header .menu-r .register {
+	color: #C81623;
+}
+
+.header .menu-r a {
+	color: #666;
+}
+
+.header .menu-r a:hover {
+	color: #C81623;
+}
+
+.content {
+	height: 1000px;
+}

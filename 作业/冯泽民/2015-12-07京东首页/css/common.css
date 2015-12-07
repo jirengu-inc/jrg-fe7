@@ -1,0 +1,61 @@
+@charset "utf-8";
+.cm-w-1210 {
+	width: 1210px;
+}
+
+.cm-fl {
+	float: left;
+}
+
+.cm-fr {
+	float: right;
+}
+
+
+/*pading*/
+
+.cm-pr-11 {
+	padding-right: 11px;
+	*padding-right: 15px;
+}
+.cm-pl-17{
+	padding-left: 17px;
+}
+
+/*color*/
+
+
+/*icon*/
+
+.cm-icon-arrows {
+	position: absolute;
+	font:15px/15px consolas;
+	overflow: hidden;
+	margin-top: 12px;
+	margin-left: 2px;
+	*margin-top: 5px;
+}
+
+.cm-icon-arrows s {
+	position: relative;
+	top: -7px;
+	text-decoration: none;
+}
+
+.cm-icon-line {
+	color: #ddd;
+	padding-left: 11px;
+	padding-right: 10px;
+}
+
+.cm-icon-phone {
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	margin-top: 5px;
+	background: url(img/header-menu-bg.png) no-repeat;
+	*margin-top: -2px;
+}
+.cm-icon-phone:hover{
+	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
+}
