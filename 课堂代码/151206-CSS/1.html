@@ -8,6 +8,9 @@
 <meta name="keywords" content="">
 <link href="" rel="stylesheet">
 <style>
+	body{
+		font: 12px/1.5 "微软雅黑";
+	}
 	.box{
 		border: 1px solid #ccc;
 	}
@@ -43,6 +46,42 @@
 	.box>h1:first-of-type{
 		text-align: center;
 	}
+	input[type='text']{
+
+	}
+	div[data-page="index"]{
+
+	}
+	
+	div.confirm{
+		color: #333;
+	}
+
+	.button{
+	    display: inline-block;
+	    height: 30px;
+	    line-height: 30px;
+	    text-align: center;
+	    background-color: green;
+	    padding: 0 12px;
+	    color: #fff!important;
+	    border-radius: 3px;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	.button:hover{
+		opacity: 0.8;
+	}
+	.button:active{
+		opacity: 0.5;
+	}
+
+	.box > h1:nth-of-type(1){
+		font-size: 40px;
+	}
+	.box > h1:nth-child(2){
+		font-size: 50px;
+	}
 </style>
 </head>
 <body>
@@ -54,12 +93,22 @@
 		<div class="first">
 			i am div's first
 		</div>
-		<h1 class="first">我也是大标题</h1>
-		<h1 class="second">我是事实</h1>
-		<h1>我是事实</h1>
-		<h1>我是事实</h1>
-		<h1>我是事实</h1>
-
+		<h1 class="first">我也是大标题1</h1>
+		<div class="first">
+			i am div's first
+		</div>
+		<h1 class="second">我是事实2</h1>
+		<h1>我是事实3</h1>
+		<h1>我是事实4</h1>
+		<h1>我是事实5</h1>
+		<div data-page="index"></div>
+		<input type="text" >
+		<input type="password">
+		<input type="radio">
+		
+		<div class="confirm button">确定</div>
+		<a class="button" style="color: blue" href="javascript:void(0)">确定</a>
+		<a class="button" style="color: blue" href="#">ok</a>
 	</div>	
     
 </body>
