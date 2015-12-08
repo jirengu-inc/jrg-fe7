@@ -27,7 +27,11 @@
 	border-bottom-color: #fff;
 	padding-left: 9px;
 	padding-right: 25px;
-	margin-bottom: -1px;
+}
+
+.header .menu-l-address:hover .cm-icon-arrows {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 }
 
 .header .menu-l-city {
@@ -53,7 +57,8 @@
 	background-color: #C81623;
 	color: #fff;
 }
-.header .menu-l-city a.selected:hover{
+
+.header .menu-l-city a.selected:hover {
 	background-color: #C81623;
 }
 
@@ -73,15 +78,82 @@
 	margin-right: 11px;
 }
 
+.header .menu-r li:hover .cm-icon-arrows {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
 .header .menu-r li {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
+	padding-left: 11px;
+	padding-right: 11px;
 }
 
 .header .menu-r .register {
 	color: #C81623;
 }
+
+.header .menu-r li.on-dd {
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+	border-bottom-color: #fff;
+	padding-right: 20px;
+	margin: 0 -3px;
+}
+
+.header .menu-r-myjd {
+	width: 270px;
+	margin-left: -12px;
+	
+}
+
+.header .menu-r-myjd .cm-baffle {
+	width: 79px;
+}
+
+.header .menu-r-phonejd {
+	width: 250px;
+	margin-left: -12px;
+}
+
+.header .menu-r-phonejd .cm-baffle {
+	width: 96px;
+}
+
+.header .menu-r-attentionjd {
+	width: 79px;
+	margin-left: -12px;
+}
+
+.header .menu-r-attentionjd .cm-baffle {
+	width: 79px;
+}
+
+.header .menu-r-service {
+	width: 163px;
+	margin-left: -12px;
+}
+
+.header .menu-r-service .cm-baffle {
+	width: 79px;
+}
+
+
+.header .menu-r-nav {
+	width: 1200px;
+	margin-left: -1133px;
+}
+
+.header .menu-r-nav .cm-baffle {
+	width: 79px;
+}
+
+
+
+
 
 .content {
 	height: 1000px;
