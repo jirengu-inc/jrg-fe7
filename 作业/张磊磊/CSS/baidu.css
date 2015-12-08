@@ -61,7 +61,7 @@
 	font-size: 13px;
 	float: right;
 }
-.more{
+.nav_right a:first-of-type{
 	width: 86px;
 	height: 33px;
 	line-height: 32px;
@@ -74,13 +74,39 @@
 .placeholder{
 	width: 100%;
 	height: 2000px;
-	color: #eee;
-}
+	}
 .nav_right a{
 	float: right;
 	margin-left:19px;
 	line-height: 32px;
 }
 .link{
-float: right;
+font-weight: bold;
+padding-left: 4px;
+}
+.logo{
+	width: 270px;
+	height: 129px;
+	display: inline;
+	margin-top: 26px;
+	
+}
+.search{
+	width: 100%;
+	height:260px;
+	margin:0 auto;
+	text-align: center;
+}
+.input{
+	width: 530px;
+	height: 20px;
+	padding: 9px 7px;
+	border:1px solid #b8b8b8;
+	border-right:0;
+	box-shadow: none;
+	font-size: 16px ;
+	outline: none;
+}
+.search form{
+	margin-top: 6px;
 }
