@@ -13,6 +13,7 @@ ul,
 ol,
 li {
 	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -32,4 +33,9 @@ body,
 	width: 100%;
 	background: #fff;
 	font: 12px/1.5 arial;
+	padding: 0;
 }
+
+
+.clearfix{zoom:1;}
+.clearfix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}

@@ -10,6 +10,8 @@
 
 .header .menu {
 	margin: 0 auto;
+	background-color: #f1f1f1;
+	height: 30px;
 }
 
 
@@ -17,10 +19,59 @@
 
 .header .menu-l {}
 
+.header .menu-l-address {
+	display: block;
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+	border-bottom-color: #fff;
+	padding-left: 9px;
+	padding-right: 25px;
+	margin-bottom: -1px;
+}
+
+.header .menu-l-city {
+	position: absolute;
+	width: 311px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.header .menu-l-city-list {
+	width: 100%;
+	padding: 10px 0 10px 10px;
+}
+
+.header .menu-l-city li {
+	float: left;
+	line-height: 24px;
+	width: 60px;
+	padding: 2px 0;
+}
+
+.header .menu-l-city a.selected {
+	background-color: #C81623;
+	color: #fff;
+}
+.header .menu-l-city a.selected:hover{
+	background-color: #C81623;
+}
+
+.header .menu-l-city a {
+	float: left;
+	padding: 0 8px;
+}
+
+.header .menu-l-city a:hover {
+	background-color: #f4f4f4;
+}
+
 
 /*头部-右菜单*/
 
-.header .menu-r {}
+.header .menu-r {
+	margin-right: 11px;
+}
 
 .header .menu-r li {
 	display: inline-block;
@@ -29,14 +80,6 @@
 }
 
 .header .menu-r .register {
-	color: #C81623;
-}
-
-.header .menu-r a {
-	color: #666;
-}
-
-.header .menu-r a:hover {
 	color: #C81623;
 }
 

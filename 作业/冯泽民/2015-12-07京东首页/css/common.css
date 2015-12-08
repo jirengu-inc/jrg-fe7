@@ -2,6 +2,9 @@
 .cm-w-1210 {
 	width: 1210px;
 }
+.cm-w-94{
+	width: 94px;
+}
 
 .cm-fl {
 	float: left;
@@ -21,9 +24,22 @@
 .cm-pl-17{
 	padding-left: 17px;
 }
+/*超链接*/
 
-/*color*/
+ .cm-a a{
+ 	color: #666;
+ }
+.cm-a a:hover{
+	color: #C81623;
+}
 
+/*挡板*/
+.cm-baffle{
+  background-color: #fff;
+  height: 1px;
+  position: absolute;	
+  margin-top: -1px;
+}
 
 /*icon*/
 
