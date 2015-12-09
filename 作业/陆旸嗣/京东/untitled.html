@@ -32,7 +32,7 @@
 			   width:15px;
 			   height: 20px;
 			   background: url(//misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;}
-	/*头部导航栏*/
+/*头部导航栏*/
 	.search{overflow: hidden;
 			width: 1210px;}
 	.logo{display: inline-block;
@@ -47,8 +47,8 @@
 	.word input{width: 456px;
 				height: 36px;
 				border:2px solid #b61d1d;
-				margin: 0 auto 20px auto;}
-	.word a{width: 82px;
+				margin: 0 auto 0 auto;}
+	.word>a{width: 82px;
 			height: 36px;
 			background-color: #b61d1d;
 			border:2px solid #b61d1d;
@@ -73,7 +73,14 @@
 		height: 16px;
 		display: inline-block;}
 	.shoppingcart a{color: #666;}
-	/*搜索栏*/
+	.undersearch>a{color: #666;
+				   font-size: 12px;
+				   margin-right: 10px;
+				   margin-top: 10px;
+				   float: left;}
+    .undersearch>a:first-child{color: #c81623;}
+    .undersearch>a:hover{color: #c81623;}
+/*搜索栏*/
 
 	</style>
 </head>
@@ -117,10 +124,19 @@
 		<div class="word">
 			<input type="text" value="MacBook">
 				<a href="#">搜索</a>
+			<div class="undersearch">
+				<a href="#">送流量</a>
+				<a href="#">买一送一</a>
+				<a href="#">满30减10</a>
+				<a href="#">万件免单</a>
+				<a href="#">直降1212</a>
+				<a href="#">MacBook</a>
+				<a href="#">雾霾口罩</a>
+			</div>
 		</div>
 		<div class="shoppingcart">
 			<i class="carlogo"></i>
-			<a href="#">我的购物车 ></a>
+			<a href="#">我的购物车 ></a>	
 		</div>
 	</div>
 </body>
