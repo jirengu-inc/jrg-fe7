@@ -1,0 +1,154 @@
+		body,ul,li,input{
+			padding:0;
+			margin:0;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		#page{
+			display:flex;
+			flex-direction:column;
+			min-height: 100vh;
+		}
+
+		#header{
+			display:flex;
+			justify-content:flex-end;
+		}
+		
+		#main{
+			flex:1;			
+		}
+
+		#footer{
+			margin-bottom:5%;
+			display:flex;
+			justify-content:center;
+		}
+
+		.link-container ul{
+			margin:19px 15px 5px 0px;
+			display:flex;
+  			justify-content:flex-end;
+		}		
+
+		.link-container a{
+			font-family:"Microsoft YaHei",arial;
+		    color: #333;
+		    font-weight: bold;
+		    line-height: 24px;
+		    margin-left: 20px;
+		    font-size: 13px;
+		    text-decoration: underline;
+		}
+		
+		.link-container a:hover{
+		    color: blue;
+		}
+
+		.btn{
+			display:block;
+			width:60px;
+			height:24px;			
+			text-align:center;
+			background:#38f;
+			color:white!important;
+			text-decoration:none!important;
+		}
+		
+		
+
+		.logo img{
+			width:270px;
+			height:129px;
+		}
+
+		.logo{
+			margin-top:2.7%;
+			text-align:center;
+		}
+		
+		.search{
+			display:flex;
+			justify-content:center;
+		}
+
+		.search-input{
+			margin-top:23px;
+			width:538px;
+			height:34px;
+			border:1px solid #ccc;
+		}
+
+		.search-btn{
+			border:none;
+			font-size:15px; 
+			margin-top:23px;
+			width:100px;
+			height:36px;			
+			text-align:center;
+			line-height:36px; 
+			background:#38f;
+			color:white!important;
+			text-decoration:none!important;
+		}
+
+		
+
+		.qrcode{
+			display:flex;
+			justify-content:center;
+		}
+
+		.qrcode-img{
+			float:left;
+			width:60px;
+			height:60px;
+		}
+
+		.qrcode-text{
+			float:left;			
+			font-family:"Microsoft YaHei",arial;
+			font-size:12px; 
+			font-weight:bold;
+			margin-left:10px; 
+			color:#4c4c4c;
+		}
+
+		.qrcode-text span{
+			color:#999;
+			letter-spacing:1px;
+		}
+
+		.qrcode-item-2{
+			margin-left:33px;
+		}
+		
+		.info{
+			margin-left:30px;
+			display:flex;
+			justify-content:space-around;
+			flex-direction:column;
+		}
+
+		.about ul{
+			display:flex;
+			justify-content:flex-start;			
+		}
+		
+		.about ul li{
+			/*display:inline-block;*/
+			margin-right:10px;			
+		}
+
+		.about ul li a{
+			font-size:12px;
+			color:#272727;
+		}
+
+		.readme,.readme a{
+			font-size:12px;
+			color:#666;
+		}
