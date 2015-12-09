@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>CSS选择器</title>
+<style>
+body,p,ul,li{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}
+body{
+	font-family: 'Microsoft Yahei';
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+
+.btn{
+	background: green!important;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	width: 60px;
+	text-align: center;
+	height: 30px;
+	line-height:30px;
+	display: inline-block;
+}
+
+
+
+#header{
+	background: #ccc;
+}
+
+#header:before{
+	content: 'start';
+	display: block;
+	background: yellow;
+}
+#header:after{
+	content: 'end';
+	display: block;
+	background: yellow;
+}
+
+.nav li{
+	display: inline-block;
+}
+#header .nav{
+	font-size: 18px;
+}
+#header .nav>li{
+	border: 1px solid black;
+}
+#header li[data-abc="ccc"] a{
+	color: pink;
+}
+
+#content .nav{
+
+}
+#content .intro{
+
+}
+#footer p, #footer h5{
+	color: #eee;
+}	
+
+</style>
+</head>
+<body>
+	<div id="header" class="header" style="background:yellow" >
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">关于</a></li>
+			<li>
+				<ul>
+					<li data-abc="aaa"><a href="#">菜单1</a></li>
+					<li data-abc="bbb"><a href="#">菜单2</a></li>
+					<li data-abc="ccc"><a href="#">菜单3</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</div>
+	<div id="content" class="main container">
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">关于</a></li>	
+		</ul>
+		<div class="carousel">我是轮播</div>
+		<div class="intro other other2" >
+		    <p>我是段落</p>
+		    <ul>
+		    	<li>list</li>
+		    	<li>list</li>
+		    	<li class="btn">list</li>
+		    </ul>		
+		</div>
+		<div class="intro" >
+		    <p>我是段落</p>
+		    <ul>
+		    	<li>list</li>
+		    	<li>list</li>
+		    	<li>list</li>
+		    </ul>
+		    		<a class="btn" href="#">确定</a>		
+		</div>
+	</div>
+	<div id="footer">
+		<p>copyright @ xxx</p>
+		<h5>我是内容</h5>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/*首页样式*/
+body,ul,li {
+		margin:0;
+		padding:0;
+		font-size: 12px;
+		font-family: arial;
+		color: #555;
+	 }
+ul,li {
+		list-style: none;
+	 }
+a {
+	color: #555;
+	text-decoration: none;
+}
+em {
+		font-style: normal;
+	}
+#header {
+			width:100%;
+			height:32px;
+			border-bottom:1px solid #ebebeb;
+			position:relative;
+		}	 
+.l-nav {
+			overflow: hidden;
+		 }
+.l-nav .weather { 
+	         		display: inline-block;
+	         		float: left;
+	         		height: 32px;
+	         		line-height: 32px;
+	         		margin-left: 15px;
+	        		margin-right: 11px;
+                }
+.l-nav a .weather-icon {
+							display: inline-block;
+							width: 18px;
+							height:18px;
+							position: relative;
+							top: 5px;
+							background: url(https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a0.png);
+							margin-right:5px;
+						 }
+.l-nav a .temp {
+					margin-right: 9px;
+				 }
+.l-nav a .air {
+					color: rgb(186,220,0);
+					font-weight: bold;
+					margin-right: 7px;
+				}
+.l-nav ul {
+            float:left;
+		  } 
+.l-nav ul li {
+            	float:left;
+            	text-decoration: underline;
+            	text-align: center;
+            	margin-top: 9px;
+            	margin-right:19px;
+
+			} 		  
+.r-nav {
+			position: absolute;
+			top: 0;
+			right: 0;
+		 }	
+.clearfix:after{
+     			content:".";        
+     			display:block;        
+     			height:0;        
+    			clear:both;        
+     			visibility:hidden;        
+				}
+
+.clearfix{
+			zoom:1
+		 }		 		 		   
+.r-nav ul {
+            		float:left;
+            		text-decoration: underline;
+			   }	
+.r-nav ul li {
+					float:left;
+					text-decoration: underline;
+					font-size: 13px;
+					font-weight: bold;
+					margin-left: 19px;
+					margin-top: 7px;
+
+			   }	
+.r-nav ul .normal {
+						font-weight: normal;
+                     }			   		   
+.r-nav .more {
+	 			float: left;
+	 			color:#fff;
+	 			font-size: 13px;
+	 			height: 32px;
+	 			line-height:32px;
+	 			background: #38f;
+	 			margin-left: 19px;
+	 			padding:0 20px;
+	 			cursor:pointer;
+
+			 }
+#main{
+		width: 100%;
+        margin-top: 140px;
+	 }	
+.logo{
+		text-align: center;
+	 }	 
+.search {
+			width: 640px;
+			margin:25px auto 0;
+			position: relative;
+		}  	
+.search .search-box {
+					    display: inline-block;
+						width: 539px;
+						height: 34px;
+						border: 1px solid #ccc;
+						border-right: none;
+
+					}
+.search .search-box:hover {
+							border: 1px solid #38f;
+                         }				
+.search .search-box input {
+							position: relative;
+							border: none;
+							outline: none;
+							width: 500px;
+							margin:8px 0 0 7px;
+							font-size: 14px;
+							background: transparent;
+
+						  }
+.search .search-btn {
+						position: absolute;
+						top: 0;
+						right: 0;
+						display: inline-block;
+						background: #38f;	
+					}	
+.search .search-btn input {
+							border:none;
+							outline: none;
+							background: transparent;
+							color: #fff;
+						    font-size: 15px;
+						    width: 100px;
+							height: 36px;
+							text-align: center;	
+							cursor: pointer;
+						  }
+#footer {
+			width: 360px;
+			height: 80px;
+			margin:500px auto auto auto;
+			text-align: center;
+
+
+        }	
+.info a {
+			font-size: 12px;
+			color: #333;
+			text-decoration: underline;
+}
+.cp-icon{
+            width: 14px;
+            height: 17px;
+            display: inline-block;
+			background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_8b5b2ea9.png);
+			background-position: -600px -96px;
+			position: relative;
+			top: 3px;
+}
