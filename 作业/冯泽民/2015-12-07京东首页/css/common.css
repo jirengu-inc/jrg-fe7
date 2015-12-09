@@ -3,6 +3,11 @@
 	width: 1210px;
 }
 
+.cm-w-94 {
+	width: 94px;
+}
+
+
 .cm-fl {
 	float: left;
 }
@@ -14,26 +19,53 @@
 
 /*pading*/
 
-.cm-pr-11 {
-	padding-right: 11px;
-	*padding-right: 15px;
-}
-.cm-pl-17{
+.cm-pl-17 {
 	padding-left: 17px;
 }
 
-/*color*/
+
+/*超链接*/
+
+.cm-a a {
+	color: #666;
+}
+
+.cm-a a:hover {
+	color: #C81623;
+}
+
+
+/*挡板*/
+
+.cm-baffle {
+	background-color: #fff;
+	height: 1px;
+	position: absolute;
+	margin-top: -1px;
+}
+
+
+/*头部-下拉曾*/
+
+.cm-drop-down {
+	position: absolute;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
 
 
 /*icon*/
 
 .cm-icon-arrows {
 	position: absolute;
-	font:15px/15px consolas;
+	font: 15px/15px consolas;
 	overflow: hidden;
 	margin-top: 12px;
 	margin-left: 2px;
 	*margin-top: 5px;
+	transition: transform .1s ease-in 0s;
+	-webkit-transition: -webkit-transform .1s ease-in 0s;
+	height: 7px;
 }
 
 .cm-icon-arrows s {
@@ -44,8 +76,8 @@
 
 .cm-icon-line {
 	color: #ddd;
-	padding-left: 11px;
-	padding-right: 10px;
+	padding: 0 !important;
+	
 }
 
 .cm-icon-phone {
@@ -56,6 +88,7 @@
 	background: url(img/header-menu-bg.png) no-repeat;
 	*margin-top: -2px;
 }
-.cm-icon-phone:hover{
+
+.cm-icon-phone:hover {
 	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
 }
