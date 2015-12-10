@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-10 19:51:17
+ * @version $Id$
+ */
+.more{
+	width:50px;
+	height: :30px;
+	background-color: #007fff;
+}
+.new a,
+.hao a,
+.map a,
+.vidio a,
+.tieba a,
+.inter a,
+.set a,
+.about a{
+	color:black;
+}
+.more a,.button a{
+	text-decoration: nong;
+	color:#ffffff;
+}
+.logo{
+	width:200px;
+	height:80px;
+}
+.button{
+	width:100px;
+	height:33px;
+	padding:0;
+	margin:0;
+	background-color: #007fff;
+	text-align: center;
+	display: inline-block;
+	line-height: 33px;
+}
+#footer #phonebd,
+#footer #rice,
+#footer #about,
+.d1,
+.d2,
+.d3,
+.d4,
+#search li{
+	display: inline-block;
+}
+.li1,.li2,.li3,.li4{
+	list-style-type: none;
+}
+#search .shuru{
+	width:480px;
+	height: 28px;
+	margin-right: -8px;
+	line-height: 28px;
+}
+.d1,.d2,.d3,.d4{
+	width:80px;
+	height:70px;
+}
+#rice{
+	margin-left: 5px;
+}
+.about a,.d2 p,.d4 p{
+	font-size: 12px;
+}
+#about{
+	margin-left:-30px;
+}

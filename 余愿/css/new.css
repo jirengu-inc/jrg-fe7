@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors yuyuan (you@example.org)
+ * @date    2015-12-07 21:25:56
+ * @version $Id$
+ */
+#header{
+	font-size: :15px;
+	height:12%;
+}
+#rightside{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+    float:right;
+}
+#content{
+	height: 100px;
+	text-align:center;
+	padding:70px;
+	margin:auto;
+	line-height: 100px;
+}
+#footer{
+	text-align: center;
+	padding:100px;
+	margin:auto;
+}
+#rightside li,.about li{
+	display: inline;
+}
