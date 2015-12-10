@@ -26,12 +26,22 @@ span{
 	background: #F1F1F1;
 	margin: 0 auto;
 }
+.header{
+	width: 1210px;
+	height: 100px;
+	margin: 0px auto;
+}
 .nav-left{
-	width: 80px;
+	width: 352px;
 	height: 30px;
 	line-height: 30px;
-	position: absolute;
-	left: 353px;
+	float: left;
+}
+.nav-right{
+	width: 825px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
 }
 .arrow{
 	background: url(../images/arrow.gif) right 2px no-repeat;
@@ -41,13 +51,6 @@ span{
 	top: 5px;
 	left: 3px;
 	margin-left: -7px;
-}
-.nav-right{
-	width: 825px;
-	height: 30px;
-	line-height: 30px;
-	position: absolute;
-	right: 342px;
 }
 .a-red{
 	color: #c81623;
