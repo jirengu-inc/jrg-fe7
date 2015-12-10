@@ -121,6 +121,27 @@ padding-left: 4px;
 	color: #fff;
 	text-decoration: none;
 	margin-left:-5px;
-
-
+}
+.footer{
+	text-align: center;
+	margin-top:500px;
+}
+.qa{
+display: inline-block;
+}
+.conw{
+	display: inline-block;
+	font-size: 12px;
+	text-align:left;
+	margin-left: 22px;
+	position: relative;
+    top: -10px;
+}
+.about_link {
+	margin-left: 20px;
+	color: #272727;
+}
+.about{
+	display: inline-block;
+	margin: 16px 0px 16px -18px;
 }
