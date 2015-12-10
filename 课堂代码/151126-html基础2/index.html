@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>第1课</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/index2.css">
+  <style>
+    html{
+      font-size: 30px;
+    }
+    body{
+      font-family: "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, STHeiti, sans-serif;
+    }
+    p {
+      color: white; 
+    }
+
+    .mydiv{
+      color: yellow;
+      text-align: justify;
+    }
+    #p1{
+      color: blue;
+    }
+    .p2{
+      
+      border: 1px solid #fff;
+    }
+
+    #mydiv{
+      color: green;
+    }
+
+    .mydiv{
+      border: 1px solid yellow;
+    }
+    .c2{
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>这里是标题</h1>
+  <p style="border: 1px solid white; border-radius: 4px;">段落</p>
+
+  <div id="mydiv" class="mydiv c2"> 
+    我是div
+    <p style="font-size: 2em;">我是子元素em</p>
+    <p id="p1" style="font-size: 2rem;">我是子元素rem</p>
+    <p class="p2" style="font-size: 12px;">我是子元素px</p>
+  </div>
+
+  <div id="mydiv2" class="mydiv">div2</div>
+
+  <script>
+    console.log(100);
+    console.log(101);
+    console.log(102);
+
+    // alert(obj);
+  </script>
+  <script type="text/javascript" src="js/basic.js"></script>
+</body>
+</html>

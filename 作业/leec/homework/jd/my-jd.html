@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My jd</title>
+  <style>
+    /* reset */
+    html, head, body, div, span, a, img, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: 12px/1 arial, "宋体";
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+    	color: #666;
+      text-decoration: none;
+    }
+
+    /* layout */
+		a:hover {
+			color: #c81623;
+		}
+
+		.wrap {
+			margin: 50px auto;
+			width: 270px;
+			background: #F1F1F1;
+		}
+		
+		.up {
+			position: relative;
+			display: inline-block;
+			padding: 0 8px;
+			height: 32px;
+			line-height: 32px;
+			background: white;
+			z-index: 1;
+		}
+		
+		.up img {
+			transform: rotate(180deg);
+		}
+		
+		.head img {
+			display: inline-block;
+			margin: 10px;
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+		}
+		
+		.login {
+			position: relative;
+			top: -20px;
+			display: inline-block;
+		}
+		
+		.login div {
+			height: 24px;
+			line-height: 24px;
+			color: #666;
+			font-weight: bold;
+		}
+		
+		.login span {
+			height: 24px;
+			line-height: 24px;
+			color: #666;
+		}
+		
+		.login span {
+			padding: 0 12px;
+		}
+		
+		.login span.bd {
+			padding-left: 0;
+			border-right: 1px solid #666;
+		}
+		
+		.down {
+			margin-top: -1px;
+			background: white;
+			border: 1px solid #ddd;
+		}
+		.down .body li{
+			display: inline-block;
+			padding: 0 15px;
+			width: 100px;
+			height: 24px;
+			line-height: 24px;
+		}
+		
+		.down .more {
+			margin-top: 16px;
+			border-top: 1px dotted #ccc;
+		}
+		
+		.more .head span {
+			display: inline-block;
+			padding: 16px;
+		}
+		
+		.more .head span.ls {
+			font-weight: bold;
+		}
+	  .more .head span.rs {
+			margin-left: 105px;
+		}
+		
+		.more .body img { 
+			display: inline-block;
+			margin: 0 0 15px 30px;
+		}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="up">
+        <span><a href="#">我的京东</a></span>
+        <img src="images/arrow.png" alt="arrow" />
+      </div>
+      <div class="down">
+        <div class="head">
+        	<a href="#"><img src="images/head.jpg" alt="head photo" /></a>
+          <div class="login">
+            <div><a href="#">你好，请登录</a></div>
+            <span class="bd"><a href="#">优惠券</a></span>
+            <span><a href="#">消息</a></span>
+          </div>
+        </div>
+        <div class="body">
+          <ul>
+            <li><a href="#">待处理订单</a></li>
+            <li><a href="#">我的关注</a></li>
+            <li><a href="#">咨询回复</a></li>
+            <li><a href="#">我的京豆</a></li>
+            <li><a href="#">降价商品</a></li>
+            <li><a href="#">我的理财</a></li>
+            <li><a href="#">返修退换货</a></li>
+            <li><a href="#">我的白条</a></li>
+          </ul>
+        </div>
+        <div class="more">
+          <div class="head">
+            <span class="ls">最近浏览</span>
+            <span class="rs"><a href="#">更多></a></span>
+          </div>
+          <div class="body">
+            <a href="#"><img src="images/book.jpg" alt="book" /></a>
+            <a href="#"><img src="images/book.jpg" alt="book" /></a>
+            <a href="#"><img src="images/book.jpg" alt="book" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

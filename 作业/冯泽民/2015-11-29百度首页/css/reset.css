@@ -1,0 +1,51 @@
+body,
+ul,
+li,
+ol,
+input,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	font-family: "宋体";
+	background-color: #fff;
+	color: #000;
+	
+}
+
+.clear:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+	line-height: 0;
+	font-size: 0;
+}
+
+.clear {
+	zoom: 1
+}
