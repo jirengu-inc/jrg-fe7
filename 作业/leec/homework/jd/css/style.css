@@ -1,0 +1,96 @@
+/* reset */
+html, body, div, a, header, ul, li, span {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li{
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  color: #666;
+  font: 14px Arial, Verdana, "宋体";
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+/* layout */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+header {
+    background-color: #F1F1F1;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1121px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+.area {
+  padding: 0 12px;
+}
+
+.area a {
+  color: inherit;
+}
+
+.white:hover {
+  background: #fff;
+}
+
+.area:hover img, .navbar li:hover img {
+  transform: rotate(180deg);
+}
+
+
+.navbar li {
+  display: inline-block;
+  padding-right: 12px;
+  padding-left: 12px;
+  height: 32px;
+  line-height: 32px;
+  background:url("../images/bd.png") no-repeat right center;
+}
+
+.navbar li a {
+  color: inherit;
+}
+
+.navbar li:first-child {
+  padding: 0;
+  border-right: none;
+}
+
+.navbar li:nth-child(2) {
+  padding-left: 7px;
+  color: #C81623;
+}
+
+.navbar .red:hover {
+  color: #C81623;
+}
