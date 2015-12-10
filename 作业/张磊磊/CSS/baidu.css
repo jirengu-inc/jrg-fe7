@@ -71,10 +71,6 @@
 	color:white;
 	text-decoration: none;
 }
-.placeholder{
-	width: 100%;
-	height: 2000px;
-	}
 .nav_right a{
 	float: right;
 	margin-left:19px;
@@ -124,7 +120,7 @@ padding-left: 4px;
 }
 .footer{
 	text-align: center;
-	margin-top:500px;
+	margin-top:380px;
 }
 .qa{
 display: inline-block;
@@ -144,4 +140,4 @@ display: inline-block;
 .about{
 	display: inline-block;
 	margin: 16px 0px 16px -18px;
-}
+
