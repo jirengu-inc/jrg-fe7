@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  /*重新传下*/
+   html,body,ul,li{  
+  margin:0;  
+  padding:0;
+}
+ul,li{
+  list-style:none;
+}
+.clearfix:after{
+  content:" ";
+  display:block;
+  clear:both;
+}
+
+#header{
+  height:50px;
+  width :1300px;
+}
+#header ul li{
+float:right;
+margin-top:10px;  
+margin-left:20px;
+margin-right:5px;
+}
+#header a{
+  color:black;
+  font-size:13px;
+  font-weight: bold;
+  font-family:"黑体"；  
+} 
+#header a:hover{
+      color:#38f;
+    }  
+#header .product{
+  background-color:#38f;
+  padding:5px;
+  font-size:15px;
+  text-decoration:none;
+  color:#fff;
+}
+#header .product:hover{
+      color: #ccc;
+      
+    }      
+#content{ 
+  height:400px;
+  width:1000px;/*设置宽度，以防浏览器窗口减小，元素位置跑偏*/
+  text-align:center;/**在包裹文本的父元素中设定文本对其方式,这只对块元素有用**/
+  padding-top: 100px;
+ /* border: 1px solid yellow;*/
+  margin: 0 auto;
+}
+#content .logo{
+  /*margin-top:80px;*/
+  width :300px;
+  margin: 0 auto;
+  /*border: 1px solid black;*/
+}
+#content .logo img{
+  width:270px;
+  height:129px;
+  /*text-align:center;*/
+ /* border: 1px solid red;*/
+}
+#content .search{  
+  margin-top:15px;
+  width:700px;/*设置固定宽度值，没有固定宽度就会自动被挤走*/
+  /*border:1px solid black;*/
+  margin:0 auto;
+}
+#content .search .input-text{
+  border:1px soild #38f;
+  width:500px;
+  height:34px;
+}
+#content .search .input-submit
+    {
+  border:1px solid #38f;/**设置边框颜色，默认边框颜色和#38f不一样，造成差异**/
+  background-color:#38f;
+  color:white;
+  width:120px;
+  height:40px;
+  font-size:19px;
+  padding-bottom:4px;
+}
+
+#footer{
+  width:521px;
+  margin:0 auto;
+  text-align:center;
+}
+#footer a{
+  color:blue;
+  font-size:15px;
+} 
+#footer .first{
+ width:400px;
+ font-family:"黑体";
+}
+#footer .first ul li{
+  float:right;
+  margin-top:10px;  
+  margin-left:20px;
+  margin-right:5px;
+}
+#footer .second {
+  text-align:center;
+  font-size:13px;
+  font-family:"黑体";
+  color:gray;
+  margin-top:10px;
+}
+#footer .second a{
+  text-align:center;
+  font-size:13px;
+  font-family:"黑体";
+  color:gray;
+}
+  </style>
+</head>
+<body>
+ <div id="header" class="clearfix">
+   <ul>
+     <li><a href="#" class="product">更多产品</a></li>
+     <li><a href="#">设置</a></li>
+     <li><a href="#">贴吧</a></li>
+     <li><a href="#">视频</a></li>
+     <li><a href="#">地图</a></li>
+     <li><a href="#">hao123</a></li>
+     <li><a href="#">新闻</a></li>
+     <li><a href="#">登录</a></li>     
+   </ul>
+  </div>
+ <div id="content">
+  <div class="logo">
+    <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" alt="baidu-logo"/>
+  </div>
+   <div class="search">     
+      <input class="input-text" name="keywords" type="text" maxlength=100/><input class="input-submit" type="submit" value="百度一下"/>
+   </div>
+ </div>
+ <div id="footer" >
+   <div class="clearfix first">
+   <ul>  
+     <li><a href="#">About Baidu</a></li>
+     <li><a href="#">关于百度</a></li>
+     <li><a href="#">把百度设为首页</a></li>     
+   </ul>
+   </div>
+   
+   <div class="second">
+    <span>©2015 Baidu <a href="#">使用百度前必读</a> 京ICP证030173</span>
+   </div>
+ </div>   
+</body>
+</html>

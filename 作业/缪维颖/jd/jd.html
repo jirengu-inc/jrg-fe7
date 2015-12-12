@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>京东(JD.COM)-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
+	<style type="text/css">
+	    body{
+	    	padding:0;
+	    	margin:0;
+	    	font-size:12px;
+	    	font-family:"STXihei","STHeiti","Microsoft YaHei","Arial";
+	    	color:#666;
+	    }
+	    #topmenu{
+          width: 100%;
+          height:30px;
+          margin:0 auto;
+          line-height:30px;
+          background:#f1f1f1;
+          z-index:10;
+        }
+        .province{
+          margin-left: 30px;
+          display:inline-block;
+          height:30px;
+          padding:0 8px;
+        }
+        .province:hover{
+         	background: white;
+         	padding:0 7px;
+         	border-left: 1px solid #ccc;
+         	border-right: 1px solid #ccc
+         }
+        #topmenu>ul{
+        	float:right;
+        	margin-top:0px;
+            display:inline;
+        }
+        #topmenu>ul>li{
+        	list-style: none;
+        	display:inline;
+        	padding-right: 0px;
+        	padding-left:3px;
+        	border-right:1px solid #ccc;
+        }
+         #topmenu>ul>li>a{
+         	text-decoration: none;
+         	color:#666;
+         }
+         #topmenu>ul>li>a:hover{
+         	text-decoration: none;
+         	color:#C81623;
+         }
+         #topmenu>ul>li:last-of-type{
+         	margin-right: 30px;
+         	border-right: none;
+         	display: inline-block;
+         	height: 30px;
+         	
+         }
+         .provincelist{
+         	border:1px solid #ccc;
+         	width: 300px;
+         	height:245px;
+         	position: absolute;
+            left:30px;
+            background: white;
+            z-index: 21;
+         }
+         .provincelist>table{
+         	margin-top:10px;
+         	margin-left:8px;
+         	width:288px;
+         	height:220px;
+         	display: inline-table;
+         }
+         .provincelist table tr td{
+         	width:52px;
+         	height: 24px;
+         	padding: 1px;
+         }
+         .provincelist table tr td span{
+         	display:inline-block;
+         	width:auto;
+         	cursor: pointer;
+         	height:24px;
+         	line-height: 24px;
+         	padding: 0px 7px;
+         }
+         .province-first span{
+            display:inline-block;
+         	width:auto;
+         	padding-left:7px;
+         	padding-right:7px;
+         	height:24px;
+         	line-height: 24px;
+         	color:white;
+         	background: #C81623;
+         }
+         .provincelist table tr td span:hover{
+         	background: #eee;
+         	color:#C81623;
+         }
+         #freenew{
+         	color:#C81623;
+         }
+         .p-space{
+          padding:0px;
+          height:3px;
+          width:74px;
+          background: white;
+          position: absolute;
+          left:31px;
+          z-index: 22;
+         }
+         .nonesubmenu{
+         	padding:0 6px;
+         	display: inline-block;
+         	text-align: center;
+         	border-left:1px solid #f1f1f1;
+         	border-right:1px solid #f1f1f1;
+         }
+         .forsubmenu{
+         	padding:0 15px;
+         	display: inline-block;
+         	text-align: center;
+         	border-left:1px solid #f1f1f1;
+         	border-right:1px solid #f1f1f1;
+         }
+         .forsubmenu:hover{
+         	background: white;
+         	border-left:1px solid #ccc;
+         	border-right:1px solid #ccc;
+         }
+         .icon{
+         	position:relative;
+         	top:5px;
+            padding-right: 1px;
+         }
+
+	</style>
+	<style>
+	    .ma-space{
+            padding:0px;
+            height:3px;
+            width:78px;
+            background: white;
+            position: absolute;
+            right:533px;
+            z-index: 19;
+         }
+         .myaccount{
+         	border:1px solid #ccc;
+         	width: 270px;
+         	height:295px;
+         	display:inline-block;
+         	position: absolute;
+            right: 340px;
+            background: white;
+            z-index: 18;
+         }
+         .myaccount-forlogin{
+            height: 80px;
+         }
+         .myaccount-menu{
+            height:115px;
+         }
+         .myaccount-menu table{
+         	margin-left: 15px;
+         } 
+         .myaccount-menu table td{
+         	width: 120px;
+         	height: 15px;
+         	cursor: pointer;
+         }
+         .myaccount-menu table td:hover{
+         	color: #C81623;
+         }
+         .myaccount-always{
+            height:84px;
+            border-top:1px dotted #ccc; 
+         }
+         .myimage{
+         	border:1px solid white;
+         	border-radius: 50%;
+         	width: 60px;
+         	height: 60px;
+         	margin: 9px 15px 4px 15px;
+         	float: left;
+         	cursor: pointer;
+         }
+         .mylogin{
+         	margin-top:26px;
+         	margin-bottom: 9px; 
+         	cursor: pointer;
+         }
+         .myaccount-rel{
+         	display: inline-block;
+         	margin-bottom: 21px;
+         }
+         .mylogin:hover,.myloginnews:hover{
+            color:#C81623;
+         }
+         .myloginnews{
+         	padding-right: 8px;
+         	cursor: pointer;
+         }
+         .myloginnews:last-of-type{
+         	padding: 0px 10px;
+         	border-left: 1px solid #666;
+         }
+         .myaccount-always h4{
+         	display: inline-block;
+         	padding-left: 20px;
+         }
+         .myaccount-always a{
+         	text-decoration: none;
+         	color:#666;
+            margin-left: 150px;
+         }
+         .myaccount-always a:hover{
+         	color:  #C81623;
+         }
+         .myaccount-always img{
+            padding: 0 2px;
+         }
+         .myaccount-always img:first-of-type{
+         	margin-left: 20px;
+         }
+	</style>
+	<style>
+	    .mjd-space{
+            padding:0px;
+            height:3px;
+            width:94px;
+            background: white;
+            position: absolute;
+            right:292px;
+            z-index: 17;
+         }
+         .mobilejd{
+         	border:1px solid #ccc;
+         	width: 250px;
+         	height:195px;
+         	position: absolute;
+            right: 135px;
+            background: white;
+            z-index: 16;
+         }
+        .jdmobilecode{
+        	height: 97px;
+        	width: 250px;
+        }
+        .jdmobilecode:first-of-type{
+            border-bottom: 1px dotted #ccc;
+        }
+        .jdmobilecode-img{
+        	height: 80px;
+        	width: 80px;
+        	float: left;
+        	margin: 8px;
+        }
+        .jdmobile-code-rel{
+        	display: inline-block;
+        }
+        .jdmobile-code-rel h4{
+        	margin-top:10px;
+        	-webkit-margin-before: 0.625em;
+            -webkit-margin-after: 0.625em;
+            -moz-margin-before: 0.625em;
+            -moz-margin-after: 0.625em;
+            cursor: pointer;
+        }
+        .jdmobile-code-rel span{
+        	color:#C81623;
+        }
+        .dmobilecode-eqimg{
+        	display: inline-block; 
+        }
+        .iphone{
+        	padding: 5px;
+        	margin-top: 5px;
+        	display: inline-block;
+        	cursor: pointer;
+        }
+	</style>
+    <style>
+         .seejd{
+            border-right:1px solid #ccc;
+            border-left:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+            width: 78px;
+            height:108px;
+            position: absolute;
+            right: 204px;
+            background: white;
+            z-index: 15;
+            text-align: center;
+         }
+         .jdcode{
+            width: 68px;
+            height: 68px;
+            padding:10px 5px 5px 5px;
+         }
+    </style>
+    <style>
+        .service-space{
+            padding:0px;
+            height:3px;
+            width:78px;
+            background: white;
+            position: absolute;
+            right:118px;
+            z-index: 14;
+         }
+         .service{
+            border:1px solid #ccc;
+            width: 165px;
+            height:165px;
+            display:inline-block;
+            position: absolute;
+            right: 30px;
+            background:white;
+            z-index: 13;
+         }
+         .service table{
+            padding-left: 10px;
+            margin: 2px 0px;
+         }
+         .service table:first-of-type{
+            border-bottom:1px dotted #ccc; 
+            padding-bottom: 10px;
+         }
+         .service table th{
+         	width:75px;
+            height: 18px;
+            text-align: left;
+            padding:5px;
+            font-weight:bolder;
+         }
+         .service table td{
+         	cursor: pointer;
+         	width:75px;
+            height: 18px;
+            text-align: left;
+            padding:0 5px;
+         }
+         .service table td:hover{
+         	color:#C81623;
+         }
+    </style>
+	<style>
+	    .tn-space{
+            padding:0px;
+            height:3px;
+            width:78px;
+            background: white;
+            position: absolute;
+            right:31px;
+            z-index: 12;
+         }
+         .website-topnav{
+         	border:1px solid #ccc;
+         	width: 1218px;
+         	height:245px;
+         	display:inline-block;
+         	position: absolute;
+            right:30px;
+            background: white;
+            z-index: 11;
+         }
+         .website-topnav table{
+            display: inline-table;
+            border-right:1px solid #ccc; 
+            margin-top: 20px;
+            padding-left: 10px;
+         }
+         .website-topnav table:last-of-type{
+            border-right:none; 
+         }
+         .website-topnav table  th,td{
+            width:75px;
+            height: 22px;
+            text-align: left;
+            padding:5px;
+         }
+         .website-topnav table th{
+            font-size: 14px;
+         }
+         .website-topnav table td{
+         	cursor: pointer;
+         }
+         .website-topnav table td:hover{
+         	color:#C81623;
+         }
+	</style>
+</head>
+<body>
+    <div id="topmenu">
+    	<div class="province">
+    	    送至：北京
+    	</div>
+    	<ul>
+    		<li>
+    		    <a href="#">你好，请登录</a>
+    		    <a href="#"><span id="freenew">免费注册</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="nonesubmenu">我的订单</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="forsubmenu">我的京东</span></a>
+    		</li>	
+    		<li>
+    		    <a href="#"><span class="nonesubmenu">京东会员</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="nonesubmenu">企业采购</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="forsubmenu"><img class="icon" src="./img/01.png">手机京东</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="forsubmenu">关注京东</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="forsubmenu">客户服务</span></a>
+    		</li>
+    		<li>
+    		    <a href="#"><span class="forsubmenu">网站导航</span></a>
+    		</li>
+    	</ul>
+    </div>
+    <div>
+        <div class="p-space"></div>
+        <div class=provincelist>
+    	    <table>
+    	    	<tr>
+    	    		<td class="province-first"><span>北京</span></td>
+    	    		<td><span>上海</span></td>
+    	    		<td><span>天津</span></td>
+    	    		<td><span>重庆</span></td>
+    	    		<td><span>河北</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>山西</span></td>
+    	    		<td><span>河南</span></td>
+    	    		<td><span>辽宁</span></td>
+    	    		<td><span>吉林</span></td>
+    	    		<td><span>黑龙江</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>内蒙古</span></td>
+    	    		<td><span>江苏</span></td>
+    	    		<td><span>山东</span></td>
+    	    		<td><span>安徽</span></td>
+    	    		<td><span>浙江</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>福建</span></td>
+    	    		<td><span>湖北</span></td>
+    	    		<td><span>湖南</span></td>
+    	    		<td><span>广东</span></td>
+    	    		<td><span>广西</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>江西</span></td>
+    	    		<td><span>四川</span></td>
+    	    		<td><span>海南</span></td>
+    	    		<td><span>贵州</span></td>
+    	    		<td><span>云南</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>西藏</span></td>
+    	    		<td><span>陕西</span></td>
+    	    		<td><span>甘肃</span></td>
+    	    		<td><span>青海</span></td>
+    	    		<td><span>宁夏</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>新疆</span></td>
+    	    		<td><span>台湾</span></td>
+    	    		<td><span>香港</span></td>
+    	    		<td><span>澳门</span></td>
+    	    		<td><span>钓鱼岛</span></td>
+    	    	</tr>
+    	    	<tr>
+    	    		<td><span>海外</span></td>
+    	    	</tr>
+    	    </table>
+    	</div>
+    </div>
+    <div>
+        <div class="ma-space"></div>
+        <div class="myaccount">
+        	<div class="myaccount-forlogin">
+        		<img class="myimage" src="./img/myimage.jpg" alt="我的头像">
+        	    <div class="myaccount-rel">
+        	        <h4 class="mylogin">你好，请登录</h4> 
+                    <span class="myloginnews">优惠券</span>
+                    <span class="myloginnews">消息</span>
+                </div>
+        	</div>
+        	<div class="myaccount-menu">
+        		<table>
+                    <tr>
+                        <td><span>待处理订单</span></td>
+                        <td><span>我的关注</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>咨询回复</span></td>
+                        <td><span>我的京豆</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>降价商品</span></td>
+                        <td><span>我的理财</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>翻修退换货</span></td>
+                        <td><span>我的白条</span></td>
+                    </tr>
+                </table>
+        	</div>
+        	<div class="myaccount-always">
+        		<h4>最近浏览</h4>
+        		<a href="#">更多 ></a>
+        		<img src="./img/001.jpg">
+        		<img src="./img/002.jpg">
+        		<img src="./img/003.jpg">
+        		<img src="./img/004.jpg">
+        	</div>
+        </div>
+    </div>
+    <div>
+        <div class="mjd-space"></div>
+        <div class="mobilejd">
+            <div class="jdmobilecode">
+            	<img class="jdmobilecode-img" src="./img/code01.png" alt="手机京东客户端">
+                <div class="jdmobile-code-rel">
+                     <h4>京东客户端</h4> 
+                     <span>首次下单，满79送79元</span>
+                     <div class="jdmobilecode-eqimg">
+                         <img class="iphone" src="./img/iphone.png">
+                         <img class="iphone" src="./img/android.png">
+                         <img class="iphone" src="./img/ipad.png">
+                     </div>
+                </div>
+            </div>
+            <div class="jdmobilecode">
+            	<img class="jdmobilecode-img" src="./img/code02.png" alt="京东钱包客户端">
+                <div class="jdmobile-code-rel">
+                     <h4>京东钱包客户端</h4> 
+                     <span>扫码支付，首单减10元</span>
+                     <div class="jdmobilecode-eqimg">
+                         <img class="iphone" src="./img/iphone.png">
+                         <img class="iphone" src="./img/android.png">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="seejd">
+            <img class="jdcode" src="./img/jdcode.png" alt="二维码"/>
+            <span>关注京东微店</span>
+        </div>
+    </div>
+    <div>
+        <div class="service-space"></div>
+        <div class="service">
+                <table>
+                    <tr>
+                        <th><span>客户</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>帮助中心</span></td>
+                        <td><span>售后服务</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>在线客服</span></td>
+                        <td><span>意见建议</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>客服邮箱</span></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th><span>商户</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>京东商学院</span></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div>
+        <div class="tn-space"></div>
+        <div class="website-topnav">
+            <table>
+                    <tr>
+                        <th><span>特色主题</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>品牌街</span></td>
+                        <td><span>今日抄底</span></td>
+                        <td><span>好东西</span></td>
+                        <td><span>京东预售</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>尖er货</span></td>
+                        <td><span>京东首发</span></td>
+                        <td><span>今日团购</span></td>
+                        <td><span>优惠券</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>闪购</span></td>
+                        <td><span>京东会员</span></td>
+                        <td><span>天天低价</span></td>
+                        <td><span>定期送</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>装机大师</span></td>
+                        <td><span>新奇特</span></td>
+                        <td><span>京东试用</span></td>
+                        <td><span>礼品购</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>智能管</span></td>
+                        <td><span>玩bigger</span></td>
+                        <td><span>大牌免息</span></td>
+                        <td><span>北京老字号</span></td>
+                    </tr>
+            </table>
+            <table>
+                    <tr>
+                        <th><span>行业频道</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>服装城</span></td>
+                        <td><span>家用电器</span></td>
+                        <td><span>电脑办公</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>手机</span></td>
+                        <td><span>美妆馆</span></td>
+                        <td><span>食品</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>数码</span></td>
+                        <td><span>母婴</span></td>
+                        <td><span>家装城</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>运动户外</span></td>
+                        <td><span>整车</span></td>
+                        <td><span>图书</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>农资频道</span></td>
+                        <td><span>京东智能</span></td>
+                    </tr>
+            </table>
+            <table>
+                    <tr>
+                        <th><span>生活服务</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>京东众筹</span></td>
+                        <td><span>白条</span></td>
+                        <td><span>京东钱包</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>京东小金库</span></td>
+                        <td><span>理财</span></td>
+                        <td><span>话费</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>旅行</span></td>
+                        <td><span>彩票</span></td>
+                        <td><span>游戏</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>机票</span></td>
+                        <td><span>电影票</span></td>
+                        <td><span>水电煤</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>京东到家</span></td>
+                        <td><span>京东微联</span></td>
+                        <td><span>京东众测</span></td>
+                    </tr>
+            </table>
+            <table>
+                    <tr>
+                        <th><span>更多精选</span></th>
+                    </tr>
+                    <tr>
+                        <td><span>京东社区</span></td>
+                        <td><span>京东通信</span></td>
+                        <td><span>在线读书</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>京东E卡</span></td>
+                        <td><span>智能社区</span></td>
+                        <td><span>游戏社区</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>京友邦</span></td>
+                        <td><span>卖家入驻</span></td>
+                        <td><span>企业采购</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>服务市场</span></td>
+                        <td><span>乡村招募</span></td>
+                        <td><span>校园加盟</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>办公生活馆</span></td>
+                        <td><span>知识产权维权</span></td>
+                        <td><span>English Site</span></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
