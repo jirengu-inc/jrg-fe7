@@ -17,7 +17,7 @@
 	 	  overflow: hidden;
 	 	  background-color: #f1f1f1;}
 	.wrapper{width: 90%;
-				 margin:0 auto;}
+		     margin:0 auto;}
 	.adress{float: left;}
 	.navigation{float: right;}
 	.navigation li{display: inline-block;}
@@ -32,6 +32,13 @@
 			   width:15px;
 			   height: 20px;
 			   background: url(//misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;}
+	.downmemu{position: absolute;
+			  right: 165px;
+			  top: 32px;
+			  display: none;}
+	.navigation>a:hover+.downmemu{display: block;}
+	.downmemu:hover{display: block;}
+	
 /*头部导航栏*/
 	.search{overflow: hidden;
 			width: 1210px;}
@@ -207,7 +214,10 @@
 				<i class="phonelogo"></i>
 				<a href="#">手机京东</a>
 				<li class="line"></li>
-				<a href="#">关注京东</a>
+				<a href="#">关注京东 V</a>
+				<div class="downmemu">
+					<img src="http://img12.360buyimg.com/da/jfs/t730/245/639798100/7883/8271c72d/54c84f72Ncc1a02a2.jpg">
+				</div>
 				<li class="line"></li>
 				<a href="#">客服服务</a>
 				<li class="line"></li>
