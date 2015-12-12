@@ -8,6 +8,16 @@
 	a{text-decoration: none;}
 	li{list-style: none;}
 	input{outline: none;}
+	.V {display: inline-block;
+		height: 7px;
+	    width: 15px;
+		overflow: hidden;}
+	s{height: 2px;
+	  width: 2px;
+	  position: relative;
+      top: -10px;
+      text-decoration: none;
+  	  font-size: 12px;}
 	.adress ul li{display: inline;
 	    		  font-size: 12px;}
 	.adress ul a{color: #666;
@@ -38,6 +48,11 @@
 			  display: none;}
 	.navigation>a:hover+.downmemu{display: block;}
 	.downmemu:hover{display: block;}
+	s:hover{position: relative;
+      					  top: -3px;
+      			          text-decoration: none;
+  	  					  font-size: 12px;}
+							  
 	
 /*头部导航栏*/
 	.search{overflow: hidden;
@@ -214,9 +229,12 @@
 				<i class="phonelogo"></i>
 				<a href="#">手机京东</a>
 				<li class="line"></li>
-				<a href="#">关注京东 V</a>
+				<a href="#">关注京东</a>
 				<div class="downmemu">
 					<img src="http://img12.360buyimg.com/da/jfs/t730/245/639798100/7883/8271c72d/54c84f72Ncc1a02a2.jpg">
+				</div>
+				<div class="V">
+					<s>◇</s>
 				</div>
 				<li class="line"></li>
 				<a href="#">客服服务</a>
