@@ -16,15 +16,17 @@
     float:right;
 }
 #content{
-	height: 100px;
+	height: 50%px;
 	text-align:center;
 	padding:70px;
 	margin:auto;
 	line-height: 100px;
+
 }
 #footer{
 	text-align: center;
-	padding:100px;
+	height:40%;
+	padding:0;
 	margin:auto;
 }
 #rightside li,.about li{
