@@ -7,13 +7,19 @@
 	width: 94px;
 }
 
-
 .cm-fl {
 	float: left;
 }
 
 .cm-fr {
 	float: right;
+}
+
+
+/*hide*/
+
+.cm-hide {
+	display: none;
 }
 
 
@@ -66,6 +72,7 @@
 	transition: transform .1s ease-in 0s;
 	-webkit-transition: -webkit-transform .1s ease-in 0s;
 	height: 7px;
+	cursor: default;
 }
 
 .cm-icon-arrows s {
@@ -77,7 +84,6 @@
 .cm-icon-line {
 	color: #ddd;
 	padding: 0 !important;
-	
 }
 
 .cm-icon-phone {

@@ -7,23 +7,30 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/css3.css" />
 		<style type="text/css">
-			/*
-		a
-		*/
+			.info {
+				position: absolute;
+				line-height: 30px;
+				color: lightcoral;
+				font-weight: bold;
+				margin-left: 4px;
+			}
 		</style>
 	</head>
 
 	<body>
-
+		<div class="info">
+			兼容ie8以上浏览器
+		</div>
 		<!--头部-->
 		<div class="header ">
 			<div class="menu cm-w-1210 ">
 				<div class="menu-l cm-fl">
 					<span class="menu-l-address">送至：<span>北京</span><i class="cm-icon-arrows"><s>◇</s></i></span>
-					<div class="menu-l-city cm-drop-down">
+					<div class=" cm-drop-down cm-hide">
 						<div class="cm-baffle cm-w-94"></div>
-						<ul class="menu-l-city-list clearfix cm-a">
+						<ul class="cm-drop-down-list clearfix cm-a">
 							<li><a class="selected" href="javascript:void(0)">北京</a></li>
 							<li><a href="javascript:void(0)">上海</a></li>
 							<li><a href="javascript:void(0)">天津</a></li>
@@ -70,20 +77,39 @@
 					<li class="cm-icon-line">|</li>
 					<li><a href="#">我的订单</a></li>
 					<li class="cm-icon-line">|</li>
-					<li class="on-dd"><a href="#">我的京东</a><i class="cm-icon-arrows"><s>◇</s></i>
-						<div class="menu-r-myjd cm-drop-down">
+					<li class="on-dd  menu-r-dd-myjd"><a href="#">我的京东</a><i class="cm-icon-arrows"><s>◇</s></i>
+						<div class="cm-drop-down cm-hide cm-a" >
 							<div class="cm-baffle"></div>
-							<ul class="menu-r-myjd-list clearfix cm-a">
-								asdas
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
+							<div class="menu-r-myid-ng">
+								<div class="user-info">
+									<div class="user-pic">
+										<img src="css/img/ng-mid.jpg" width="60" height="60" alt="用户头像" />
+									</div>
+									<h5 class="user-login">
+										<a href="">你好，请登录</a>
+									</h5>
+									<div class="user-msg">
+										<a href="#">优惠券</a><span class="cm-icon-line">|</span><a href="#">消息</a>
+									</div>
+
+								</div>
+							</div>
+							<ul class="menu-r-myid-menu clearfix">
+								<li><a href="#">待处理订单</a></li>
+
+								<li><a href="#">我的关注</a></li>
+
+								<li><a href="#">咨询回复</a></li>
+
+								<li><a href="#">我的京豆</a></li>
+
+								<li><a href="#">降价商品</a></li>
+
+								<li><a href="#">我的理财</a></li>
+
+								<li><a href="#">返修退换货</a></li>
+
+								<li><a href="#">我的白条</a></li>
 							</ul>
 						</div>
 					</li>
@@ -92,11 +118,11 @@
 					<li class="cm-icon-line">|</li>
 					<li><a href="#">企业采购</a></li>
 					<li class="cm-icon-line">|</li>
-					<li class="on-dd">
+					<li class="on-dd   menu-r-dd-phonejd">
 						<a class="cm-icon-phone" href="#"></a><a class="cm-pl-17" href="#">手机京东</a><i class="cm-icon-arrows"><s>◇</s></i>
-						<div class="menu-r-phonejd cm-drop-down">
+						<div class="cm-drop-down cm-hide">
 							<div class="cm-baffle"></div>
-							<ul class="menu-r-myjd-list clearfix cm-a">
+							<ul class="cm-drop-down-list clearfix cm-a">
 								asdas
 								<br />
 								<br />
@@ -109,10 +135,10 @@
 					</li>
 
 					<li class="cm-icon-line">|</li>
-					<li class="on-dd"><a href="#">关注京东</a><i class="cm-icon-arrows"><s>◇</s></i>
-						<div class="menu-r-attentionjd cm-drop-down">
+					<li class="on-dd menu-r-dd-attentionjd"><a href="#">关注京东</a><i class="cm-icon-arrows"><s>◇</s></i>
+						<div class="cm-drop-down cm-hide">
 							<div class="cm-baffle"></div>
-							<ul class="menu-r-myjd-list clearfix cm-a">
+							<ul class="cm-drop-down-list clearfix cm-a">
 								asda
 								<br />
 								<br />
@@ -123,10 +149,10 @@
 					</li>
 
 					<li class="cm-icon-line">|</li>
-					<li class="on-dd"><a href="#">客户服务</a><i class="cm-icon-arrows"><s>◇</s></i>
-						<div class="menu-r-service  cm-drop-down">
+					<li class="on-dd menu-r-dd-service"><a href="#">客户服务</a><i class="cm-icon-arrows"><s>◇</s></i>
+						<div class="cm-drop-down cm-hide">
 							<div class="cm-baffle"></div>
-							<ul class="menu-r-myjd-list clearfix cm-a">
+							<ul class="cm-drop-down-list clearfix cm-a">
 								asda
 								<br />
 								<br />
@@ -148,10 +174,10 @@
 						</div>
 					</li>
 					<li class="cm-icon-line">|</li>
-					<li class="on-dd"><a href="#">网站导航</a><i class="cm-icon-arrows"><s>◇</s></i>
-						<div class="menu-r-nav  cm-drop-down" style="display: none;">
+					<li class="on-dd menu-r-dd-nav"><a href="#">网站导航</a><i class="cm-icon-arrows"><s>◇</s></i>
+						<div class="cm-drop-down cm-hide">
 							<div class="cm-baffle"></div>
-							<ul class="menu-r-myjd-list clearfix cm-a">
+							<ul class="cm-drop-down-list clearfix cm-a">
 								asda
 								<br />
 								<br />
@@ -195,14 +221,60 @@
 		</div>
 
 		<div class="content">
-			导航条兼容ie8以上
+
 		</div>
 
 		<!--脚部-->
 		<div class="footer">
 
 		</div>
-
+		<!--<script type="text/javascript">
+			HTMLElement.prototype.addClass = function(className) {
+				if (this.classList) {
+					this.classList.add(className);
+				} else {
+					this.className += ' ' + className;
+				}
+			};
+			HTMLElement.prototype.removeClass = function(className) {
+				if (this.classList) {
+					this.classList.remove(className);
+				} else {
+					this.className = this.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+				}
+			};
+			window.onload = function() {
+				var oMenur = document.getElementsByClassName('menu-r')[0];
+				var aHeaderMenu = oMenur.querySelectorAll('.on-dd');
+				var oMenul = document.getElementsByClassName('menu-l')[0];
+				for (var i = 0; i < aHeaderMenu.length; i++) {
+					aHeaderMenu[i].onmouseover = (function(i) {
+						return function() {
+							aHeaderMenu[i].addClass('on-focus');
+							var o = aHeaderMenu[i].querySelector('.cm-drop-down');
+							o.removeClass('cm-hide');
+						}
+					})(i);
+					aHeaderMenu[i].onmouseout = (function(i) {
+						return function() {
+							aHeaderMenu[i].removeClass('on-focus');
+							var o = aHeaderMenu[i].querySelector('.cm-drop-down');
+							o.addClass('cm-hide');
+						}
+					})(i);
+				}
+				oMenul.onmouseover = function(e) {
+					this.addClass('on-focus');
+					var o = this.querySelector('.cm-drop-down');
+					o.removeClass('cm-hide');
+				};
+				oMenul.onmouseout = function(e) {
+					this.removeClass('on-focus');
+					var o = this.querySelector('.cm-drop-down');
+					o.addClass('cm-hide');
+				};
+			};
+		</script>-->
 	</body>
 
 </html>
