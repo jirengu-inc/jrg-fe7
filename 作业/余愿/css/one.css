@@ -6,8 +6,8 @@
  * @version $Id$
  */
 .more{
-	width:50px;
-	height: :30px;
+	width:80px;
+	height: :60px;
 	background-color: #007fff;
 }
 .new a,
@@ -20,27 +20,32 @@
 .about a{
 	color:black;
 }
-.more a,.button a{
-	text-decoration: nong;
+.more a,.button {
+	text-decoration: none;
 	color:#ffffff;
 }
-.logo{
-	width:200px;
-	height:80px;
+
+
+.shuru{
+	width:480px;
+	height: 28px;
+	margin-right: -8px;
+	line-height: 28px;
 }
 .button{
 	width:100px;
-	height:33px;
+	height:34px;
 	padding:0;
 	margin:0;
 	background-color: #007fff;
 	text-align: center;
 	display: inline-block;
-	line-height: 33px;
+	line-height: 34px;
 }
-#footer #phonebd,
-#footer #rice,
-#footer #about,
+#phonebd,
+#rice,
+#about,
+.about,
 .d1,
 .d2,
 .d3,
@@ -51,22 +56,8 @@
 .li1,.li2,.li3,.li4{
 	list-style-type: none;
 }
-#search .shuru{
-	width:480px;
-	height: 28px;
-	margin-right: -8px;
-	line-height: 28px;
-}
+
 .d1,.d2,.d3,.d4{
 	width:80px;
 	height:70px;
-}
-#rice{
-	margin-left: 5px;
-}
-.about a,.d2 p,.d4 p{
-	font-size: 12px;
-}
-#about{
-	margin-left:-30px;
 }
