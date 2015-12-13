@@ -344,8 +344,8 @@
 
 
 .banner  .express li {
-	float: left;
-	padding-right: 10px;
+	display: inline-block;
+	padding-right: 7px;
 	
 }
 
@@ -409,6 +409,38 @@
 	margin: 10px 0;
 	padding-left: 46px;
 	color: #999;
+}
+
+/*导航*/
+#nav {
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 2px solid #B1191A;
+	font-size: 15px;
+} 
+
+#nav .good-class{
+	display: inline-block;
+	width: 200px;
+	background-color: #B1191A ;
+	
+	color: #fff;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+#nav .nav-list{
+	display: inline-block;
+	
+}
+#nav .nav-list li{
+	display: inline-block;
+	padding: 0 18px;
+}
+#nav .tip-good{
+	position: absolute;
+	right: 0;
+	bottom: 1px;
 }
 
 .content {
