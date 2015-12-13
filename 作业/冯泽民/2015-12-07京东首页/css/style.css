@@ -87,10 +87,8 @@
 	-webkit-transform: rotate(180deg);
 }
 
-.header .menu-r li {
+.header .menu-r > li {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 	padding-left: 11px;
 	padding-right: 11px;
 }
@@ -100,7 +98,7 @@
 }
 
 .header .menu-r li.on-dd {
-	padding-right: 20px;
+	padding-right: 25px;
 	margin: 0 -3px;
 	border: solid #f1f1f1;
 	border-width: 0 1px;
@@ -119,7 +117,7 @@
 }
 
 .header .menu-r-dd-myjd .cm-baffle {
-	width: 79px;
+	width: 84px;
 }
 
 .header .menu-r-myid-ng {
@@ -142,6 +140,7 @@
 
 .header .menu-r-myid-ng .user-login {
 	padding-top: 6px;
+	font-weight: bold;
 }
 
 .header .menu-r-myid-ng .user-msg .cm-icon-line {
@@ -167,35 +166,128 @@
 }
 
 .header .menu-r-dd-phonejd .cm-baffle {
-	width: 96px;
+	width: 101px;
+}
+
+.header .menu-r-dd-phonejd .jd-client {
+	position: absolute;
+	width: 61px;
+	height: 14px;
+	margin-left: 98px;
+	margin-top: 10px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-iphone {
+	position: absolute;
+	width: 43px;
+	height: 39px;
+	margin-left: 97px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-android {
+	position: absolute;
+	width: 49px;
+	height: 39px;
+	margin-left: 151px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-ipad {
+	position: absolute;
+	width: 27px;
+	height: 39px;
+	margin-left: 214px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-client {
+	position: absolute;
+	width: 84px;
+	height: 14px;
+	margin-left: 98px;
+	margin-top: 107px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-iphone {
+	position: absolute;
+	width: 43px;
+	height: 39px;
+	margin-left: 97px;
+	margin-top: 145px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-android {
+	position: absolute;
+	width: 49px;
+	height: 39px;
+	margin-left: 150px;
+	margin-top: 145px;
+	text-indent: -500px;
+	overflow: hidden;
 }
 
 .header .menu-r-dd-attentionjd .cm-drop-down {
-	width: 79px;
+	width: 84px;
 	margin-left: -12px;
+	text-align: center;
 }
 
 .header .menu-r-dd-attentionjd .cm-baffle {
-	width: 79px;
+	width: 84px;
 }
 
 .header .menu-r-dd-service .cm-drop-down {
 	width: 163px;
 	margin-left: -12px;
+	padding-bottom: 7px;
 }
 
 .header .menu-r-dd-service .cm-baffle {
-	width: 79px;
+	width: 84px;
+}
+
+.header .menu-r-dd-service li {
+	float: left;
+	line-height: 24px;
+	padding-left:10px;
+	padding-right: 11px;
+}
+
+.header .menu-r-dd-service h4 {
+	padding-left: 10px;
+	color: #666;
+}
+
+.header .menu-r-dd-service .business-title {
+	padding-top: 4px;
+}
+
+.header .menu-r-dd-service .customer {
+	border-bottom: 1px dotted #a2a2a2;
+	padding-bottom: 5px;
 }
 
 .header .menu-r-dd-nav .cm-drop-down {
 	width: 1208px;
-	margin-left: -1141px;
+	margin-left: -1136px;
 }
 
 .header .menu-r-dd-nav .cm-baffle {
-	width: 79px;
-	margin-left: 1129px;
+	width: 84px;
+	margin-left: 1124px;
 }
 
 .content {

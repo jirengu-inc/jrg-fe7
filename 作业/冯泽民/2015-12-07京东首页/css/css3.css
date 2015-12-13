@@ -18,3 +18,8 @@
 .header .menu-r li.on-dd:hover .cm-drop-down {
 	display: block;
 }
+
+.header .menu-r li.on-dd:hover .cm-icon-phone {
+	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
+}
+
