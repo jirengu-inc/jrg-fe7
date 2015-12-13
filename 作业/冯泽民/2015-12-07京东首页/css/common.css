@@ -1,6 +1,7 @@
 @charset "utf-8";
 .cm-w-1210 {
 	width: 1210px;
+	margin: 0 auto;
 }
 
 .cm-w-94 {
@@ -57,52 +58,59 @@
 	position: absolute;
 	border: 1px solid #ddd;
 	background-color: #fff;
+	z-index: 2;
 }
 
 
 /*头部二维码*/
 
- .cm-qr-code{
- 	width:250px ;
- 	height: 195px;
- 	background: url(img/header-menu-phonejd.png) no-repeat ;
- }
+.cm-qr-code {
+	width: 250px;
+	height: 195px;
+	background: url(img/header-menu-phonejd.png) no-repeat;
+}
+
 
 /*导航列表*/
-.cm-nav-list{
+
+.cm-nav-list {
 	margin: 17px 0;
 	padding: 0 0 0 20px;
 	border-right: 1px solid #ddd;
 	display: inline-block;
 }
 
-.cm-nav-list dt{
+.cm-nav-list dt {
 	color: #666;
 	font-size: 14px;
 	font-weight: bold;
 }
-.cm-nav-list dd{
+
+.cm-nav-list dd {
 	margin: 0;
-	
 }
-.cm-nav-list li{
+
+.cm-nav-list li {
 	float: left;
-  line-height: 24px;
-  width: 85px;
+	line-height: 24px;
+	width: 85px;
 }
-.cm-nav-list.l1{
+
+.cm-nav-list.l1 {
 	width: 346px;
 }
-.cm-nav-list.l2{
-	padding-left:17px ;
+
+.cm-nav-list.l2 {
+	padding-left: 17px;
 	width: 259px;
 }
 
-.cm-nav-list.l3{
-	padding-left:17px ;
+.cm-nav-list.l3 {
+	padding-left: 17px;
 	width: 259px;
 	border-right: 0 !important;
 }
+
 
 /*icon*/
 
@@ -141,4 +149,20 @@
 
 .cm-icon-phone:hover {
 	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
+}
+
+.cm-icon-shop {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url(img/header-menu-bg.png) no-repeat -1px -58px;
+	margin-left: 20px;
+	margin-top: 9px;
+}
+
+.cm-icon-nogoods{
+	float: left;
+	width: 57px;
+	height: 49px;
+	background: url(img/shop-cart-nogoods.png) no-repeat;
 }

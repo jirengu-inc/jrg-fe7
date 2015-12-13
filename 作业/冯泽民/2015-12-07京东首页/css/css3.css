@@ -23,3 +23,13 @@
 	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
 }
 
+
+.banner .shop-cart:hover {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	border-bottom: 0;
+}
+.banner .shop-cart:hover .cm-drop-down{
+	display: block;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}

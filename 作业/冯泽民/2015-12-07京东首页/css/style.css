@@ -9,9 +9,9 @@
 }
 
 .header .menu {
-	margin: 0 auto;
 	background-color: #f1f1f1;
 	height: 30px;
+	overflow: hidden;
 }
 
 
@@ -262,7 +262,7 @@
 .header .menu-r-dd-service li {
 	float: left;
 	line-height: 24px;
-	padding-left:10px;
+	padding-left: 10px;
 	padding-right: 11px;
 }
 
@@ -288,6 +288,127 @@
 .header .menu-r-dd-nav .cm-baffle {
 	width: 84px;
 	margin-left: 1124px;
+}
+
+
+/*检索区*/
+
+.banner {
+	height: 100px;
+}
+
+.banner .logo {
+	display: inline-block;
+	width: 270px;
+	line-height: 100px;
+	padding-right: 89px;
+	vertical-align: top;
+	
+}
+
+.banner .search {
+	position: relative;
+	display: inline-block;
+	width: 538px;
+	
+	padding-right: 101px;
+	top: 25px;
+	vertical-align: top;
+}
+
+.banner .search .search-input {
+	float: left;
+	width: 450px;
+	height: 32px;
+	line-height: 32px;
+	border: solid #B61D1D;
+	border-width: 2px 0 2px 2px;
+	padding: 0 0 0 4px;
+	outline: none;
+}
+
+.banner .search .search-submit {
+	float: left;
+	width: 82px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #B61D1D;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+.banner  .express{
+	margin-top: 5px;
+}
+
+
+.banner  .express li {
+	float: left;
+	padding-right: 10px;
+	
+}
+
+.banner .express li .selected {
+	color: #C81623;
+}
+
+.banner .shop-cart {
+	vertical-align: top;
+	display: inline-block;
+	width: 139px;
+	height: 34px;
+	border: 1px solid #dfdfdf;
+	position: relative;
+	top: 25px;
+	line-height: 34px;
+	background-color: #F9F9F9;
+}
+
+.banner .shop-cart .my-cart {
+	margin-left: 44px;
+}
+
+.banner .shop-cart .amount {
+	position: absolute;
+	background-color: #C81623;
+	padding: 1px 2px;
+	line-height: 12px;
+	text-align: center;
+	border-radius: 7px 7px 7px 0;
+	margin-top: -4px;
+	color: #fff;
+	width: 12px;
+}
+
+.banner .shop-cart .point {
+	position: absolute;
+	color: #999;
+	font: 400 13px/13px simsun;
+	margin-top: 11px;
+	margin-left: 19px;
+}
+
+.banner .shop-cart .cm-drop-down {
+	width: 308px;
+	margin-left: -170px;
+}
+
+.banner .shop-cart .cm-baffle {
+	width: 139px;
+	margin-left: 169px;
+	background-color: #fff;
+	height: 5px;
+	margin-top: -4px;
+}
+
+.banner .shop-cart .nogoods {
+	height: 49px;
+	line-height: 49px;
+	text-align: left;
+	margin: 10px 0;
+	padding-left: 46px;
+	color: #999;
 }
 
 .content {
