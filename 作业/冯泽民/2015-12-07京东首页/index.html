@@ -306,7 +306,16 @@
 		<div id="nav">
 			<div class="cm-w-1210" style="position: relative;">
 				<div class="good-class">
+				
+				<div class="title">
 					全部商品分类
+					
+				</div>
+				
+					<div class="list">
+						
+					</div>
+				
 				</div>
 				<ul class="nav-list cm-a">
 					
@@ -336,53 +345,7 @@
 		<div class="footer">
 
 		</div>
-		<!--<script type="text/javascript">
-			HTMLElement.prototype.addClass = function(className) {
-				if (this.classList) {
-					this.classList.add(className);
-				} else {
-					this.className += ' ' + className;
-				}
-			};
-			HTMLElement.prototype.removeClass = function(className) {
-				if (this.classList) {
-					this.classList.remove(className);
-				} else {
-					this.className = this.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-				}
-			};
-			window.onload = function() {
-				var oMenur = document.getElementsByClassName('menu-r')[0];
-				var aHeaderMenu = oMenur.querySelectorAll('.on-dd');
-				var oMenul = document.getElementsByClassName('menu-l')[0];
-				for (var i = 0; i < aHeaderMenu.length; i++) {
-					aHeaderMenu[i].onmouseover = (function(i) {
-						return function() {
-							aHeaderMenu[i].addClass('on-focus');
-							var o = aHeaderMenu[i].querySelector('.cm-drop-down');
-							o.removeClass('cm-hide');
-						}
-					})(i);
-					aHeaderMenu[i].onmouseout = (function(i) {
-						return function() {
-							aHeaderMenu[i].removeClass('on-focus');
-							var o = aHeaderMenu[i].querySelector('.cm-drop-down');
-							o.addClass('cm-hide');
-						}
-					})(i);
-				}
-				oMenul.onmouseover = function(e) {
-					this.addClass('on-focus');
-					var o = this.querySelector('.cm-drop-down');
-					o.removeClass('cm-hide');
-				};
-				oMenul.onmouseout = function(e) {
-					this.removeClass('on-focus');
-					var o = this.querySelector('.cm-drop-down');
-					o.addClass('cm-hide');
-				};
-			};
-		</script>-->
+		
 	</body>
 
 </html>

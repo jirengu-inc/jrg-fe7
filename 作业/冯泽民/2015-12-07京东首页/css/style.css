@@ -303,14 +303,12 @@
 	line-height: 100px;
 	padding-right: 89px;
 	vertical-align: top;
-	
 }
 
 .banner .search {
 	position: relative;
 	display: inline-block;
 	width: 538px;
-	
 	padding-right: 101px;
 	top: 25px;
 	vertical-align: top;
@@ -338,15 +336,14 @@
 	font-size: 16px;
 	letter-spacing: 0.2em;
 }
-.banner  .express{
+
+.banner .express {
 	margin-top: 5px;
 }
 
-
-.banner  .express li {
+.banner .express li {
 	display: inline-block;
 	padding-right: 7px;
-	
 }
 
 .banner .express li .selected {
@@ -409,36 +406,48 @@
 	margin: 10px 0;
 	padding-left: 46px;
 	color: #999;
-	
 }
 
+
 /*导航*/
+
 #nav {
 	height: 44px;
 	line-height: 44px;
 	border-bottom: 2px solid #B1191A;
 	font-size: 15px;
-} 
+}
 
-#nav .good-class{
+#nav .good-class {
 	display: inline-block;
 	width: 200px;
-	background-color: #B1191A ;
-	
+	position: relative;
+}
+
+#nav .good-class .title {
+	background-color: #B1191A;
 	color: #fff;
 	padding-left: 10px;
 	cursor: pointer;
 }
 
-#nav .nav-list{
-	display: inline-block;
-	
+#nav .good-class .list {
+	position: absolute;
+	height: 440px;
+	width: 100%;
+	background: #C81623;
 }
-#nav .nav-list li{
+
+#nav .nav-list {
+	display: inline-block;
+}
+
+#nav .nav-list li {
 	display: inline-block;
 	padding: 0 18px;
 }
-#nav .tip-good{
+
+#nav .tip-good {
 	position: absolute;
 	right: 0;
 	bottom: 1px;
