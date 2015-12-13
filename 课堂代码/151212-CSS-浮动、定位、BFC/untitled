@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    html,body,ul,li{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style: none;
+    }
+    
+    .box{
+      border: 1px solid green;
+      margin-left: 10px;
+      font-size: 0px;
+    }
+
+    .box>li{
+      display: inline-block;
+      *display: inline;
+      background: blue;
+      color: #fff;
+      padding: 3px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<h1>1. inline-block缝隙</h1> 
+<ul class="box">
+  <li>tag1</li>
+  <li>tag2</li>
+  <li>tag3</li>
+</ul>
+<p>dddddd ddd</p>
+</body>
+</html>
