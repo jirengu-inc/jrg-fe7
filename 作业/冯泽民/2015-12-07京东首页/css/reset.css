@@ -1,0 +1,53 @@
+@charset "utf-8";
+body,
+dl,
+dd,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	font: 12px/1.5 Arial, Verdana, "\5b8b\4f53";
+	padding: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	display: block;
+	content: 'clear';
+	clear: both;
+	line-height: 0;
+	visibility: hidden;
+}

@@ -36,7 +36,7 @@
 	}
 
 	.sidebar{
-		font-weight: lighter;
+		font-weight: normal;
 		color: white;
 		width: 66px;
 		height: 28px;
@@ -56,7 +56,7 @@
 
 	#content{
 		width: 100%;
-		height: 350px;
+		/*height: 300px  无需给中间部分加高度，由内容自己撑开高度*/
 		text-align: center;
 	}
 
@@ -69,6 +69,11 @@
 		width: 540px;
 		height: 38px;
 	}
+
+	.search:focus{
+		outline: none;
+	}/* 把输入框颜色用CSS3伪类去色了 */
+	
 	.wrap .button{
 		width: 100px; 
 		height: 42px;
@@ -94,15 +99,21 @@
 
 	#footer{
 		text-align: center;
-		width: 100%;;
+		width: 100%;
 		height: 100px;
+		margin-top: 200px;
 		overflow: hidden;
 	}
+
+	.foot{
+		width: 650px;
+		margin: 0 auto;
+		overflow: auto;
+	}/*外加一个foot包裹，才可以设置居中,同时会更接近响应式的效果*/
 
 	.photo-1{
 		width: 120px;
 		height: 60px;
-		margin-left: 360px;
 		float: left;
 		overflow: hidden;
 	}/* 第一个二维码的div */
@@ -175,6 +186,7 @@
 			<li><a class="sidebar"  href="">更多产品</a></li>
 		 </ul>
 	</div>
+	<!--导航栏-->
 	<div id="content">
 		<img src="bd_logo1.png">
 		<div class="wrap">
@@ -182,18 +194,21 @@
 			<a class="button" href="javasrcipt:void(0)">百度一下</a>
 		</div>	 
 	</div>
+	<!--百度框-->
 	<div id="footer">
-		<div class="photo-1"><img src="11.png" ><span><b>手机百度</b></br>快人一步</span></div>
-		<div class="photo-2"><img src="22.png" ><span><b>百度糯米</b></br>一毛大餐</span></div>
-		<div class="service">
-			<a href="">把百度设为主页</a>
-			<a href="">关于百度</a>
-			<a href="">About Baidu</a>	
-			<div class="info-wrap">
-				©2015 Baidu
-				<a href="#">使用百度前必读</a>
-				<a href="#">意见反馈</a>
-				京ICP证030173号
-			</div>
+		<div class="foot">
+			<div class="photo-1"><img src="11.png" ><span><b>手机百度</b></br>快人一步</span></div>
+			<div class="photo-2"><img src="22.png" ><span><b>百度糯米</b></br>一毛大餐</span></div>
+			<div class="service">
+				<a href="">把百度设为主页</a>
+				<a href="">关于百度</a>
+				<a href="">About Baidu</a>	
+				<div class="info-wrap">
+					©2015 Baidu
+					<a href="#">使用百度前必读</a>
+					<a href="#">意见反馈</a>
+					京ICP证030173号
+			 	</div>
+			</div>	
 		</div>
 </html>
