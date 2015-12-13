@@ -1,0 +1,25 @@
+@charset "utf-8";
+.menu-l:hover {
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+
+.menu-l:hover .cm-drop-down {
+	display: block;
+}
+
+.header .menu-r li.on-dd:hover {
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+
+.header .menu-r li.on-dd:hover .cm-drop-down {
+	display: block;
+}
+
+.header .menu-r li.on-dd:hover .cm-icon-phone {
+	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
+}
+
