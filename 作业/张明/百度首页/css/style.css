@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-12 19:22:41
+ * @version $Id$
+ */
+body {margin: 0 auto; font-size: 12px;}
+a {color: #333;}
+a:hover {color: #333;}
+
+#header {text-align: right; margin: 20px 10px 0 0; line-height: 20px; }
+#header a {font-size: 13px; color: #333; margin-left:15px; }
+#header a:hover {color: #333;}
+#header a.nav {font-weight: bold;}
+#header a.more {display: inline-block; padding: 2px 4px; background: #3388ff; color: #fff; text-decoration: none;}
+
+#content {margin-top: 120px;}
+.logo {text-align:center;}
+.search {text-align: center; margin-top: 36px;}
+.kws {width: 526px; padding: 7px; line-height: 20px; border: #b8b8b8 1px solid; border-right: none;; outline: none;}
+.kws:focus {border: #3388ff 1px solid; border-right:none;}
+.btn {border: none; background: #3388ff; width: 100px; line-height: 34px; color: #fff; font-size: 14px; vertical-align:bottom;}
+
+#footer {text-align: center; margin-top: 240px; line-height: 24px;font-family: Verdana, sans-serif;}
+#footer a {margin: 0 5px;}
