@@ -52,13 +52,13 @@
 }
 
 
-/*头部-下拉曾*/
+/*头部-下拉层*/
 
 .cm-drop-down {
 	position: absolute;
 	border: 1px solid #ddd;
 	background-color: #fff;
-	z-index: 2;
+	z-index: 4;
 }
 
 
@@ -112,6 +112,20 @@
 }
 
 
+/*btn*/
+
+.cm-btn-close {
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	background: url(img/btn-close.png) no-repeat;
+}
+.cm-btn-close:hover{
+	background: url(img/btn-close.png) no-repeat 0 -19px;
+}
+
+
+
 /*icon*/
 
 .cm-icon-arrows {
@@ -131,6 +145,15 @@
 	position: relative;
 	top: -7px;
 	text-decoration: none;
+}
+
+.cm-icon-r-arrows {
+	position: absolute;
+	font: 12px/12px consolas;
+	overflow: hidden;
+	line-height: 31px;
+	right: 12px;
+	color: #F7F7F7;
 }
 
 .cm-icon-line {
@@ -160,7 +183,7 @@
 	margin-top: 9px;
 }
 
-.cm-icon-nogoods{
+.cm-icon-nogoods {
 	float: left;
 	width: 57px;
 	height: 49px;
