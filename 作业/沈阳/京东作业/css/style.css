@@ -36,15 +36,75 @@ span{
 	height: 30px;
 	line-height: 30px;
 	float: left;
+	position: relative;
+}
+.nav-left .down{
+	width: 311px;
+	border: 1px solid #dddddd;
+	border-top: none;
+	position: absolute;
+	left: -10px;
+	background: white;
+	display: none;
+}
+.down-ul{
+	width: 100%;
+	padding: 10px 0 10px 10px;
+	overflow: auto;
+}
+.down-ul li{
+	float: left;
+	line-height: 24px;
+	width: 60px;
+	padding: 2px 0;
+}
+.down-ul li:hover{
+	background: #f4f4f4;
+}
+.nav-left:hover .down{
+	display: block;
 }
 .nav-right{
 	width: 825px;
 	height: 30px;
 	line-height: 30px;
 	float: left;
+	position: relative;
 }
+/*我的京东下拉菜单*/
+.nav-right .down{
+	width: 270px;
+	border: 1px solid #dddddd;
+	border-top: none;
+	position: absolute;
+	left: 218px;
+	top: 100%;
+	background: white;
+	display: none;
+}
+.user-down:hover .down{
+	display: block;
+}
+.down-top{
+	width: 100%;
+}
+.down-top .user-head{
+	display: block;
+	float: left;
+}
+.down-top dl{
+	float: left;
+}
+.down-middle li{
+
+}
+/*我的菜单下拉结束*/
 .arrow{
 	background: url(../images/arrow.gif) right 2px no-repeat;
+}
+#header-nav .nav-left:hover .arrow{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
 }
 .phone{
 	position: relative;
@@ -133,4 +193,11 @@ span{
 }
 input:focus{
     outline: none;
+}
+.clearfix:after {
+	display: block;
+	content: 'clear';
+	clear: both;
+	line-height: 0;
+	visibility: hidden;
 }
