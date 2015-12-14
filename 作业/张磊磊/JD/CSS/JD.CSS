@@ -1,29 +1,28 @@
 *{
 	margin: 0px;
-	font-family: arial,verdana;
+	padding: 0px;
+	font-family: Arial,Verdana,"宋体";
 }
 .header{
 	height: 30px;
-	background-color: #F1F1F1;
+	background: #F1F1F1;
 	font-size: 12px;
-	color: #666;
 }
 .wapper{
 	width: 1210px;
 	height: 30px;
 	margin: 0 auto;
-	list-style: none;
+	background: red;
 }
-.region>span{
-	line-height: 30px;
-	padding-left: 10px;
-	padding-right: 5px;
+.region{
+	height: 30px;
+	width: 97px;
+	float: left;
+	background:yellow;
 }
-  .arrow {
-	font: 400 15px/15px Consolas;
-} 
-.arrow-s{
-	position: relative;
-	text-decoration: none;
-	color: #6A6A6A;
+.fr{
+	width: 797px;
+	height: 30px;
+	float: right;
+	background-color: blue;
 }
