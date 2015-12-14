@@ -33,3 +33,16 @@
 	display: block;
 	box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
+
+#nav .good-list .class-name:hover{
+	background-color: #F7F7F7;
+	color: #B61D1D;
+}
+
+#nav .good-list .class-name:hover a{
+	color: #B61D1D;
+}
+
+#nav .good-list .class-name:hover + .class-list{
+	display: block;
+}

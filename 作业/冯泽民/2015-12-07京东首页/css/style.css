@@ -419,23 +419,17 @@
 }
 
 #nav .good-class {
-	display: inline-block;
-	width: 200px;
 	position: relative;
+	display: inline-block;
+	width: 210px;
+	font-size:14px ;
 }
 
-#nav .good-class .title {
+#nav .good-title {
 	background-color: #B1191A;
 	color: #fff;
 	padding-left: 10px;
 	cursor: pointer;
-}
-
-#nav .good-class .list {
-	position: absolute;
-	height: 440px;
-	width: 100%;
-	background: #C81623;
 }
 
 #nav .nav-list {
@@ -453,6 +447,61 @@
 	bottom: 1px;
 }
 
+#nav .good-list {
+	position: absolute;
+	width: 100%;
+	background: #C81623;
+	height: 466px;
+	margin-top: 2px;
+}
+
+#nav .good-list .class-name {
+	height: 31px;
+	line-height: 31px;
+	padding-left: 10px;
+	border-left: 1px solid #B61D1D;
+	z-index: 3;
+	position: relative;
+	color: #fff;
+}
+
+#nav .good-list .class-name a {
+	color: #fff;
+	
+}
+
+#nav .good-list .class-list {
+	position: absolute;
+	display: none;
+	width: 999px;
+	border: solid #B61D1D;
+	border-width:2px 1px 1px 1px ;
+	background-color: #F7F7F7;
+	z-index: 0;
+	left: 209px;
+	top: -2px;
+	min-height: 465px;
+}
+
+#nav .good-list .class-list.on-cl {
+	display: block;
+}
+
 .content {
 	height: 1000px;
+}
+
+/*广告*/
+
+.header-ad{
+	background-color: #BE1E00;
+	height: 80px;
+	
+}
+.header-ad .ad-box{
+	position: relative;
+}
+.header-ad .cm-btn-close {
+	right: 5px;
+	top: 5px;
 }
