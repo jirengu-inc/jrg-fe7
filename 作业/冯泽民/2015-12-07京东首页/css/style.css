@@ -422,7 +422,8 @@
 	position: relative;
 	display: inline-block;
 	width: 210px;
-	font-size:14px ;
+	
+	
 }
 
 #nav .good-title {
@@ -430,6 +431,8 @@
 	color: #fff;
 	padding-left: 10px;
 	cursor: pointer;
+	
+	
 }
 
 #nav .nav-list {
@@ -453,6 +456,7 @@
 	background: #C81623;
 	height: 466px;
 	margin-top: 2px;
+	font-size:14px ;
 }
 
 #nav .good-list .class-name {
