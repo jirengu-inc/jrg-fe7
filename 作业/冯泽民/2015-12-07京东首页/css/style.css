@@ -422,8 +422,6 @@
 	position: relative;
 	display: inline-block;
 	width: 210px;
-	
-	
 }
 
 #nav .good-title {
@@ -431,8 +429,6 @@
 	color: #fff;
 	padding-left: 10px;
 	cursor: pointer;
-	
-	
 }
 
 #nav .nav-list {
@@ -454,9 +450,9 @@
 	position: absolute;
 	width: 100%;
 	background: #C81623;
-	height: 466px;
 	margin-top: 2px;
-	font-size:14px ;
+	font-size: 14px;
+	border-bottom: 1px solid #B61D1D;
 }
 
 #nav .good-list .class-name {
@@ -471,7 +467,6 @@
 
 #nav .good-list .class-name a {
 	color: #fff;
-	
 }
 
 #nav .good-list .class-list {
@@ -479,7 +474,7 @@
 	display: none;
 	width: 999px;
 	border: solid #B61D1D;
-	border-width:2px 1px 1px 1px ;
+	border-width: 2px 1px 1px 1px;
 	background-color: #F7F7F7;
 	z-index: 0;
 	left: 209px;
@@ -495,16 +490,18 @@
 	height: 1000px;
 }
 
+
 /*广告*/
 
-.header-ad{
+.header-ad {
 	background-color: #BE1E00;
 	height: 80px;
-	
 }
-.header-ad .ad-box{
+
+.header-ad .ad-box {
 	position: relative;
 }
+
 .header-ad .cm-btn-close {
 	right: 5px;
 	top: 5px;
