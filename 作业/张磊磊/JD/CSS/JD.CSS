@@ -33,6 +33,7 @@
 	top: -7px;
 	position: relative;
 	text-decoration: none;
+	font-family:consolas; 
 }
 
 .region{
@@ -61,8 +62,9 @@ line-height: 28px;
 	border: 1px solid #ddd;
 	display: none;
 	position: relative;
-
 	right: 11px;
+	z-index: 1;
+	top:1px;
 
 }
 .region:hover .region-list{
@@ -71,6 +73,7 @@ line-height: 28px;
 .region:hover {
 	background-color: #fff;
 	border: 1px solid #ddd;
+	cursor: default;
 
 }
 .region-list li{
@@ -91,11 +94,26 @@ line-height: 28px;
 	    background: #C81623;
 	    color: white;
 }
-
+.item:hover{
+	background-color: #F4F4F4
+}
 .fr{
 	width: 797px;
 	height: 30px;
 	float: right;
 	background-color: white;
 
+}
+.placeholder{
+	width: 100px;
+	height: 3px;
+	background-color:#fff;
+	position: absolute;
+	bottom: -2px;
+	right:0px;
+	display: none;
+	z-index: 2
+}
+.region:hover .placeholder{
+	display: block;
 }
