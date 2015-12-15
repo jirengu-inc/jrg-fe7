@@ -46,3 +46,8 @@
 #nav .good-list .class-name:hover + .class-list{
 	display: block;
 }
+
+
+#nav .class-list:hover{
+	display: block;
+}
