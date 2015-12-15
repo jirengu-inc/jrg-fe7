@@ -7,22 +7,95 @@
 	height: 30px;
 	background: #F1F1F1;
 	font-size: 12px;
+	color: #666;
 }
 .wapper{
 	width: 1210px;
 	height: 30px;
 	margin: 0 auto;
-	background: red;
 }
+.arrows{
+	font:400 15px/15px consolas;
+	color: #6a6a6a;
+	top: 12px;
+	right: 8px;
+	overflow: hidden;
+	height: 7px;
+	-webkit-transition:-webkit-transform .1s ease-in 0s;
+	position: absolute;
+	display: block;
+}
+.region:hover .arrows {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.arrows>s{
+	top: -7px;
+	position: relative;
+	text-decoration: none;
+}
+
 .region{
-	height: 30px;
-	width: 97px;
+	height: 28px;
+	width: 90px;
 	float: left;
-	background:yellow;
+	padding-left: 10px;
+	border: 1px solid #f1f1f1;
+	position: relative;
 }
+.region span{
+line-height: 28px;
+}
+.region img:first-of-type{
+	vertical-align:middle;
+	position: relative;
+	top:-1px;
+	left: 4px;
+	z-index: 0;
+}
+
+.region-list{
+	width: 301px;
+	height: 224px;
+	padding: 10px 0 10px 10px;
+	border: 1px solid #ddd;
+	display: none;
+	position: relative;
+
+	right: 11px;
+
+}
+.region:hover .region-list{
+	display: block;
+}
+.region:hover {
+	background-color: #fff;
+	border: 1px solid #ddd;
+
+}
+.region-list li{
+	float: left;
+	list-style:none;
+	width: 60px;
+	height: 24px;
+	display: inline-block;
+	padding: 2px 0;
+}
+.region-list li a{
+	color: #666;
+	text-decoration: none;
+	line-height: 24px;
+	padding: 5px 8px;
+}
+.region-list li:nth-of-type(2) a{
+	    background: #C81623;
+	    color: white;
+}
+
 .fr{
 	width: 797px;
 	height: 30px;
 	float: right;
-	background-color: blue;
+	background-color: white;
+
 }
