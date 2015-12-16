@@ -34,11 +34,11 @@
 /*超链接*/
 
 .cm-a a {
-	color: #666;
+	color: #666 !important;
 }
 
 .cm-a a:hover {
-	color: #C81623;
+	color: #C81623 !important;
 }
 
 
@@ -120,10 +120,10 @@
 	height: 19px;
 	background: url(img/btn-close.png) no-repeat;
 }
-.cm-btn-close:hover{
+
+.cm-btn-close:hover {
 	background: url(img/btn-close.png) no-repeat 0 -19px;
 }
-
 
 
 /*icon*/

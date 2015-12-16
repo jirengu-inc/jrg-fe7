@@ -491,16 +491,18 @@
 	display: inline-block;
 	width: 790px;
 	vertical-align: top;
-	padding: 0 0 0 20px;
+	padding: 20px 0 10px 20px;
 }
 
+#nav .items-express {
+	line-height: 24px;
+}
 
 #nav .items-express a {
 	display: inline-block;
-	line-height: 24px;
 	background-color: #7C7171;
 	padding: 0 0 0 8px;
-	color: #fff;
+	color: #fff !important;
 	margin-right: 7px;
 }
 
@@ -508,7 +510,7 @@
 	display: inline-block;
 	width: 23px;
 	font: 12px/12px consolas;
-	color: #fff;
+	color: #fff !important;
 	line-height: 24px;
 	margin-left: 9px;
 	background: #5C5251;
@@ -538,7 +540,7 @@
 }
 
 #nav .item-name .cm-icon-r-arrows {
-	color: #666;
+	color: #666 !important;
 	right: auto;
 	margin-left: 9px;
 	margin-top: -3px;
@@ -585,8 +587,25 @@
 }
 
 .class-ad {
+	padding-top: 20px;
 	display: inline-block;
-	width: 185px;
-	background: #DDDDDD;
+	width: 168px;
 	vertical-align: top;
+	text-align: right;
+	padding-right: 2px;
+}
+
+.class-ad a {
+	display: inline-block;
+	margin-left: -2px;
+}
+
+.class-ad .small-ad {
+	line-height: 35px;
+}
+
+.class-ad .big-ad {
+	padding-top: 9px;
+	line-height: 134px;
+	;
 }
