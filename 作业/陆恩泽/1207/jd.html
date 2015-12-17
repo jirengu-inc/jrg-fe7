@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>京东奶茶</title>
+    <title>京东商城</title>
     <style>
     html,body,ul,li,p{
-        margin: 0;
+        margin:0;
         padding:0;
     }
     a{
@@ -15,7 +15,7 @@
     a:hover{
       color: red;
     }
-
+    
     ul,li{
       list-style: none;
     }
@@ -24,121 +24,162 @@
       display: block;
       clear:both;
     }
-    #book{
-        /*border: 1px solid black;*/
-        width: 240px;
-    }
-    .image img{
-        width:200px;
-        height: 200px;
-    }
-    .info{
-        /*text-align: center;*/
-        width: 200px;
-        /*border: 1px solid red;*/
-        margin-left: 25px;
-    }
-    .info a{
-        font-weight: bold;
-        font-family: "黑体";
-        color:#ccc;
-    }
-    .info a:hover{
-        color: red;
-    }
-    .price {
-      margin-left: 25px;
-      /*border: 1px solid #ccc;*/
-      font-weight: bold;
-    }
-    .price p{
-        color:#e4393c; 
-        font-size: 20px;
-    }
-   #nav{
-    /*border: 1px solid black;*/
-    height: 37px;
-    background-color: #F3EDED;
-    border-bottom: 2px solid red;
-   }
+   #nav{ 
+      background-color: #F3EDED;
+      line-height: 30px;/*忽略点*/
+      height: 32px;
+     }
+   #nav a{
+     color: #666;
+     font-size: 12px;
+     font-family: arial;
+
+   }  
+     
    #nav a:hover{
       color: red;
     }
     
-   .layout{
+   .layout{    
     width: 1210px;
     margin: 0 auto;
-    height: 30px;
-    padding-top: 10px;   
    }
    .left-side{
     float: left;
-    /*border: 1px solid red;*/
    }
-   .left-side a{
-    color: #888;
-    font-size: 12px;
-    font-family: "宋体";
+   .left-side .down-menu{
+    position: relative; 
    }
-   .right-side{
-
-       /*border: 1px solid green;*/
-       margin-left:150px;
-   }
-   .right-side li{
-    float: right;
-    border-left: 1px solid #888; 
-   }
-   .right-side ul,li{
-     padding-left: 10px;
-     padding-right: 10px; 
-   }
-   .right-side a{
-     color: #888;
+    .left-side .down-menu span{
+     color: #666;
      font-size: 12px;
-     font-family: "宋体";
+     font-family: arial;
+     padding: 0px 10px 0px 10px; 
    }
-   .right-side .spec{
-    /*color: red;*/
-    border-left: 1px solid transparent;
+   .left-side .down-menu{
+        /*border: 1px solid gray;*/
    }
-    .right-side .spec a{
+   .left-side .down-menu:hover{
+    background-color: white;
+    border-left: 1px solid #CAC3C3;
+    border-right: 1px solid #CAC3C3;
+   }
+   /*.left-side .down-menu .adr{
+    border: 1px solid black;
+   }*/
+   .left-side .down-menu .list{
+            display: none;
+            position: absolute;
+            left:-11px;
+            top:100%; 
+            line-height: 30px;
+            padding: 0px 10px 0px 10px;
+            border-left: 1px solid #CAC3C3;
+            border-bottom: 1px solid #CAC3C3;
+
+
+           /* padding-top: 10px;*/
+   }
+   .left-side .down-menu .second{
+            left:49px;
+            border-top: 1px solid #CAC3C3;
+            border-bottom:1px solid #CAC3C3;
+            border-left: 1px solid transparent;
+            padding-bottom: 31px;
+   }
+    .left-side .down-menu .third{
+            left:109px;
+            border-top: 1px solid #CAC3C3; 
+            border-right:1px solid #CAC3C3; 
+            border-bottom: 1px solid #CAC3C3;
+            border-left: 1px solid transparent;
+            padding-bottom: 31px;
+   }
+   .left-side .down-menu:hover .list{
+    display: block;
+    width: 40px;
+    text-align: center;
+    margin: 0px 10px;
+   }
+   .left-side .down-menu .list .selected{
+    background-color:#C81623;
+    padding:5px 8px 5px 8px;
+   }
+   .right-side li {
+    float: right; 
+    font-size: 10px;
+    color:#CAC3C3;
+   }
+   .right-side li a{
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+   .right-side li .moblie{
+    background: url("http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png") 4px -1px no-repeat;
+    padding: 1px 0px 2px 20px;
+    margin-right: 8px;
+   }
+   .right-side li .moblie:hover{
+    background-position: 4px -26px;
+   }
+   
+   #nav .right-side .spec a{
     color: red;
    }  
     </style>
 </head>
 <body>
-   <h1>图书商品</h1>
-   <div id="book">
-      <div class="image">
-       <a href="#"><img src="http://img11.360buyimg.com/n1/s200x200_jfs/t1618/299/640480158/164969/1bbd272/559dcb24Nff32e1e4.jpg" alt="阿乙推荐"></a>
-      </div>
-      <div class="info">
-        <a href="#">独立日 1 用一间书房抵抗全世界</a>
-      </div>
-      <div class="price">
-          <p>¥34.20</p>
-      </div>
-   </div>
-   <h1>导航条</h1>
   <div id="nav">
-    <!-- layout边框为yellow -->
     <div class="layout clearfix">
     <!-- 双飞翼布局用layout包裹 -->
-      <!-- left-side边框为red -->
-      <div class="left-side"><a href="#">送至，上海</a></div>
-      <!-- right-side边框为绿色 -->
-      <div class="right-side  clearfix">
+      <div class="left-side">
+        <ul>
+          <li class="down-menu"><span>送至: 上海<s>◇</s></span>
+          <div class="adr clearfix">
+
+           <ul class="list">
+              <li><a href="#" class="selected">上海</a></li>
+              <li><a href="#">北京</a></li>
+              <li><a href="#">江苏</a></li>
+              <li><a href="#">广东</a></li>
+              <li><a href="#">江西</a></li>
+              <li><a href="#">湖南</a></li>
+              <li><a href="#">湖北</a></li>
+              <li><a href="#">海外</a></li>
+           </ul>
+           <ul class="list second">
+              <li><a href="#">河南</a></li>
+              <li><a href="#">河北</a></li>
+              <li><a href="#">广西</a></li>
+              <li><a href="#">山西</a></li>
+              <li><a href="#">天津</a></li>
+              <li><a href="#">新疆</a></li>
+              <li><a href="#">内蒙古</a></li>
+           </ul>
+          <ul class="list third">
+              <li><a href="#">陕西</a></li>
+              <li><a href="#">云南</a></li>
+              <li><a href="#">台湾</a></li>
+              <li><a href="#">海南</a></li>
+              <li><a href="#">辽宁</a></li>
+              <li><a href="#">山东</a></li>
+              <li><a href="#">黑龙江</a></li>
+           </ul>
+         </div> 
+          </li>
+        </ul>       
+      </div>
+      <div class="right-side clearfix">
          <ul>
-          <li><a href="#">网站导航</a></li>
-          <li><a href="#">客户服务</a></li>
-          <li><a href="#">关注京东</a></li>
-          <li><a href="#">手机京东</a></li>
-          <li><a href="#">企业采购</a></li>
-          <li><a href="#">京东会员</a></li>
-          <li><a href="#">我的京东</a></li>
-          <li><a href="#">我的订单</a></li>
-          <li><a href="#">免费注册</a></li>
+          <li><a href="#">网站导航</a></li><li>|</li>
+          <li><a href="#">客户服务</a></li><li>|</li>
+          <li><a href="#">关注京东</a></li><li>|</li>
+          <li ><a href="#" class="moblie">手机京东</a></li><li>|</li>
+          <li><a href="#">企业采购</a></li><li>|</li>
+          <li><a href="#">京东会员</a></li><li>|</li>
+          <li><a href="#">我的京东</a></li><li>|</li>
+          <li><a href="#">我的订单</a></li><li>|</li>
+          <li><a href="#">免费注册</a></li><li>|</li>
           <li class="spec"><a href="#" >恩泽陆，请登录</a></li> 
         </ul>
       </div>
