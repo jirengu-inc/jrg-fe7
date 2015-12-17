@@ -125,7 +125,10 @@ line-height: 28px;
 	padding: 0 2px;
 	margin-left:10px; 
 }
-.fore1 a{
+.fore a:hover{
+	color: #c81623;
+}
+.fr li a{
 	color: #666;
 	text-decoration: none;
 }
@@ -133,4 +136,9 @@ line-height: 28px;
 	padding-right: 10px;
 	color: #c81623;
 	font-family: "verdana,simsun";
+}
+
+.spacer{
+	color: #ddd;	
+	padding: 0px !important;
 }
