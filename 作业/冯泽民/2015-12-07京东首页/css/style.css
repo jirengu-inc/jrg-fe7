@@ -422,7 +422,6 @@
 	position: relative;
 	display: inline-block;
 	width: 210px;
-	font-size:14px ;
 }
 
 #nav .good-title {
@@ -451,8 +450,9 @@
 	position: absolute;
 	width: 100%;
 	background: #C81623;
-	height: 466px;
 	margin-top: 2px;
+	font-size: 14px;
+	border-bottom: 1px solid #B61D1D;
 }
 
 #nav .good-list .class-name {
@@ -467,7 +467,6 @@
 
 #nav .good-list .class-name a {
 	color: #fff;
-	
 }
 
 #nav .good-list .class-list {
@@ -475,33 +474,138 @@
 	display: none;
 	width: 999px;
 	border: solid #B61D1D;
-	border-width:2px 1px 1px 1px ;
+	border-width: 2px 1px 1px 1px;
 	background-color: #F7F7F7;
 	z-index: 0;
 	left: 209px;
 	top: -2px;
 	min-height: 465px;
+	font-size: 12px;
 }
 
 #nav .good-list .class-list.on-cl {
 	display: block;
 }
 
+#nav .class-items-box {
+	display: inline-block;
+	width: 790px;
+	vertical-align: top;
+	padding: 20px 0 10px 20px;
+}
+
+#nav .items-express {
+	line-height: 24px;
+}
+
+#nav .items-express a {
+	display: inline-block;
+	background-color: #7C7171;
+	padding: 0 0 0 8px;
+	color: #fff !important;
+	margin-right: 7px;
+}
+
+#nav .items-express i {
+	display: inline-block;
+	width: 23px;
+	font: 12px/12px consolas;
+	color: #fff !important;
+	line-height: 24px;
+	margin-left: 9px;
+	background: #5C5251;
+	text-align: center;
+}
+
+#nav .items-express a:hover {
+	background-color: #C81623;
+}
+
+#nav .items-express a:hover i {
+	background-color: #B1191A;
+}
+
+#nav .item-box {
+	overflow: hidden;
+}
+
+#nav .item-name {
+	line-height: 2em;
+	padding-top: 8px;
+	padding-right: 30px;
+	width: 54px;
+	float: left;
+	font-weight: 700;
+	text-align: right;
+}
+
+#nav .item-name .cm-icon-r-arrows {
+	color: #666 !important;
+	right: auto;
+	margin-left: 9px;
+	margin-top: -3px;
+}
+
+#nav .item-list {
+	width: 620px;
+	line-height: 16px;
+	float: left;
+	border-top: 1px solid #E0E0E0;
+	padding: 6px 0;
+}
+
+#nav .item-box.first .item-list {
+	border-top: 0;
+}
+
+#nav .item-list a {
+	float: left;
+	padding: 0 8px;
+	margin: 4px 0;
+	border-left: 1px solid #E0E0E0;
+}
+
 .content {
 	height: 1000px;
 }
 
+
 /*广告*/
 
-.header-ad{
+.header-ad {
 	background-color: #BE1E00;
 	height: 80px;
-	
 }
-.header-ad .ad-box{
+
+.header-ad .ad-box {
 	position: relative;
 }
+
 .header-ad .cm-btn-close {
 	right: 5px;
 	top: 5px;
+}
+
+.class-ad {
+	padding-top: 20px;
+	display: inline-block;
+	width: 168px;
+	vertical-align: top;
+	text-align: right;
+	padding-right: 2px;
+}
+
+.class-ad a {
+	display: inline-block;
+	margin-left: -2px;
+}
+
+.class-ad .small-ad {
+	line-height: 35px;
+}
+
+.class-ad .big-ad {
+	padding-top: 9px;
+	line-height: 134px;
+	;
 }
