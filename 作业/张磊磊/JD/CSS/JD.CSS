@@ -101,8 +101,6 @@ line-height: 28px;
 	width: 833px;
 	height: 30px;
 	float: right;
-	background-color: white;
-
 }
 .placeholder{
 	width: 100px;
@@ -123,7 +121,7 @@ line-height: 28px;
 	line-height: 30px;
 	height: 30px;
 	padding: 0 2px;
-	margin-left:10px; 
+	
 }
 .fore a:hover{
 	color: #c81623;
@@ -131,6 +129,11 @@ line-height: 28px;
 .fr li a{
 	color: #666;
 	text-decoration: none;
+	margin-right:8px; 
+}
+.fore2 a{
+	padding: 0 8px;
+
 }
 .fore1 a:first-of-type{
 	padding-right: 10px;
@@ -141,4 +144,37 @@ line-height: 28px;
 .spacer{
 	color: #ddd;	
 	padding: 0px !important;
+}
+.fore3{
+	position: relative;
+
+}
+.cw-icon{
+	position: relative;
+	padding-right: 20px;
+	padding-left: 8px;
+	
+.ci-right{
+top: 12px;
+right: 10px;
+height: 7px;
+overflow: hidden;
+font:400 15px/15px consolas;
+color: #6A6A6A;
+-webkit-transition:-webkit-transform .1s ease-in 0s;
+display: block;
+position: absolute;
+}
+.ci-right s{
+	position: relative;
+	top: -7px;
+	text-decoration: none;
+	font:400 15px/15px consolas;
+}
+.my-jd{
+	height: 294px;
+	width: 270px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: -10px
 }
