@@ -429,5 +429,38 @@ span{
     top: 14px;
 	left: 18px;
     background: url(../images/nav-third-right.png) no-repeat center;
-    background-position: 0px 1px;
+    background-position: 0px 0px;
+}
+.ci-2{
+	background-position: 0px -25px;
+}
+.ci-3{
+	background-position: 0px -50px;
+}
+.ci-4{
+	background-position: 0px -75px;
+}
+.ci-5{
+	background-position: 0px -100px;
+}
+.ci-6{
+	background-position: 0px -125px;
+}
+.ci-7{
+	background-position: 0px -150px;
+}
+.ci-8{
+	background-position: 0px -175px;
+}
+.ci-9{
+	background-position: 0px -200px;
+}
+.ci-10{
+	background-position: 0px -225px;
+}
+.ci-11{
+	background-position: 0px -250px;
+}
+.ci-12{
+	background-position: 0px -272px;
 }
