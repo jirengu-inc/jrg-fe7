@@ -31,14 +31,14 @@
 .logo{
 	display: inline-block;
 	width: 270px;
-	height: 100px;
 	padding-right: 90px;
 	line-height: 100px;
 }
 .search-1210 .search{
 	display: inline-block;
 	width:535px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	padding-right: 100px; 
 }
 
 .search-input,.search-btn{
@@ -68,4 +68,7 @@
 }
 .changecl a:hover{
 	color: #cb1623;
-};
+}
+.shop-car{
+	display: inline-block;
+}
