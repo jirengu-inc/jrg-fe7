@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-19 12:14:45
+ * @version $Id$
+ */
+.header-ad{
+	background-color: #be1e00;
+    height:80px;
+}
+.header-ad-1210{
+	width:1210px;
+	margin:0 auto;
+	position: relative;
+	height: 80px;
+}
+.header-ad-close{
+	position:absolute;
+	right: 5px;
+	top:5px;
+	width: 19px;
+	height: 19px;
+	overflow: hidden;
+}
+.search-1210{
+	width: 1210px;
+	height: 100px;
+	margin:0 auto;
+}
+.logo{
+	display: inline-block;
+	width: 270px;
+	height: 100px;
+	padding-right: 90px;
+	line-height: 100px;
+}
+.search-1210 .search{
+	display: inline-block;
+	width:535px;
+	margin: 0 auto; 
+}
+
+.search-input,.search-btn{
+    float: left;
+}
+.search-input{
+	width: 450px;
+	height: 28px;
+	border: 2px solid #b61d1d;
+}
+.search-btn{
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	background-color: #b61d1d;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+.search-rmd li{
+	display: inline-block;
+	padding-right: 7px;
+}
+.search-rmd a{
+	color: #6a6a6a;
+}
+.changecl a:hover{
+	color: #cb1623;
+};
