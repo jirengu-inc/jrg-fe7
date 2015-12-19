@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-15 19:47:24
+ * @version $Id$
+ */
+html,body{
+	height: 100%;
+	width:100%;
+	background-color: #fff;
+	font:12px/1.5 Arial, Verdana, "\5b8b\4f53";
+}
+body{
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+/*头部*/
+#header{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f1f1f1;
+}
+#header .long-1210{
+	width: 1210px;
+	margin: 0 auto;
+}
+
+#header .menu{
+	background-color: #f1f1f1;
+	overflow: hidden;
+	height: 30px;
+}
+#header .address{
+	cursor: default;
+}
+#nav-left,.nav-right a,.menu-city a{
+	font-size: 13px;
+	color: #6a6a6a;
+}
+/*倒三角*/
+.arrow{
+	font: 15px/15px consolas;
+	position:absolute;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 2px;
+	height:7px;
+    cursor: default;
+}
+/*包裹三角的框*/
+.icon{
+	border:solid #f1f1f1;
+	border-width: 0 1px;
+	padding-left:9px;
+	padding-right:25px;
+}
+
+/*顶部的左边*/
+#nav-left{
+	height:30px;
+	float: left;
+}
+/*顶部的右边*/
+.nav-right{
+	margin: 0;
+	padding: 0;
+	float: right;
+	height: 30px;
+}
+/*头部右边的列表*/
+.nav-right>li{
+    display: inline-block;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+/**/
+
+.nav-right a,.menu-city a{
+    text-decoration: none;
+}
+
+.line{
+	color:#ddd;
+	padding:0 !important;
+}
+.menu-city li{
+  list-style-type: none;
+  float:left;
+  width:40px;
+}
+.menu-city{
+	width:100%;
+	border:1px solid #ddd;
+	height:100%;
+	padding:0 10px 10px;
+}
+#menu-city{
+	width:300px;
+	position: absolute;
+	margin-left: -10px;
+	display: none;
+}
+.city-bj{
+	border:1px solid #ddd;
+	background-color: #c81623;
+	height:25px;
+}
