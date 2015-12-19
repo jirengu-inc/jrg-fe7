@@ -476,7 +476,7 @@
 	border: solid #B61D1D;
 	border-width: 2px 1px 1px 1px;
 	background-color: #F7F7F7;
-	z-index: 0;
+	z-index: 1;
 	left: 209px;
 	top: -2px;
 	min-height: 465px;
@@ -565,8 +565,152 @@
 	border-left: 1px solid #E0E0E0;
 }
 
-.content {
-	height: 1000px;
+
+/*京东地图*/
+
+#map {
+	padding: 12px 0 10px 0;
+	height: 454px;
+}
+
+#map .slider {
+	display: inline-block;
+	width: 729px;
+	height: 454px;
+	margin-left: 221px;
+	vertical-align: top;
+}
+
+#map .service {
+	display: inline-block;
+	width: 248px;
+	height: 452px;
+	margin-left: 7px;
+	border: 1px solid #E4E4E4;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+#map .service h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#map .title {
+	height: 43px;
+	line-height: 43px;
+	padding-left: 16px;
+	color: #666;
+	position: relative;
+}
+
+#map .more {
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+
+#map .more:hover .cm-icon-r-arrows {
+	color: #B1191A;
+}
+
+#map .more .cm-icon-r-arrows {
+	position: relative;
+	right: 0;
+	color: #666;
+	margin-left: 7px;
+}
+
+#map .jd-express .content {
+	line-height: 27px;
+	padding: 8px 0 13px 15px;
+	border-top: 1px dotted #E8E8E7;
+}
+
+#map .jd-express .content span {
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+#map .life .title {
+	border-top: 1px dashed #E8E8E7;
+}
+
+#map .life .content {
+	width: 260px;
+	overflow: hidden;
+	text-align: center;
+	border-top: 1px solid #E8E8E7;
+}
+
+#map .life .content li {
+	float: left;
+	width: 62px;
+	height: 69px;
+	border-right: 1px solid #E8E8E7;
+	border-bottom: 1px solid #E8E8E7;
+	display: inline;
+}
+
+#map .life i {
+	margin-top: 13px;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: url(img/map-live.png) no-repeat 0 0;
+}
+
+#map .life li span {
+	margin-top: 45px;
+	display: inline-block;
+}
+
+#map .life-h i {}
+
+#map .life-j i {
+	background-position-y: -25px;
+}
+
+#map .life-d i {
+	background-position-y: -50px;
+	margin-left: 5px;
+}
+
+#map .life-y i {
+	background-position-y: -75px;
+}
+
+#map .life-c i {
+	background-position-y: -100px;
+}
+
+#map .life-t i {
+	background-position-y: -125px;
+}
+
+#map .life-jd i {
+	background-position-y: -150px;
+}
+
+#map .life-s i {
+	background-position-y: -175px;
+	margin-left: 5px;
+}
+
+#map .life-z i {
+	background-position-y: -200px;
+}
+
+#map .life-l i {
+	background-position-y: -225px;
+}
+
+#map .life-p i {
+	background-position-y: -250px;
+	margin-left: 5px;
+}
+#map .life-b i {
+	background-position-y: -275px;
 }
 
 
