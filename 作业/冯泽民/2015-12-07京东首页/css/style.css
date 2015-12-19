@@ -9,9 +9,9 @@
 }
 
 .header .menu {
-	margin: 0 auto;
 	background-color: #f1f1f1;
 	height: 30px;
+	overflow: hidden;
 }
 
 
@@ -87,10 +87,8 @@
 	-webkit-transform: rotate(180deg);
 }
 
-.header .menu-r li {
+.header .menu-r > li {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 	padding-left: 11px;
 	padding-right: 11px;
 }
@@ -100,7 +98,7 @@
 }
 
 .header .menu-r li.on-dd {
-	padding-right: 20px;
+	padding-right: 25px;
 	margin: 0 -3px;
 	border: solid #f1f1f1;
 	border-width: 0 1px;
@@ -119,7 +117,7 @@
 }
 
 .header .menu-r-dd-myjd .cm-baffle {
-	width: 79px;
+	width: 84px;
 }
 
 .header .menu-r-myid-ng {
@@ -142,6 +140,7 @@
 
 .header .menu-r-myid-ng .user-login {
 	padding-top: 6px;
+	font-weight: bold;
 }
 
 .header .menu-r-myid-ng .user-msg .cm-icon-line {
@@ -167,37 +166,590 @@
 }
 
 .header .menu-r-dd-phonejd .cm-baffle {
-	width: 96px;
+	width: 101px;
+}
+
+.header .menu-r-dd-phonejd .jd-client {
+	position: absolute;
+	width: 61px;
+	height: 14px;
+	margin-left: 98px;
+	margin-top: 10px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-iphone {
+	position: absolute;
+	width: 43px;
+	height: 39px;
+	margin-left: 97px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-android {
+	position: absolute;
+	width: 49px;
+	height: 39px;
+	margin-left: 151px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-ipad {
+	position: absolute;
+	width: 27px;
+	height: 39px;
+	margin-left: 214px;
+	margin-top: 48px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-client {
+	position: absolute;
+	width: 84px;
+	height: 14px;
+	margin-left: 98px;
+	margin-top: 107px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-iphone {
+	position: absolute;
+	width: 43px;
+	height: 39px;
+	margin-left: 97px;
+	margin-top: 145px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+
+.header .menu-r-dd-phonejd .jd-purse-android {
+	position: absolute;
+	width: 49px;
+	height: 39px;
+	margin-left: 150px;
+	margin-top: 145px;
+	text-indent: -500px;
+	overflow: hidden;
 }
 
 .header .menu-r-dd-attentionjd .cm-drop-down {
-	width: 79px;
+	width: 84px;
 	margin-left: -12px;
+	text-align: center;
 }
 
 .header .menu-r-dd-attentionjd .cm-baffle {
-	width: 79px;
+	width: 84px;
 }
 
 .header .menu-r-dd-service .cm-drop-down {
 	width: 163px;
 	margin-left: -12px;
+	padding-bottom: 7px;
 }
 
 .header .menu-r-dd-service .cm-baffle {
-	width: 79px;
+	width: 84px;
+}
+
+.header .menu-r-dd-service li {
+	float: left;
+	line-height: 24px;
+	padding-left: 10px;
+	padding-right: 11px;
+}
+
+.header .menu-r-dd-service h4 {
+	padding-left: 10px;
+	color: #666;
+}
+
+.header .menu-r-dd-service .business-title {
+	padding-top: 4px;
+}
+
+.header .menu-r-dd-service .customer {
+	border-bottom: 1px dotted #a2a2a2;
+	padding-bottom: 5px;
 }
 
 .header .menu-r-dd-nav .cm-drop-down {
 	width: 1208px;
-	margin-left: -1141px;
+	margin-left: -1136px;
 }
 
 .header .menu-r-dd-nav .cm-baffle {
-	width: 79px;
-	margin-left: 1129px;
+	width: 84px;
+	margin-left: 1124px;
 }
 
-.content {
-	height: 1000px;
+
+/*检索区*/
+
+.banner {
+	height: 100px;
+}
+
+.banner .logo {
+	display: inline-block;
+	width: 270px;
+	line-height: 100px;
+	padding-right: 89px;
+	vertical-align: top;
+}
+
+.banner .search {
+	position: relative;
+	display: inline-block;
+	width: 538px;
+	padding-right: 101px;
+	top: 25px;
+	vertical-align: top;
+}
+
+.banner .search .search-input {
+	float: left;
+	width: 450px;
+	height: 32px;
+	line-height: 32px;
+	border: solid #B61D1D;
+	border-width: 2px 0 2px 2px;
+	padding: 0 0 0 4px;
+	outline: none;
+}
+
+.banner .search .search-submit {
+	float: left;
+	width: 82px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #B61D1D;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+
+.banner .express {
+	margin-top: 5px;
+}
+
+.banner .express li {
+	display: inline-block;
+	padding-right: 7px;
+}
+
+.banner .express li .selected {
+	color: #C81623;
+}
+
+.banner .shop-cart {
+	vertical-align: top;
+	display: inline-block;
+	width: 139px;
+	height: 34px;
+	border: 1px solid #dfdfdf;
+	position: relative;
+	top: 25px;
+	line-height: 34px;
+	background-color: #F9F9F9;
+}
+
+.banner .shop-cart .my-cart {
+	margin-left: 44px;
+}
+
+.banner .shop-cart .amount {
+	position: absolute;
+	background-color: #C81623;
+	padding: 1px 2px;
+	line-height: 12px;
+	text-align: center;
+	border-radius: 7px 7px 7px 0;
+	margin-top: -4px;
+	color: #fff;
+	width: 12px;
+}
+
+.banner .shop-cart .point {
+	position: absolute;
+	color: #999;
+	font: 400 13px/13px simsun;
+	margin-top: 11px;
+	margin-left: 19px;
+}
+
+.banner .shop-cart .cm-drop-down {
+	width: 308px;
+	margin-left: -170px;
+}
+
+.banner .shop-cart .cm-baffle {
+	width: 139px;
+	margin-left: 169px;
+	background-color: #fff;
+	height: 5px;
+	margin-top: -4px;
+}
+
+.banner .shop-cart .nogoods {
+	height: 49px;
+	line-height: 49px;
+	text-align: left;
+	margin: 10px 0;
+	padding-left: 46px;
+	color: #999;
+}
+
+
+/*导航*/
+
+#nav {
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 2px solid #B1191A;
+	font-size: 15px;
+}
+
+#nav .good-class {
+	position: relative;
+	display: inline-block;
+	width: 210px;
+}
+
+#nav .good-title {
+	background-color: #B1191A;
+	color: #fff;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+#nav .nav-list {
+	display: inline-block;
+}
+
+#nav .nav-list li {
+	display: inline-block;
+	padding: 0 18px;
+}
+
+#nav .tip-good {
+	position: absolute;
+	right: 0;
+	bottom: 1px;
+}
+
+#nav .good-list {
+	position: absolute;
+	width: 100%;
+	background: #C81623;
+	margin-top: 2px;
+	font-size: 14px;
+	border-bottom: 1px solid #B61D1D;
+}
+
+#nav .good-list .class-name {
+	height: 31px;
+	line-height: 31px;
+	padding-left: 10px;
+	border-left: 1px solid #B61D1D;
+	z-index: 3;
+	position: relative;
+	color: #fff;
+}
+
+#nav .good-list .class-name a {
+	color: #fff;
+}
+
+#nav .good-list .class-list {
+	position: absolute;
+	display: none;
+	width: 999px;
+	border: solid #B61D1D;
+	border-width: 2px 1px 1px 1px;
+	background-color: #F7F7F7;
+	z-index: 1;
+	left: 209px;
+	top: -2px;
+	min-height: 465px;
+	font-size: 12px;
+}
+
+#nav .good-list .class-list.on-cl {
+	display: block;
+}
+
+#nav .class-items-box {
+	display: inline-block;
+	width: 790px;
+	vertical-align: top;
+	padding: 20px 0 10px 20px;
+}
+
+#nav .items-express {
+	line-height: 24px;
+}
+
+#nav .items-express a {
+	display: inline-block;
+	background-color: #7C7171;
+	padding: 0 0 0 8px;
+	color: #fff !important;
+	margin-right: 7px;
+}
+
+#nav .items-express i {
+	display: inline-block;
+	width: 23px;
+	font: 12px/12px consolas;
+	color: #fff !important;
+	line-height: 24px;
+	margin-left: 9px;
+	background: #5C5251;
+	text-align: center;
+}
+
+#nav .items-express a:hover {
+	background-color: #C81623;
+}
+
+#nav .items-express a:hover i {
+	background-color: #B1191A;
+}
+
+#nav .item-box {
+	overflow: hidden;
+}
+
+#nav .item-name {
+	line-height: 2em;
+	padding-top: 8px;
+	padding-right: 30px;
+	width: 54px;
+	float: left;
+	font-weight: 700;
+	text-align: right;
+}
+
+#nav .item-name .cm-icon-r-arrows {
+	color: #666 !important;
+	right: auto;
+	margin-left: 9px;
+	margin-top: -3px;
+}
+
+#nav .item-list {
+	width: 620px;
+	line-height: 16px;
+	float: left;
+	border-top: 1px solid #E0E0E0;
+	padding: 6px 0;
+}
+
+#nav .item-box.first .item-list {
+	border-top: 0;
+}
+
+#nav .item-list a {
+	float: left;
+	padding: 0 8px;
+	margin: 4px 0;
+	border-left: 1px solid #E0E0E0;
+}
+
+
+/*京东地图*/
+
+#map {
+	padding: 12px 0 10px 0;
+	height: 454px;
+}
+
+#map .slider {
+	display: inline-block;
+	width: 729px;
+	height: 454px;
+	margin-left: 221px;
+	vertical-align: top;
+}
+
+#map .service {
+	display: inline-block;
+	width: 248px;
+	height: 452px;
+	margin-left: 7px;
+	border: 1px solid #E4E4E4;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+#map .service h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#map .title {
+	height: 43px;
+	line-height: 43px;
+	padding-left: 16px;
+	color: #666;
+	position: relative;
+}
+
+#map .more {
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+
+#map .more:hover .cm-icon-r-arrows {
+	color: #B1191A;
+}
+
+#map .more .cm-icon-r-arrows {
+	position: relative;
+	right: 0;
+	color: #666;
+	margin-left: 7px;
+}
+
+#map .jd-express .content {
+	line-height: 27px;
+	padding: 8px 0 13px 15px;
+	border-top: 1px dotted #E8E8E7;
+}
+
+#map .jd-express .content span {
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+#map .life .title {
+	border-top: 1px dashed #E8E8E7;
+}
+
+#map .life .content {
+	width: 260px;
+	overflow: hidden;
+	text-align: center;
+	border-top: 1px solid #E8E8E7;
+}
+
+#map .life .content li {
+	float: left;
+	width: 62px;
+	height: 69px;
+	border-right: 1px solid #E8E8E7;
+	border-bottom: 1px solid #E8E8E7;
+	display: inline;
+}
+
+#map .life i {
+	margin-top: 13px;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: url(img/map-live.png) no-repeat 0 0;
+}
+
+#map .life li span {
+	margin-top: 45px;
+	display: inline-block;
+}
+
+#map .life-h i {}
+
+#map .life-j i {
+	background-position-y: -25px;
+}
+
+#map .life-d i {
+	background-position-y: -50px;
+	margin-left: 5px;
+}
+
+#map .life-y i {
+	background-position-y: -75px;
+}
+
+#map .life-c i {
+	background-position-y: -100px;
+}
+
+#map .life-t i {
+	background-position-y: -125px;
+}
+
+#map .life-jd i {
+	background-position-y: -150px;
+}
+
+#map .life-s i {
+	background-position-y: -175px;
+	margin-left: 5px;
+}
+
+#map .life-z i {
+	background-position-y: -200px;
+}
+
+#map .life-l i {
+	background-position-y: -225px;
+}
+
+#map .life-p i {
+	background-position-y: -250px;
+	margin-left: 5px;
+}
+#map .life-b i {
+	background-position-y: -275px;
+}
+
+
+/*广告*/
+
+.header-ad {
+	background-color: #BE1E00;
+	height: 80px;
+}
+
+.header-ad .ad-box {
+	position: relative;
+}
+
+.header-ad .cm-btn-close {
+	right: 5px;
+	top: 5px;
+}
+
+.class-ad {
+	padding-top: 20px;
+	display: inline-block;
+	width: 168px;
+	vertical-align: top;
+	text-align: right;
+	padding-right: 2px;
+}
+
+.class-ad a {
+	display: inline-block;
+	margin-left: -2px;
+}
+
+.class-ad .small-ad {
+	line-height: 35px;
+}
+
+.class-ad .big-ad {
+	padding-top: 9px;
+	line-height: 134px;
+	;
 }

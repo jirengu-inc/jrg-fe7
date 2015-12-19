@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  
+  .container,
+.ct3{
+/*   width: 400px;
+  height: 400px; */
+ /*  border: 1px solid; */
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+.container .box:nth-child(1){
+  float: right;
+  background: red;
+}
+
+.container .box:nth-child(2){
+  float: right;
+  clear: both;
+  background: blue;
+}
+.container .box:nth-child(3){
+  clear: both;
+  background: yellow;
+}
+
+
+.ct3 .box{
+
+}
+
+.ct3 .box:nth-child(1){
+
+  background: red;
+}
+
+.ct3 .box:nth-child(2){
+
+  background: blue;
+}
+.ct3 .box:nth-child(3){
+  float: right;
+  background: yellow;
+}
+.footer{
+  clear: right;
+  border: 3px solid blue;
+}
+
+  
+  
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div>
+
+<div class="container">
+  <div class="box"></div>
+  <p>浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-blocks, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-blocks, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们的内容创建新的BFC（块级格式上下文）</p>
+</div>
+  
+<div class="ct3">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div>
+ 
+<div class="footer">浮动元素和绝对定位元素，非块级盒子的块级容器（例如 inline-blocks, table-cells, 和 table-captions），以及overflow值不为“visiable”的块级盒子，都会为他们</div>
+  
+  
+</body>
+</html>

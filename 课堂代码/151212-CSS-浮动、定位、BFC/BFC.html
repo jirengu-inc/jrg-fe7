@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  html,body,p{
+  margin: 0;
+  padding: 0;
+}
+.clear:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.clear{
+  *zoom: 1;
+}
+
+.ct1>div{
+  overflow: hidden;
+}
+
+.ct1 .box{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background: red;
+  
+}
+
+.ct2{
+/*   display: inline-block; */
+    /*  overflow: auto;  */
+/*   float: left; */
+  border: 2px solid blue;
+  /* *zoom: 1; */
+}
+
+
+
+.ct2 .box{
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  background: red;
+  
+}
+.clear{
+  clear: both;
+}
+
+.ct3{
+  border: 1px solid #ccc;
+}
+
+.ct3 img{
+  width: 80px;
+  float: left;
+}
+.ct3 p{
+  overflow: auto;
+}
+
+
+
+  
+  
+  </style>
+</head>
+<body>
+ <div class="ct1">
+   <div>
+        <div class="box">1</div>
+   </div>
+   <div>
+       <div class="box">2</div> 
+   </div>
+
+   <div class="box">3</div>
+ </div>
+  
+ <div class="ct2 clear">
+   <div class="box">4</div>
+   <div class="box">5</div>
+   <div class="box">6</div>
+
+ </div>
+  
+  <div class="ct3">
+    <img src="http://cdn.jirengu.com/public/logo-tiny.png" alt="">
+    <p>卧室文字卧室文字卧室文字卧室文字卧室文字卧室文字卧室文字卧室文字卧室文字卧室文字</p>
+  </div>
+</body>
+</html>
