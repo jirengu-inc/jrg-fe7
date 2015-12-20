@@ -147,7 +147,10 @@ line-height: 28px;
 }
 .fore3{
 	position: relative;
-
+	line-height: 30px;
+	height:30px;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
 }
 .cw-icon{
 	position: relative;
@@ -176,5 +179,24 @@ position: absolute;
 	width: 270px;
 	border: 1px solid #ddd;
 	position: absolute;
-	left: -10px
+	left: -1px;
+	display:none;
+}
+.drop:hover .ci-right{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.fore3:hover .my-jd{
+	display: block;
+}
+.fore3:hover {
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.test{
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	background-color: red;
 }
