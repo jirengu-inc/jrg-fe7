@@ -1,0 +1,140 @@
+html,body{
+    padding: 0;
+    margin:0;
+}
+a{ text-decoration: none;}
+
+input{
+    width: 450px;
+    height: 30px;
+    border: 2px solid #B61d1d;
+    float: left;
+    outline: none;    
+}
+ul li{
+    list-style-type: none;
+}
+#nav{
+    height: 30px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+#nav ul li ul{
+    position: absolute; display: none;
+}
+#nav ul li ul li{
+    float: left;
+    padding: 0 10px;
+    line-height: 18px;
+    background: #f1f1f1;
+}
+#nav ul li:hover ul{
+    display: block;
+    width: 260px;
+}
+#nav ul li ul li:hover{
+    background: #666;
+}
+.nav-address{
+    float: left;
+    font-family: "microsoft yahei";
+    margin: 8px;
+    padding: 0;
+}
+.address{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    line-height: 20px;
+}
+.nav-list{
+    float: right;
+    margin: 0;
+    padding: 0;
+}    
+.nav-list li{
+    float: left;
+    list-style-type: none;
+    padding: 8px;
+    font-family: "microsoft yahei";	
+}
+.nav-list li ul {
+    position: absolute;display: none;
+}
+.nav-list li:hover ul {
+    display: block;
+}
+.user{
+    width: 200px;
+}
+.user-logo{
+    float: left;
+}
+.address,.login,.submit{
+    text-decoration: none;
+}
+.icon-phone{
+    background:url(jd2015img.png) 0-25 no-repeat;
+    top:5px;
+    left:7px;
+    width:15px;
+    height:20px;
+}
+.icon-arrow {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.ad{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: -5px;
+    z-index: -5;
+}
+.search{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    position: relative;
+    padding: 20px 0;
+    z-index: -5;
+}
+.searchbox{
+    float: left;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.search-link{
+    float: left;
+    background-color: #B61d1d;
+    width: 80px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.shopping{
+    width: 80px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    float: right;
+    margin-right: 300px;
+    background: #f9f9f9;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+.cw-icon{
+    top: 9px;
+    left: 18px;
+    width: 18px;
+    height: 16px
+    background: url(css/header-menu-bg.png) 0 -58px no-repeat;
+}
