@@ -80,14 +80,14 @@
 	top: 25px;
 	vertical-align: top;
 }
-.car{
+/*.car{
 	position: absolute;
 	width: 16px;
 	height: 16px;
 	background: url(img/header-menu-bg.png) no-repeat -1px -58px;
     margin-left: 20px;
     margin-top: 9px;
-}
+}*/
 .shop-car .mycar{
 	position: relative;
 	margin-left: 44px;
