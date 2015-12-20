@@ -189,3 +189,19 @@
 	height: 49px;
 	background: url(img/shop-cart-nogoods.png) no-repeat;
 }
+
+.cm-icon-exempt , .cm-icon-send {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 15px;
+	
+}
+.cm-icon-exempt{
+	background: url(img/map-live-m.png) no-repeat;
+}
+
+.cm-icon-send {
+	background: url(img/map-live-s.png) no-repeat;
+}
