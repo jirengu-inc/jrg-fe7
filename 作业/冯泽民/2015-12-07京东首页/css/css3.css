@@ -23,3 +23,39 @@
 	background: url(img/header-menu-bg.png) no-repeat 0 -25px;
 }
 
+.banner .shop-cart:hover {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	border-bottom: 0;
+}
+
+.banner .shop-cart:hover .cm-drop-down {
+	display: block;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+#nav .class-tier:hover a {
+	color: #B61D1D;
+}
+
+#nav .class-tier:hover .class-name {
+	background-color: #F7F7F7;
+	color: #B61D1D;
+}
+
+#nav .class-name:hover a {
+	color: #B61D1D;
+	background-color: #F7F7F7;
+}
+
+#nav .class-tier:hover .class-list {
+	display: block;
+}
+
+
+
+
+
+
+
+

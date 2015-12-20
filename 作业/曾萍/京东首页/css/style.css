@@ -1,0 +1,142 @@
+
+body {
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+	color: #666;
+}
+#shortcut {
+	background-color: #f1f1f1;
+	line-height: 30px;
+}
+a{
+	text-decoration: none;
+	padding: 0 8px;
+	display: inline-block;
+	color: #666 !important;
+
+}
+
+a:hover{
+	color: #c81623 !important;
+}
+.ui-areamini-content-list a:hover{
+	background-color: #f4f4f4;
+	
+}
+.w {
+	/*display: inline-block;*/
+	width: 1210px;
+	margin: 0 auto;
+	height: 30px;
+}
+.fl {
+	float: left;
+}
+.dorpdown {
+	position: relative;
+}
+.dorpdown-layer {
+	display: none;
+	position: absolute;
+	line-height: 24px;
+	top: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.dorpdown:hover .dorpdown-layer{
+	display: inline-block;
+}
+.ttbar-mycity:hover .dt{
+	padding: 0 24px 0 9px;
+	
+}
+li.dorpdown:hover .dt{
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+.ui-areamini-text-wrap{
+	position: relative;
+	width: 83px;
+	padding: 0 0 0 10px;
+
+}
+
+.ci-right{
+	position: absolute;
+  	font: 15px/15px consolas;
+  	overflow: hidden;
+  	margin: 13px 0 0 6px;
+  	height: 7px;
+}
+.ci-right s{
+	position: relative;
+	top: -6px;
+	text-decoration: none;
+}
+.dorpdown:hover s{
+	position: relative;
+	top: 0;
+}
+
+#ttbar-mycity .dd {
+	width: 301px;
+	padding: 10px 0 10px 10px;
+}
+
+.dd-spacer{
+	left:0;
+	width:93px;
+	position: absolute;
+	top: -7px;
+	height: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.ui-areamini-content-list li {
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	width: 60px;
+	padding: 2px 0;
+}
+/*fr*/
+.fr{
+	float: right;	
+}
+.fr>li{
+	float-left;
+	display: inline-block;
+	padding: 0 2px;
+}
+
+.icon-line{
+	width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0 !important;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.ttbr-myjd .dt{
+	width: 49px;
+	padding-right: 25px;
+}
+.cw-icon{
+	position: relative;
+}
+.cw-icon i{
+	display: inline-block;
+	position: absolute;
+	overflow: hidden;
+}
+#ttbar-apps .dt{
+	padding: 0 25px;
+}
+#ttbar-apps .dt .ci-left{
+	top: 5px;
+	left: 7px;
+	width: 15px;
+	height: 20px;
+	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
+}
