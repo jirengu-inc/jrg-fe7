@@ -115,7 +115,7 @@ line-height: 28px;
 .region:hover .placeholder{
 	display: block;
 }
-.fr li{
+.fr>li{
 	float: left;
 	list-style: none;
 	line-height: 30px;
@@ -194,9 +194,50 @@ position: absolute;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 }
-.test{
+.dd-spacer{
 	position: absolute;
-	width: 20px;
-	height: 10px;
-	background-color: red;
+	width: 88px;
+	height: 3px;
+	background-color: #fff;
+	top: 28px;
+	left: 0px;
+	display: none;
+	z-index: 2
+}
+.fore3:hover .dd-spacer{
+	display: block;
+}
+.user-info{
+	width: 240px;
+	height: 60px;
+	padding:10px 15px;
+
+
+}
+.user-info div{
+	float: left;
+}
+.user-pic{
+	margin-right:10px;
+}
+.hello-register{
+	width: 160px;
+	padding-top:6px; 
+	font-weight: bold;
+}
+.u-extra{
+	height: 24px!important;
+	line-height: 24px!important;
+}
+.otherlist{
+	width: 255px;
+	height: 96px;
+	padding-left: 15px;
+	overflow: auto;
+
+}
+.otherlist div{
+	height: 24px;
+	width: 126px;
+	float: left;
 }
