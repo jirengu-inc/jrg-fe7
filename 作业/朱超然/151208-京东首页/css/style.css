@@ -1,75 +1,175 @@
-*{
-	padding:0px;
-	margin:0px;
-	box-sizing:border-box;
-}
-
-body{
+#header{
+	background:#f1f1f1;
 	font-size:12px;
-}
-
-li{
-	list-style: none;
-}
-
-a{
-	text-decoration:none;
-}
-
-#top-bar{
-	background:#f1f1f1;
-	width:100%;
-	height:30px;
 	line-height:30px;
+	width:100%;
 }
 
-#top-bar .bar-container{
-	background:#f1f1f1;
+.layout{
 	width:1210px;
 	margin:0 auto;
 }
 
-#top-bar .bar-container .nav{
-	float:right;
+.layout:after{
+	content:"";
+	display:block;
+	clear:both;
 }
 
-#top-bar .bar-container .place-select,
-#top-bar .bar-container .place-select p,
-#top-bar .bar-container .place-select span{
-	display:inline-block;
-}
-
-#top-bar .bar-container .nav li{
-	display:inline-block;
+.address{
 	float:left;
+	padding:0px 10px;
 }
 
-#top-bar .bar-container .nav .tab-login{
-	margin-right:10px;
+.nav{
+	float:right;
+	font-size:0;/*除去子元素inline-block的缝隙*/
 }
 
-#top-bar .bar-container .nav li .link-login{
+.address p{
+	display:inline-block;
+	line-height:30px;
+	height:30px;
+	font-size:12px;
+}
+
+.address-choice{
+	width:303px;
+}
+
+.address .address-choice li{
+	float:left;
+	width:60px;
+	text-align:center;
+}
+
+.address .address-choice li .selected{
+	background:#C81623;
+	color:#fff;
+}
+
+.address .address-choice li a{
+	display:inline-block;
+	color:#666;
+	width:36px;
+	height:24px;
+	line-height:24px;
+}
+
+.address .address-choice li a:hover{
+	color:#c81623;
+	background:#f1f1f1;
+}
+
+.nav>li{
+	display:inline-block;
+	padding:0px 10px; 
+	height:30px;
+	font-size:0;
+	vertical-align:top;
+}
+
+.nav li a{
+	display:inline-block;
+	color:#666;	
+	font-size:12px;
+	height:30px;
+}
+
+.nav li a:hover{
+	color:#c81623;
+}
+
+.nav .tab-login,
+.nav .tab-login a{
+	margin-right:6px;
+}
+
+.myjd-drop-info{
+	width:272px;
+}
+
+.myjd-drop-info .user-info{
+	font-size:12px;
+	padding:10px 15px;
+	overflow:hidden;/*形成BFC*/
+}
+
+.myjd-drop-info .user-info .user-pic{
+	float:left;
+	width:60px;
+	height:60px;
+}
+
+.myjd-drop-info .user-info .user-pic img{
+	/*行内元素默认是和父元素的基线对齐的,而基线又和父元素底边有间隔,改变img元素的display属性，让其脱离行内元素性质*/
+	display:block;
+	border-radius:50%;
+}
+
+.myjd-drop-info .user-info .user-prompt{
+	float:left;
+	/*形成BFC*/
+	overflow:hidden;
+	width:180px;
+	height:60px;
+	padding-left:10px;
+}
+
+.myjd-drop-info .user-info .user-prompt p span{
+	margin:0px 10px;
+}
+
+.myjd-drop-info .list-info{
+	/*形成BFC*/
+	overflow:hidden;
+}
+
+.myjd-drop-info .list-info1,.myjd-drop-info .list-info2{
+	float:left;
+	width:135px;
+	height:100px;
+	padding-left:30px;
+}
+
+.myjd-drop-info .list-info1 li,.myjd-drop-info .list-info2 li{
+	line-height:25px;
+	height:25px;
+}
+
+.myjd-drop-info .list-info1 li a,.myjd-drop-info .list-info2 li a{
+	/*行内元素默认是和父元素的基线对齐的,而基线又和父元素底边有间隔这个间隔和font-size,font-family有关。
+	所以设置vertical-align: bottom,把元素的底端与父元素字体的底端对齐。*/
+	vertical-align: bottom;
+}
+
+.nav li .phone{
+	float:left;
+	position:relative;
+	top:5px;
+	width:15px;
+	height:20px;
+	background:url(../img/icon.png);
+	background-repeat:no-repeat;
+	margin-right:2px;
+}
+
+.nav .phone-jd:hover .phone{
+	background:url(../img/icon.png) 0 -25px;
+}
+
+.nav .spacer{
+	background:#ddd;
+	width:1px;
+	height:10px;
+	margin-top:10px;
+	padding:0px 0px;
+}
+
+.nav li .link-login{
 	color:#666;	
 }
 
-#top-bar .bar-container .nav li .link-regist{
+.nav li .link-regist{
 	color:#C81623;
-}
-
-#top-bar .bar-container .nav .spacer{
-	background:#ddd;
-	width:1px;
-	height:12px;
-	margin-top:9px;
-}
-
-#top-bar .bar-container .nav li .tab{
-	width:64px;
-	height:30px;
-	padding:0px 8px;
-}
-
-#top-bar .bar-container .nav li .tab a{
-	color: #666;
-    text-decoration: none;
 }
