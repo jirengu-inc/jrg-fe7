@@ -1,142 +1,216 @@
-
 body {
 	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
 	color: #666;
 }
-#shortcut {
-	background-color: #f1f1f1;
-	line-height: 30px;
-}
 a{
 	text-decoration: none;
-	padding: 0 8px;
 	display: inline-block;
-	color: #666 !important;
-
+	color: #666;
+}
+.fl a{
+	padding: 0 8px;
 }
 
 a:hover{
-	color: #c81623 !important;
+	color: #c81623;
 }
-.ui-areamini-content-list a:hover{
+.content-list a:hover{
 	background-color: #f4f4f4;
-	
 }
-.w {
-	/*display: inline-block;*/
+li{
+	list-style: none;
+}
+.header{
+	background-color: #f1f1f1;
+	line-height: 30px;
+}
+.w{
 	width: 1210px;
-	margin: 0 auto;
 	height: 30px;
+	margin: 0 auto;
 }
-.fl {
+.fl{
 	float: left;
 }
-.dorpdown {
-	position: relative;
-}
-.dorpdown-layer {
-	display: none;
+.content-list{
 	position: absolute;
+	top: 100%;
+	left: 0;
 	line-height: 24px;
-	top: 30px;
+	width: 300px;
+	padding: 10px 0 10px 10px;
 	background-color: #fff;
 	border: 1px solid #ddd;
 }
-.dorpdown:hover .dorpdown-layer{
-	display: inline-block;
+.content-list li{
+	float: left;
+	width: 60px;
+	padding: 2px 0;
 }
-.ttbar-mycity:hover .dt{
-	padding: 0 24px 0 9px;
-	
-}
-li.dorpdown:hover .dt{
-	background-color: #fff;
-	border: solid #ddd;
-	border-width: 0 1px;
-}
-.ui-areamini-text-wrap{
+.dorpdown-layer{
 	position: relative;
-	width: 83px;
-	padding: 0 0 0 10px;
-
+	display: none;
 }
-
-.ci-right{
-	position: absolute;
-  	font: 15px/15px consolas;
-  	overflow: hidden;
-  	margin: 13px 0 0 6px;
-  	height: 7px;
-}
-.ci-right s{
-	position: relative;
-	top: -6px;
-	text-decoration: none;
-}
-.dorpdown:hover s{
-	position: relative;
-	top: 0;
-}
-
-#ttbar-mycity .dd {
-	width: 301px;
-	padding: 10px 0 10px 10px;
-}
-
 .dd-spacer{
-	left:0;
-	width:93px;
+	left: 1px;
+	width: 95px;
 	position: absolute;
 	top: -7px;
 	height: 10px;
 	background-color: #fff;
 	overflow: hidden;
 }
-.ui-areamini-content-list li {
-	display: inline-block;
-	float: left;
-	line-height: 24px;
-	width: 60px;
-	padding: 2px 0;
+.dorpdown{
+	position: relative;
+	padding: 0 25px 0 8px;
+
 }
-/*fr*/
-.fr{
-	float: right;	
+.city{
+	padding: 0 25px 0 10px;
 }
-.fr>li{
-	float-left;
-	display: inline-block;
-	padding: 0 2px;
+.fl:hover .dorpdown-layer{
+	display: block;
+} 
+.fl:hover .dorpdown{
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+.fl:hover s{
+	top : 1px;
+}
+.dorpdown:hover s{
+	top: 1px;
+}
+.ci-right{
+  	top: 12px;
+    right: 8px;
+    height: 7px;
+    overflow: hidden;
+    font: 15px/15px consolas;
+    color: #6A6A6A;
+}
+.dorpdown i{
+	display: block;
+	position: absolute;
+}
+.ci-right s{
+	position: relative;
+	top: -7px;
+	text-decoration: none;
 }
 
-.icon-line{
+
+/*fr*/
+.fr{
+	float: right;
+}
+.fr li{
+	display: inline-block;
+}
+.dt {
+	padding: 0 8px;
+}
+.fr .icon-line{
 	width: 1px;
-    height: 12px;
+    height: 10px;
     margin-top: 9px;
     padding: 0 !important;
     background: #ddd;
     overflow: hidden;
 }
-
-.ttbr-myjd .dt{
-	width: 49px;
-	padding-right: 25px;
+.ttbar-login{
+	font-family: "verdana,simsun";
+	color: #c81623;
+	padding: 0 8px;
 }
-.cw-icon{
+.ttbar-myjd .dorpdown-layer{
+	display: none;
+	width: 270px;
+	margin-left: -9px;
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.menu-myjd-p{
+	padding: 10px 19px;
+}
+.header .menu-myjd-p .user-pic{
+	position: absolute;
+}
+/*清除浮动*/
+.header .menu-myjd-p .user-login{
+	margin-left: 69px;
+	font-weight: bold;
+	line-height: 24px;
+}
+.header .menu-myjd-p .user-msg{
+	padding-left: 70px;
+	line-height: 24px;
+}
+.header .menu-myjd-p .user-msg .icon-line{
+	margin: 0 11px 0 9px;
+	color: #666;
+	background-color: #fff;
+}
+.header .menu-myjd-p img{
+	border-radius: 50%;
+}
+.ttbar-myjd .dd-spacer{
+	width: 80px;
+}
+.menu-myjd-l{
+	padding: 5px 0 10px 19px;
+}
+.menu-myjd-l li{
+	float: left;
+	padding: 0;
+	width: 120px;
+	line-height: 24px;
 	position: relative;
 }
-.cw-icon i{
-	display: inline-block;
-	position: absolute;
-	overflow: hidden;
-}
-#ttbar-apps .dt{
+/*下拉框*/
+.dorpdown:hover .dorpdown-layer{
+	display: block;
+} 
+
+
+
+
+
+
+
+
+
+
+
+.ttbar-apps{
 	padding: 0 25px;
 }
-#ttbar-apps .dt .ci-left{
+.ttbar-apps> .icon-phone{
+	position: absolute;
 	top: 5px;
-	left: 7px;
 	width: 15px;
-	height: 20px;
+	height: 19px;
+	margin-left: -19px;
 	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
+}
+.dorpdown:hover{
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+.dorpdown:hover .icon-phone{
+	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -25px no-repeat;
+}
+.ttbar-atte{
+	width: 49px;
+	/*padding: 0 25px 0 8px;*/
+}
+.ttbar-sev{
+	/*padding: 0 25px 0 8px;*/
+}
+.ttbar-nav{
+	/*padding: 0 25px 0 8px;*/
 }
