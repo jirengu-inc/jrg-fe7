@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-21 23:01:05
+ * @version $Id$
+ */
+#content .good-box{
+	width: 210px;
+}
+#content .good-kind{
+	position: relative;
+	height: 31px;
+    width: 200px;
+    line-height: 31px;
+    background-color: #cb1623;
+    font-size: 14px;
+    padding-left: 10px
+}
+#content .good-kind a{
+	color: #fff;
+}
+.arrow-l{
+	position: absolute;
+    font: 12px/12px consolas;
+    color: #f7f7f7;
+    right: 20px;
+}
+.good-kind :hover{
+    background-color: #f7f7f7;
+    color: #cb1623;
+}

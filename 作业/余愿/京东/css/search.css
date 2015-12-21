@@ -9,9 +9,7 @@
 	background-color: #be1e00;
     height:80px;
 }
-.header-ad-1210{
-	width:1210px;
-	margin:0 auto;
+.header-adm{
 	position: relative;
 	height: 80px;
 }
@@ -23,9 +21,7 @@
 	height: 19px;
 	overflow: hidden;
 }
-.search-1210{
-	width: 1210px;
-	height: 100px;
+.search{
 	margin:0 auto;
 }
 .logo{
@@ -33,12 +29,15 @@
 	width: 270px;
 	padding-right: 90px;
 	line-height: 100px;
+	vertical-align: top;
 }
-.search-1210 .search{
+.search .search-blk{
+	position: relative;
 	display: inline-block;
 	width:535px;
-	margin: 0 auto;
 	padding-right: 100px; 
+	vertical-align: top;
+	top: 25px;
 }
 
 .search-input,.search-btn{

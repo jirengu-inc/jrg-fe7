@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-21 21:26:23
+ * @version $Id$
+ */
+#nav{
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 2px solid #b1191a;
+	font-size: 15px;
+}
+.nav{
+	position: relative;
+}
+.nav-left{
+    height: 44px;
+    width: 210px;
+    background-color: #b1191a;
+    color: #fff;
+}
+.nav-left-title{
+	padding-left: 10px;
+}
+.nav-center-list{
+	width: 620px;
+}
+.nav-left,.nav-center,.nav-center .nav-center-list li{
+	display: inline-block;
+}
+.nav-center .nav-center-list a{
+	color: #6a6a6a;
+}
+.nav-center .nav-center-list li{
+	padding: 0 18px;
+}
+.changecl a:hover{
+	color: #cb1623;
+}
+.nav-pic{
+	display: inline-block;
+	width: 150px;
+	height: 44px;
+    position: absolute;
+    right: 0;
+}
