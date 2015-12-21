@@ -130,7 +130,9 @@ line-height: 28px;
 	color: #666;
 	text-decoration: none;
 	margin-right:8px; 
+
 }
+
 .fore2 a{
 	padding: 0 8px;
 
@@ -234,10 +236,37 @@ position: absolute;
 	height: 96px;
 	padding-left: 15px;
 	overflow: auto;
-
+	margin-bottom: 10px;
 }
 .otherlist div{
 	height: 24px;
 	width: 126px;
 	float: left;
+}
+.smt{
+	width: 240px;
+	
+	float: left;
+}
+.viewlist  h4{
+	float: left;
+}
+.viewlist  a{
+	float: right;
+}
+.item{
+	float: left;
+}
+.item img{
+	float: left;
+	padding: 4px;
+}
+.viewlist{
+	width: 240px;
+	height: 82px;
+	padding: 10px 15px;
+	border-top:1px  dotted #ccc;
+}
+.fore4 , .fore5{
+	padding: 0 8px;
 }
