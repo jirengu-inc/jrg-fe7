@@ -1,0 +1,420 @@
+/*heder.css*/
+* {
+	margin:0;
+	padding:0; 
+}
+body {
+	font: 12px/150% Arial,Verdana;
+	background: #fff;
+	overflow: scroll;
+}
+ul,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+i,em{
+	font-style: normal;
+}
+.clearfix {
+	*zoom: 1; 
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden; 
+}
+#header {
+	background: #f1f1f1;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+}
+.layout {
+	width: 1210px;
+	margin:0 auto;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+#header li {
+	float: left;
+	padding:0 2px;	
+}
+#header #ttbar-mycity{
+	padding-left: 1px;
+}
+#header #ttbar-nav{
+	padding-right: 1px;
+}
+.dorpdown{
+	position: relative;
+	*zoom: 1; 
+}
+#header li .dt { 
+	float: left;
+	padding: 0 8px;
+	height: 30px;
+}
+#header .arrow {
+	height: 7px;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	font: 400 15px/15px consolas;
+	transition: transition 0.1s ease in 0s;
+	-webkit-transition: -webkit-transform 0.1s ease-in 0s;
+	overflow: hidden;
+}
+#header .arrow i {
+	position: relative;
+	top: -7px;
+	color:#6a6a6a;
+}
+#header #ttbar-mycity .dt {
+	float: left;
+	padding: 0 25px 0 10px;
+	height: 30px;
+}
+#header .item1 a:nth-of-type(2) {
+	color: #C81623;
+}
+#header .login {
+	float: left;
+	margin-right:10px; 
+}
+#header .spacer {
+	width: 1px;
+	height: 12px;
+	background: #ddd;
+	margin-top: 9px;
+	padding:0;
+	float: left;
+}
+#header #ttbar-myjd .dt,#header #ttbar-gzjd .dt,#header #ttbar-server .dt,#header #ttbar-nav .dt{
+	float: left;
+	padding-right: 25px;
+	height: 30px;
+}
+#header #ttbar-jdmobil .dt {
+	float: left;
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 30px;
+}
+#header li .icon-left{
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	background: url(jd2015img.png) 0 0 no-repeat;
+}
+/*以下为header下拉菜单部分*/
+#header li.dorpdown:hover{
+	padding: 0 1px;
+}
+#header #ttbar-mycity:hover{
+	padding: 0 1px 0 0;
+}
+#header #ttbar-nav:hover{
+	padding: 0 0 0 1px;
+}
+#header li.dorpdown:hover .dt {
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+#header li.dorpdown:hover>.dorpdown-layer{
+	display: block;
+}
+#header .dd{
+	line-height: 24px; 
+}
+/*下拉隐藏*/
+.dorpdown-layer{
+	display: none;
+	position: absolute;
+	transition: all 600ms cubic-bezier(0.23,1,0.32,1);
+	-webkit-transition: all 600ms cubic-bezier(0.23,1,0.32,1);
+}
+#header .dorpdown-layer{
+	top: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+#header .dd-spacer {
+	position: absolute;
+	top: -7px;
+	height: 10px;
+	background: #fff;
+	overflow: hidden;
+}
+#header li.dorpdown:hover .arrow{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+/*ttbar-mycity下拉菜单*/
+#header #ttbar-mycity:hover .dt {
+	float: left;
+	padding: 0 25px 0 10px;
+}
+#header #ttbar-mycity .dd{
+	width: 301px;
+	padding: 10px 0 10px 10px;
+}
+#header #ttbar-mycity .dd-spacer {
+	width: 98px;
+	left: 0;
+}
+#header #ttbar-mycity .item{
+	float: left;
+	width: 60px;
+	padding: 2px 0;
+	text-align: center;
+}
+#header #ttbar-mycity a{
+	float: left;
+	padding:0 8px;
+}
+#header #ttbar-mycity .slected{
+	background: #C81623;
+	color: #fff;
+}
+/*ttbar-myjd下拉菜单*/
+#header #ttbar-myjd .dd-spacer{
+	width: 81px;
+}
+#header #ttbar-myjd .dd{
+	width: 270px;
+}
+#header #ttbar-myjd .userinfo{
+	padding: 10px 15px;
+	overflow: hidden;
+}
+#header #ttbar-myjd .u-pic{
+	float: left;
+	margin-right: 10px
+}
+#header #ttbar-myjd .u-name{
+	padding: 6px 0 0;
+	font-weight: 700;
+}
+#header #ttbar-myjd .otherlist{
+	width: 255px;
+	padding-left: 15px;
+	margin: 5px 0 10px;
+	overflow: hidden;
+}
+#header #ttbar-myjd .fore1,#header #ttbar-myjd .fore2{
+	float: left;
+	width: 126px;
+}
+#header #ttbar-myjd .viewlist{
+	width: 240px;
+	padding: 10px 15px;
+	border-top: 1px dotted #ccc;	
+}
+#header #ttbar-myjd .viewlist .smt{
+	overflow: hidden;
+}
+#header #ttbar-myjd .viewlist h4{
+	float: left;
+}
+#header #ttbar-myjd .viewlist .extra{
+	float: right;
+}
+/*ttbar-server下拉菜单*/
+#header #ttbar-server .dd-spacer{
+	width: 81px;
+}
+#header #ttbar-server .dd{
+	width: 170px;
+	padding-bottom: 8px;
+}
+#header #ttbar-server .item-client{
+	font-weight: 700;
+	padding-left:10px;
+}
+#header #ttbar-server .item{
+	width:70px;
+	display: inline-block;
+	padding-left: 10px;
+}
+#header #ttbar-server .item-business{
+	font-weight: 700;
+	padding-left:10px;
+	border-top: 1px dotted #ccc;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+/*ttbar-jdmobil下拉菜单*/
+#header #ttbar-jdmobil .dd-spacer{
+	width: 98px;
+}
+#header #ttbar-jdmobil .dd-inner{
+	position: relative;
+	width: 250px;
+	height: 195px;
+    overflow: hidden;
+    background: url(566aa1c6N759d9d51.png) 0 0 no-repeat;
+}
+#header #ttbar-jdmobil .dd .link1{
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	left: 92px;
+	top: 6px;
+	background-position: 0 -44px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .link3{
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	left: 92px;
+	top: 104px;
+	background-position: -1 -66px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .jdapp-ios{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	left: 92px;
+	top: 46px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .jdapp-android{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	left: 147px;
+	top: 46px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .ipad{
+	display: block;
+	position: absolute;
+	width: 45px;
+	height: 44px;
+	left: 202px;
+	top: 46px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .wyapp-ios{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	left: 92px;
+	top: 143px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+#header #ttbar-jdmobil .dd .wyapp-android{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	left: 147px;
+	top: 143px;
+	text-indent: -500px;
+	overflow: hidden;
+}
+/*ttbar-gzjd下拉菜单*/
+#header #ttbar-gzjd .dd-spacer{
+	width: 81px;
+}
+/*ttbar-nav下拉菜单*/
+#header #ttbar-nav .dd-spacer{
+	right: 0;
+	width: 81px;
+}
+#header #ttbar-nav .dd{
+	width: 1208px;
+	right: 0;
+	padding: 20px 0 16px;
+}
+#header #ttbar-nav dl{
+	width: 259px;
+	float: left;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+#header #ttbar-nav dl.fore1{
+	width: 347px;
+	border-left:none;
+}
+#header #ttbar-nav dt{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+#header #ttbar-nav .item{
+	float: left;
+	width: 86px;
+}
+
+/*
+#header .arrow {
+	height: 7px;
+	line-height: 7px;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	overflow: hidden;
+}
+#header .add {
+	float: left;
+	position: relative;
+	padding: 0 25px 0 10px;
+} 
+#header .item {
+	float: right;
+}
+#header ul li { 
+	float: left; 
+}
+#header ul li a {
+	color: #666;
+}
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	content: "";
+	display:block;
+	clear: both;
+	visibility: hidden;
+}
+.login {
+	padding: 0 2px;
+	margin-right:10px;
+}
+#header .login a:nth-child(2){
+	color:#C81623;
+}
+.spacer {
+	width:1px;
+	height: 12px;
+	background: #ddd;
+	margin-top:9px;
+}
+#header .item1 {
+	padding:0 10px;
+}
+*/

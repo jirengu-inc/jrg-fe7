@@ -649,10 +649,10 @@
 	height: 69px;
 	border-right: 1px solid #E8E8E7;
 	border-bottom: 1px solid #E8E8E7;
-	display: inline;
+	position: relative;
 }
 
-#map .life i {
+#map .life .mark {
 	margin-top: 13px;
 	position: absolute;
 	width: 25px;
@@ -665,52 +665,149 @@
 	display: inline-block;
 }
 
-#map .life-h i {}
+#map .life-h .mark {}
 
-#map .life-j i {
+#map .life-j .mark {
 	background-position-y: -25px;
 }
 
-#map .life-d i {
+#map .life-d .mark {
 	background-position-y: -50px;
 	margin-left: 5px;
 }
 
-#map .life-y i {
+#map .life-y .mark {
 	background-position-y: -75px;
 }
 
-#map .life-c i {
+#map .life-c .mark {
 	background-position-y: -100px;
 }
 
-#map .life-t i {
+#map .life-t .mark {
 	background-position-y: -125px;
 }
 
-#map .life-jd i {
+#map .life-jd .mark {
 	background-position-y: -150px;
 }
 
-#map .life-s i {
+#map .life-s .mark {
 	background-position-y: -175px;
 	margin-left: 5px;
 }
 
-#map .life-z i {
+#map .life-z .mark {
 	background-position-y: -200px;
 }
 
-#map .life-l i {
+#map .life-l .mark {
 	background-position-y: -225px;
 }
 
-#map .life-p i {
+#map .life-p .mark {
 	background-position-y: -250px;
 	margin-left: 5px;
 }
-#map .life-b i {
+
+#map .life-b .mark {
 	background-position-y: -275px;
+}
+
+#today {
+	height: 164px;
+	
+}
+.watch-box {
+	position: relative;
+	display: inline-block;
+	width: 211px;
+	height: 100%;
+	background: url(img/homebg.png) no-repeat 0 -137px;
+	
+}
+
+
+/*表盘*/
+
+.watch-box  .clock-dial {
+	border: 7px solid #fff;
+	width: 42px;
+	height: 42px;
+	margin-top: 31px;
+	margin-left: 72px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+}
+
+
+/*时针*/
+
+.watch-box  .clock-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5px;
+	margin-top: 2.5px;
+	width: 5px;
+	height: 20px;
+	background: #fff;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.watch-box  .min-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -2.5px;
+	margin-top: 2px;
+	width: 5px;
+	height: 20px;
+	background: #fff;
+	border-radius: 2px;
+	animation: css3-watch 20s steps(60, end) infinite;
+	transform-origin: 2.5px 19.5px;
+}
+
+.watch-box  .clock-oorigin {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	margin-left: -3.5px;
+	margin-top: -3.5px;
+	background: #fff;
+	z-index: 3;
+}
+
+.watch-box  .sec-pin {
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: -6px;
+	width: 5px;
+	height: 28px;
+	
+	animation: css3-watch 12s linear infinite;
+	transform-origin: 2.7px 27px;
+	z-index: 4;
+}
+
+.watch-box  .pin {
+	width: 5px;
+	height: 5px;
+	background: #605454;
+	position: absolute;
+	border-radius: 50px;
+	
+}
+
+@-webkit-keyframes css3-watch {
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 
@@ -751,5 +848,58 @@
 .class-ad .big-ad {
 	padding-top: 9px;
 	line-height: 134px;
-	;
+	
+}
+.toady-ad{
+	position: relative;
+	display: inline-block;
+	width: 1000px;
+	height: 164px;
+	margin-left: -4px;
+	vertical-align: top;
+}
+
+.toady-ad .prev ,.toady-ad .next{
+	position: absolute;
+	background-color: #000;
+	width: 28px;
+	height: 62px;
+	line-height: 62px !important;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	font: 20px/20px consolas;
+	text-align: center;
+	top: 50%;
+	margin-top: -31px;
+	color: #fff;
+	z-index: 2;
+	display: none;
+}
+ 
+
+.toady-ad .prev{
+	left: 0;
+	
+}
+.toady-ad .next{
+	right: 0;
+	
+}
+.toady-ad:hover > .prev ,.toady-ad:hover > .next {
+	display: block;
+}
+
+
+
+
+
+.toady-ad .ad-box{
+	position: absolute;
+	width: 1000px;
+	overflow: hidden;
+}
+.toady-ad .ad-box li{
+	float: left;
+	margin-right: 1px;
+	width: 249px;
 }
