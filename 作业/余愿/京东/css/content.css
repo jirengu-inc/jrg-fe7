@@ -5,10 +5,19 @@
  * @date    2015-12-21 23:01:05
  * @version $Id$
  */
-#content .good-box{
+#nav .good-box,#nav .good-list{
 	width: 210px;
 }
-#content .good-kind{
+/*#content .content-pic{
+    display: inline-block;
+}
+*/
+#nav .good-list{
+    padding-top: 2px;
+    border-bottom: 1px solid #cb1623;
+    border-left: 1px solid #cb1623;
+}
+#nav .good-kl{
 	position: relative;
 	height: 31px;
     width: 200px;
@@ -17,7 +26,7 @@
     font-size: 14px;
     padding-left: 10px
 }
-#content .good-kind a{
+#nav .good-kind a{
 	color: #fff;
 }
 .arrow-l{
@@ -25,8 +34,24 @@
     font: 12px/12px consolas;
     color: #f7f7f7;
     right: 20px;
+    top: 9px;
 }
-.good-kind :hover{
+#nav .good-kind:hover .good-kl{
     background-color: #f7f7f7;
     color: #cb1623;
+}
+/*#nav .good-kl:hover a{
+    color: #cb1623;
+    background-color: #f7f7f7;
+}*/
+#nav .good-kind:hover a{
+    color: #cb1623;
+}
+#content .content-pic{
+    display: inline-block;
+    width: 729px;
+    height: 454px;
+    padding-left: 220px;
+    padding-top: 10px;
+    vertical-align: top;
 }
