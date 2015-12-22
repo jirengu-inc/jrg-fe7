@@ -716,21 +716,20 @@
 
 #today {
 	height: 164px;
-	
 }
+
 .watch-box {
 	position: relative;
 	display: inline-block;
 	width: 211px;
 	height: 100%;
 	background: url(img/homebg.png) no-repeat 0 -137px;
-	
 }
 
 
 /*表盘*/
 
-.watch-box  .clock-dial {
+.watch-box .clock-dial {
 	border: 7px solid #fff;
 	width: 42px;
 	height: 42px;
@@ -744,7 +743,7 @@
 
 /*时针*/
 
-.watch-box  .clock-pin {
+.watch-box .clock-pin {
 	position: absolute;
 	left: 50%;
 	margin-left: -2.5px;
@@ -756,7 +755,7 @@
 	z-index: 2;
 }
 
-.watch-box  .min-pin {
+.watch-box .min-pin {
 	position: absolute;
 	left: 50%;
 	margin-left: -2.5px;
@@ -769,7 +768,7 @@
 	transform-origin: 2.5px 19.5px;
 }
 
-.watch-box  .clock-oorigin {
+.watch-box .clock-oorigin {
 	position: absolute;
 	width: 7px;
 	height: 7px;
@@ -782,32 +781,98 @@
 	z-index: 3;
 }
 
-.watch-box  .sec-pin {
+.watch-box .sec-pin {
 	position: absolute;
 	left: 50%;
 	margin-left: -3px;
 	top: -6px;
 	width: 5px;
 	height: 28px;
-	
 	animation: css3-watch 12s linear infinite;
 	transform-origin: 2.7px 27px;
 	z-index: 4;
 }
 
-.watch-box  .pin {
+.watch-box .pin {
 	width: 5px;
 	height: 5px;
 	background: #605454;
 	position: absolute;
 	border-radius: 50px;
-	
 }
 
 @-webkit-keyframes css3-watch {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+
+/*脚*/
+
+#footer .service-pic {
+	background-color: #F5F5F5;
+	height: 95px;
+	line-height: 95px;
+}
+
+
+
+#footer .service-pic .pic-1,#footer .service-pic .pic-2 ,#footer .service-pic .pic-3 ,#footer .service-pic .pic-4  {
+	display: inline-block;
+	vertical-align: middle;
+	width: 284px;
+	height: 55px;
+	margin-left: 16px;
+}
+#footer .service-pic .pic-1{
+	background: url(img/service_items_1.png) no-repeat;
+}
+#footer .service-pic .pic-2{
+	background: url(img/service_items_2.png) no-repeat;
+}
+#footer .service-pic .pic-3{
+	background: url(img/service_items_3.png) no-repeat;
+}
+#footer .service-pic .pic-4{
+	background: url(img/service_items_4.png) no-repeat;
+}
+
+#footer .footer-box{
+	color: #666;
+	overflow: hidden;
+	padding: 14px 0 19px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#footer .footer-box .guide{
+	float: left;
+	width: 166px;
+	margin-right: 34px;
+	
+}
+
+#footer .footer-box .guide dt{
+	font-size: 16px;
+	line-height: 36px;
+}
+#footer .footer-box .guide dd{
+	line-height: 20px;
+}
+
+#footer .footer-box .map{
+	float: left;
+	background: url(img/china-map.png) no-repeat  0 -131px;
+	width: 188px;
+	height: 169px;
+	margin-left: -34px;
+	padding-left: 15px;
+	
+	
+}
+
+#footer .footer-box .map .details{
+	text-align: right
 }
 
 
@@ -848,9 +913,9 @@
 .class-ad .big-ad {
 	padding-top: 9px;
 	line-height: 134px;
-	
 }
-.toady-ad{
+
+.toady-ad {
 	position: relative;
 	display: inline-block;
 	width: 1000px;
@@ -859,7 +924,8 @@
 	vertical-align: top;
 }
 
-.toady-ad .prev ,.toady-ad .next{
+.toady-ad .prev,
+.toady-ad .next {
 	position: absolute;
 	background-color: #000;
 	width: 28px;
@@ -875,30 +941,27 @@
 	z-index: 2;
 	display: none;
 }
- 
 
-.toady-ad .prev{
+.toady-ad .prev {
 	left: 0;
-	
 }
-.toady-ad .next{
+
+.toady-ad .next {
 	right: 0;
-	
 }
-.toady-ad:hover > .prev ,.toady-ad:hover > .next {
+
+.toady-ad:hover > .prev,
+.toady-ad:hover > .next {
 	display: block;
 }
 
-
-
-
-
-.toady-ad .ad-box{
+.toady-ad .ad-box {
 	position: absolute;
 	width: 1000px;
 	overflow: hidden;
 }
-.toady-ad .ad-box li{
+
+.toady-ad .ad-box li {
 	float: left;
 	margin-right: 1px;
 	width: 249px;

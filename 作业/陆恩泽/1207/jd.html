@@ -20,7 +20,7 @@
     clear:both;
     }
     #nav{
-    background-color: #F3EDED;
+    background-color: #F1F1F1;
     line-height: 30px;/*忽略点*/
     }
     #nav a{
@@ -144,6 +144,106 @@
        top: -1px;
        left:0px;
     }
+    /*搜索框*/
+   .search 
+   {
+    width: 1210px;
+    margin: 20px auto;
+   /* border: 1px solid black;*/
+      }
+      .search .logo{
+        float: left;
+      }
+  .search .logo img{
+      width: 270px;
+      height: 60px;
+      /*border: 1px solid green;*/
+    }
+  .search .form{
+    float: left;
+    margin-left: 100px;
+  }
+  .search input[type="text"]{
+                border-color: #B61D1D;
+                border-width: 2px 0px 2px 2px;
+                width: 446px;
+                height:24px;
+                line-height: 24px;
+                outline: none;
+                margin-bottom: 4px;
+                 }
+  .search input[type="submit"]{
+    color: white;
+    border: none;
+    background-color: #B61D1D;
+    height: 30px;
+    width: 82px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    padding: 1px 0px 1px 0px;
+    position: relative;
+    top: 2px;
+
+  }
+  .form .hot{
+    margin-top: 10px;
+    font-family: arial;
+    font-size: 12px;
+  }
+  .form .hot a{
+    color: #666;
+  }
+  .form .hot a:first-of-type{
+    color: red;
+}
+  .search .shopping-car{
+    float: left;
+    margin-left:150px; 
+    /*margin-top: 10px; */
+    position: relative;
+    border: 1px solid #CAC3C3;
+    padding: 10px;
+    background-color: #F1F1F1;
+  }
+  .search .shopping-car span a{
+    font-size: 12px;
+    padding: 10px 18px;
+    font-family: arial;
+    color: #666;
+    background: url("http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png") -4px -49px no-repeat;
+  }
+  .search .shopping-car .car-list{
+    position: absolute;
+    top:106%;
+    left:-183px;
+    display: none;
+    /*border: 1px solid #ddd;*/
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    height:49px;
+    width: 308px;
+    font-size: 12px;
+    font-family:Arial;
+    text-align: center;
+    line-height: 49px;
+    color: #999;
+  }
+  .search .shopping-car .car-list .spacer{
+    background-color: white;
+    width: 126px;
+    height: 12px;
+    position: absolute;
+    left:182px;
+    top:-6%;
+  }
+  .search .shopping-car:hover{
+    border-top: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    background-color: white;
+  }
+  .search .shopping-car:hover .car-list{
+    display: block;
+   }
     </style>
   </head>
   <body>
@@ -216,5 +316,31 @@
           </ul>
         </div>
       </div>
+     </div>
+     <div class="search clearfix">
+         <div class="logo">
+         <a href="http://www.jd.com/"><img src="http://misc.360buyimg.com/lib/img/e/logo-201305.png" class="
+         logo"></a>      
+         </div>
+         <div class="form">
+         <input name="search-content" type="text"><input type="submit" value="搜索">
+        <div class="hot">
+         <a href="#">京喜圣诞</a>
+         <a href="#">2件99元</a>
+         <a href="#">1元抢</a>
+         <a href="#">雾霾口罩</a>
+         <a href="#">199减100</a>
+         <a href="#">卫衣男</a>
+         <a href="#">皮衣</a>
+         <a href="#">耳钉</a>
+         <a href="#">迷你冰箱</a>
+         </div>
+       </div> 
+        <div class="shopping-car clearfix">
+          <span><a href="#">我的购物车</a>></span>
+          <div class="car-list"><div class="spacer"></div>购物车中还没有商品，赶紧选购吧！</div>
+        </div>
+
+    </div>
     </body>
   </html>
