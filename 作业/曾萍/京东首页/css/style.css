@@ -28,60 +28,55 @@ li{
 	width: 1210px;
 	height: 30px;
 	margin: 0 auto;
+	position: relative;
 }
 .fl{
 	float: left;
 }
 .content-list{
-	position: absolute;
-	top: 100%;
-	left: 0;
-	line-height: 24px;
+	position: relative;
 	width: 300px;
 	padding: 10px 0 10px 10px;
-	background-color: #fff;
-	border: 1px solid #ddd;
 }
 .content-list li{
 	float: left;
 	width: 60px;
 	padding: 2px 0;
 }
-.dorpdown-layer{
-	position: relative;
-	display: none;
-}
+
 .dd-spacer{
-	left: 1px;
-	width: 95px;
+	left: 0;
+	width: 93px;
 	position: absolute;
 	top: -7px;
 	height: 10px;
 	background-color: #fff;
 	overflow: hidden;
 }
+/*头部下拉菜单*/
+.dorpdown-layer{
+	position: absolute;
+	background: #fff;
+	left: -1px;
+	border: 1px solid #ddd;
+	line-height: 24px;
+	z-index: 10;
+	display: none;
+}
 .dorpdown{
 	position: relative;
 	padding: 0 25px 0 8px;
-
+	border: solid #f1f1f1;
+	border-width: 0 1px;
 }
-.city{
-	padding: 0 25px 0 10px;
-}
-.fl:hover .dorpdown-layer{
-	display: block;
-} 
-.fl:hover .dorpdown{
+.dorpdown:hover{
 	background-color: #fff;
 	border: solid #ddd;
 	border-width: 0 1px;
 }
-.fl:hover s{
-	top : 1px;
-}
-.dorpdown:hover s{
-	top: 1px;
-}
+.dorpdown:hover .dorpdown-layer{
+	display: block;
+} 
 .ci-right{
   	top: 12px;
     right: 8px;
@@ -98,6 +93,9 @@ li{
 	position: relative;
 	top: -7px;
 	text-decoration: none;
+}
+.dorpdown:hover s{
+	top: 1px;
 }
 
 
@@ -125,13 +123,8 @@ li{
 	padding: 0 8px;
 }
 .ttbar-myjd .dorpdown-layer{
-	display: none;
 	width: 270px;
-	margin-left: -9px;
-	position: absolute;
-	top: 100%;
-	background-color: #fff;
-	border: 1px solid #ddd;
+	padding-bottom: 10px;
 }
 .menu-myjd-p{
 	padding: 10px 19px;
@@ -139,7 +132,7 @@ li{
 .header .menu-myjd-p .user-pic{
 	position: absolute;
 }
-/*清除浮动  继续看视频*/
+
 .header .menu-myjd-p .user-login{
 	margin-left: 69px;
 	font-weight: bold;
@@ -158,7 +151,7 @@ li{
 	border-radius: 50%;
 }
 .ttbar-myjd .dd-spacer{
-	width: 80px;
+	width: 81px;
 }
 .menu-myjd-l{
 	padding: 5px 0 10px 19px;
@@ -170,21 +163,8 @@ li{
 	line-height: 24px;
 	position: relative;
 }
-/*下拉框*/
-.dorpdown:hover .dorpdown-layer{
-	display: block;
-} 
 
-
-
-
-
-
-
-
-
-
-
+/*apps*/
 .ttbar-apps{
 	padding: 0 25px;
 }
@@ -194,23 +174,268 @@ li{
 	width: 15px;
 	height: 19px;
 	margin-left: -19px;
-	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
-}
-.dorpdown:hover{
-	background-color: #fff;
-	border: solid #ddd;
-	border-width: 0 1px;
+	background: url(../img/phone.png) 0 0 no-repeat;
 }
 .dorpdown:hover .icon-phone{
-	background: url(http://misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -25px no-repeat;
+	background: url(../img/phone.png) 0 -25px no-repeat;
+}
+.ttbar-apps .dd-spacer{
+	width: 98px;
+}
+
+.ttbar-apps-main{
+	background: url(../img/apps.png);
+	position: relative;
+	width: 250px;
+	height: 195px;
+	overflow: hidden;
+}
+.ttbar-apps-main a{
+	display: inline-block;
+	position: absolute;
+	opacity: 0;
+}
+.ttbar-apps-main .link1{
+	left: 99px;
+	top: 3px;
+}
+.ttbar-apps-main .link2{
+    top: 100px;
+    left: 98px;
+}
+.ttbar-apps-main .link3{
+    top: 45px;
+    left: 96px;
+    width: 58px;
+    line-height: 22px;
+}
+.ttbar-apps-main .link4{
+    top: 46px;
+    left: 146px;
+    width: 60px;
+    line-height: 22px;
+}
+
+.ttbar-apps-main .link5{
+    top: 46px;
+    left: 210px;
+     width: 49px;
+    line-height: 22px;
+}
+.ttbar-apps-main .link6{
+    top: 146px;
+    left: 98px;
+     width: 47px;
+    line-height: 14px;
+}
+.ttbar-apps-main .link7{
+    top: 146px;
+    left: 151px;
+     width: 58px;
+    line-height: 14px;
+}
+/*关注*/
+.ttbar-atte .dd-spacer{
+	width: 82px;
 }
 .ttbar-atte{
 	width: 49px;
-	/*padding: 0 25px 0 8px;*/
 }
-.ttbar-sev{
-	/*padding: 0 25px 0 8px;*/
+.ttbar-atte .dorpdown-layer{
+    padding-bottom: 5px;
 }
-.ttbar-nav{
-	/*padding: 0 25px 0 8px;*/
+/*client*/
+
+.ttbar-sev .dorpdown-layer{
+	width: 170px;
+	padding-bottom: 5px;
 }
+.ttbar-sev .dd-spacer{
+	width: 81px;
+}
+.ttbar-sev .item-client{
+	font-weight: 700;
+    padding-left: 10px;
+}
+.ttbar-sev .item-business{
+	border-top: 1px dotted #ccc;
+	font-weight: 700;
+    padding-left: 10px;
+}
+
+.ttbar-sev .item{
+	display: inline-block;
+	width: 70px;
+	padding-left: 10px;
+}
+/*nav*/
+.ttbar-nav .dorpdown-layer{
+	width: 1210px;
+	padding: 20px 0 16px;
+}
+.ttbar-nav .dd-spacer{
+	position: absolute;
+	left: 1210px;
+	width: 81px;
+	transform: translateX(-81px);
+}
+.ttbar-nav dl{
+	padding-left: 20px;
+	float: left;
+	border-left: 1px solid #ddd;
+	width: 259px;
+}
+.ttbar-nav dt{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+.ttbar-nav .fore1{
+	width: 347px;
+	border-left: none;
+}
+.ttbar-nav .dorpdown-layer{
+	position: absolute;
+	left:-1210px;
+	transform: translateX(80px);
+}
+.ttbar-nav .item{
+	float: left;
+	width:86px;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 80px;
+	margin: 0px auto 0px;
+	background-color: #ff1844;
+}
+.banner-close{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/close.png) 0px 0px no-repeat;
+}
+.banner-close:hover{
+	background: url(../img/close.png) 0px -19px no-repeat;
+}
+/*search*/
+.search{
+	line-height: 100px;
+}
+.search .logo-sale{
+	position: relative;
+	float: left;
+	width:362px;
+	height: 60px;
+	padding: 20px 0;
+}
+.search .logo-sale .logo{
+	display: block;
+	width: 270px;
+	height: 60px;
+	background: url(../img/logo-2015.png) 0 0 no-repeat;
+}
+.search .logo-sale .logo-right{
+	/*display: block;*/
+	position: absolute;
+	top: 10px;
+	left: 168px;
+	width: 180px;
+	height: 80px;
+	overflow: hidden;
+	background: url(../img/logo-xmas.gif) 0 0 no-repeat;
+}
+.search-text{
+	width: auto;
+	position: relative;
+	float: left;
+	margin-top: 25px;
+}
+.search-text>.form {
+	width: auto;
+	height: 36px;
+}
+.search-text>.form .text{
+	float: left;
+	width: 446px;
+	height: 24px;
+	line-height: 24px;
+	padding: 4px;
+	margin-bottom: 4px;
+	border: solid #b61d1d;
+	border-width: 2px 0 2px 2px;
+	outline: 0;
+	font: 14px "microsoft yahei";
+	color: rgb(153,153,153);
+}
+.search-text>.form button{
+	float: left;
+    width: 82px;
+    height: 36px;
+    background: #B61D1D;
+    border: none;
+    line-height: 1;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    cursor: pointer;
+}
+.settle-up{
+	float: right;
+    z-index: 11;
+    height: 36px;
+    margin: 25px 65px 0 0;
+}
+.search .cm-icon{
+	position: relative;
+	cursor: default;
+	width: 75px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    padding: 0 28px 0 36px;
+    background: #F9F9F9;
+    text-align: center;
+    line-height: 34px;
+}
+.search .cm-icon i{
+	display: block;
+	position: absolute;
+}
+.search .cm-icon .ci-l{
+	top: 9px;
+    left: 18px;
+    width: 18px;
+    height: 16px;
+    background: url(//../img/phone.png) 0 -58px no-repeat;
+}
+.search .cm-icon .ci-r{
+	top: 11px;
+    right: 10px;
+    width: 7px;
+    height: 13px;
+    overflow: hidden;
+    font: 400 13px/13px simsun;
+    color: #999;
+}
+.search .cm-icon .sttle-up-content{
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+}
+.search .cm-icon .sttle-up-content .loading{
+	display: block;
+	height: 50px;
+	background: url(//../img/loading.gif);
+}
+
+
+
+
+
+
+
+
