@@ -13,26 +13,26 @@
 }
 .nav{
 	position: relative;
+	height: 44px;
 }
 .nav-left{
+	display: inline-block;
     height: 44px;
-    width: 210px;
+    width: 211px;
     background-color: #b1191a;
     color: #fff;
 }
 .nav-left-title{
 	padding-left: 10px;
 }
-.nav-center-list{
-	width: 620px;
-}
-.nav-left,.nav-center,.nav-center .nav-center-list li{
+#nav .nav-center{
 	display: inline-block;
 }
-.nav-center .nav-center-list a{
+.nav-center a{
 	color: #6a6a6a;
 }
-.nav-center .nav-center-list li{
+.nav-center li{
+	display: inline-block;
 	padding: 0 18px;
 }
 .changecl a:hover{
