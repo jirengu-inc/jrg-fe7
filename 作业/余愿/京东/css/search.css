@@ -22,13 +22,14 @@
 	overflow: hidden;
 }
 .search{
-	margin:0 auto;
+	height: 100px;
 }
 .logo{
 	display: inline-block;
 	width: 270px;
-	padding-right: 90px;
+	height: 100px;
 	line-height: 100px;
+	padding-right: 89px;
 	vertical-align: top;
 }
 .search .search-blk{
