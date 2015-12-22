@@ -1,0 +1,21 @@
+body,
+ul,
+input {
+	margin: 0;
+	padding: 0;
+}
+.clr:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.clr {
+	*zoom: 1;
+}
+li {
+	list-style: none;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}

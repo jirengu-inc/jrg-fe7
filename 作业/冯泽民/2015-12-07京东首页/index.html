@@ -17,6 +17,103 @@
 				margin-left: 4px;
 			}
 		</style>
+
+		<style type="text/css">
+			.jd-clock-wrap {
+				position: relative;
+				width: 210px;
+				height: 151px;
+				background: url(img/homebg.png) 0 -136px no-repeat;
+			}
+			
+			.jd-clock {
+				position: absolute;
+				left: 72px;
+				top: 31px;
+				width: 43px;
+				height: 43px;
+				border-radius: 50%;
+				border: 7px solid #fff;
+			}
+			
+			.jd-clock::before {
+				content: "";
+				position: absolute;
+				left: 18px;
+				top: 18px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background: #fff;
+			}
+			
+			.jd-clock .jd-clock-h {
+				position: absolute;
+				top: 5px;
+				left: 19px;
+				height: 19px;
+				width: 5px;
+				background-color: #fff;
+				border-radius: 2px;
+				transform: rotate(10deg);
+				-webkit-transform-origin: 2.5px 16.5px;
+				-moz-transform-origin: 2.5px 16.5px;
+				transform-origin: 2.5px 16.5px;
+			}
+			
+			.jd-clock .jd-clock-m {
+				position: absolute;
+				left: 5px;
+				top: 19px;
+				width: 19px;
+				height: 5px;
+				background: 0 0;
+				border-radius: 2px;
+			}
+			
+			.jd-clock .jd-clock-m::after {
+				content: "";
+				position: absolute;
+				left: 14px;
+				top: -17px;
+				width: 5px;
+				height: 21px;
+				background-color: #fff;
+				border-radius: 2px;
+				-webkit-transform-origin: 2.5px 19.5px;
+				-webkit-animation: tick-tock 20s steps(60, end) infinite;
+				-moz-transform-origin: 2.5px 19.5px;
+				-moz-animation: tick-tock 20s steps(60, end) infinite;
+				transform-origin: 2.5px 19.5px;
+				animation: tick-tock 20s steps(60, end) infinite;
+			}
+			
+			.jd-clock .jd-clock-s {
+				position: absolute;
+				left: 19px;
+				top: -6px;
+				width: 5px;
+				height: 28px;
+				-webkit-transform-origin: bottom;
+				-webkit-animation: tick-tock 10s linear infinite;
+				-moz-transform-origin: bottom;
+				-moz-animation: tick-tock 10s linear infinite;
+				transform-origin: bottom;
+				animation: tick-tock 10s linear infinite;
+			}
+			
+			.jd-clock .jd-clock-s::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 5px;
+				height: 5px;
+				background-color: #5e5252;
+				border-radius: 50%;
+			}
+		</style>
+
 	</head>
 
 	<body>
@@ -824,7 +921,7 @@
 
 								</div>
 							</li>
-							<li class="class-tier"> 
+							<li class="class-tier">
 								<div class="class-name"><a href="#">男装</a>、<a href="#">女装</a>、<a href="#">内衣</a>、<a href="#">珠宝</a><i class="cm-icon-r-arrows">&gt;</i></div>
 								<div class="class-list">上面几个例子够了~</div>
 							</li>
@@ -890,12 +987,98 @@
 				<div class="tip-good">
 					<a href="#"><img src="img/tip-good.jpg" /></a>
 				</div>
-
 			</div>
 
 		</div>
 
-		<div class="content">
+		<!--
+    	京东地图
+    -->
+		<div id="map" class=" cm-w-1210">
+
+			<div class="slider">
+				<img src="img/map-slider.png" width="729" height="454" alt="轮播图" />
+			</div>
+
+			<div class="service cm-a">
+				<div class="jd-express ">
+					<div class="title ">
+						<h2>京东快报</h2>
+						<a class="more" href="#">更多<i class="cm-icon-r-arrows">&gt;</i></a>
+					</div>
+					<ul class="content">
+						<li><a href="#"><span>[特惠]</span>服装圣诞狂欢 低至88元</a></li>
+						<li><a href="#"><span>[公告]</span>自贡大件运营中心正式投入运营</a></li>
+						<li><a href="#"><span>[公告]</span>自贡大件运营中心正式投入运营</a></li>
+						<li><a href="#"><span>[公告]</span>刘强东向习主席介绍智能物流</a></li>
+						<li><a href="#"><span>[特惠]</span>雾霾防护，呼吸健康生活</a></li>
+					</ul>
+				</div>
+				<div class="life ">
+					<div class="title">
+						<h2>生活服务</h2>
+					</div>
+					<ul class="content">
+						<li class="life-h"><a href="#"><i class="mark"></i><span >话费</span></a></li>
+						<li class="life-j"><a href="#"><i class="mark"></i><span >机票</span></a></li>
+						<li class="life-d"><a href="#"><i class="mark"></i><span >电影票</span></a></li>
+						<li class="life-y"><a href="#"><i class="mark"></i><span >游戏</span></a></li>
+						<li class="life-c"><a href="#"><i class="mark"></i><span >彩票</span></a></li>
+						<li class="life-t"><a href="#"><i class="mark"></i><span >团购</span></a></li>
+						<li class="life-jd"><a href="#"><i class="mark"></i><span >酒店</span><i class="cm-icon-exempt"></i></a></li>
+						<li class="life-s"><a href="#"><i class="mark"></i><span >水电煤</span></a></li>
+						<li class="life-z"><a href="#"><i class="mark"></i><span >众筹</span></a></li>
+						<li class="life-l"><a href="#"><i class="mark"></i><span >理财</span></a></li>
+						<li class="life-p"><a href="#"><i class="mark"></i><span >礼品卡</span></a></li>
+						<li class="life-b"><a href="#"><i class="mark"></i><span >白条</span><i class="cm-icon-send"></i></a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!--
+        	今日推荐
+        -->
+		<div id="today" class="cm-w-1210">
+			<!--
+            	css3时钟
+            -->
+			<div class="watch-box">
+				<div class="clock-dial">
+					<div class="clock-pin">
+					</div>
+					<div class="min-pin">
+					</div>
+					<div class="clock-oorigin">
+					</div>
+					<div class="sec-pin">
+						<div class="pin">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="toady-ad">
+
+				<a class="prev" href="javascript:;">&lt;</a>
+				<a class="next" href="javascript:;">&gt;</a>
+				<ul class="ad-box">
+					<li>
+						<a href="#"><img src="img/today-ad/ad1.jpg" width="249" height="164" alt="今日推荐" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/today-ad/ad2.jpg" width="249" height="164" alt="今日推荐" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/today-ad/ad3.jpg" width="249" height="164" alt="今日推荐" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/today-ad/ad4.jpg" width="249" height="164" alt="今日推荐" /></a>
+					</li>
+				</ul>
+
+			</div>
 
 		</div>
 

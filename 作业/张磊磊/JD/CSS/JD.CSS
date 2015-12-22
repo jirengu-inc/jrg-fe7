@@ -88,7 +88,7 @@ line-height: 28px;
 	color: #666;
 	text-decoration: none;
 	line-height: 24px;
-	padding: 5px 8px;
+	padding: 0px 8px;
 }
 .region-list li:nth-of-type(2) a{
 	    background: #C81623;
@@ -101,8 +101,6 @@ line-height: 28px;
 	width: 833px;
 	height: 30px;
 	float: right;
-	background-color: white;
-
 }
 .placeholder{
 	width: 100px;
@@ -117,13 +115,13 @@ line-height: 28px;
 .region:hover .placeholder{
 	display: block;
 }
-.fr li{
+.fr>li{
 	float: left;
 	list-style: none;
 	line-height: 30px;
 	height: 30px;
 	padding: 0 2px;
-	margin-left:10px; 
+	
 }
 .fore a:hover{
 	color: #c81623;
@@ -131,6 +129,13 @@ line-height: 28px;
 .fr li a{
 	color: #666;
 	text-decoration: none;
+	margin-right:8px; 
+
+}
+
+.fore2 a{
+	padding: 0 8px;
+
 }
 .fore1 a:first-of-type{
 	padding-right: 10px;
@@ -141,4 +146,127 @@ line-height: 28px;
 .spacer{
 	color: #ddd;	
 	padding: 0px !important;
+}
+.fore3{
+	position: relative;
+	line-height: 30px;
+	height:30px;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+}
+.cw-icon{
+	position: relative;
+	padding-right: 20px;
+	padding-left: 8px;
+	}
+.ci-right{
+top: 12px;
+right: 10px;
+height: 7px;
+overflow: hidden;
+font:400 15px/15px consolas;
+color: #6A6A6A;
+-webkit-transition:-webkit-transform .1s ease-in 0s;
+display: block;
+position: absolute;
+}
+.ci-right s{
+	position: relative;
+	top: -7px;
+	text-decoration: none;
+	font:400 15px/15px consolas;
+}
+.my-jd{
+	height: 294px;
+	width: 270px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: -1px;
+	display:none;
+}
+.drop:hover .ci-right{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.fore3:hover .my-jd{
+	display: block;
+}
+.fore3:hover {
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.dd-spacer{
+	position: absolute;
+	width: 88px;
+	height: 3px;
+	background-color: #fff;
+	top: 28px;
+	left: 0px;
+	display: none;
+	z-index: 2
+}
+.fore3:hover .dd-spacer{
+	display: block;
+}
+.user-info{
+	width: 240px;
+	height: 60px;
+	padding:10px 15px;
+
+
+}
+.user-info div{
+	float: left;
+}
+.user-pic{
+	margin-right:10px;
+}
+.hello-register{
+	width: 160px;
+	padding-top:6px; 
+	font-weight: bold;
+}
+.u-extra{
+	height: 24px!important;
+	line-height: 24px!important;
+}
+.otherlist{
+	width: 255px;
+	height: 96px;
+	padding-left: 15px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+.otherlist div{
+	height: 24px;
+	width: 126px;
+	float: left;
+}
+.smt{
+	width: 240px;
+	
+	float: left;
+}
+.viewlist  h4{
+	float: left;
+}
+.viewlist  a{
+	float: right;
+}
+.item{
+	float: left;
+}
+.item img{
+	float: left;
+	padding: 4px;
+}
+.viewlist{
+	width: 240px;
+	height: 82px;
+	padding: 10px 15px;
+	border-top:1px  dotted #ccc;
+}
+.fore4 , .fore5{
+	padding: 0 8px;
 }
