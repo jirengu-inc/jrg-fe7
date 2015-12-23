@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-21 21:26:23
+ * @version $Id$
+ */
+#nav{
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 2px solid #b1191a;
+	font-size: 15px;
+}
+.nav{
+	position: relative;
+	height: 44px;
+}
+.nav-left{
+	display: inline-block;
+    height: 44px;
+    width: 211px;
+    background-color: #b1191a;
+    color: #fff;
+}
+.nav-left-title{
+	padding-left: 10px;
+}
+#nav .nav-center{
+	display: inline-block;
+}
+.nav-center a{
+	color: #6a6a6a;
+}
+.nav-center li{
+	display: inline-block;
+	padding: 0 18px;
+}
+.changecl a:hover{
+	color: #cb1623;
+}
+.nav-pic{
+	display: inline-block;
+	width: 150px;
+	height: 44px;
+    position: absolute;
+    right: 0;
+}

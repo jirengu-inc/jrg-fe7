@@ -1,75 +1,273 @@
-*{
-	padding:0px;
-	margin:0px;
-	box-sizing:border-box;
-}
-
-body{
+#header{
+	background:#f1f1f1;
 	font-size:12px;
-}
-
-li{
-	list-style: none;
-}
-
-a{
-	text-decoration:none;
-}
-
-#top-bar{
-	background:#f1f1f1;
-	width:100%;
-	height:30px;
 	line-height:30px;
+	width:100%;
 }
 
-#top-bar .bar-container{
-	background:#f1f1f1;
+.layout{
 	width:1210px;
 	margin:0 auto;
 }
 
-#top-bar .bar-container .nav{
-	float:right;
+.layout:after{
+	content:"";
+	display:block;
+	clear:both;
 }
 
-#top-bar .bar-container .place-select,
-#top-bar .bar-container .place-select p,
-#top-bar .bar-container .place-select span{
-	display:inline-block;
-}
-
-#top-bar .bar-container .nav li{
-	display:inline-block;
+.address{
 	float:left;
+	padding:0px 10px;
 }
 
-#top-bar .bar-container .nav .tab-login{
-	margin-right:10px;
+.nav{
+	float:right;
+	font-size:0;/*除去子元素inline-block的缝隙*/
 }
 
-#top-bar .bar-container .nav li .link-login{
+.address p{
+	display:inline-block;
+	line-height:30px;
+	height:30px;
+	font-size:12px;
+}
+
+.address-choice{
+	width:303px;
+}
+
+.address .address-choice li{
+	float:left;
+	width:60px;
+	text-align:center;
+}
+
+.address .address-choice li .selected{
+	background:#C81623;
+	color:#fff;
+}
+
+.address .address-choice li a{
+	display:inline-block;
+	color:#666;
+	width:36px;
+	height:24px;
+	line-height:24px;
+}
+
+.address .address-choice li a:hover{
+	color:#c81623;
+	background:#f1f1f1;
+}
+
+.nav>li{
+	display:inline-block;
+	padding:0px 10px; 
+	height:30px;
+	font-size:0;
+	vertical-align:top;
+}
+
+.nav li a{
+	display:inline-block;
+	color:#666;	
+	font-size:12px;
+	height:30px;
+}
+
+.nav li a:hover{
+	color:#c81623;
+}
+
+.nav .tab-login,
+.nav .tab-login a{
+	margin-right:6px;
+}
+
+.myjd-drop-info{
+	width:272px;
+}
+
+.myjd-drop-info .user-info{
+	font-size:12px;
+	padding:10px 15px;
+	overflow:hidden;/*形成BFC*/
+}
+
+.myjd-drop-info .user-info .user-pic{
+	float:left;
+	width:60px;
+	height:60px;
+}
+
+.myjd-drop-info .user-info .user-pic img{
+	/*行内元素默认是和父元素的基线对齐的,而基线又和父元素底边有间隔,改变img元素的display属性，让其脱离行内元素性质*/
+	display:block;
+	border-radius:50%;
+}
+
+.myjd-drop-info .user-info .user-prompt{
+	float:left;
+	/*形成BFC*/
+	overflow:hidden;
+	width:180px;
+	height:60px;
+	padding-left:10px;
+}
+
+.myjd-drop-info .user-info .user-prompt p span{
+	margin:0px 10px;
+}
+
+.myjd-drop-info .list-info{
+	/*形成BFC*/
+	overflow:hidden;
+}
+
+.myjd-drop-info .list-info1,.myjd-drop-info .list-info2{
+	float:left;
+	width:135px;
+	height:100px;
+	padding-left:30px;
+}
+
+.myjd-drop-info .list-info1 li,.myjd-drop-info .list-info2 li{
+	line-height:25px;
+	height:25px;
+}
+
+.myjd-drop-info .list-info1 li a,.myjd-drop-info .list-info2 li a{
+	/*行内元素默认是和父元素的基线对齐的,而基线又和父元素底边有间隔这个间隔和font-size,font-family有关。
+	所以设置vertical-align: bottom,把元素的底端与父元素字体的底端对齐。*/
+	vertical-align: bottom;
+}
+
+.nav li .phone{
+	float:left;
+	position:relative;
+	top:5px;
+	width:15px;
+	height:20px;
+	background:url(../img/icon.png);
+	background-repeat:no-repeat;
+	margin-right:2px;
+}
+
+.nav .phone-jd:hover .phone{
+	background:url(../img/icon.png) 0 -25px;
+}
+
+.nav .phone-jd:hover .phone-jd-drop-info{
+	background:url(../img/qcode.png) 0 0px;
+	width:252px;
+	height:197px;
+}
+
+.nav .attention-jd:hover .attention-jd-drop-info img{
+	display:block;
+	width:86px;
+	height:97px;
+}
+
+.nav .custom-service:hover .custom-service-drop-info{
+	width:174px;
+	height:187px;
+}
+
+.nav .custom-service:hover .line-spacer{
+	border:1px dotted #ddd;
+}
+
+.nav .custom-service:hover .business-item,
+.nav .custom-service:hover .client-item,
+.nav .custom-service:hover .custom-service-item{
+	font-size:12px;
+	width:80px;
+	height:24px;
+	line-height:24px;	
+	padding-left:10px;
+}
+
+.nav .custom-service:hover .business-item,
+.nav .custom-service:hover .client-item{
+	margin-top:5px;
+	font-weight:bold;
+}
+
+.nav .custom-service:hover .custom-service-item a{
+	line-height:24px;
+	height:24px;
+	vertical-align:top;
+}
+
+.nav .custom-service:hover .custom-service-item{
+	display:inline-block;
+}
+
+.nav .website-nav:hover .website-nav-drop-info{
+	width:1214px;
+	height:190px;
+	left:auto;
+	right:-1px;
+	padding: 20px 0 16px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .fore1{
+	float:left;
+	padding-left:20px;
+	width:367px;
+	height:150px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .fore2,
+.nav .website-nav:hover .website-nav-drop-info .fore3,
+.nav .website-nav:hover .website-nav-drop-info .fore4{
+	float:left;
+	padding-left:20px;
+	width:280px;
+	height:150px;
+	border-left:1px solid #ddd;
+}
+
+.nav .website-nav:hover .website-nav-drop-info dt{
+	font-size:14px;
+	font-weight:700;
+	margin-bottom:6px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .item{
+	float:left;
+	width:86px;
+	height:24px;
+	line-height:24px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .item a{
+	height:24px;
+	line-height:24px;
+}
+
+.nav .spacer{
+	background:#ddd;
+	width:1px;
+	height:10px;
+	margin-top:10px;
+	padding:0px 0px;
+}
+
+.nav li .link-login{
 	color:#666;	
 }
 
-#top-bar .bar-container .nav li .link-regist{
+.nav li .link-regist{
 	color:#C81623;
 }
 
-#top-bar .bar-container .nav .spacer{
-	background:#ddd;
-	width:1px;
-	height:12px;
-	margin-top:9px;
+#top-banner{
+	background:#028d23;
 }
 
-#top-bar .bar-container .nav li .tab{
-	width:64px;
-	height:30px;
-	padding:0px 8px;
-}
-
-#top-bar .bar-container .nav li .tab a{
-	color: #666;
-    text-decoration: none;
+#top-banner .layout img{
+	vertical-align:bottom;
 }
