@@ -204,7 +204,7 @@ position: absolute;
 }
 .dd-spacer{
 	position: absolute;
-	width: 88px;
+	width: 80px;
 	height: 3px;
 	background-color: #fff;
 	top: 28px;
@@ -289,3 +289,144 @@ position: absolute;
     line-height: 30px;
     vertical-align:middle;
 	}
+.app{
+	width: 250px;
+	height: 195px;
+	border: 1px solid #ddd;
+	position: absolute;
+	background-image: url(../PIC/2.png);
+	left: -1px;
+	display: none;
+	}
+.fore6{
+	position: relative;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+
+
+}
+.fore6:hover .app{
+	display: block;
+}
+.fore6:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.fore6:hover .ci-left{
+	background: url(../PIC/1.png) 0 -25px no-repeat;
+}
+.fore6:hover .dd-spacer{
+	display: block;
+	width: 98px;
+}
+
+.app-link1{
+	display: block;
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	left: 90px;
+	top: 10px;
+}
+.app-link5{
+	display: block;
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	left: 90px;
+	top: 105px;
+}
+.app-link2{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	top: 45px;
+	left: 90px;
+}
+.app-link3{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	top: 45px;
+	left: 145px;
+}
+.app-link4{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 44px;
+	top: 45px;
+	left: 200px;
+}
+.app-link6{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	top: 145px;
+	left: 90px;
+}
+.app-link7{
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 44px;
+	top: 145px;
+	left: 145px;
+
+}
+.fore7{
+	position: relative;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+
+}
+.dd-inner{
+	width: 80px;
+	height: 97px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: -1px;
+	display: none;
+}
+.fore7:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.fore7:hover .dd-inner{
+	display: block;
+}
+.fore7:hover .dd-spacer{
+	display: block;
+	width: 80px;
+}
+.fore8{
+	position: relative;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+}
+.customer{
+	border: 1px solid #ddd;
+	position: absolute;
+	width: 172px;
+	height: 165px;
+	line-height: 24px;
+}
+.customer>h4{
+	padding-left: 10px;
+}
+.customer-item{
+	display: inline-block;
+	width: 70px;
+	height: 24px;
+	padding-left: 10px;
+	background-color: yellow;
+}
+.bussiness-item{
+	height: 24px;
+	border-top: 1px dotted #ccc;
+}
