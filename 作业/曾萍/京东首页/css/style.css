@@ -43,6 +43,10 @@ li{
 	width: 60px;
 	padding: 2px 0;
 }
+#city a{
+	background-color: #c81623;
+	color: #fff;
+}
 
 .dd-spacer{
 	left: 0;
@@ -400,17 +404,17 @@ li{
     background: #F9F9F9;
     text-align: center;
     line-height: 34px;
+    border: 1px solid #ddd;
 }
 .search .cm-icon i{
 	display: block;
-	position: absolute;
 }
 .search .cm-icon .ci-l{
 	top: 9px;
     left: 18px;
     width: 18px;
     height: 16px;
-    background: url(//../img/phone.png) 0 -58px no-repeat;
+    background: url(../img/phone.png) 0 -58px no-repeat;
 }
 .search .cm-icon .ci-r{
 	top: 11px;
@@ -421,16 +425,81 @@ li{
     font: 400 13px/13px simsun;
     color: #999;
 }
-.search .cm-icon .sttle-up-content{
-	position: relative;
-	width: 100%;
-	background-color: #fff;
+.search .cm-icon .ci-count{
+	position: absolute;
+	top: -4px;
+	left: 104px;
+	display: inline-block;
+	padding: 1px 2px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #fff;
+	background-color: #c81623;
+	border-radius: 7px 7px 7px 0;
+	min-width: 12px;
+	text-align: center;
+} 
+.search .dorpdown .dd-spacer{
+	width: 139px;
+	left: 169px;
 }
-.search .cm-icon .sttle-up-content .loading{
+.search .dorpdown .prompt{
+	padding: 10px 15px;
+}
+
+.search .dorpdown-layer-r .nogoods{
+	height: 49px;
+	padding-left: 30px;
+	line-height: 49px;
+	overflow: hidden;
+	color: #999;
+}
+.search .dorpdown-layer-r .nogoods b{
+	float: left;
+	width: 56px;
+	height: 49px;
+	background-image: url(../img/settleup-nogoods.png);
+}
+
+
+
+.search .dorpdown-layer-r{
+	background: #fff;
+	border: 1px solid #ddd;
+	line-height: 24px;
+	position: absolute;
+	right: -1px;
+	width: 308px;
+	display: none;
+	z-index: 2;
+}
+.search .dorpdown:hover .dorpdown-layer-r{
 	display: block;
-	height: 50px;
-	background: url(//../img/loading.gif);
 }
+.search .cm-icon:hover{
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.search .cm-icon:hover .dorpdown-layer-r{
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
