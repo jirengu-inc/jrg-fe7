@@ -158,6 +158,96 @@
 	background:url(../img/icon.png) 0 -25px;
 }
 
+.nav .phone-jd:hover .phone-jd-drop-info{
+	background:url(../img/qcode.png) 0 0px;
+	width:252px;
+	height:197px;
+}
+
+.nav .attention-jd:hover .attention-jd-drop-info img{
+	display:block;
+	width:86px;
+	height:97px;
+}
+
+.nav .custom-service:hover .custom-service-drop-info{
+	width:174px;
+	height:187px;
+}
+
+.nav .custom-service:hover .line-spacer{
+	border:1px dotted #ddd;
+}
+
+.nav .custom-service:hover .business-item,
+.nav .custom-service:hover .client-item,
+.nav .custom-service:hover .custom-service-item{
+	font-size:12px;
+	width:80px;
+	height:24px;
+	line-height:24px;	
+	padding-left:10px;
+}
+
+.nav .custom-service:hover .business-item,
+.nav .custom-service:hover .client-item{
+	margin-top:5px;
+	font-weight:bold;
+}
+
+.nav .custom-service:hover .custom-service-item a{
+	line-height:24px;
+	height:24px;
+	vertical-align:top;
+}
+
+.nav .custom-service:hover .custom-service-item{
+	display:inline-block;
+}
+
+.nav .website-nav:hover .website-nav-drop-info{
+	width:1214px;
+	height:190px;
+	left:auto;
+	right:-1px;
+	padding: 20px 0 16px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .fore1{
+	float:left;
+	padding-left:20px;
+	width:367px;
+	height:150px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .fore2,
+.nav .website-nav:hover .website-nav-drop-info .fore3,
+.nav .website-nav:hover .website-nav-drop-info .fore4{
+	float:left;
+	padding-left:20px;
+	width:280px;
+	height:150px;
+	border-left:1px solid #ddd;
+}
+
+.nav .website-nav:hover .website-nav-drop-info dt{
+	font-size:14px;
+	font-weight:700;
+	margin-bottom:6px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .item{
+	float:left;
+	width:86px;
+	height:24px;
+	line-height:24px;
+}
+
+.nav .website-nav:hover .website-nav-drop-info .item a{
+	height:24px;
+	line-height:24px;
+}
+
 .nav .spacer{
 	background:#ddd;
 	width:1px;
@@ -172,4 +262,12 @@
 
 .nav li .link-regist{
 	color:#C81623;
+}
+
+#top-banner{
+	background:#028d23;
+}
+
+#top-banner .layout img{
+	vertical-align:bottom;
 }
