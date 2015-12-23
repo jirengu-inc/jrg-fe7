@@ -88,14 +88,15 @@ line-height: 28px;
 	color: #666;
 	text-decoration: none;
 	line-height: 24px;
-	padding: 0px 8px;
+	padding: 5px 8px;
 }
 .region-list li:nth-of-type(2) a{
 	    background: #C81623;
 	    color: white;
 }
 .item:hover{
-	background-color: #F4F4F4
+	background-color: #F4F4F4;
+	color:#c81623;
 }
 .fr{
 	width: 833px;
@@ -129,7 +130,7 @@ line-height: 28px;
 .fr li a{
 	color: #666;
 	text-decoration: none;
-	margin-right:8px; 
+	
 
 }
 
@@ -138,10 +139,14 @@ line-height: 28px;
 
 }
 .fore1 a:first-of-type{
-	padding-right: 10px;
+	padding-right: 5px;
 	color: #c81623;
 	font-family: "verdana,simsun";
 }
+.fore1{
+	margin-right:10px; 
+}
+
 
 .spacer{
 	color: #ddd;	
@@ -161,7 +166,7 @@ line-height: 28px;
 	}
 .ci-right{
 top: 12px;
-right: 10px;
+right: 4px;
 height: 7px;
 overflow: hidden;
 font:400 15px/15px consolas;
@@ -175,6 +180,7 @@ position: absolute;
 	top: -7px;
 	text-decoration: none;
 	font:400 15px/15px consolas;
+
 }
 .my-jd{
 	height: 294px;
@@ -254,12 +260,15 @@ position: absolute;
 .viewlist  a{
 	float: right;
 }
-.item{
+.visted{
 	float: left;
 }
-.item img{
+.visted img{
 	float: left;
 	padding: 4px;
+}
+.visted:hover{
+	cursor: default;
 }
 .viewlist{
 	width: 240px;
@@ -267,6 +276,16 @@ position: absolute;
 	padding: 10px 15px;
 	border-top:1px  dotted #ccc;
 }
-.fore4 , .fore5{
+.fore4 >a, .fore5 >a{
 	padding: 0 8px;
 }
+.ci-left{
+	width: 15px;
+	height: 20px;
+	background: url(../PIC/1.png) 0 0 no-repeat;
+	display:inline-block;
+	top: 5px;
+    left: 7px;
+    line-height: 30px;
+    vertical-align:middle;
+	}
