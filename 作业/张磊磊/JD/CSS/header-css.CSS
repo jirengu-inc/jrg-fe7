@@ -99,7 +99,7 @@ line-height: 28px;
 	color:#c81623;
 }
 .fr{
-	width: 833px;
+	width: 835px;
 	height: 30px;
 	float: right;
 }
@@ -415,6 +415,8 @@ position: absolute;
 	width: 172px;
 	height: 165px;
 	line-height: 24px;
+	display: none;
+	left: -1px;
 }
 .customer>h4{
 	padding-left: 10px;
@@ -424,9 +426,70 @@ position: absolute;
 	width: 70px;
 	height: 24px;
 	padding-left: 10px;
-	background-color: yellow;
 }
 .bussiness-item{
 	height: 24px;
 	border-top: 1px dotted #ccc;
+	padding: 5px 0;
+
+}
+.fore8:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.fore8:hover .customer{
+	display: block;
+}
+.fore8:hover .dd-spacer{
+	display: block;
+	width: 80px;
+}
+.fore9{
+	position: relative;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+}
+.more-web{
+    border: 1px solid #ddd;
+	position: absolute;
+	width: 1210px;
+	height: 150px;
+	padding:20px 0 16px 0;
+	left: -1131px;
+	line-height: 24px;
+	display: none;
+}
+.more-web1{
+	width: 347px;
+	padding-left: 20px;
+	float: left;
+	border-left:1px solid #ddd；
+}
+.more-web>dl>dt{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.more-web>dl>dd>div{
+	float: left;
+	width: 86px;
+}
+.more-web2{
+	width: 259px;
+	padding-left: 20px;
+	float: left;
+    border-left: 1px solid #ddd;
+}
+.fore9:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.fore9:hover .more-web{
+	display: block;
+}
+.fore9:hover .dd-spacer{
+ 	display: block;
+	width: 80px;
 }

@@ -1,0 +1,11 @@
+.top-ad{
+	width: 100%;
+	height: 80px;
+	background-color: #f52f50;
+	position: relative;
+	z-index: -5
+}
+.top-ad-wapper{
+	width: 1210px;
+	margin: 0 auto;
+}
