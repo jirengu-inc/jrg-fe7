@@ -14,61 +14,94 @@
 	#header{background: #F1F1F1;}
 
 	.head{
-		width: 1210px; 
+		width: 1210px;/* 设置一个适中的宽度 */ 
 		height:30px;
 		margin: 0 auto;
-		overflow: auto;
 	}
-	/* 设置一个适中的宽度 */
 		
 	.war-nav{
 		display: block;
 		float: left;
 		width: 100px;
-		height: 23px;
-		overflow: hidden;
+		height: 30px;
 		position: relative;
-	}/*溢出的那部分隐藏*/
+	}
 
 	.place{
 		display: inline-block;
 		font-size: 12px;
 		color: #666;
-		padding-top: 8px;	
+		padding: 8px 1px 8px 10px;
 		float: left;
 	}
 
-	.icon-arrow{
+	/*.icon-arrow{
 		display: inline-block;
 		float: left;
 		overflow: hidden;
 		width: 20px;
 		height: 7px;
 		margin-top: 12px;
-	}
+	}*/
+
+	.icon-arrow{/*外面icon-arrow类似一个小窗户*/
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		width: 12px;
+		height: 6px;
+    	margin-left: 5px;
+		margin-top: 13px;
+    	cursor: pointer;
+    	transition: all 0.3s;
+		}
+
+	.icon-arrow:hover {transform: rotate(180deg);}
 	
 	.icon-arrow s{
 		position: relative;
-		top: -16px;
+		top: -11px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 18px;
 		font-family: consolas;
-	}/* consolas让箭头更美观*/
+		}/* consolas让箭头更美观*/
 
-	.icon-arrow s:hover{
+
+	/*.icon-arrow s:hover{
 		position: relative;
 	    top:-8px;
 		text-decoration: none;
+		overflow: hidden;
 		transition-duration:0.01s;
 		transform:(180deg);
-	}/*用了相对定位把箭头旋转180度*/
+	}
+	用了相对定位把箭头旋转180度*/
 	
-	.war-nav :hover{
+
+	.war-nav:hover{
+		display: block;
+   		background-color: white;
+    	/*border:1px solid #CAC3C3;不要加这个边框*/
+    	width: 100px;
+		height: 30px;
+	}
+
+	.war-nav:hover s{/*当移动到一整块，三角型箭头自动旋转*/
+		position: relative;
+	    top:-6px;
+		text-decoration: none;
+		overflow: hidden;
+		transition-duration:0.01s;
+		transform:(180deg);
+	}
+
+	.war-nav:hover .way{/*当移动到一整块，上半部分出现白色框*/
     	display: block;
    		background-color: white;
-    	border:1px solid #CAC3C3;
-		border: 1px solid red;
+		/*border: 1px solid  #666;*/
 		border-top: none;
+		width: 300px;
+		overflow: auto;
     }
 
 	.war-nav .way{
@@ -77,9 +110,34 @@
 		left: -1px;
 		top: 100%;
 		width: 301px;
+		/*height: 200px;无需设高度*/
 	}
 
+	.war-nav .way li{
+		width: 45px;
+		height: 32px;
+		margin-top: 5px;
+		margin-left:12px;
+		list-style: none;
+		float: left;
+		text-decoration: none;	
+	}
+
+	.war-nav .way li>a{
+		text-decoration: none;
+		font-size: 12px;
+		font-family: arial;
+		color: #666;
+	}
+
+	.war-nav .way li>a:hover{
+		color: red;
+		padding: 1px 4px;
+		background: #F4F4F4;
+	}/*移到下拉框中的地方名会有浅灰色框出现*/
+
 	/*左边导航完成*/
+
 
 	.nav ul{
 		float: right;
@@ -91,7 +149,8 @@
 		list-style: none;
 		padding: 5px 5px;
 	}
-	
+	.nav .item a:hover{color: red;}
+
 	.nav .item-line{
 		float: left;
 		list-style: none;
@@ -222,10 +281,10 @@
 
 	.menu .submenu{
 		color: white;
-		width: 130px;
-		height: 44px;
+		width: 113px;
+		height: 47px;
 		background: #B1191A;
-		padding: 0 95px 0 0px;
+		padding: 0 109px 0 0px;
 	}
 
 	.menu .submenu:hover{color: white;}
@@ -234,11 +293,10 @@
 	.main{
 		width: 1210px;
 		margin: 0 auto;
-		overflow: auto;
 	}
 
 	.list{
-		width: 223px;
+		width: 220px;
 		border: 1px solid #B61D1D;
 		background-color: #B61D1D;
 		float: left;
@@ -247,7 +305,7 @@
 	.list h3{
 		width:220px; 
 		height: 34px;
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 
 	.list a{

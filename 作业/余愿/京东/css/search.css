@@ -9,9 +9,7 @@
 	background-color: #be1e00;
     height:80px;
 }
-.header-ad-1210{
-	width:1210px;
-	margin:0 auto;
+.header-adm{
 	position: relative;
 	height: 80px;
 }
@@ -23,22 +21,24 @@
 	height: 19px;
 	overflow: hidden;
 }
-.search-1210{
-	width: 1210px;
+.search{
 	height: 100px;
-	margin:0 auto;
 }
 .logo{
 	display: inline-block;
 	width: 270px;
-	padding-right: 90px;
+	height: 100px;
 	line-height: 100px;
+	padding-right: 89px;
+	vertical-align: top;
 }
-.search-1210 .search{
+.search .search-blk{
+	position: relative;
 	display: inline-block;
 	width:535px;
-	margin: 0 auto;
 	padding-right: 100px; 
+	vertical-align: top;
+	top: 25px;
 }
 
 .search-input,.search-btn{
@@ -63,7 +63,7 @@
 	display: inline-block;
 	padding-right: 7px;
 }
-.search-rmd a{
+.search-rmd a,.shop-car a{
 	color: #6a6a6a;
 }
 .changecl a:hover{
@@ -71,4 +71,40 @@
 }
 .shop-car{
 	display: inline-block;
+	position: relative;
+	width: 136px;
+	height: 34px;
+	background-color: #f9f9f9;
+	border:1px solid #dfdfdf;
+	line-height: 34px;
+	top: 25px;
+	vertical-align: top;
+}
+/*.car{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url(img/header-menu-bg.png) no-repeat -1px -58px;
+    margin-left: 20px;
+    margin-top: 9px;
+}*/
+.shop-car .mycar{
+	position: relative;
+	margin-left: 44px;
+}
+.shop-car .shop-ident{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	background-color: #cb1623;
+	border-radius: 6px 6px 6px 0;
+    margin-top: -5px;
+    color: #fff;
+}
+.arrow-r{
+	margin-left: 15px;
+	font: 400 13px/13px simsun;
+	color: #666;
 }
