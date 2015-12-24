@@ -807,6 +807,7 @@ li{
 	right: 0;
 	border: 1px solid #e4e4e4;
 	border-bottom: 0;
+	background: rgb(255,255,255);
 }
 .focus>.focus-extra .mt{
 	padding: 0 15px;
@@ -818,17 +819,103 @@ li{
 	float: left;
 	font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.focus>.focus-extra .mt>.extra{
+	float: right;
+	font-family: "consolas";
+	color: #666;
+}
+.focus>.focus-extra .mc{
+	height: 140px;
+	padding: 8px 0 0 15px;
+}
+.focus>.focus-extra .mc li{
+	width: 210px;
+	height: 27px;
+	line-height: 27px;
+	overflow: hidden;
+}
+.focus>.focus-extra .mc li span{
+	font-weight: 700;
+	margin-right: 5px;
+}
+.focus>.focus-extra .life-serv{
+	/*float: right;*/
+	position: absolute;
+	right: 0;
+	width: 248px;
+	height: 250px;
+	top: 213px;
+	border: 1px solid #e4e4e4;
+	background: rgb(255,255,255);
+	overflow: hidden;
+}
+.focus .life-serv>.mc{
+	position: relative;
+	padding: 0;
+}
+.focus .life-serv>.mc ul{
+	position: relative;
+	width: 252px;
+	height: 209px;
+}
+.focus .life-serv>.mc li{
+	float: left;
+	width: 62px;
+	height: 68px;
+	border-right: 1px solid #e8e8e7;
+	border-bottom: 1px solid #e8e8e7;
+	overflow: hidden;
+	position: relative;
+}
+.focus .life-serv>.mc li a{
+	display: block;
+	width: 62px;
+	padding-top: 41px;
+	line-height: 28px;
+	text-align: center;
+}
+.focus .life-serv>.mc i{
+	position: absolute;
+	top: 13px;
+	left: 18px;
+	width: 25px;
+	height: 27px;
+	display: inline-block;
+	background: url(../img/icon.png) 0 0 no-repeat;
+}
+.life-serv #fore2{
+	background: url(../img/icon.png) 0 -25px no-repeat;
+}
+.life-serv #fore3{
+	background: url(../img/icon.png) 0 -50px no-repeat;
+}
+.life-serv #fore4{
+	background: url(../img/icon.png) 0 -75px no-repeat;
+}
+.life-serv #fore5{
+	background: url(../img/icon.png) 0 -100px no-repeat;
+}
+.life-serv #fore6{
+	background: url(../img/icon.png) 0 -125px no-repeat;
+}
+.life-serv #fore7{
+	background: url(../img/icon.png) 0 -150px no-repeat;
+}
+.life-serv #fore8{
+	background: url(../img/icon.png) 0 -175px no-repeat;
+}
+.life-serv #fore9{
+	background: url(../img/icon.png) 0 -200px no-repeat;
+}
+.life-serv #fore10{
+	background: url(../img/icon.png) 0 -225px no-repeat;
+}
+.life-serv #fore11{
+	background: url(../img/icon.png) 0 -250px no-repeat;
+}
+.life-serv #fore12{
+	background: url(../img/icon.png) 0 -275px no-repeat;
+}
 
 
 
