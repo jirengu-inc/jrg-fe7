@@ -1,0 +1,7 @@
+@media screen and (max-width:1000px){
+body{
+	width:1000px;
+	height:760px;
+}
+@import url(index.css);
+}
