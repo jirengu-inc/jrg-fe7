@@ -816,63 +816,95 @@
 	line-height: 95px;
 }
 
-
-
-#footer .service-pic .pic-1,#footer .service-pic .pic-2 ,#footer .service-pic .pic-3 ,#footer .service-pic .pic-4  {
+#footer .service-pic .pic-1,
+#footer .service-pic .pic-2,
+#footer .service-pic .pic-3,
+#footer .service-pic .pic-4 {
 	display: inline-block;
 	vertical-align: middle;
 	width: 284px;
 	height: 55px;
 	margin-left: 16px;
 }
-#footer .service-pic .pic-1{
+
+#footer .service-pic .pic-1 {
 	background: url(img/service_items_1.png) no-repeat;
 }
-#footer .service-pic .pic-2{
+
+#footer .service-pic .pic-2 {
 	background: url(img/service_items_2.png) no-repeat;
 }
-#footer .service-pic .pic-3{
+
+#footer .service-pic .pic-3 {
 	background: url(img/service_items_3.png) no-repeat;
 }
-#footer .service-pic .pic-4{
+
+#footer .service-pic .pic-4 {
 	background: url(img/service_items_4.png) no-repeat;
 }
 
-#footer .footer-box{
+#footer .footer-box {
 	color: #666;
+}
+
+#footer .cm-icon-line{
+	padding:0 5px !important;
+}
+
+#footer .guide-box {
 	overflow: hidden;
 	padding: 14px 0 19px 0;
 	border-bottom: 1px solid #E5E5E5;
 }
 
-#footer .footer-box .guide{
+#footer .footer-box .guide {
 	float: left;
 	width: 166px;
 	margin-right: 34px;
-	
 }
 
-#footer .footer-box .guide dt{
+#footer .footer-box .guide dt {
 	font-size: 16px;
 	line-height: 36px;
 }
-#footer .footer-box .guide dd{
+
+#footer .footer-box .guide dd {
 	line-height: 20px;
 }
 
-#footer .footer-box .map{
+#footer .footer-box .map {
 	float: left;
-	background: url(img/china-map.png) no-repeat  0 -131px;
+	background: url(img/china-map.png) no-repeat 0 -131px;
 	width: 188px;
 	height: 169px;
 	margin-left: -34px;
 	padding-left: 15px;
-	
-	
 }
 
-#footer .footer-box .map .details{
+#footer .footer-box .map .details {
 	text-align: right
+}
+
+#footer .footer-box .info-box {
+	text-align: center;
+}
+
+
+#footer  .info-box {
+	padding: 23px 0 10px 0;
+}
+
+#footer  .info-box .info li {
+	display: inline-block;
+}
+
+#footer  .info-box .records{
+	margin-top: 8px;
+}
+
+#footer .record-pic{
+	margin-top:7px ;
+	display: block;
 }
 
 

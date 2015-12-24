@@ -100,6 +100,7 @@ li{
 }
 .dorpdown:hover s{
 	top: 1px;
+	transition: all 100ms ease-in;
 }
 
 
@@ -124,7 +125,7 @@ li{
 .ttbar-login{
 	font-family: "verdana,simsun";
 	color: #c81623;
-	padding: 0 8px;
+	padding: 0 0 0 8px;
 }
 .ttbar-myjd .dorpdown-layer{
 	width: 270px;
@@ -344,7 +345,6 @@ li{
 	background: url(../img/logo-2015.png) 0 0 no-repeat;
 }
 .search .logo-sale .logo-right{
-	/*display: block;*/
 	position: absolute;
 	top: 10px;
 	left: 168px;
@@ -392,7 +392,7 @@ li{
 	float: right;
     z-index: 11;
     height: 36px;
-    margin: 25px 65px 0 0;
+    margin: 26px 65px 0 0;
 }
 .search .cm-icon{
 	position: relative;
@@ -446,7 +446,6 @@ li{
 .search .dorpdown .prompt{
 	padding: 10px 15px;
 }
-
 .search .dorpdown-layer-r .nogoods{
 	height: 49px;
 	padding-left: 30px;
@@ -460,9 +459,6 @@ li{
 	height: 49px;
 	background-image: url(../img/settleup-nogoods.png);
 }
-
-
-
 .search .dorpdown-layer-r{
 	background: #fff;
 	border: 1px solid #ddd;
@@ -485,6 +481,272 @@ li{
 	border: 1px solid #ddd;
 	box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
+.search .hot-words{
+	float: left;
+	width: 518px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+.search .hot-words a{
+	float: left;
+	margin-right: 10px;
+}
+.search .hot-words .style-red{
+	color: #c81623;
+}
+/*nav*/
+.nav{
+	height: 46px;
+}
+.nav>.w{
+	height: 44px;
+}
+.nav .category{
+	height: 47px;
+	float: left;
+	position: relative;
+	width: 210px;
+	overflow: visible;
+	background: #b1191a;
+	z-index: 3;
+}
+.nav .category-dt a{
+	background: url(../img/category-bg.jpg) no-repeat;
+	height: 51px;
+	width: 190px;
+	padding: 0 10px;
+	line-height: 56px;
+	margin-bottom: -6px;
+	top: -6px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	font: 400 15px/60px "microsoft yahei";
+	color: #fff;
+}
+.nav .nav-items{
+	/*float: left;*/
+	display: inline-block;
+}
+.nav .nav-items li{
+	display: inline-block;
+	padding: 0 20px;
+}
+.nav .nav-items a{
+    height: 44px;
+    text-align: center;
+    font: 400 15px/44px "microsoft yahei";
+    color: #333;
+} 
+.nav .nav-items a:hover{
+	color: #c81623;
+}
+.nav .nav-items i{
+	position: absolute;
+	top: 0;
+	background: url(../img/new.jpeg) 0 0 no-repeat;
+	width: 38px;
+	height: 30px;
+}
+.nav .treasure{
+	float: right;
+	width: 140px;
+	height: 40px;
+	display: block;
+	margin-top: 2px;
+	cursor: pointer;
+	background: url(../img/treasure.jpg) 0 0 no-repeat;
+}
+/*category-dd*/
+.nav .category-dd{
+	height: 466px;
+	background: #c81623;
+	margin-top: 2px;
+}
+.nav .dd-dorpdown{
+	height: 31px;
+	padding: 0 10px;
+	line-height: 31px;
+	position: relative;
+	border-left: 1px solid #c81623;
+}
+.nav .dd-dorpdown h3 a{
+	color: #fff;
+	float: left;
+	font: 14px "microsoft yahei";
+}
+.nav .dd-dorpdown h3{
+	padding: 6px;
+}
+.nav .dd-dorpdown .c-dd-s{
+	color: #f7f7f7;
+	width: 14px;
+	height: 31px;
+    font: 400 9px/14px consolas;
+    position: absolute;
+    top: 9px;
+    right: 14px;
+}
+.nav .dd-dorpdown:hover{
+	background: #f7f7f7;
+}
+.nav .dd-dorpdown:hover .clr a{
+	color: #b61d1d;
+}
+.nav .dd-dorpdown:hover .c-dd-s{
+	top: 0;
+	left: 200px;
+	background: #f7f7f7;
+}
+.nav .dd-dorpdown-layer{
+	display: none;
+	/*display: block;*/
+	width: 999px;
+	height: 465px;
+	border: 1px solid #c81623;
+	background: #f7f7f7;
+	position: absolute;
+	left: 209px;
+	overflow: hidden;
+	top: -1px;
+}
+.nav .dd-dorpdown:hover .dd-dorpdown-layer{
+	display: block;
+}
+.nav .item-channels{
+	float: left;
+	width: 790px;
+	padding: 20px 0 0 20px;
+	height: 24px;
+	overflow: hidden;
+}
+.nav .item-channels .channels a{
+	float: left;
+	display: inline-block;
+	padding: 0 0 0 8px;
+	margin-right: 10px;
+	line-height: 24px;
+	background: #7c7171;
+	color: #fff;
+	white-space: nowrap;
+}
+.nav .item-channels .channels a:hover{
+	background: #c81623;
+}
+.nav .item-channels .channels i{
+	display: inline-block;
+	margin-left: 8px;
+	width: 23px;
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+    font: 400 9px/14px consolas;
+    background: #5c5251;
+    line-height: 24px;
+}
+.nav .subitems{
+	float: left;
+	width: 790px;
+	padding: 6px 0  6px 20px;
+	min-height: 409px;
+}
+.nav .subitems dl{
+	width: 100%;
+	overflow: hidden;
+	line-height: 2em;
+}
+.nav .subitems dt{
+	position: relative;
+	float: left;
+	width: 54px;
+	padding: 8px 30px 0 0;
+	text-align: right;
+	font-weight: 700;
+}
+.nav .subitems dt i{
+	position: absolute;
+	top: 13px;
+	right: 18px;
+	width: 4px;
+	height: 14px;
+    font: 400 9px/14px consolas;
+}
+.nav .subitems .fore dd{
+	border-top: none;
+
+}
+
+.nav .subitems dd{
+	float: left;
+	padding: 6px 0;
+	width: 620px;
+	border-top: 1px solid #eee;
+
+}
+.nav .subitems dd a{
+	float: left;
+	padding: 0 8px;
+	margin: 4px 0;
+	line-height: 16px;
+	height: 16px;
+	border-left: 1px solid #e0e0e0;
+	white-space: nowrap;
+}
+.nav .item-brands{
+	float: right;
+	width: 168px;
+	margin: 19px 20px 20px 0;
+}
+.nav .item-brands a{
+	margin: 1px 0 0 1px;
+	display: inline;
+	float: right;
+}
+.nav .item-promotions{
+	float: right;
+	width: 168px;
+	display: inline;
+	margin-right: 20px;
+	overflow: auto;
+}
+.nav .item-promotions a{
+	display: block;
+	margin-bottom: 1px;
+}
+
+
+/*banner-xmas c-b-line*/
+.c-b-line{
+	height: 5px;
+	position: relative;
+	top: -4px;
+	margin-bottom: -4px;
+	background: url(../img/bg-line.jpg) repeat-x;
+}
+.banner-xmas{
+	background: url(../img/xmax-bg.jpg) no-repeat center top;
+	height: 469px;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
