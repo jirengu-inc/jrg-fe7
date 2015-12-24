@@ -1,0 +1,83 @@
+
+
+body{
+	font: 12px/1.5 Arial,Verdana,"Microsoft Yahei", "\5b8b\4f53";
+}
+
+ul,li,dl{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color: #C81623;
+}
+
+.layout{
+	margin: 0 auto;
+	width: 900px;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+.split{
+	color: #ddd;
+}
+
+.text-stress{
+	color: #CD303B;
+}
+
+.trig {
+    display: inline-block;
+    width: 19px;
+    height: 11px;
+    background: url(../imgs/trig.png) 0 0 no-repeat;
+    position: relative;
+    top: 1px;
+    transition: transform 0.2s;
+
+}
+/*.trig:hover {
+    background-position: 0 -21px;
+    transform: rotate(180deg);
+}*/
+.phone{
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background: url(../imgs/phone.png) 0 0 no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

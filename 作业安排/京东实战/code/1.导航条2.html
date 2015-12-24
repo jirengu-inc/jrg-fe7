@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>1.导航条</title>
+<link rel="stylesheet" href="./css/reset2.css">
+<link rel="stylesheet" href="./css/common2.css">
+<link rel="stylesheet" href="./css/nav2.css">
+
+<style>
+	#nav{
+		height: 30px;
+		line-height: 30px;
+		background-color: #f1f1f1;
+	}
+
+	#nav .address{
+		float: left;
+		padding: 0 10px;
+	}
+
+	#nav .list{
+		float: right;
+	}
+	#nav .list > li{
+		padding: 0 6px;
+		float: left;
+	}
+	#nav .drop{
+		position: relative;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	#nav .drop:hover{
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		background-color: #fff;
+	}
+	
+	#nav .drop:hover .trig{
+		transform: rotate(180deg);
+	}
+
+	#nav .panel{
+		position: absolute;
+		left: -1px;
+		border: 1px solid #ccc;
+		padding: 10px;
+		display: none;
+	}
+	
+	#nav .panel-addr{
+		width: 314px;
+	}
+	#nav .panel-addr ul{
+		line-height: 1;
+	}
+	#nav .panel-addr li{
+	    float: left;
+	    padding: 5px 12px;
+	    margin: 2px 5px;
+	    cursor: pointer;
+	}
+	#nav .panel-addr li:hover{
+		background-color: #f2f2f2;
+	}
+	#nav .panel-addr li.active{
+		background-color: #CD303B;
+	}
+	#nav .panel .space {
+	    width: 99px;
+	    height: 3px;
+	    background: white;
+	    position: relative;
+	    left: -10px;
+	    top: -12px;
+	}
+	#nav .drop:hover .panel{
+		display: block;
+	}
+
+
+</style>
+	
+</head>
+<body>
+<div id="nav">
+	<div class="layout clearfix">
+		<div class="address drop">
+			送至：<span>河南</span><span class="trig"></span>
+				<div class="panel panel-addr">
+					<div class="space"></div>
+					<ul class="clearfix">
+						<li class="active"><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+						<li><a href="">北京</a></li>
+					</ul>
+				</div>
+
+		</div>
+		<ul class="list">
+			<li>
+				<a class="text-stress" href="">请登录</a>
+			</li>
+			<li><a href="">免费注册</a></li>
+			<li class="split">|</li>
+			<li><a href="">免费注册</a></li>
+			<li class="split">|</li>
+			<li class="drop"><a href="">我的京东</a><span class="trig"></span>
+				<div class="panel panel-person">
+					<div class="space"></div>
+					<div class="detail">
+						hello
+					</div>
+				</div>
+
+
+			</li>
+			<li class="split">|</li>
+			<li class="drop"  ><span class="phone"></span> <a href="">手机京东</a><span class="trig"></span>
+				<div class="panel panel-phone">
+					<div class="space"></div>
+					<div class="detail">
+						hello
+					</div>
+				</div>
+
+			</li>
+			<li class="split">|</li>
+			<li class="drop"><a href="">网站导航</a><span class="trig"></span></li>
+			
+		</ul>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
