@@ -25,3 +25,7 @@ img{
 i{
 	font-style: normal;
 }
+h2,h3{
+	font-family: "microsoft yahei";
+	font-weight: 400;
+}
