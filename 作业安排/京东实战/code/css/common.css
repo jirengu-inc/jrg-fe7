@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors hunger (hunger@jirengu.com)
+ * @date    2015-12-24 15:09:43
+ * @version $Id$
+ */
+
+/**
+ * 这里是页面公共的样式
+ */
+ol,ul{
+	list-style: none;
+}
+
+a{
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #c81623;
+}
+
+.layout{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+}
+
+body{
+	font: 12px/1.5 Arial,Verdana,"Microsoft Yahei", "\5b8b\4f53";
+	color: #666;
+}
+
+
+.text-stress{
+	color: #c81623;
+}
+
+
+.trigle{
+	display: inline-block;
+    width: 19px;
+    height: 10px;
+    background: url(../imgs/trigle.png) 0 -20px no-repeat;
+    transition: transform 0.3s;
+}
+.trigle:hover{
+	/*transform: rotate(180deg);*/
+	/*transform-origin: center center;*/
+	
+}
+.trigle.up{
+	background-position: 0px 0px;
+}
+.icon-phone {
+    display: inline-block;
+    background: url(../imgs/phone.png) 0 0 no-repeat;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.icon-phone:hover {
+    background-position: 0 -25px;
+}
+
+
+

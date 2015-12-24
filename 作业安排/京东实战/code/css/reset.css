@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors hunger (hunger@jirengu.com)
+ * @date    2015-12-24 15:09:43
+ * @version $Id$
+ */
+
+/**
+ * 这是reset样式
+ */
+
+html,body,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,img,div{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

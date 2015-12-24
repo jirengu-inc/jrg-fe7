@@ -34,8 +34,7 @@
         }
         .left-side{
         float: left;
-        width: 80px;/*设置点击时的宽度*/
-        text-align: center;
+        width: 100px;/*设置点击时的宽度*/
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
         position: relative;
@@ -50,10 +49,30 @@
         color: #666;
         font-size: 12px;
         font-family: arial;
+        cursor: default;
+        /*border: 1px solid black;*/
+        margin-left: 10px;
         }
-        .left-side span i{
-        font-style: normal;
-        font-size: 18px;
+        .left-side .ci-right{
+        font: 400 15px/15px consolas;
+        color: #6A6A6A;
+        display: block;
+        position: absolute;
+        height: 7px;/*设置固定高度使得一部分元素被隐藏*/
+        top: 14px;
+        right: 17px;
+        -webkit-transition: -webkit-transform .1s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0s;
+        cursor: default;
+        overflow: hidden;/*内容会被修剪，但是浏览器不会显示供查看内容的滚动条。http://blog.sina.com.cn/s/blog_60b35e830100uw3z.html*/
+        }
+        .left-side:hover .ci-right{
+            transform: rotate(180deg); /*对元素进行移动、缩放、转动、拉长或拉伸*/
+            -webkit-transform: rotate(180deg);
+        }
+        .left-side .ci-right s {
+        position: relative;
+        top: -7px;
+        text-decoration: none;
         }
         .left-side:hover .list{ /*对一个div加hover不会出现鼠标点上去元素跳动问题*/
         display: block;
@@ -89,7 +108,7 @@
         }
         /*去处除鼠标放置在下拉菜单时的边框，absolute脱离文档流，在这个元素随便写几个元素方便调试*/
         .left-side .list .dd-spacer{
-        width:80px;
+        width:100px;
         border-top:1px solid white;
         position:absolute;
         top: -1px;
@@ -172,7 +191,7 @@
         }
         .search input[type="text"]{
         border-color: #B61D1D;
-        border-width: 2px 0px 2px 2px;
+        border-style: solid;
         width: 446px;
         height:24px;
         line-height: 24px;
@@ -296,13 +315,14 @@
         }
         .products .dt{
         float:left;
+        /* border:1px solid blue;*/
         }
         .products .dt a{
         height: 51px;
         line-height: 56px;
         /* border: 1px solid black;*/
         font:400 15px/44px "microsoft yahei";
-        width: 182px;
+        width: 185px;
         display: block;
         padding-left: 10px;
         color: #fff;
@@ -323,22 +343,131 @@
         width: 1210px;
         margin: 20px auto;
         }
+        /*侧边栏具体商品分类*/
         .content .left-1{
-        border: 1px solid black;
+       /* border: 1px solid black;*/
         background-color: #b61d1d;
-        width: 190px;
+        width: 195px;
         position: relative;
         top: -26px;
+        float: left;
         }
         .content .left-1 ul li{
-            line-height: 31px;
-            padding-left: 10px;
+        line-height: 31px;
+        position: relative;
+        color: white;
         }
         .content .left-1 ul li a{
-            color: white;
+        color: white;
+        font-family: "microsoft yahei";
+        font-size: 14px;
+        font-weight: 400;
+        padding:0px 10px;
+        border-left: 1px solid transparent;
+        display: block;/*解决鼠标放置在其他位置链接颜色消失的问题*/
+        }
+        .content .left-1 ul li i{
+            font: 400 9px/14px consolas;
+            color: #fff;
+            position: absolute;
+            width: 4px;
+            height: 14px;
+            top: 9px;
+            right: 14px;
+        }
+       
+        .content .left-1 ul li a:hover{
+            color: #B61D1D;
+            border-left: 1px solid #B61D1D;
+            background-color: white;
+              
+        }
+        .content .left-1 ul li:last-of-type a:hover{
+            border-bottom: 1px solid #B61D1D;  
+        }
+        .content .main{
+            float:left;
+            margin-left: 10px;
+            position: relative;
+            top: -15px;
+            left: 0px;
+        }
+        .content .main img{
+            width: 730px;
+            height: 454px;
+        }
+        .content .right-1 {
+            border: 1px solid #CAC3C3;
+            border-bottom: none;
+            float: right;
+            width: 248px;
+            position: relative;
+            top: -16px;
+        }
+        .content .right-1 .news ul li{
+            line-height: 27px;
+            padding-left: 10px;
+        }
+        .content .right-1 .news ul li a{
+            color: #666;
+            font: 12px/150% Arial,Verdana,"\5b8b\4f53"; 
+        }
+         .content .right-1 .news ul li span{
+             font-weight: 700;
+             font-family: "黑体";
+        }
+        .content .right-1 .news ul li a:hover{
+            color: red;
+        }
+        .content .right-1 .news ul li:first-of-type{
+            border-bottom: 1px dotted #CAC3C3;
+            height: 43px;
+            line-height: 43px;
+        }
+        .content .right-1 .news ul li:first-of-type span{
+            font-size: 16px;
             font-family: "microsoft yahei";
-            font-size: 14px;
             font-weight: 400;
+            color: #666;
+        }
+
+        .content .right-1 .news ul li:first-of-type a{
+                 padding-left: 114px;
+                 font-family: consolas;
+        }
+        
+        .content .right-1 .news{
+            border-bottom: 1px dashed #CAC3C3;
+        }
+        .content .right-1 .life div{
+            font-size: 16px;
+            font-family: "microsoft yahei";
+            font-weight: 400;
+            color: #666;
+            height: 43px;
+            line-height: 43px;
+            padding-left: 10px;
+         }
+         .content .right-1 .life .life-list{
+            border-top: 1px dashed #CAC3C3;
+         }
+         .content .right-1 .life .life-list li{
+                float: left;
+                font: 12px/150% Arial,Verdana,"\5b8b\4f53"; 
+                height: 62px;
+                width:82px;
+                border-bottom: 1px solid #CAC3C3;
+                /*border-right: 1px solid #CAC3C3;*/ 
+                text-align: center;
+         } 
+         .content .right-1 .life .life-list li a{
+            color: #666;
+           /* height: 28px;
+            width: 62px;*/
+            display: block;
+         }
+        .content .right-1 .life .life-list .b-r{
+            border-right: 1px solid #CAC3C3;
         }
         </style>
     </head>
@@ -347,7 +476,8 @@
             <div class="layout clearfix">
                 <!-- 双飞翼布局用layout包裹 -->
                 <div class="left-side">
-                    <span>送至: 上海<i>◇</i></span>
+                    <span>送至: 上海</span>
+                    <i class="ci-right"><s>◇</s></i>
                     <ul class="list">
                         <li class="dd-spacer"></li>
                         <li><a class="item" href="javasript:void(0)">北京</a></li>
@@ -437,7 +567,7 @@
             </div>
         </div>
         <div class="products clearfix">
-            <div class="dt clearfix">
+            <div class="dt ">
                 <a href="#">全部商品分类</a>
             </div>
             <ul class="clearfix">
@@ -450,30 +580,67 @@
                 <li><a href="#">拍卖</a></li>
                 <li><a href="#">金融</a></li>
             </ul>
-            <div class="new-product clearfix">
+            <div class="new-product">
                 <a href="#"></a>
             </div>
         </div>
         <div class="c-b-line"></div>
-        <div class="content">
+        <div class="content clearfix">
             <div class="left-1">
                 <ul>
-                    <li><a href="#">家用电器</a></li>
-                    <li><a href="#">手机、数码、京东通信</a></li>
-                    <li><a href="#">电脑、办公</a></li>
-                    <li><a href="#">家居、家具、家装、厨具</a></li>
-                    <li><a href="#">男装、女装、内衣、珠宝</a></li>
-                    <li><a href="#">个护化妆、清洁用品</a></li>
-                    <li><a href="#">鞋靴、箱包、钟表、奢侈品</a></li>
-                    <li><a href="#">运动户外</a></li>
-                    <li><a href="#">汽车、汽车用品</a></li>
-                    <li><a href="#">母婴、玩具乐器</a></li>
-                    <li><a href="#">食品、酒类、生鲜、特产</a></li>
-                    <li><a href="#">营养保健</a></li>
-                    <li><a href="#">图书、音像、电子书</a></li>
-                    <li><a href="#">彩票、旅行、充值、票务</a></li>
-                    <li><a href="#">理财、众筹、白条、保险</a></li>
+                    <li><a href="#">家用电器</a><i>></i></li>
+                    <li><a href="#">手机、数码、京东通信</a><i>></i></li>
+                    <li><a href="#">电脑、办公</a><i>></i></li>
+                    <li><a href="#">家居、家具、家装、厨具</a><i>></i></li>
+                    <li><a href="#">男装、女装、内衣、珠宝</a><i>></i></li>
+                    <li><a href="#">个护化妆、清洁用品</a><i>></i></li>
+                    <li><a href="#">鞋靴、箱包、钟表、奢侈品</a><i>></i></li>
+                    <li><a href="#">运动户外</a><i>></i></li>
+                    <li><a href="#">汽车、汽车用品</a><i>></i></li>
+                    <li><a href="#">母婴、玩具乐器</a><i>></i></li>
+                    <li><a href="#">食品、酒类、生鲜、特产</a><i>></i></li>
+                    <li><a href="#">营养保健</a><i>></i></li>
+                    <li><a href="#">图书、音像、电子书</a><i>></i></li>
+                    <li><a href="#">彩票、旅行、充值、票务</a><i>></i></li>
+                    <li><a href="#">理财、众筹、白条、保险</a><i>></i></li>
                 </ul>
+            </div>
+            <div class="main">
+                <a href="#"><img src="http://img10.360buyimg.com/da/jfs/t2281/246/1848566257/103665/bfc8e80e/567a5d83N275728db.jpg" alt=""></a>
+            </div>
+            <div class="right-1">
+                <div class="news">
+                    <ul>
+                        <li><span>京东快报<a href="#">更多 ></a></span></li>
+                        <li><a href="#"><span>[特惠]</span>
+                            小家电2件99元 超值过圣诞</a></li>
+                        <li><a href="#"><span>[公告]</span>
+                            自贡大件运营中心正式投入运营</a></li>
+                        <li><a href="#"><span>[特惠]</span>
+                            买大酒享小酒自营郎酒专场</a></li>
+                        <li><a href="#"><span>[公告]</span>
+                            刘强东向习主席介绍智能物流</a></li>
+                        <li><a href="#"><span>[特惠]</span>
+                            直减200元 购机票</a></li>
+                    </ul>
+                </div>
+                <div class="life">
+                   <div>生活服务</div>
+                   <ul class="life-list clearfix">
+                          <li class="b-r"><a href="#">话费</a></li>
+                          <li class="b-r"><a href="#">机票</a></li>
+                          <li><a href="#">电影票</a></li>
+                          <li class="b-r"><a href="#">游戏</a></li>
+                          <li class="b-r"><a href="#">彩票</a></li>
+                          <li><a href="#">团购</a></li>
+                          <li class="b-r"><a href="#">酒店</a></li>
+                          <li class="b-r"><a href="#">水电煤</a></li>
+                          <li><a href="#">众筹</a></li>
+                          <li class="b-r"><a href="#">理财</a></li>
+                          <li class="b-r"><a href="#">礼品卡</a></li>
+                          <li><a href="#">白条</a></li>
+                    </ul>   
+                </div>
             </div>
         </div>
     </body>
