@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	min-width:1213px;
+}
+
+a{
+	color:#666;
+	text-decoration: none;
+
+}
+
+
+.layout{
+	width: 1210px;
+	margin:0 auto;
+	position: relative;
+}
+
+
+.layout li{
+	color:#666;
+	list-style:none;
+	text-align:center;
+	float:left;
+
+}
+
+
+.clear-fix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.nav{
+    float:right;
+}
+
+.nav-drop {
+	position: relative;
+	top:1px;
+	border-left:1px solid #F1F1F1;
+	border-right:1px solid #F1F1F1;
+	padding:0 5px;
+}
+.navbar{
+	padding:0 2px;
+	position: relative;
+}
+
+.dt {
+	padding:0 8px;
+}
+
+.arrows {
+	font: 20px/15px consolas;
+	overflow: hidden;
+	height: 7px;
+	position: absolute;
+    margin-top: 13px;
+    margin-left: 2px;
+    height:7px;
+}
+
+.arrows s {
+	position: relative;
+	top: -9px;
+	text-decoration: none;
+}
+
+.nav-arrows {
+	padding-right: 25px;
+}
+
+
+/*分隔线*/
+.cut-off-line{
+	background:#DDD;
+	width:1px;
+	height:12px;
+	margin-top:9px;
+	display: inline-block;
+
+}
+
+.drop-content{
+	display: none;
+	border: 1px solid #ddd;
+}
