@@ -1,0 +1,76 @@
+body {
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+	color: #666;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: #666;
+}
+a:hover{
+	color: #c81623;
+}
+.w{
+	width: 1210px;
+	margin: 0 auto;
+}
+.dd-spacer{
+	position: absolute;
+	top: -7px;
+	height: 10px;
+	left: 0;
+	width: 93px;
+	background-color: #fff;
+}
+.dorpdown-layer{
+	position: absolute;
+	background: #fff;
+	left: -1px;
+	border: 1px solid #ddd;
+	line-height: 24px;
+	z-index: 10;
+	display: none;
+}
+.dorpdown{
+	position: relative;
+	padding: 0 25px 0 8px;
+	border: solid #f1f1f1;
+	border-width: 0 1px;
+}
+.dorpdown:hover{
+	background-color: #fff;
+	border: solid #ddd;
+	border-width: 0 1px;
+}
+.dorpdown:hover .dorpdown-layer{
+	display: block;
+} 
+#slider-page{
+	position: absolute;
+	display: none;
+	/*display: block;*/
+	top: 50%;
+	margin-top: -31px;
+	width: 28px;
+	height: 62px;
+	line-height: 62px;
+	z-index: 3;
+	background: rgba(0,0,0,.2);
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+    font-weight: 400;
+    font-family: "simsun";
+    cursor: pointer;
+}
+#slider-page-f:hover #slider-page{
+	display: block;
+}
+.sd-2015-icon{
+	background: url(../img/icon-xmas.png) 0 0 no-repeat;
+	float: left;
+	margin-right: 4px;
+	display: inline-block;
+	width: 32px;
+	height: 30px;
+}
