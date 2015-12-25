@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <title>京东商城</title>
         <style>
-        html,body,ul,li,p{
+        html,body,ul,li,p,div{
         margin:0;
         padding:0;
+        box-sizing:border-box;
         }
         a{
         text-decoration: none;
@@ -158,6 +159,7 @@
         border:1px solid #CAC3C3;
         left:-1px;
         z-index: 2;
+        background-color: white;
         }
         .right-side .app:hover .code{
         display: block;
@@ -217,6 +219,9 @@
         }
         .form .hot a{
         color: #666;
+        }
+         .form .hot a:hover{
+        color: red;
         }
         .form .hot a:first-of-type{
         color: red;
@@ -322,7 +327,7 @@
         line-height: 56px;
         /* border: 1px solid black;*/
         font:400 15px/44px "microsoft yahei";
-        width: 185px;
+        width: 210px;
         display: block;
         padding-left: 10px;
         color: #fff;
@@ -347,7 +352,7 @@
         .content .left-1{
        /* border: 1px solid black;*/
         background-color: #b61d1d;
-        width: 195px;
+        width: 210px;
         position: relative;
         top: -26px;
         float: left;
@@ -452,22 +457,37 @@
             border-top: 1px dashed #CAC3C3;
          }
          .content .right-1 .life .life-list li{
-                float: left;
-                font: 12px/150% Arial,Verdana,"\5b8b\4f53"; 
+                float: left; 
                 height: 62px;
                 width:82px;
                 border-bottom: 1px solid #CAC3C3;
-                /*border-right: 1px solid #CAC3C3;*/ 
                 text-align: center;
-         } 
-         .content .right-1 .life .life-list li a{
-            color: #666;
-           /* height: 28px;
-            width: 62px;*/
+         }
+
+        .content  .life .life-list li span:hover{
+             color: red;      
+        }
+         .content .right-1 .life .life-list i{  
+            height: 28px;
+            width: 32px;
             display: block;
+            border: 1px solid red;
+            margin: 5px auto 0px auto;
          }
         .content .right-1 .life .life-list .b-r{
             border-right: 1px solid #CAC3C3;
+        }
+        .content .life .life-list span{
+           width: 36px;
+           height: 14px;
+           display: block;
+           border:1px solid black;
+           font:12px/150% Arial,Verdana,"\5b8b\4f53";
+           color: #666;
+           margin: 0 auto;
+        }
+        .content .life-list li:first-of-type i{
+            background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") 4px 2px no-repeat;
         }
         </style>
     </head>
@@ -627,18 +647,18 @@
                 <div class="life">
                    <div>生活服务</div>
                    <ul class="life-list clearfix">
-                          <li class="b-r"><a href="#">话费</a></li>
-                          <li class="b-r"><a href="#">机票</a></li>
-                          <li><a href="#">电影票</a></li>
-                          <li class="b-r"><a href="#">游戏</a></li>
-                          <li class="b-r"><a href="#">彩票</a></li>
-                          <li><a href="#">团购</a></li>
-                          <li class="b-r"><a href="#">酒店</a></li>
-                          <li class="b-r"><a href="#">水电煤</a></li>
-                          <li><a href="#">众筹</a></li>
-                          <li class="b-r"><a href="#">理财</a></li>
-                          <li class="b-r"><a href="#">礼品卡</a></li>
-                          <li><a href="#">白条</a></li>
+                          <li class="b-r"><a href="#"><i></i><span>话费</span></a></span></li>
+                          <li class="b-r"><a href="#"><i></i><span>机票</span></a></li>
+                          <li ><a href="#"><i></i><span>电影票</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>游戏</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>彩票</span></a></li>
+                          <li><a href="# "><i></i><span>团购</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>酒店</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>水电煤</span></a></li>
+                          <li><a href="#"><i></i><span>众筹</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>理财</span></a></li>
+                          <li class="b-r"><a href="#"><i></i><span>礼品卡</span></a></li>
+                          <li><a href="#"><i></i><span>白条</span></a></li>
                     </ul>   
                 </div>
             </div>

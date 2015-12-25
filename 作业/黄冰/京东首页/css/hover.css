@@ -1,4 +1,4 @@
-#header .hover:hover .nav-drop{
+#header .hover:hover .drop{
 	background: #fff;
 	border-left:1px solid #ddd;
 	border-right:1px solid #ddd;
@@ -26,3 +26,19 @@ a:hover {
 	color: #C81623;
 }
 
+/*购物车*/
+#shopping-trolley:hover .my-shopping-trolley {
+	background-color: #fff;
+	border-bottom:1px solid #fff;
+	z-index: 6;
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+#shopping-trolley:hover .shopping-trolley-drop {
+	display: block;
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+#shopping-trolley:hover .space {
+	display: block;
+}

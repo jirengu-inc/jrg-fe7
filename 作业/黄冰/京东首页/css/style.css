@@ -1,19 +1,18 @@
 
 /*头部导航条*/
 #header{
-	font-family:"verdana,simsun";
-	font-size:12px;
 	background: #F1F1F1;
 	line-height:30px;
 	height:30px;
+	position:relative;
+	z-index: 10;
 }
 
 #header .address{
-	color:#666;
 	float:left;
 }
 
-#header .address .nav-drop{
+#header .address .drop{
 	width: 90px;
 	padding-left: 10px;
 	position: relative;
@@ -22,10 +21,7 @@
 	border-right:1px solid #F1F1F1
 }
 
-/*注册*/
-a#register{
-	color:#C81623;
-}
+
 
 /*手机icon*/
 #header .phone-jd{
@@ -278,18 +274,168 @@ a#register{
 .ad {
 	width:100%;
 	height:80px;
-	position: relative;
-	z-index: -5;
-	background: #ff173e;
+	background-color: #ff173e;
 }
 
 #ad {
+	position: relative;
+	display: block;
 	width:1210px;
-	margin:0 auto;
-}
-#ad a {
-	display: inline-block;
 	height: 80px;
-	width:1210px;
+}
 
+a.quit {
+    display: block;
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: url(../image/quit.gif) 0 0 no-repeat;
+}
+
+a.quit:hover {
+	background-position: 0 -19px;
+}
+
+/*搜索栏*/
+.jd-logo {
+	display: block;
+	float: left;
+    margin: 20px 0;
+    width: 270px;
+    height: 60px;
+    background: url(../image/JDlogo.png) 0 0 no-repeat;
+}
+.search {
+	position: relative;
+	margin: 30px 70px 0 70px;
+	width: 538px;
+	float: left;
+}
+.search input {
+	width:456px;
+	height: 30px;
+	border:2px solid #b61d1d;
+	font:14px/1.5em "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	padding-left: 4px;
+	color: #333;
+}
+
+.search li {
+	margin:5px;
+	font:12px/1.5em Arial,Verdana,"\5b8b\4f53";
+}
+
+.search>a {
+	text-align: center;
+	font-size: 16px;
+	color: #fff!important;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	height: 34px;
+	line-height: 32px;
+	background: #b61d1d;
+	font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+
+/*购物车*/
+#shopping-trolley{
+	float: left;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    margin: 30px 70px 0 50px;
+}
+#shopping-trolley .my-shopping-trolley{
+    width: 140px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background: #F9F9F9;
+}
+
+#shopping-trolley .shopping-trolley-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 8px 5px 0 20px;
+	background: url(../image/icon.png) 0 -57px no-repeat;
+}
+
+#shopping-trolley a {
+	display: inline-block;
+    position: relative;
+    top: -6px;
+}
+
+#shopping-trolley .no-goods{
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	padding: 0 1px 2px 0;
+	background: #B61D1D;
+	color: #fff;
+	border-radius: 50% 50% 50% 0;
+	position: relative;
+	top: -20px;
+	left: 2px;
+	text-align: center;
+}
+
+
+.shopping-trolley-drop {
+	display: none;
+	width:310px;
+	height: 70px;
+	border:1px solid #ddd;
+	position: absolute;
+	right:-2px;
+	background:#fff;
+}
+
+.settleup-nogoods {
+	display: inline-block;
+	width: 57px;
+	height: 49px;
+	position: absolute;
+	top: 10px;
+	left: 45px;
+	background: url(../image/settleup-nogoods.png) 0 0 no-repeat;
+}
+
+.hint {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+	color: #999;
+}
+
+
+/*全部商品分类*/
+.goods-nav {
+	width:100%;
+	height:45px;
+	border-bottom: 2px solid #b61d1d;
+}
+
+.all-goods {
+	width:210px;
+	height: 45px;
+	font: 400 15px/44px "microsoft yahei";
+	line-height: 45px;
+	background:#b61d1d;
+}
+
+.all-goods>a {
+	color:#fff;
+	display: inline-block;
+	margin-left:10px; 
+}
+
+.all-goods>a:hover {
+	color:#fff;
 }

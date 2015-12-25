@@ -15,7 +15,7 @@
 
 	    <!-- 送至北京 -->
 	    	<div  class="hover address">
-	    	  <div class="nav-drop">
+	    	  <div class="drop">
 	    		<span>送至：<span>北京</span><i class="arrows"><s>◇</s></i></span>
 	    	  </div>
 	    	    <ul class="drop-content drop-address">
@@ -63,7 +63,7 @@
 	            	<li class="navbar">
 		            	<div class="dt">
 		            		<a href="javascript:void(0);" >你好，请登录</a>
-		            		<a href="javascript:void(0);" id="register">免费注册</a>
+		            		<a href="javascript:void(0);" class="default">免费注册</a>
 		            	</div>
 	            	</li>
 	            	<li class="cut-off-line"></li>
@@ -74,7 +74,7 @@
 	            	</li>
 	            	<li class="cut-off-line"></li>
 	            	<li class="hover navbar">
-            			<div class="nav-arrows nav-drop dt">
+            			<div class="nav-arrows drop dt">
 	            			<a href="javascript:void(0);">我的京东</a><i class="arrows"><s>◇</s></i>
             			</div>
 
@@ -115,7 +115,7 @@
             		</li>
             		<li class="cut-off-line"></li>
             		<li class=" hover navbar" id="phone-jd">
-	            		<div  class="dt nav-arrows phone-jd nav-drop" >
+	            		<div  class="dt nav-arrows phone-jd drop" >
 	            		    <span></span> 
 		            		<a href="javascript:void(0);" >手机京东</a><i class="arrows"><s>◇</s></i>
 		            	</div>
@@ -139,7 +139,7 @@
             		</li>
 	            	<li class="cut-off-line"></li>
 	                <li class=" hover navbar">
-	                    <div class="dt nav-arrows nav-drop">
+	                    <div class="dt nav-arrows drop">
 		            		<span>关注京东<i class="arrows"><s>◇</s></i></span>
 	            		</div>
 				<!-- 关注京东下拉导航 -->
@@ -147,7 +147,7 @@
 	            	</li>
 	            	<li class="cut-off-line"></li>
 	            	<li class=" hover navbar">
-	                    <div class="dt nav-arrows nav-drop">	
+	                    <div class="dt nav-arrows drop">	
 	            			<span>客户服务<i class="arrows"><s>◇</s></i></span>
             			</div>
             			<div class="customer-service clear-fix drop-content">
@@ -168,7 +168,7 @@
             		</li>
 					<li class="cut-off-line"></li>
 	            	<li class=" hover navbar">
-	                    <div class="dt nav-arrows nav-drop">
+	                    <div class="dt nav-arrows drop">
 	            			<span>网站导航<i class="arrows"><s>◇</s></i></span>
             			</div>
             			                <!-- 网站导航下拉导航菜单 -->
@@ -262,17 +262,63 @@
 <!-- 主干 -->
 
     <div id="container">
+        <!-- 广告 -->
 	    <div class="ad clear-fix">
-		 <div id="ad" class="clear-fix">	
-          <a href="javascript:void()"  class="clear-fix"><img src="image/ad.jpg"/></a>
-           <a href="javascript:void()"></a>
-         </div>
+			<div  class="layout">	
+		        <a href="javascript:void()" id="ad" class="clear-fix"><img src="image/ad.jpg"/></a>
+		        <a href="javascript:void()" class="quit"></a>
+	         </div>
 		</div>	
-		 <div class="layout">
-		    
-			 
-           
-	    </div>
+
+		<!-- 搜索框 -->
+
+		<div class="layout clear-fix">
+		    <a class="jd-logo" href=" "></a>
+		    <div class="search clear-fix">
+		    	<input type="text" placeholder="2016日历"/>
+		    	<a href="">搜索</a>
+		    	<ul class="clear-fix">
+		    		<li><a href="" class="default">1元礼物</a></li>
+		    		<li><a href="">9.9元秒杀</a></li>
+		    		<li><a href="">买1得2</a></li>
+		    		<li><a href="">送200元</a></li>
+		    		<li><a href="">圣诞礼物</a></li>
+		    		<li><a href="">围巾</a></li>
+		    		<li><a href="">拍立得</a></li>
+		    		<li><a href="">糕点</a></li>
+		    		<li><a href="">沉香手串</a></li>
+		    	</ul>
+		    </div>
+
+		    <div id="shopping-trolley" class="clear-fix">
+		         <div class="space"></div>
+		         <div class="my-shopping-trolley">
+			    	<span class="shopping-trolley-icon"></span><a href="">我的购物车</a><span class="no-goods">0</span><i class="cusp"><s>◇</s></i>
+			    </div>
+
+			    <div class="clear-fix shopping-trolley-drop">
+			    	<span class="settleup-nogoods"></span><span class="hint">购物车中还没有商品，赶紧选购吧！</span>
+			    </div>
+			</div>
+
+		</div>
+
+<!-- 	商品导航 -->
+		<div class="goods-nav">
+			<div class="layout clear-fix">
+				<div class="all-goods"><a href="">全部商品分类</a></div>
+				<ul>
+					<li><a href="">服装城</a></li>
+					<li><a href="">美妆馆</a></li>
+					<li><a href="">超市</a></li>
+					<li><a href="">全球购</a></li>
+					<li><a href="">闪购</a></li>
+					<li><a href="">团购</a></li>
+					<li><a href="">拍卖</a></li>
+					<li><a href="">金融</a></li>
+				</ul>
+				<a href="" class="w-goods"></a>
+			</div>
     </div>
 
 
