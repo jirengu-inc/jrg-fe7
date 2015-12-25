@@ -5,6 +5,8 @@
 
 body{
 	min-width:1213px;
+	font:12px/1.5em Arial,Verdana,"\5b8b\4f53";
+	color:#666;
 }
 
 a{
@@ -25,8 +27,16 @@ a{
 	color:#666;
 	list-style:none;
 	text-align:center;
-	float:left;
+	
 
+}
+
+#header li {
+	float:left;
+}
+
+.search li{
+	float:left;
 }
 
 
@@ -40,7 +50,7 @@ a{
     float:right;
 }
 
-.nav-drop {
+.drop {
 	position: relative;
 	top:1px;
 	border-left:1px solid #F1F1F1;
@@ -63,7 +73,6 @@ a{
 	position: absolute;
     margin-top: 13px;
     margin-left: 2px;
-    height:7px;
 }
 
 .arrows s {
@@ -90,4 +99,39 @@ a{
 .drop-content{
 	display: none;
 	border: 1px solid #ddd;
+}
+
+input {
+	outline: none;
+}
+
+a.default {
+	color:#C81623; 
+}
+
+.cusp {
+	font: 21px/15px consolas;
+    overflow: hidden;
+    width: 14px;
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 0px;
+}
+
+.cusp s {
+	position: relative;
+	left: -9px;
+	text-decoration: none;
+	color: #999;
+}
+
+.space {
+	display: none;
+	background: #fff;
+	width: 140px;
+	height: 5px;
+	position: absolute;
+	top: 33px;
+	left: 1px;
+	z-index: 12;;
 }
