@@ -63,8 +63,9 @@ line-height: 28px;
 	display: none;
 	position: relative;
 	right: 11px;
-	z-index: 1;
+	z-index: 15;
 	top:1px;
+	background-color: #fff;
 
 }
 .region:hover .region-list{
@@ -189,6 +190,8 @@ position: absolute;
 	position: absolute;
 	left: -1px;
 	display:none;
+	background-color: #fff;
+	z-index: 15;
 }
 .drop:hover .ci-right{
 	transform: rotate(180deg);
@@ -297,6 +300,7 @@ position: absolute;
 	background-image: url(../PIC/2.png);
 	left: -1px;
 	display: none;
+	z-index: 15;
 	}
 .fore6{
 	position: relative;
@@ -391,6 +395,7 @@ position: absolute;
 	position: absolute;
 	left: -1px;
 	display: none;
+	z-index: 15;
 }
 .fore7:hover{
 	background-color: #fff;
@@ -417,6 +422,8 @@ position: absolute;
 	line-height: 24px;
 	display: none;
 	left: -1px;
+	background-color: #fff;
+	z-index: 15;
 }
 .customer>h4{
 	padding-left: 10px;
@@ -459,6 +466,8 @@ position: absolute;
 	left: -1131px;
 	line-height: 24px;
 	display: none;
+	background-color: #fff;
+	z-index: 15;
 }
 .more-web1{
 	width: 347px;

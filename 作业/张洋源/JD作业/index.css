@@ -1,3 +1,6 @@
+
+/*通用设置*/
+
 html,body{
     padding: 0;
     margin:0;
@@ -14,11 +17,15 @@ input{
 ul li{
     list-style-type: none;
 }
+
 #nav{
     height: 30px;
     background-color: #f1f1f1;
     font-size: 14px;
+    width: 1500px;
 }
+
+/*送至广东-导航条*/
 #nav ul li ul{
     position: absolute; display: none;
 }
@@ -39,7 +46,6 @@ ul li{
     float: left;
     font-family: "microsoft yahei";
     margin: 8px;
-    padding: 0;
 }
 .address{
     position: absolute;
@@ -47,6 +53,9 @@ ul li{
     height: 100px;
     line-height: 20px;
 }
+
+/*右边导航条*/
+
 .nav-list{
     float: right;
     margin: 0;
@@ -92,10 +101,13 @@ ul li{
     top: -5px;
     z-index: -5;
 }
+
+/*搜索框*/
 .search{
     height: 100px;
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
+    text-align: center;
 }
 .logo{
     float: left;
@@ -137,4 +149,68 @@ ul li{
     width: 18px;
     height: 16px
     background: url(css/header-menu-bg.png) 0 -58px no-repeat;
+}
+
+/*功能导航条*/
+.function-nav{
+    height: 30px;
+    position: relative;
+    border-bottom: 2px solid #f00;
+    width: 1600px;
+}
+.function-nav li{
+    list-style-type: none;
+    float: left;
+    padding-right: 50px;
+    line-height: 24px;
+}
+.function-nav .nav-head{
+    background: red;
+    margin-left: 10px;
+}
+.classify{
+    width: 100%;
+    overflow: auto;
+    border: 1px dashed orange;
+}
+.classify .detail{
+    list-style-type: none;
+    line-height: 30px;
+    height: 500px;
+    float: left;
+    margin-left: -85%;
+    background-color: #b61f1f;
+    font-weight: bold;
+    font-family: "arial";
+}
+.detail li:hover{
+    background: #dfdfdf;
+}
+.classify .show{
+    height: 500px;
+    width: 100%;
+    float: left;
+}
+.show .show-content{
+    height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0 10px;
+}
+.classify .aside{
+    height: 500px;
+    width: 250px;
+    float: left;
+    margin-left: -20%;
+    border: 1px solid #dfdfdf;
+}
+.aside .aside-title{
+    height: 30px;
+    border-top: 1px solid #dfdfdf;
+    line-height: 30px;
+}
+.aside .aside-content{
+    list-style-type: none;
+    border: 1px dashed #dfdfdf;
+    line-height: 30px;
 }

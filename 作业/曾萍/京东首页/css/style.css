@@ -10,7 +10,6 @@ a{
 .fl a{
 	padding: 0 8px;
 }
-
 a:hover{
 	color: #c81623;
 }
@@ -102,8 +101,6 @@ li{
 	top: 1px;
 	transition: all 100ms ease-in;
 }
-
-
 /*fr*/
 .fr{
 	float: right;
@@ -137,7 +134,6 @@ li{
 .header .menu-myjd-p .user-pic{
 	position: absolute;
 }
-
 .header .menu-myjd-p .user-login{
 	margin-left: 69px;
 	font-weight: bold;
@@ -168,7 +164,6 @@ li{
 	line-height: 24px;
 	position: relative;
 }
-
 /*apps*/
 .ttbar-apps{
 	padding: 0 25px;
@@ -187,7 +182,6 @@ li{
 .ttbar-apps .dd-spacer{
 	width: 98px;
 }
-
 .ttbar-apps-main{
 	background: url(../img/apps.png);
 	position: relative;
@@ -220,7 +214,6 @@ li{
     width: 60px;
     line-height: 22px;
 }
-
 .ttbar-apps-main .link5{
     top: 46px;
     left: 210px;
@@ -250,7 +243,6 @@ li{
     padding-bottom: 5px;
 }
 /*client*/
-
 .ttbar-sev .dorpdown-layer{
 	width: 170px;
 	padding-bottom: 5px;
@@ -267,7 +259,6 @@ li{
 	font-weight: 700;
     padding-left: 10px;
 }
-
 .ttbar-sev .item{
 	display: inline-block;
 	width: 70px;
@@ -275,12 +266,12 @@ li{
 }
 /*nav*/
 .ttbar-nav .dorpdown-layer{
-	width: 1210px;
+	width: 1208px;
 	padding: 20px 0 16px;
 }
 .ttbar-nav .dd-spacer{
 	position: absolute;
-	left: 1210px;
+	left: 1208px;
 	width: 81px;
 	transform: translateX(-81px);
 }
@@ -301,7 +292,7 @@ li{
 }
 .ttbar-nav .dorpdown-layer{
 	position: absolute;
-	left:-1210px;
+	left:-1208px;
 	transform: translateX(80px);
 }
 .ttbar-nav .item{
@@ -527,7 +518,6 @@ li{
 	color: #fff;
 }
 .nav .nav-items{
-	/*float: left;*/
 	display: inline-block;
 }
 .nav .nav-items li{
@@ -675,15 +665,12 @@ li{
 }
 .nav .subitems .fore dd{
 	border-top: none;
-
 }
-
 .nav .subitems dd{
 	float: left;
 	padding: 6px 0;
 	width: 620px;
 	border-top: 1px solid #eee;
-
 }
 .nav .subitems dd a{
 	float: left;
@@ -715,8 +702,6 @@ li{
 	display: block;
 	margin-bottom: 1px;
 }
-
-
 /*banner-xmas c-b-line*/
 .c-b-line{
 	height: 5px;
@@ -726,37 +711,211 @@ li{
 	background: url(../img/bg-line.jpg) repeat-x;
 }
 .banner-xmas{
+	position: relative;
+}
+.banner-xmas-bg{
 	background: url(../img/xmax-bg.jpg) no-repeat center top;
 	height: 469px;
 	width: 100%;
 	cursor: pointer;
-	position: relative;
+	position: absolute;
 	z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*focus*/
+.focus{
+	width: 1210px;
+	margin: 0 auto;
+}
+.focus>.focus-ad{
+	float: left;
+	height: 466px;
+	width: 1210px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.focus>.focus-ad>.ad-c{
+	width: 730px;
+	height: 466px;
+	cursor: pointer;
+	margin: 12px 0 0 220px;
+	background: url(../img/ad0.jpg) no-repeat;
+}
+.focus>.focus-ad i{
+	position: absolute;
+	display: block;
+	display: none;
+	top: 50%;
+	margin-top: -31px;
+	width: 28px;
+	height: 62px;
+	line-height: 62px;
+	z-index: 3;
+	background: rgba(0,0,0,.2);
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "simsun";
+	cursor: pointer;
+}
+.focus>.focus-ad .but-l{
+	left: 220px;
+}
+.focus>.focus-ad .but-r{
+	right: 260px;
+}
+.focus>.focus-ad>.ad-c:hover i{
+	display: block;
+}
+.focus>.focus-ad .but-page ul{
+	position: absolute;
+	top: 440px;
+	left: 210px;
+	width: 750px;
+	text-align: center;
+	z-index: 3;
+}
+.focus>.focus-ad .but-page li:nth-child(1){
+	background: #b61b1f;
+}
+.focus>.focus-ad .but-page li{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	margin: 0 2px;
+	background: #3e3e3e;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #fff;
+}
+.focus>.focus-ad .but-page li:hover{
+	background: #b61b1f;
+}
+.focus>.focus-extra{
+	position: relative;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1;
+}
+.focus>.focus-extra>.news{
+	width: 248px;
+	height: 200px;
+	position: absolute;
+	top: 12px;
+	right: 0;
+	border: 1px solid #e4e4e4;
+	border-bottom: 0;
+	background: rgb(255,255,255);
+}
+.focus>.focus-extra .mt{
+	padding: 0 15px;
+	border-bottom: 1px dotted #e8e8e7;
+	height: 43px;
+	line-height: 43px;
+}
+.focus>.focus-extra .mt h2{
+	float: left;
+	font-size: 16px;
+}
+.focus>.focus-extra .mt>.extra{
+	float: right;
+	font-family: "consolas";
+	color: #666;
+}
+.focus>.focus-extra .mc{
+	height: 140px;
+	padding: 8px 0 0 15px;
+}
+.focus>.focus-extra .mc li{
+	width: 210px;
+	height: 27px;
+	line-height: 27px;
+	overflow: hidden;
+}
+.focus>.focus-extra .mc li span{
+	font-weight: 700;
+	margin-right: 5px;
+}
+.focus>.focus-extra .life-serv{
+	/*float: right;*/
+	position: absolute;
+	right: 0;
+	width: 248px;
+	height: 250px;
+	top: 213px;
+	border: 1px solid #e4e4e4;
+	background: rgb(255,255,255);
+	overflow: hidden;
+}
+.focus .life-serv>.mc{
+	position: relative;
+	padding: 0;
+}
+.focus .life-serv>.mc ul{
+	position: relative;
+	width: 252px;
+	height: 209px;
+}
+.focus .life-serv>.mc li{
+	float: left;
+	width: 62px;
+	height: 68px;
+	border-right: 1px solid #e8e8e7;
+	border-bottom: 1px solid #e8e8e7;
+	overflow: hidden;
+	position: relative;
+}
+.focus .life-serv>.mc li a{
+	display: block;
+	width: 62px;
+	padding-top: 41px;
+	line-height: 28px;
+	text-align: center;
+}
+.focus .life-serv>.mc i{
+	position: absolute;
+	top: 13px;
+	left: 18px;
+	width: 25px;
+	height: 27px;
+	display: inline-block;
+	background: url(../img/icon.png) 0 0 no-repeat;
+}
+.life-serv #fore2{
+	background: url(../img/icon.png) 0 -25px no-repeat;
+}
+.life-serv #fore3{
+	background: url(../img/icon.png) 0 -50px no-repeat;
+}
+.life-serv #fore4{
+	background: url(../img/icon.png) 0 -75px no-repeat;
+}
+.life-serv #fore5{
+	background: url(../img/icon.png) 0 -100px no-repeat;
+}
+.life-serv #fore6{
+	background: url(../img/icon.png) 0 -125px no-repeat;
+}
+.life-serv #fore7{
+	background: url(../img/icon.png) 0 -150px no-repeat;
+}
+.life-serv #fore8{
+	background: url(../img/icon.png) 0 -175px no-repeat;
+}
+.life-serv #fore9{
+	background: url(../img/icon.png) 0 -200px no-repeat;
+}
+.life-serv #fore10{
+	background: url(../img/icon.png) 0 -225px no-repeat;
+}
+.life-serv #fore11{
+	background: url(../img/icon.png) 0 -250px no-repeat;
+}
+.life-serv #fore12{
+	background: url(../img/icon.png) 0 -275px no-repeat;
+}
 
 
 

@@ -1,0 +1,295 @@
+
+/*头部导航条*/
+#header{
+	font-family:"verdana,simsun";
+	font-size:12px;
+	background: #F1F1F1;
+	line-height:30px;
+	height:30px;
+}
+
+#header .address{
+	color:#666;
+	float:left;
+}
+
+#header .address .nav-drop{
+	width: 90px;
+	padding-left: 10px;
+	position: relative;
+	top:1px;
+	border-left:1px solid #F1F1F1;
+	border-right:1px solid #F1F1F1
+}
+
+/*注册*/
+a#register{
+	color:#C81623;
+}
+
+/*手机icon*/
+#header .phone-jd{
+	padding-left:25px;
+}
+
+#header .phone-jd span{
+	display: block;
+	height: 20px;
+	width: 15px;
+	position: absolute;
+	top:5px;
+	left:5px;
+	overflow: hidden;
+	background: url(../image/icon.png) 0 0 no-repeat;
+}
+
+/*送至：地址*/
+
+#header  .drop-address{
+	position: absolute;
+    border:1px solid #ddd;
+    top:30px;
+	width:310px;
+    padding:8px 0;
+    background:#fff;	
+}
+#header .drop-address li {
+	padding:0 9px;
+}
+
+#header .drop-address a{
+	display: inline-block;   
+    line-height: 2em;
+    padding:0 8px;
+}
+
+#header .selected {	
+	background: #C81623;
+	color:#fff;
+}
+
+#header .drop-address-sp {
+	display: inline-block;
+	margin-left: -1em;
+}
+
+
+
+/*我的京东*/
+.myJD-drop {
+	width: 270px;
+	position: absolute;
+}
+
+.myJD-drop img{
+    width: 60px;
+	border-radius: 50% 50%;	
+	position: absolute;
+	left: 15px;
+	top:10px;
+}
+
+.login{
+	display: inline-block;
+	margin:10px 0 0 -20px;
+	font-weight: bold;
+}
+
+.message {
+	margin: -5px 0 0 -5px;
+
+}
+
+.message>a {
+	display: inline-block;
+	margin:0 10px;
+}
+
+.myJD-drop ul {
+	margin: 15px 0 15px 15px;
+}
+
+.myJD-drop ul li{
+	width: 120px;
+	text-align: left;
+	line-height: 2.3em;
+}
+
+/*手机京东*/
+
+#phone-jd:hover span{
+	background: url(../image/icon.png) 0 -25px no-repeat;
+}
+.phone-jd-drop {
+	position: absolute;
+	width: 250px;
+	height: 195px;
+    background: url(../image/JDClientServerQRCode.png) 0 0 no-repeat;
+
+}
+
+.link {
+	position: relative;
+}
+
+
+.app-link1 {
+	display: block;
+	width:100px;
+	height: 20px;
+	
+}
+
+.app-link2 {
+	display: inline-block;
+	width:50px;
+	height: 44px;
+
+}
+
+.jd-client {
+	position: absolute;
+	left: 90px;
+	top:10px; 
+}
+
+
+.jd-client-ios {
+	position: absolute;
+	left: 90px;
+	top:45px; 
+}
+
+.jd-client-android {
+	position: absolute;
+	left: 145px;
+	top:45px; 
+}
+.jd-client-ipad {
+	position: absolute;
+	left: 195px;
+	top:45px; 
+}
+
+.jd-wallet {
+	position: absolute;
+	left: 90px;
+	top: 105px;
+}
+
+.jd-wallet-ios {
+	position: absolute;
+	left: 90px;
+	top: 140px;
+}
+
+.jd-wallet-android {
+	position: absolute;
+	left: 145px;
+	top: 140px;
+}
+
+/*关注京东*/
+
+.jd-microshop {
+	position: absolute;
+	width:81px;
+	height: 110px;
+	background: url(../image/JDMicroShopQRCode.jpg) 0 5px no-repeat;
+}
+
+/*客户服务*/
+
+.customer-service {
+	text-align: left;
+	position: absolute;
+	width:170px;
+	height: 160px;
+}
+
+
+.customer-service dt,dd{
+	float: left;	
+	height: 2em;	
+	margin-left: 10px;
+}
+
+.customer-service dd {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.customer-service dt {
+    font-weight: bold;	
+    width:170px;
+}
+
+.customer {
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #ddd;
+}
+
+/*网站导航*/
+
+.web-nav {
+	font:12px/2.5em Arial,Verdana,"\5b8b\4f53";
+	text-align: left;
+	position: absolute;
+	left:-1127px;
+	width: 1210px;
+	height:185px;
+}
+
+.web-nav dt,dd{
+	float: left;	
+}
+
+.web-nav dd{
+	width:75px;
+}
+.web-nav dl {
+	width:268px;
+	float: left;
+	margin:1.5em 5px 0 5px;
+	border-right: 1px solid #ddd;
+}
+
+.web-nav dt {
+	width:270px;
+	margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+ 	
+}
+
+.web-nav .sp-theme {
+	width:360px;
+}
+
+.web-nav .sp-theme dt{
+	width:360px;
+}
+
+#more {
+	border-right: none;
+}
+
+/*主干*/
+.ad {
+	width:100%;
+	height:80px;
+	position: relative;
+	z-index: -5;
+	background: #ff173e;
+}
+
+#ad {
+	width:1210px;
+	margin:0 auto;
+}
+#ad a {
+	display: inline-block;
+	height: 80px;
+	width:1210px;
+
+}

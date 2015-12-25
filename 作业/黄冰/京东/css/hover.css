@@ -1,0 +1,28 @@
+#header .hover:hover .nav-drop{
+	background: #fff;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	z-index: 3;
+
+}
+
+.hover:hover .arrows{
+    transform:rotate(180deg);
+    transition: all 100ms ease-in;
+}
+
+.hover:hover .drop-content{
+  display: block;
+  background-color: #fff;
+}
+
+a:hover {
+	color: #C81623;
+}
+
+/*选中地区改变背景*/
+.drop-address a:hover{
+	background:#eee;
+	color: #C81623;
+}
+
