@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-12-15 19:47:24
+ * @version $Id$
+ */
+/*html,body{
+	height: 100%;
+	width:100%;
+	background-color: #fff;
+	font:12px/1.5 Arial, Verdana, "\5b8b\4f53";
+}*/
+html,body,ul,li{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	color: #6a6a6a;
+	text-decoration: none;
+}
+a :hover{
+	color: #cb1623;
+}
+.clearfix :after{
+	content: '';
+	display: inline-block;
+	clear: both;
+}
+.long-1210{
+	width: 1210px;
+	margin: 0 auto;
+}

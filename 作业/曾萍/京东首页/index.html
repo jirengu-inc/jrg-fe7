@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>jd</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 	<div class="header">
@@ -111,7 +113,7 @@
 					<a href="http://">企业采购</a>
 				</li>
 				<li class="icon-line"></li>
-				<li class="dorpdown ttbar-apps">
+				<li class="dorpdown" id="ttbar-apps">
 					<i class="icon-phone"></i>
 					<a href="http://">手机京东</a>
 					<i class="ci-right">
@@ -259,7 +261,7 @@
 		</div>
 	</div>
 	<div class="banner clr">
-		<div class="w">
+		<div class="w banner-w">
 			<a href="#" class="banner-close"></a>
 			<a href="#"><img border="0" src="img/banner.jpg" width="1210" height="80" ></a>
 		</div>
@@ -498,9 +500,9 @@
 	</div>
 	<div class="focus clr">
 		<div class="focus-ad">
-			<div class="ad-c clr">
-				<i class="but-l">&lt;</i>
-				<i class="but-r">&gt;</i>
+			<div class="ad-c clr" id="slider-page-f">
+				<i class="but-l" id="slider-page">&lt;</i>
+				<i class="but-r" id="slider-page">&gt;</i>
 				<div class="but-page">
 					<ul>
 						<li>1</li>
@@ -515,9 +517,140 @@
 		</div>
 		<div class="focus-extra">
 			<div class="news">
-				
+				<div class="mt">
+					<h2>京东快报</h2>
+					<div class="extra">
+						<a href="">更多 &gt;</a>
+					</div>
+				</div>
+				<div class="mc">
+					<ul>
+						<li><a href="http://"><span>[特惠]</span>小家电2件99元</a></li>
+						<li><a href="http://"><span>[公告]</span>自贡大件运营中心正式投入运营</a></li>
+						<li><a href="http://"><span>[特惠]</span>买大酒享小酒自营郎酒专场</a></li>
+						<li><a href="http://"><span>[公告]</span>刘强东向习主席介绍智能物流</a></li>
+						<li><a href="http://"><span>[特惠]</span>直减200元 购机票</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="lifeserv">
+			<div class="life-serv">
+				<div class="mt">
+					<h2>生活服务</h2>
+				</div>
+				<div class="mc" id="mc-bottom">
+					<ul>
+						<li><a href=""><i></i><span>话费</span></a></li>
+						<li><a href=""><i id="fore2"></i><span>机票</span><i class="ci-top1"></i></a></li>
+						<li><a href=""><i id="fore3"></i><span>电影票</span></a></li>
+						<li><a href=""><i id="fore4"></i><span>游戏</span></a></li>
+						<li><a href=""><i id="fore5"></i><span>彩票</span></a></li>
+						<li><a href=""><i id="fore6"></i><span>团购</span></a></li>
+						<li><a href=""><i id="fore7"></i><span>酒店</span></a></li>
+						<li><a href=""><i id="fore8"></i><span>水电煤</span></a></li>
+						<li><a href=""><i id="fore9"></i><span>众筹</span></a></li>
+						<li><a href=""><i id="fore10"></i><span>理财</span></a></li>
+						<li><a href=""><i id="fore11"></i><span>礼品卡</span></a></li>
+						<li><a href=""><i id="fore12"></i><span>白条</span><i class="ci-top2"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lazy-fn-wrap">
+		<div class="w">
+			<div id="lazy-todays">
+				<div class="today-clock"></div>
+				<div class="slider-main" id="slider-page-f">
+					<i class="but-l" id="slider-page">&lt;</i>
+					<i class="but-r" id="slider-page">&gt;</i>
+					<ul>
+						<li><img src="img/today-ad1.jpg" width="249" height="164"></li>
+						<li><img src="img/today-ad2.jpg" width="249" height="164"></li>
+						<li><img src="img/today-ad3.jpg" width="249" height="164"></li>
+						<li class="no-border"><img src="img/today-ad4.jpg" width="250" height="164"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="w" id="guess-like">
+			<div class="guess-you">
+				<div class="mt">
+					<i class="sd-2015-icon"></i>
+					<h2>猜你喜欢</h2>
+					<a href="" class="extra">换一批</a>
+				</div>
+				<div class="mc">
+					<div class="spacer"><i></i></div>
+					<ul>
+						<li class="no-border">
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad1.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">格力(GREE)NSO-10d小太阳取暖器/电暖</a>
+								</div>
+								<div class="p-price"><i>¥</i>198.00</div>
+							</div>
+						</li>
+						<li>
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad2.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">小米(MI)盒子3代 4K高清网络电视机顶盒</a>
+								</div>
+								<div class="p-price"><i>¥</i>299.00</div>
+							</div>
+						</li><li>
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad3.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">英雄(HERO)359正姿色彩系铱金钢笔F</a>
+								</div>
+								<div class="p-price"><i>¥</i>35.00</div>
+							</div>
+						</li><li>
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad4.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">九阳(Joyoung)JYY-50C3韩式酷炫多功能电</a>
+								</div>
+								<div class="p-price"><i>¥</i>288.00</div>
+							</div>
+						</li><li>
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad5.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">华为(HUAWEI)荣耀路由1200M别墅穿墙王</a>
+								</div>
+								<div class="p-price"><i>¥</i>188.00</div>
+							</div>
+						</li>
+						<li>
+							<div class="p-img">
+								<a href=""><img src="img/guess-ad6.jpg" width="130" height="130"></a>
+							</div>
+							<div class="p-info">
+								<div class="p-name">
+									<a href="">爱普生(EPSON)LQ-730K针式打印机</a>
+								</div>
+								<div class="p-price"><i>¥</i>1649.00</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="w lazy-fn-done" id="lazy-special-buy">
+			<div class="home-special-buy">
 				
 			</div>
 		</div>

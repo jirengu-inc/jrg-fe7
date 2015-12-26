@@ -1,0 +1,137 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	min-width:1213px;
+	font:12px/1.5em Arial,Verdana,"\5b8b\4f53";
+	color:#666;
+}
+
+a{
+	color:#666;
+	text-decoration: none;
+
+}
+
+
+.layout{
+	width: 1210px;
+	margin:0 auto;
+	position: relative;
+}
+
+
+.layout li{
+	color:#666;
+	list-style:none;
+	text-align:center;
+	
+
+}
+
+#header li {
+	float:left;
+}
+
+.search li{
+	float:left;
+}
+
+
+.clear-fix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.nav{
+    float:right;
+}
+
+.drop {
+	position: relative;
+	top:1px;
+	border-left:1px solid #F1F1F1;
+	border-right:1px solid #F1F1F1;
+	padding:0 5px;
+}
+.navbar{
+	padding:0 2px;
+	position: relative;
+}
+
+.dt {
+	padding:0 8px;
+}
+
+.arrows {
+	font: 20px/15px consolas;
+	overflow: hidden;
+	height: 7px;
+	position: absolute;
+    margin-top: 13px;
+    margin-left: 2px;
+}
+
+.arrows s {
+	position: relative;
+	top: -9px;
+	text-decoration: none;
+}
+
+.nav-arrows {
+	padding-right: 25px;
+}
+
+
+/*分隔线*/
+.cut-off-line{
+	background:#DDD;
+	width:1px;
+	height:12px;
+	margin-top:9px;
+	display: inline-block;
+
+}
+
+.drop-content{
+	display: none;
+	border: 1px solid #ddd;
+}
+
+input {
+	outline: none;
+}
+
+a.default {
+	color:#C81623; 
+}
+
+.cusp {
+	font: 21px/15px consolas;
+    overflow: hidden;
+    width: 14px;
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 0px;
+}
+
+.cusp s {
+	position: relative;
+	left: -9px;
+	text-decoration: none;
+	color: #999;
+}
+
+.space {
+	display: none;
+	background: #fff;
+	width: 140px;
+	height: 5px;
+	position: absolute;
+	top: 33px;
+	left: 1px;
+	z-index: 12;;
+}
