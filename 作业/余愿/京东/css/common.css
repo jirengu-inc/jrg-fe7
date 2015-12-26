@@ -11,7 +11,7 @@
 	background-color: #fff;
 	font:12px/1.5 Arial, Verdana, "\5b8b\4f53";
 }*/
-body,ul,li{
+html,body,ul,li{
 	margin: 0;
 	padding: 0;
 }
@@ -29,4 +29,8 @@ a :hover{
 	content: '';
 	display: inline-block;
 	clear: both;
+}
+.long-1210{
+	width: 1210px;
+	margin: 0 auto;
 }
