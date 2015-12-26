@@ -5,25 +5,6 @@
  * @date    2015-12-15 19:47:24
  * @version $Id$
  */
-html,body{
-	height: 100%;
-	width:100%;
-	background-color: #fff;
-	font:12px/1.5 Arial, Verdana, "\5b8b\4f53";
-}
-body{
-	margin: 0;
-}
-li{
-	list-style-type: none;
-}
-ul{
-	margin: 0;
-	padding: 0;
-}
-a{
-	text-decoration: none;
-}
 /*头部*/
 #header{
 	width: 100%;
@@ -49,7 +30,7 @@ a{
 }
 /*倒三角*/
 .arrow{
-	font: 15px/15px consolas;
+	font: 18px/15px consolas;
 	position:absolute;
 	overflow: hidden;
 	margin-top: 10px;
@@ -72,8 +53,6 @@ a{
 }
 /*顶部的右边*/
 .nav-right{
-	margin: 0;
-	padding: 0;
 	float: right;
 	height: 30px;
 }

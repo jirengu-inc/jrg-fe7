@@ -5,11 +5,6 @@
  * @date    2015-12-21 23:01:05
  * @version $Id$
  */
-#content .clear:after{
-    content: '';
-    display: block;
-    clear: both;
-}
 .content{
     height: 465px;
     background-color: #fff;

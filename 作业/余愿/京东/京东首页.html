@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <title>京东(JD.COM)</title>
+<link href="css/common.css" rel="stylesheet">
 <link href="css/header.css" rel="stylesheet">
 <link href="css/search.css" rel="stylesheet">
 <link href="css/nav.css" rel="stylesheet">
 <link href="css/content.css" rel="stylesheet">
 </head>
 <body>
-   	<div id="header">
-    
+   	<div id="header">    
       <!-- 顶部 -->
-   	  <div class="long-1210 menu">
+   	  <div class="long-1210 menu clearfix">
    			<div id="nav-left" class="icon">
    					<span class="address">送至：<span>北京</span><i class="arrow"><s>◇</s></i></span>
               <div id="menu-city">
@@ -57,24 +57,24 @@
               </div>
    	    </div>
    		  <ul class="nav-right">
-   		    		<li class="changecl">
+   		    		<li class="">
                 <a href="#">你好，请登录</a>
                 <a href="#" style="color:#cb1623;">免费注册</a></li><li class="line">|</li>
-   		    		<li class="changecl">
+   		    		<li class="">
                 <a href="#">我的订单</a></li><li class="line">|</li>
-   		    		<li class="changecl">
+   		    		<li class="icon">
                 <a href="#" target="_blank">我的京东</a><i class="arrow"><s>◇</s></i></li><li class="line">|</li>
-   		    		<li class="changecl">
+   		    		<li class="">
                 <a href="#">京东会员</a></li><li class="line">|</li>
-   		    		<li class="changecl">
+   		    		<li class="">
                 <a href="#">企业采购</a></li><li class="line">|</li>
-   		    		<li class="icon changecl">
+   		    		<li class="icon">
                 <a href="#" target="_blank">手机京东</a><i class="arrow"><s>◇</s></i></li><li class="line">|</li>
-   		    		<li class="icon changecl">
+   		    		<li class="icon">
                 <a href="#" target="_blank">关注京东</a><i class="arrow"><s>◇</s></i></li><li class="line">|</li>
-   		    		<li class="changecl icon">
+   		    		<li class="icon">
                 <a href="#" target="_blank">客户服务</a><i class="arrow"><s>◇</s></i></li><li class="line">|</li>
-   		    		<li class="changecl icon">
+   		    		<li class="icon">
                 <a href="#" target="_blank">网站导航</a><i class="arrow"><s>◇</s></i></li>
    		  </ul> 
       </div>
@@ -96,8 +96,10 @@
           <a href="#"><img src="img/logo-201305.png" width="270" height="60" alt="京东LOGO"></a>
         </div>
         <div class="search-blk">
-          <input type="text" name="search" class="search-input">
-          <div class="search-btn">搜索</div>
+          <div class="clearfix">
+            <input type="text" name="search" class="search-input">
+            <a class="search-btn" href="#">搜索</a>
+          </div>
           <ul class="search-rmd">
             <li class="changecl"><a href="#" style="color:#cb1623;">买一送一</a></li>
             <li class="changecl"><a href="#">送流量</a></li>
@@ -112,7 +114,7 @@
         <div class="shop-car">
           <i class="car"></i>
           <a href="#" class="mycar"><span>我的购物车</span></a>
-          <span class="shop-ident">0</span>
+          <span class="shop-ident">2</span>
           <i class="arrow-r">></i>    
         </div> 
     </div>
@@ -141,7 +143,7 @@
     </div>     
    	
    	<div id="content">
-      <div class="long-1210 clear">
+      <div class="long-1210 clearfix">
         <div class="long-1210 content">
           <div class="content-pic">
             <img src="img/map-slider.png" width="729" height="455" alt="中间轮播图片">
@@ -227,11 +229,8 @@
             </ul>
         </div>  
         <div class="content-news">
-
         </div>
       </div>
-
-
    	</div>
    	<div id="footer">
    		
