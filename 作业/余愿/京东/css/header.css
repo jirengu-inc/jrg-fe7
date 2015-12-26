@@ -12,24 +12,21 @@
 	line-height: 30px;
 	background-color: #f1f1f1;
 }
-#header .menu{
-	overflow: hidden;
-	height: 30px;
-}
 #header .address{
-	cursor: default;
+	width: 106px;
+	text-align: center;
 }
 #nav-left,.nav-right a,.menu-city a{
 	font-size: 13px;
 }
 /*包裹三角的框*/
 .icon{
-	position: relative;
 	padding-left:9px;
 	padding-right: 25px;
 }
 /*倒三角*/
 .arrow{
+	display: inline-block;
 	position: absolute;
     width: 19px;
     height: 20px;
@@ -39,6 +36,7 @@
 
 /*顶部的左边*/
 #nav-left{
+	position: relative;
 	height: 30px;
 	float: left;
 }
@@ -46,7 +44,6 @@
 .nav-right{
 	float: right;
 	height: 30px;
-	border: 1px solid #f1f1f1;
 }
 /*头部右边的列表*/
 .nav-right >li{

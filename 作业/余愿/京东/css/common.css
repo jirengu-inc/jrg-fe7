@@ -25,7 +25,7 @@ a{
 a :hover{
 	color: #cb1623;
 }
-.clearfix :hover{
+.clearfix :after{
 	content: '';
 	display: inline-block;
 	clear: both;
