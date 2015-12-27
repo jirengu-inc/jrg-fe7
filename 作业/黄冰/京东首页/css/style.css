@@ -204,7 +204,7 @@
 }
 
 
-#header .customer-service dt,dd{
+#header .customer-service dt,#header .customer-service dd{
 	float: left;	
 	height: 2em;	
 	margin-left: 10px;
@@ -236,12 +236,15 @@
 	height:185px;
 }
 
-#header .web-nav dt,dd{
+#header .web-nav dt, #header .web-nav dd{
 	float: left;	
 }
 
 #header .web-nav dd{
-	width:75px;
+	float: left;
+	width:75px;	
+	height: 2em;	
+	margin-left: 10px;
 }
 #header .web-nav dl {
 	width:268px;
@@ -483,7 +486,7 @@ a.quit:hover {
 	background-color: #C81623;
 }
 #container .primary-menu>li {
-	height: 30px;
+	height: 31px;
 	color: #fff;
 	text-align: left;
 	position: relative;
@@ -504,9 +507,8 @@ a.quit:hover {
 
 .primary-menu>li>i {
 	position: absolute;
-	z-index: 1;
 	top: 9px;
-	right: 14px;
+	right: 15px;
 	width: 4px;
 	height: 14px;
 	font: 400 9px/14px consolas;
@@ -516,17 +518,24 @@ a.quit:hover {
 }
 
 .primary-menu-drop {
-	position: absolute;
-	top: 0;
+	position:absolute;
 	left: 209px;
 	width: 1000px;
 	border-right: 1px solid #C81623;
 	border-bottom:  1px solid #C81623;
-	min-height: 450px;
+	min-height: 465px;
 	background-color: #F7F7F7;
 	font: 400 12px/2em Arial,Verdana,"\5b8b\4f53";
+	display: none;
 }
 
+.drop-list1 {
+	top: 0;
+}
+
+.drop-list2 {
+	top:-31px;
+}
 .second-level-menu {
 	width: 715px;
 }
@@ -556,16 +565,73 @@ a.quit:hover {
 	cursor: pointer;
 }
 
+.second-level-menu>dl>dt{
+    float: left;
+    width: 105px;
+    padding-top: 5px;
+}
+.second-level-menu>dl>dt>a {
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 10px;
+	width: 50px;
+	text-align: right;
+	padding-left:25px;
+	
+}
+.second-level-menu>dl>dt>i{
+    font:400 9px/24px consolas;
+    color: #666;
+    display: inline-block;
+
+}
+
 .second-level-menu>dl>dd {
 	border-bottom: 1px solid #eee;
 	width:620px;
 	margin-left: 105px;
+	padding:5px 20px 5px 0;
+
 }
 
-.second-level-menu>dl>dt{
-    float: left;
+.second-level-menu>dl>dd>a {
+    line-height: 1em;
+    display: inline-block;
+    padding: 0 6px;
+    margin: 5px 0;
+    border-left: 1px solid #ddd;
+   
 }
-.second-level-menu>dl>dt>a {
-	font-weight: bold;
-	
+
+.pic-menu {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 170px;
+	font-size: 0;
+}
+
+.pic-menu .small-pic>a {
+	display: inline-block;
+	width: 85px;
+	height: 35px;	
+}
+.pic-menu .small-pic>a>img {
+	display: inline-block;
+	line-height: 35px;
+	margin-bottom: -11px;
+}
+.pic-menu .large-pic {
+	margin-top: 10px;
+}
+.pic-menu .large-pic>a {
+	display: inline-block;
+	width: 170px;
+	height: 85px;	
+}
+
+.pic-menu .large-pic>a>img {
+	display: inline-block;
+	line-height: 35px;
+	margin-bottom: -11px;
 }

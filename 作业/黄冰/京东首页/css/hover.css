@@ -61,3 +61,12 @@ a:hover {
 .second-level-menu ul li:hover>i {
     background-color: #b61d1d;
 }
+
+.second-level-menu>dl>dt:hover>i,.second-level-menu>dl>dt:hover>a{
+	color: #C81623;
+	cursor:pointer;
+}
+
+.primary-menu>li:hover .primary-menu-drop {
+	display: block;
+}
