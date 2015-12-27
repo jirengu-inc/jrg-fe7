@@ -216,13 +216,13 @@
 /*nav*/
 .ttbar-nav .dorpdown-layer{
 	width: 1208px;
+	left: -1128px;
 	padding: 20px 0 16px;
 }
 .ttbar-nav .dd-spacer{
 	position: absolute;
-	left: 1208px;
+	left: 1127px;
 	width: 81px;
-	transform: translateX(-81px);
 }
 .ttbar-nav dl{
 	padding-left: 20px;
@@ -238,11 +238,6 @@
 .ttbar-nav .fore1{
 	width: 347px;
 	border-left: none;
-}
-.ttbar-nav .dorpdown-layer{
-	position: absolute;
-	left:-1208px;
-	transform: translateX(80px);
 }
 .ttbar-nav .item{
 	float: left;
@@ -872,11 +867,81 @@
 	margin: 10px 0 20px;
 	cursor: pointer;
 }
-#lazy-todays>.today-clock{
+#lazy-todays>.watch-box{
+	position: relative;
 	float: left;
 	width: 210px;
 	height: 151px;
 	background: url(../img/homebg.png) 0 -136px no-repeat;
+}
+#lazy-todays>.watch-box .clock-dial {
+    border: 7px solid #fff;
+    width: 42px;
+    height: 42px;
+    margin-top: 31px;
+    margin-left: 72px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+#lazy-todays>.watch-box .clock-pin {
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top: 2.5px;
+    width: 5px;
+    height: 20px;
+    background: #fff;
+    border-radius: 2px;
+    z-index: 2;
+}
+#lazy-todays>.watch-box .min-pin {
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top: 2px;
+    width: 5px;
+    height: 20px;
+    background: #fff;
+    border-radius: 2px;
+    animation: css3-watch 20s steps(60, end) infinite;
+    transform-origin: 2.5px 19.5px;
+}
+#lazy-todays>.watch-box .clock-oorigin {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.5px;
+    margin-top: -3.5px;
+    background: #fff;
+    z-index: 3;
+}
+#lazy-todays>.watch-box .sec-pin {
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: -6px;
+    width: 5px;
+    height: 28px;
+    animation: css3-watch 12s linear infinite;
+    transform-origin: 2.7px 27px;
+    z-index: 4;
+}
+
+#lazy-todays>.watch-box .pin {
+    width: 5px;
+    height: 5px;
+    background: #605454;
+    position: absolute;
+    border-radius: 50px;
+}
+@-webkit-keyframes css3-watch {
+	to {
+		transform: rotate(360deg);
+	}
 }
 #lazy-todays>.slider-main{
 	float: right;
@@ -957,7 +1022,6 @@
 #guess-like>.guess-you>.mc .p-img{
 	margin-bottom: 10px;
 	text-align: center;
-
 }
 #guess-like .p-info{
 	padding: 0 36px;
@@ -966,7 +1030,6 @@
 #guess-like>.guess-you .no-border .p-info{
 	border-left: none;
 }
-
 #guess-like .p-name{
 	height: 36px;
 	margin-bottom: 6px;
