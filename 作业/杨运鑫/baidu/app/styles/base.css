@@ -1,0 +1,31 @@
+/*public css*/
+/*¸¡¶¯*/
+.pull-left {
+   float: left;
+}
+.pull-right {
+    float: right;
+}
+/*Çå³ý¸¡¶¯*/
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+em, i {
+    font-style: normal;
+}
+html {
+    font-size: 14px;
+    color: #555;
+}
