@@ -72,12 +72,12 @@
 
 
 /*我的京东*/
-.myJD-drop {
+#header .myJD-drop {
 	width: 270px;
 	position: absolute;
 }
 
-.myJD-drop img{
+#header .myJD-drop img{
     width: 60px;
 	border-radius: 50% 50%;	
 	position: absolute;
@@ -85,27 +85,27 @@
 	top:10px;
 }
 
-.login{
+#header .login{
 	display: inline-block;
 	margin:10px 0 0 -20px;
 	font-weight: bold;
 }
 
-.message {
+#header .message {
 	margin: -5px 0 0 -5px;
 
 }
 
-.message>a {
+#header .message>a {
 	display: inline-block;
 	margin:0 10px;
 }
 
-.myJD-drop ul {
+#header .myJD-drop ul {
 	margin: 15px 0 15px 15px;
 }
 
-.myJD-drop ul li{
+#header .myJD-drop ul li{
 	width: 120px;
 	text-align: left;
 	line-height: 2.3em;
@@ -113,10 +113,10 @@
 
 /*手机京东*/
 
-#phone-jd:hover span{
+#header #phone-jd:hover span{
 	background: url(../image/icon.png) 0 -25px no-repeat;
 }
-.phone-jd-drop {
+#header .phone-jd-drop {
 	position: absolute;
 	width: 250px;
 	height: 195px;
@@ -124,62 +124,62 @@
 
 }
 
-.link {
+#header .link {
 	position: relative;
 }
 
 
-.app-link1 {
+#header .app-link1 {
 	display: block;
 	width:100px;
 	height: 20px;
 	
 }
 
-.app-link2 {
+#header .app-link2 {
 	display: inline-block;
 	width:50px;
 	height: 44px;
 
 }
 
-.jd-client {
+#header .jd-client {
 	position: absolute;
 	left: 90px;
 	top:10px; 
 }
 
 
-.jd-client-ios {
+#header .jd-client-ios {
 	position: absolute;
 	left: 90px;
 	top:45px; 
 }
 
-.jd-client-android {
+#header .jd-client-android {
 	position: absolute;
 	left: 145px;
 	top:45px; 
 }
-.jd-client-ipad {
+#header .jd-client-ipad {
 	position: absolute;
 	left: 195px;
 	top:45px; 
 }
 
-.jd-wallet {
+#header .jd-wallet {
 	position: absolute;
 	left: 90px;
 	top: 105px;
 }
 
-.jd-wallet-ios {
+#header .jd-wallet-ios {
 	position: absolute;
 	left: 90px;
 	top: 140px;
 }
 
-.jd-wallet-android {
+#header .jd-wallet-android {
 	position: absolute;
 	left: 145px;
 	top: 140px;
@@ -187,7 +187,7 @@
 
 /*关注京东*/
 
-.jd-microshop {
+#header .jd-microshop {
 	position: absolute;
 	width:81px;
 	height: 110px;
@@ -196,7 +196,7 @@
 
 /*客户服务*/
 
-.customer-service {
+#header .customer-service {
 	text-align: left;
 	position: absolute;
 	width:170px;
@@ -204,30 +204,30 @@
 }
 
 
-.customer-service dt,dd{
+#header .customer-service dt,dd{
 	float: left;	
 	height: 2em;	
 	margin-left: 10px;
 }
 
-.customer-service dd {
+#header .customer-service dd {
 	display: inline-block;
 	margin-right: 25px;
 }
 
-.customer-service dt {
+#header .customer-service dt {
     font-weight: bold;	
     width:170px;
 }
 
-.customer {
+#header .customer {
 	padding-bottom: 8px;
 	border-bottom: 1px dotted #ddd;
 }
 
 /*网站导航*/
 
-.web-nav {
+#header .web-nav {
 	font:12px/2.5em Arial,Verdana,"\5b8b\4f53";
 	text-align: left;
 	position: absolute;
@@ -236,21 +236,21 @@
 	height:185px;
 }
 
-.web-nav dt,dd{
+#header .web-nav dt,dd{
 	float: left;	
 }
 
-.web-nav dd{
+#header .web-nav dd{
 	width:75px;
 }
-.web-nav dl {
+#header .web-nav dl {
 	width:268px;
 	float: left;
 	margin:1.5em 5px 0 5px;
 	border-right: 1px solid #ddd;
 }
 
-.web-nav dt {
+#header .web-nav dt {
 	width:270px;
 	margin-left: 10px;
     font-weight: bold;
@@ -258,15 +258,15 @@
  	
 }
 
-.web-nav .sp-theme {
+#header .web-nav .sp-theme {
 	width:360px;
 }
 
-.web-nav .sp-theme dt{
+#header .web-nav .sp-theme dt{
 	width:360px;
 }
 
-#more {
+#header #more {
 	border-right: none;
 }
 
@@ -394,6 +394,7 @@ a.quit:hover {
 	position: absolute;
 	right:-2px;
 	background:#fff;
+	z-index: 3;
 }
 
 .settleup-nogoods {
@@ -420,12 +421,14 @@ a.quit:hover {
 	width:100%;
 	height:45px;
 	border-bottom: 2px solid #b61d1d;
+	font: 400 15px/44px "microsoft yahei";
 }
 
 .all-goods {
+	float:left;
 	width:210px;
 	height: 45px;
-	font: 400 15px/44px "microsoft yahei";
+	
 	line-height: 45px;
 	background:#b61d1d;
 }
@@ -438,4 +441,131 @@ a.quit:hover {
 
 .all-goods>a:hover {
 	color:#fff;
+}
+
+.goods-nav li{
+	float: left;
+	margin: 0 20px;
+
+}
+
+.goods-nav li>a {
+	color:#333;
+}
+
+.goods-nav li>a:hover {
+	color:#b61d1d;
+}
+
+.w-goods {
+	display: inline-block;
+    width: 140px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    background: url(../image/w-goods.jpg) 0 0 no-repeat;
+}
+
+/*banner*/
+
+.banner>a{
+	display: inline-block;
+	height: 470px;
+	width: 100%;
+	background: url(../image/container-background.jpg) -291px 0 no-repeat;
+}
+
+/*商品主菜单*/
+.primary-menu {
+	position: absolute;
+	top:-475px;
+	width: 210px;
+	background-color: #C81623;
+}
+#container .primary-menu>li {
+	height: 30px;
+	color: #fff;
+	text-align: left;
+	position: relative;
+	font: 400 14px/30px "microsoft yahei";
+	padding-left:10px;	
+	border-left: 1px solid #C81623;
+}
+#container .primary-menu>li>a {
+    text-align: left;
+    display: inline-block;
+    color: #fff;
+
+}
+
+#container .primary-menu>li>span{
+	color: #fff;
+}
+
+.primary-menu>li>i {
+	position: absolute;
+	z-index: 1;
+	top: 9px;
+	right: 14px;
+	width: 4px;
+	height: 14px;
+	font: 400 9px/14px consolas;
+}
+#container .primary-menu>.last-menu{
+	border-bottom: 1px solid #C81623;
+}
+
+.primary-menu-drop {
+	position: absolute;
+	top: 0;
+	left: 209px;
+	width: 1000px;
+	border-right: 1px solid #C81623;
+	border-bottom:  1px solid #C81623;
+	min-height: 450px;
+	background-color: #F7F7F7;
+	font: 400 12px/2em Arial,Verdana,"\5b8b\4f53";
+}
+
+.second-level-menu {
+	width: 715px;
+}
+.second-level-menu>ul {
+    margin: 20px 0 0 20px;
+}
+
+.second-level-menu>ul li {
+	float:left;
+	margin-right: 10px;
+}
+.second-level-menu>ul a {
+	display: inline-block;
+	height: 24px;
+	background-color: #7C7171;
+	color: #fff; 
+	padding:0 7px;
+
+}
+.second-level-menu>ul>li>i {
+	display: inline-block;
+	width:25px;
+	height: 2em;
+	background-color:#5c5251; 
+	color: #fff;
+	font: 400 9px/24px consolas;
+	cursor: pointer;
+}
+
+.second-level-menu>dl>dd {
+	border-bottom: 1px solid #eee;
+	width:620px;
+	margin-left: 105px;
+}
+
+.second-level-menu>dl>dt{
+    float: left;
+}
+.second-level-menu>dl>dt>a {
+	font-weight: bold;
+	
 }
