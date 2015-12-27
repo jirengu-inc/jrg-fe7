@@ -42,3 +42,22 @@ a:hover {
 #shopping-trolley:hover .space {
 	display: block;
 }
+
+/*商品主菜单*/
+#container .primary-menu>li:hover {
+	background-color: #fff;
+	
+}
+#container .primary-menu>li:hover>a{
+	color: #b61d1d;
+}
+
+#container .primary-menu>li:hover>span{
+	color: #b61d1d;
+}
+.second-level-menu ul li:hover>a {
+    background-color: #C81623;
+}
+.second-level-menu ul li:hover>i {
+    background-color: #b61d1d;
+}
