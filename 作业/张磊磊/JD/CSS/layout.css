@@ -127,9 +127,50 @@
 .hot-word>a{
 	margin-right: 10px;
 	color: #666;
-	text-decoration: none;
 	line-height: 20px;
 }
 .hot-word>a:first-of-type{
 color: #c81623;
+}
+/* 导航栏 */
+#nav{
+	position: relative;
+    border-bottom: 2px solid #B1191A;
+}
+.all-list{
+	width: 210px;
+	height: 44px;
+	float: left;
+	background-color: #B1191A;
+	position: relative;
+	line-height: 52px;
+}
+.all-list>a{
+	font: 400 15px/44px "microsoft yahei";
+	color: #fff;
+	margin: 0 10px;
+}
+.all-list>a:hover{
+	color: #fff;
+}
+.new-year{
+	width: 238px;
+	height: 22px;
+	position: absolute;
+	background: url(../PIC/newyear-decoration.jpg) no-repeat;
+	top: -11px;
+	left: -14px
+}
+.nav-items{
+	float: left;
+}
+.nav-items>a{
+	display: block;
+	line-height: 44px;
+	float: left;
+	height: 44px;
+	padding: 0 20px;
+	color: #333;
+	text-align: center;
+	font: 400 15px/44px "microsoft yahei";
 }

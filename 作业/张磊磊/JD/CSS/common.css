@@ -37,3 +37,6 @@ body{
 a:hover{
 	color: #c81623;
 }
+a{
+	text-decoration: none;
+}
