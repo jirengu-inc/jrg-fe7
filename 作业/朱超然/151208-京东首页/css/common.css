@@ -5,7 +5,7 @@
 }
 
 body{
-	font-size:12px;
+	font:12px/150% Arial,Verdana,"\5b8b\4f53";
 	color:#666;
 }
 
@@ -15,4 +15,10 @@ li{
 
 a{
 	text-decoration:none;
+}
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
 }
