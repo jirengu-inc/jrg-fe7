@@ -174,3 +174,89 @@ color: #c81623;
 	text-align: center;
 	font: 400 15px/44px "microsoft yahei";
 }
+.meizu{
+	float: right;
+	width: 140px;
+	height: 40px;
+	display: block;
+	background: url(../PIC/MEIZU.jpg);
+}
+/* 菜单&Banner*/
+.menu-banner{
+	position: relative;
+}
+
+.menu-banner>a{
+	position: absolute;
+	width: 100%;
+	height: 469px;
+	z-index:1;
+	background:url(../PIC/background.jpg) no-repeat center top;
+}
+.banner-wap{
+	position: relative;
+	z-index: 15;
+}
+.menu-list{
+	float: left;
+	position: relative;
+}
+.menu-list>li{
+	position: relative;
+	border-left: 1px solid #b61d1d;
+	background-color: #c81623;
+	width: 209px;
+	height: 31px;
+	line-height: 31px;
+}
+.menu-list>li>a{
+	color: #fff;
+	font-family: "microsoft yahei";
+	font-weight: 400;
+	font-size: 14px;
+	margin-left:10px; 
+}
+.menu-list>li>a>i{
+	font: 400 9px/14px consolas;
+	float: right;
+	margin:9px 9px 0 0; 
+}
+.banner{
+	position: relative;
+	float: left;
+	margin:12px 0 0 10px;
+	cursor: pointer;
+}
+.banner-sort{
+	position: absolute;
+	top: 425px;
+	left: 295px
+
+
+}
+.banner-sort>li{
+	float: left;
+	width: 18px;
+	height: 18px;
+	margin: 0 2px;
+	line-height: 18px;
+	background: #3e3e3e;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+}
+.banner-sort>li:nth-of-type(5){
+	background: #b61b1f;
+}
+.banner-sort>li:hover{
+	background: #b61b1f;
+}
+.news-life{
+	position: relative;
+	float: right;
+	width: 248px;
+	height: 455px;
+	border:1px solid #E8E8E7;
+	margin-top:12px; 
+	background-color:#fff; 
+}
