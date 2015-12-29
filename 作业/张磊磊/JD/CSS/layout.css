@@ -288,7 +288,7 @@ color: #c81623;
 
 .menu-drop:hover {
 	background-color: #f7f7f7;
-	border-right:1px solid #f7f7f7;
+
 }
 .menu-drop:hover .c-dd-s{
 	display: block;
