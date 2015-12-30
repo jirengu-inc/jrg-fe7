@@ -16,26 +16,22 @@
 	width: 106px;
 	text-align: center;
 }
-#nav-left,.nav-right a,.menu-city a{
+.address-left,.nav-right a,.menu-city a{
 	font-size: 13px;
-}
-/*包裹三角的框*/
-.icon{
-	padding-left:9px;
-	padding-right: 25px;
 }
 /*倒三角*/
 .arrow{
 	display: inline-block;
 	position: absolute;
     width: 19px;
-    height: 20px;
-    background: url(../img/trigle.png) no-repeat 0px 8px;
-    top: 2px;
+    height: 10px;
+    background: url(../img/trigle.png) no-repeat 0px -20px;
+    transition: transform 0.3s;
+    top: 10px;
 }
 
 /*顶部的左边*/
-#nav-left{
+.address-left{
 	position: relative;
 	height: 30px;
 	float: left;
@@ -43,16 +39,12 @@
 /*顶部的右边*/
 .nav-right{
 	float: right;
-	height: 30px;
 }
 /*头部右边的列表*/
 .nav-right >li{
+	position: relative;
+	padding: 0 3px;
     display: inline-block;
-}
-/**/
-
-.nav-right a,.menu-city a{
-    text-decoration: none;
 }
 
 .line{
@@ -60,24 +52,48 @@
 /*	padding: 0 !important;*/
 }
 .menu-city li{
-  list-style-type: none;
-  float: left;
-  width: 40px;
+    float: left;
+    width: 39px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 5px 5px;
+    line-height: 1;
 }
+
 .menu-city{
-	width: 100%;
-	border: 1px solid #ddd;
-	height: 100%;
-	padding: 0 10px 10px;
-}
-#menu-city{
-	width: 300px;
+    border: 1px solid #ddd;
 	position: absolute;
-	margin-left: -10px;
+	width: 315px;
 	display: none;
 }
-.city-bj{
-	border: 1px solid #ddd;
+.selected{
 	background-color: #c81623;
-	height: 25px;
+	color: #fff;
 }
+#header .drop{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;	
+}
+#header .address-left:hover{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+}
+#header .address-left:hover .arrow{
+    transform: rotate(180deg);
+}
+#header .address-left:hover .menu-city{
+	display: block;
+}
+.menu-city li:hover{
+    background-color: #f1f1f1;
+}
+.menu-city li:hover a{
+	color: #cb1623;
+}
+/*导航右边*/
+#nav-right .drop{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;	
+}
+#nav-right 
