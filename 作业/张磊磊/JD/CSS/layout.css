@@ -195,7 +195,7 @@ color: #c81623;
 }
 .banner-wap{
 	position: relative;
-	z-index: 15;
+	z-index: 14;
 }
 .menu-list{
 	float: left;
@@ -230,6 +230,9 @@ color: #c81623;
 	top: -6px;
 	left:190px;
 	z-index: 16;
+}
+.bot-line{
+	border-bottom: 1px solid #b61d1d
 }
 .banner{
 	position: relative;
@@ -272,7 +275,7 @@ color: #c81623;
 }
 .dropdown-layer{
 	width: 999px;
-	height:500px;
+	min-height:465px;
 	background-color: #f7f7f7;
 	border: 1px solid #b61d1d;
 	position: absolute;
@@ -281,6 +284,7 @@ color: #c81623;
 	left: 209px;
 	display: none;
 	overflow: hidden;
+	padding: 
 }
 .menu-drop:hover .dropdown-layer{
 	display: block;
@@ -295,4 +299,67 @@ color: #c81623;
 }
 .menu-drop:hover .clr{
 	color: #b61d1d;
+}
+/*具体菜单*/
+.menu-item{
+	padding: 20px 0 10px 20px;
+	width: 790px; 
+}
+.menu-channel>a{
+	display: inline-block;
+	color: #fff;
+	padding-left:8px;
+	background: #7C7171; 
+	margin-right: 7px;
+	line-height: 24px;
+}
+.menu-channel>a>i{
+	display: inline-block;
+	width: 23px;
+	font: 12px/12px consolas;
+	line-height: 24px;
+	margin-left: 9px;
+	background: #5C5251;
+    text-align: center;
+}
+.menu-channel>a:hover{
+	color: #fff;
+	background: #C81623;
+}
+.menu-channel>a:hover  i{
+	background:#B1191A;
+}
+.subitems dt{
+	padding-top: 8px;
+	display: inline-block;
+	width: 80px;
+	text-align:right;
+	line-height: 16px;
+	float: left;
+}
+.subitems dt a{
+	font-weight: 700;
+	text-align: right;
+}
+.subitems dt i{
+	font: 12px/12px consolas;
+	margin-left: 9px;
+	margin-right: 11px;
+}
+.subitems dd{
+	padding:6px 0;
+	display: block;
+	line-height: 16px;
+	width: 620px;
+	float: left;
+}
+.subitems dd a{
+	padding: 0 8px;
+	border-left: 1px solid #E0E0E0;
+	margin: 4px 0;
+	display: block;
+	float: left;
+}
+.line{
+	border-top: 1px solid #E0E0E0;
 }
