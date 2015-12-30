@@ -1,0 +1,72 @@
+#header .hover:hover .drop{
+	background: #fff;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	z-index: 3;
+
+}
+
+.hover:hover .arrows{
+    transform:rotate(180deg);
+    transition: all 100ms ease-in;
+}
+
+.hover:hover .drop-content{
+  display: block;
+  background-color: #fff;
+}
+
+a:hover {
+	color: #C81623;
+}
+
+/*选中地区改变背景*/
+.drop-address a:hover{
+	background:#eee;
+	color: #C81623;
+}
+
+/*购物车*/
+#shopping-trolley:hover .my-shopping-trolley {
+	background-color: #fff;
+	border-bottom:1px solid #fff;
+	z-index: 6;
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+#shopping-trolley:hover .shopping-trolley-drop {
+	display: block;
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+#shopping-trolley:hover .space {
+	display: block;
+}
+
+/*商品主菜单*/
+#container .primary-menu>li:hover {
+	background-color: #fff;
+	
+}
+#container .primary-menu>li:hover>a{
+	color: #b61d1d;
+}
+
+#container .primary-menu>li:hover>span{
+	color: #b61d1d;
+}
+.second-level-menu ul li:hover>a {
+    background-color: #C81623;
+}
+.second-level-menu ul li:hover>i {
+    background-color: #b61d1d;
+}
+
+.second-level-menu>dl>dt:hover>i,.second-level-menu>dl>dt:hover>a{
+	color: #C81623;
+	cursor:pointer;
+}
+
+.primary-menu>li:hover .primary-menu-drop {
+	display: block;
+}

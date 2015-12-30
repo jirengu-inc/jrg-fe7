@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*@charset "UTF-8";
 /**
  * 
  * @authors Your Name (you@example.org)
@@ -22,15 +22,26 @@
 	overflow: hidden;
 }
 .search{
+	font:12px/1.5 Arial, Verdana, "\5b8b\4f53";
 	height: 100px;
 }
 .logo{
+	position: relative;
 	display: inline-block;
 	width: 270px;
 	height: 100px;
 	line-height: 100px;
 	padding-right: 89px;
+	text-align: center;
 	vertical-align: top;
+}
+/*.logo a{
+	position: absolute;
+	top: 20px;
+}*/
+.logo img{
+	position: absolute;
+	top: 15px;
 }
 .search .search-blk{
 	position: relative;
@@ -40,16 +51,23 @@
 	vertical-align: top;
 	top: 25px;
 }
-
+.search .search-blk :after{
+	content: '';
+	display: block;
+	clear: both;
+}
 .search-input,.search-btn{
-    float: left;
+
 }
 .search-input{
+	float: left;
 	width: 450px;
 	height: 28px;
 	border: 2px solid #b61d1d;
+	outline: none;
 }
 .search-btn{
+	float: left;
 	width: 80px;
 	height: 34px;
 	line-height: 34px;
@@ -58,6 +76,11 @@
 	text-align: center;
 	font-size: 16px;
 	letter-spacing: 3px;
+}
+.search-rmd{
+	width: 500px;
+	height: 20px;
+	padding-top: 5px;
 }
 .search-rmd li{
 	display: inline-block;
@@ -80,14 +103,14 @@
 	top: 25px;
 	vertical-align: top;
 }
-/*.car{
+.car{
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	background: url(img/header-menu-bg.png) no-repeat -1px -58px;
+	background: url(../img/header-menu-bg.png) no-repeat -1px -58px;
     margin-left: 20px;
     margin-top: 9px;
-}*/
+}
 .shop-car .mycar{
 	position: relative;
 	margin-left: 44px;
@@ -107,4 +130,4 @@
 	margin-left: 15px;
 	font: 400 13px/13px simsun;
 	color: #666;
-}
+}*/

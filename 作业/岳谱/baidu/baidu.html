@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>百度一下，你就知道</title>
+ <link href="css/baidu.css" type="text/css" rel="stylesheet" />
+ 
+ </head>
+
+ <body>
+  <div class="head">
+    <a href="#" id="nuo"   class="nav">糯米</a>
+	<a href="#" id="map"   class="nav">新闻</a>
+	<a href="#" id="map"   class="nav">hao123</a>
+	<a href="#" id="map"   class="nav">地图</a>
+	<a href="#" id="vido"  class="nav">视频</a>
+	<a href="#" id="tieba" class="nav">贴吧</a>
+
+	<a href="#" id="login" class="lg">登录</a>
+	<a href="#" id="setting"class="set">设置</a>
+	<a href="#" id="more" class="mor">更多产品</a>
+
+	
+	  <div id="more_content" >
+	    <div  id="bd_more" class="bd_more">更多产品</div>
+	    <div class="bd_ico">
+		<a href="#" id="tj_mp3"><span class="mp3"></span>音乐</a>
+		<a href="#" id="tj_img"><span class="img"></span>图片</a>
+		<a href="#" id="tj_zhidao"><span class="zhidao"></span>知道</a>
+		<a href="#" id="tj_wenku"><span class="wenku"></span>文库</a>
+		<a href="#" id="tj_bang"><span class="bang"></span>风云榜</a>
+		<a href="#" id="tj_tuiguang"><span class="tuiguang"></span>百度推广</a>
+        </div>
+		<div class="bdmore">
+		   <a href="#" id="tj_more">全部产品&gt;&gt;</a>
+		</div> 
+	  </div><!--更多产品结束-->
+ </div><!--头部结束-->
+
+
+   <div id="content">
+      <div class="logo"><img src="./pic/bd_logo1.png"/></div><!--百度logo结束-->   
+      <div class="text_content">
+      	<span class="text">
+      		<input class="in_text" name="wd">
+      	</span><!--span是行内元素-->
+
+      	<span class="search">
+      	  <input class="ser_input" type="submit" value="百度一下">
+      	 </span>
+       </div>
+   </div><!--内容结束-->
+
+
+   
+   <div  class="ftCon">
+    <div class="footer">
+      <div class="item">
+      <div class="qrcode-item qrcode-item-1">
+         <div id="qrcode-img"></div><!--存放图片-->
+		 <div id="qrcode-text">
+				<p><b>手机百度</b></p>
+			    <p><span>快人一步</span></p>
+		  </div><!--百度快人内容结束-->
+	   </div><!--百度手机结束-->
+
+       <div class="qrcode-item qrcode-item-2">
+         <div id="qrcode-img"></div><!--存放图片-->
+		 <div id="qrcode-text">
+				<p><b>百度糯米</b></p>
+			    <p><span>一毛大餐</span></p>
+		  </div><!--糯米一毛内容结束-->
+	   </div><!--百度糯米结束-->
+
+        </div><!--item-->
+        
+        <div class="Word">
+          <p id="lh">
+          	<a id="setf" href="#">把百度设为主页</a>
+          	<a id="guan" href="#">关于百度</a>
+          	<a id="about"href="#">About  Baidu</a>
+          </p><!--p-lh-->
+          <p id="copy">
+          	©2015 Baidu 
+            <a href="#">使用百度前必读</a>
+            <a class="cp-feedback" href="#">意见反馈</a>
+            京ICP证030173号 
+            <i class="c-icon-icrlogo"></i>
+          </p><!--p-copy-->
+        	
+        </div><!--word-->
+	   </div><!--ftCon-->
+     </div><!--脚本结束-->
+   
+  <script type="text/javascript">
+     window.onload=function(){	
+     	var allMor=document.getElementById('more');	
+     	var allContent=document.getElementById('more_content'); 
+     	while(1){
+     	allMor.mouseover=function()	
+     	{	if(allContent.style.display=='none')
+     	    {	allContent.style.display='block';	}
+
+     	    else{ allContent.style.display='none';	}
+
+    	}  ;
+
+    	window.onclick=function(){
+            if(allContent.style.display=='block')
+     	    {	allContent.style.display='none';	}
+
+     	    else{ allContent.style.display='block';	}
+    	};
+        
+		}
+
+
+    };
+
+ </script>
+
+ </body>
+</html>
