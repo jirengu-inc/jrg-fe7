@@ -19,17 +19,14 @@
 .address-left,.nav-right a,.menu-city a{
 	font-size: 13px;
 }
-/*倒三角*/
-.arrow{
-	display: inline-block;
-	position: absolute;
-    width: 19px;
-    height: 10px;
-    background: url(../img/trigle.png) no-repeat 0px -20px;
-    transition: transform 0.3s;
-    top: 10px;
+.line{
+	color: #ddd;
+/*	padding: 0 !important;*/
 }
 
+.address-left .arrow{
+	margin-left: -5px;
+}
 /*顶部的左边*/
 .address-left{
 	position: relative;
@@ -39,17 +36,22 @@
 /*顶部的右边*/
 .nav-right{
 	float: right;
+	height: 30px;
 }
 /*头部右边的列表*/
 .nav-right >li{
 	position: relative;
-	padding: 0 3px;
+	height: 30px;
+	padding: 0 2px;
     display: inline-block;
+    line-height: 30px;
+    margin-left: -4px;
+    margin-right: -4px;
 }
 
-.line{
-	color: #ddd;
-/*	padding: 0 !important;*/
+/*城市下拉菜单*/
+.address-left .show-value{
+	z-index: 1;
 }
 .menu-city li{
     float: left;
@@ -64,17 +66,18 @@
     border: 1px solid #ddd;
 	position: absolute;
 	width: 315px;
+	background-color: #fff;
 	display: none;
 }
 .selected{
 	background-color: #c81623;
 	color: #fff;
 }
-#header .drop{
+#header .address-left .drop{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;	
 }
-#header .address-left:hover{
+#header .address-left:hover .drop{
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     background-color: #fff;
@@ -92,8 +95,18 @@
 	color: #cb1623;
 }
 /*导航右边*/
-#nav-right .drop{
+.nav-right .drop{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;	
 }
-#nav-right 
+.nav-right .drop:hover{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;	
+}
+.nav-right .drop:hover .arrow{
+    transform: rotate(180deg);
+}
+.nav-right .drop:hover .phone{
+	background-position: 0 -25px;
+}

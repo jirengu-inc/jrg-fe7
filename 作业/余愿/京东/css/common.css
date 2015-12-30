@@ -39,8 +39,26 @@ a:hover{
 }
 .space{
 	position: absolute;
-	width: 107px;
+	width: 106px;
 	height: 2px;
 	background-color: #fff;
     top: -1px;
+}
+/*倒三角*/
+.arrow{
+	display: inline-block;
+    width: 19px;
+    height: 10px;
+    background: url(../img/trigle.png) no-repeat 0px -20px;
+    transition: transform 0.3s;
+}
+.nav-right .drop .phone{
+	display: inline-block;
+	width: 15px;
+	height: 20px;
+	background: url(../img/header-menu-bg.png) no-repeat 0px 0px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	margin-right: -7px; 
 }
