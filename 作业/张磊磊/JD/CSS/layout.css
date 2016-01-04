@@ -304,6 +304,7 @@ color: #c81623;
 .menu-item{
 	padding: 20px 0 10px 20px;
 	width: 790px; 
+	float: left;
 }
 .menu-channel>a{
 	display: inline-block;
@@ -362,4 +363,24 @@ color: #c81623;
 }
 .line{
 	border-top: 1px solid #E0E0E0;
+}
+.brand{
+	width: 168px;
+	margin: 19px 20px 10px 0;
+	float: right;
+	font-size:0px; 
+	line-height:0px;
+}
+.brand img{
+	padding: 0px 0px 1px 1px;
+}
+.item-promotion{
+	margin-right: 20px;
+	width: 168px;
+	font-size:0px; 
+	line-height:0px;
+	float: right;
+}
+.item-promotion  img{
+	padding-bottom:1px; 
 }
