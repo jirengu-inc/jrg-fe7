@@ -382,5 +382,35 @@ color: #c81623;
 	float: right;
 }
 .item-promotion  img{
-	padding-bottom:1px; 
+	padding-bottom:1px; }
+/*右侧京东快报&生活服务*/
+.mt{
+	height: 43px;
+	padding: 0 15px; 
+	line-height:43px;
+    color: #666;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.mt h2{
+	float: left;
+	font-size: 16px;
+}
+.mt a{
+	float: right;
+	font-family: consolas;
+}
+.mc{
+	height: 157px;
+	 border-bottom: 1px dotted #E8E8E7;
+}
+.mc ul{
+	padding: 8px 0 0 15px;
+}
+.mc ul li{
+	height: 27px;
+	line-height: 27px;
+}
+.mc a span{
+	font-weight: 700;
+    margin-right: 5px;
 }

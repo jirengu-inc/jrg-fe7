@@ -44,3 +44,7 @@ a{
 li{
 	list-style: none;
 }
+h2,h3{
+	font-family: "microsoft yahei";
+    font-weight: 400;
+}
