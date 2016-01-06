@@ -443,3 +443,36 @@ color: #c81623;
 	left: 18px;
 	background-image: url(../PIC/service-icon.png);
 }
+.service-icon2{
+	background-position-y:-25px; 
+}
+.service-icon3{
+	background-position-y:-50px; 
+}
+.service-icon4{
+	background-position-y:-75px; 
+}
+.service-icon5{
+	background-position-y:-100px; 
+}
+.service-icon6{
+	background-position-y:-125px; 
+}
+.service-icon7{
+	background-position-y:-150px; 
+}
+.service-icon8{
+	background-position-y:-175px; 
+}
+.service-icon9{
+	background-position-y:-200px; 
+}
+.service-icon10{
+	background-position-y:-225px; 
+}
+.service-icon11{
+	background-position-y:-250px; 
+}
+.service-icon12{
+	background-position-y:-275px; 
+}
