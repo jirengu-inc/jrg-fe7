@@ -55,7 +55,7 @@
 	float: right;
 }
 .fr li{
-	display: inline-block;
+	float: left;
 }
 .dt {
 	padding: 0 8px;
@@ -184,9 +184,6 @@
 /*关注*/
 .ttbar-atte .dd-spacer{
 	width: 82px;
-}
-.ttbar-atte{
-	width: 49px;
 }
 .ttbar-atte .dorpdown-layer{
     padding-bottom: 5px;
@@ -377,6 +374,10 @@
 	min-width: 12px;
 	text-align: center;
 } 
+.search .cm-icon .my-goods a{
+	display: block;
+	width: 80px;
+}
 .search .dorpdown .dd-spacer{
 	width: 139px;
 	left: 169px;
@@ -421,7 +422,7 @@
 }
 .search .hot-words{
 	float: left;
-	width: 518px;
+	/*width: 518px;*/
 	display: block;
 	height: 20px;
 	line-height: 20px;
@@ -778,7 +779,7 @@
 }
 .focus .life-serv>.mc ul{
 	position: relative;
-	width: 252px;
+	width: 260px;
 	height: 209px;
 }
 .focus .life-serv>.mc li{
@@ -955,6 +956,8 @@
 	float: left;
 	display: inline-block;
 	border-right: 1px solid #fff;
+	width: 248px;
+	margin-right: 1px;
 }
 #lazy-todays>.slider-main .no-border{
 	border-right: none;
@@ -1033,6 +1036,7 @@
 #guess-like .p-name{
 	height: 36px;
 	margin-bottom: 6px;
+	overflow: hidden;
 }
 #guess-like .p-price{
 	color: #b51d1a;
