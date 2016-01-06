@@ -414,3 +414,32 @@ color: #c81623;
 	font-weight: 700;
     margin-right: 5px;
 }
+.service{
+	 overflow: hidden;
+}
+.service>ul{
+	width: 260px;
+	position: relative;
+}
+.service>ul>li{
+	width:62px;
+	height: 69px;
+	float: left;
+	border-right: 1px solid #E8E8E7;
+    border-bottom: 1px solid #E8E8E7;
+}
+.service>ul>li>a{
+	padding-top: 41px;
+	position: relative;
+	display: block;
+	text-align: center;
+}
+.service-icon{
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 25px;
+	top:13px;
+	left: 18px;
+	background-image: url(../PIC/service-icon.png);
+}
