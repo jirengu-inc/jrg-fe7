@@ -1,0 +1,115 @@
+ <input id="ipt" type="text">
+<script>
+"use strict";
+//demo1
+
+// var delayer = setTimeout(function() {
+// 	// body...
+// 	console.log(1);
+// }, 3000);
+
+// var i = 0;
+// var clock = setInterval(function(){
+// 	var d = new Date();
+// 	console.log( d.getHours()+':'+d.getMinutes()+':'+d.getSeconds());
+// }, 1000);
+
+// console.log('delayer', delayer);
+// console.log('clock', clock);
+
+
+// function stop(){
+// 	clearTimeout(delayer);
+// 	clearInterval(clock);
+// }
+
+
+//最小时间粒度
+
+// function getMini(){
+// 	var i = 0;
+// 	var clock = setTimeout(function(){
+// 		i++;
+// 		if(i=== 1000){
+// 			clearInterval(clock);
+// 			console.log()
+// 		}
+// 		clock = arguments.callee()
+// 	})
+// }
+
+// setTimeout setInterval
+// 1-----2-----3-----4
+// 1+++++++++2+++--3++---4   setInterval 
+// a+++-----b+++-----c
+
+
+function sum(){
+	console.log(arguments.callee);
+}
+
+
+function usetime(){
+	for(var i=0;i<1000;i++){
+		console.log('');
+	}
+}
+
+
+// var i = 0;
+// function intv(){
+// 	setTimeout(function(){
+// 		usetime();
+// 		console.log(i++);
+// 		intv();
+// 	}, 1000);
+// }
+//intv();
+
+// var j = 0;
+// setInterval(function(){
+// 	//usetime();
+// 	//alert(1);
+// 	console.log(j++);
+// }, 1000);
+
+var a = 1;
+setTimeout(function(){
+	console.log('before',a);
+	a = 2;
+	console.log('after', a);
+}, 0);
+
+a = 100;
+console.log(a);
+
+
+
+var ipt = document.getElementById('ipt');
+
+ipt.addEventListener('keydown', function(){
+	var me = this;
+	setTimeout(function(){
+		me.value = me.value.toUpperCase();
+	}, 0);
+	
+});
+
+
+
+
+
+//call apply
+Math.max(13,4,5);
+var arr = [13,4,5];
+
+Math.max.apply(null, arr);
+
+Array.prototype.slice.call(arguments, 0,10);
+[].slice.call(arguments, 0,10);
+
+
+
+
+
+</script>

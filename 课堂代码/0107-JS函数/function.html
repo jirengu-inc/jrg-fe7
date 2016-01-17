@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>function</title>
+
+</head>
+<body>
+	<script>
+	var a;
+
+	function getInfo(name, age, sex){
+		console.log('name:',name);
+		console.log('age:', age);
+		console.log('sex:', sex);
+		console.log(arguments);
+		arguments[0] = 'valley';
+		console.log('name', name);
+	}
+
+	// getInfo('hunger', 28, '男');
+	// getInfo('hunger', 28);
+	// getInfo('男');
+
+	// function sum(a,b){
+	// 	return a+b;
+	// }
+	// function sum(a,b,c){
+	// 	return a+b+c;
+	// }
+	function sum(a,b,c){
+		var sum = '';
+		for(var i=0;i<arguments.length;i++){
+			sum = sum + arguments[i];
+		}
+		// return sum;
+	}
+	var result = sum('ok ', 'okkk');
+	//console.log(result);
+	//console.log( sum('hello',' world ',' hunger') );
+	//
+
+
+
+
+
+	//console.log(a);
+	var a = 1;
+	//console.log(b);
+
+	//sayName(123);
+	
+
+	sayName('world');
+	
+	
+
+	function sayName(name){
+		if(typeof name !=='string'){
+			return ;
+		}
+
+		console.log('hello ', name);
+	}
+
+
+	var sayAge = function(age){
+		console.log(age);
+	};
+	//sayAge(10);
+
+
+	// var fn
+	// function fn(){}
+	// fn = 3;
+	// console.log(fn);
+
+	// function fn(fn2){
+
+	//   console.log(fn2);
+	//   var fn2 = 3;
+	//   console.log(fn2);
+	//   console.log(fn);
+	//   // function fn2(){
+	//   // 	console.log('fnnn2');
+	//   // }
+	// }
+
+	// fn(10);
+
+	// var fn = 1;
+	// function fn(fn){
+	//     console.log(fn);
+	// }
+
+	//console.log(fn); 
+
+	//作用域
+	// console.log(j);
+	// console.log(i);
+	for(var i=0;i<10;i++){
+		var j = 100;
+	}
+
+	// console.log(i);
+	// console.log(j);
+
+	function fn(){
+		// 
+		//i = 99;
+		var i;
+		function fn2(){
+			i = 100;
+		}
+
+		console.log(i);
+		i = 99;
+
+
+		fn2();
+		console.log(i);
+	}
+	fn();
+	console.log(i);
+
+	var say = 0;
+
+	(function(n){
+		var i = 888;
+		console.log(n);
+		console.log('hello hunger', i);
+		if(n<0) return;
+		// say(n-1);
+	}( 10000 ));
+	console.log(say);
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
