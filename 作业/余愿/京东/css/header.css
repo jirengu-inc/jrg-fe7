@@ -16,26 +16,19 @@
 	width: 106px;
 	text-align: center;
 }
-#nav-left,.nav-right a,.menu-city a{
+.address-left,.nav-right a,.menu-city a{
 	font-size: 13px;
 }
-/*包裹三角的框*/
-.icon{
-	padding-left:9px;
-	padding-right: 25px;
-}
-/*倒三角*/
-.arrow{
-	display: inline-block;
-	position: absolute;
-    width: 19px;
-    height: 20px;
-    background: url(../img/trigle.png) no-repeat 0px 8px;
-    top: 2px;
+.line{
+	color: #ddd;
+/*	padding: 0 !important;*/
 }
 
+.address-left .arrow{
+	margin-left: -5px;
+}
 /*顶部的左边*/
-#nav-left{
+.address-left{
 	position: relative;
 	height: 30px;
 	float: left;
@@ -47,37 +40,73 @@
 }
 /*头部右边的列表*/
 .nav-right >li{
+	position: relative;
+	height: 30px;
+	padding: 0 2px;
     display: inline-block;
-}
-/**/
-
-.nav-right a,.menu-city a{
-    text-decoration: none;
+    line-height: 30px;
+    margin-left: -4px;
+    margin-right: -4px;
 }
 
-.line{
-	color: #ddd;
-/*	padding: 0 !important;*/
+/*城市下拉菜单*/
+.address-left .show-value{
+	z-index: 1;
 }
 .menu-city li{
-  list-style-type: none;
-  float: left;
-  width: 40px;
+    float: left;
+    width: 39px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 5px 5px;
+    line-height: 1;
 }
+
 .menu-city{
-	width: 100%;
-	border: 1px solid #ddd;
-	height: 100%;
-	padding: 0 10px 10px;
-}
-#menu-city{
-	width: 300px;
+    border: 1px solid #ddd;
 	position: absolute;
-	margin-left: -10px;
+	width: 315px;
+	background-color: #fff;
 	display: none;
 }
-.city-bj{
-	border: 1px solid #ddd;
+.selected{
 	background-color: #c81623;
-	height: 25px;
+	color: #fff;
+}
+#header .address-left .drop{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;	
+}
+#header .address-left:hover .drop{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+}
+#header .address-left:hover .arrow{
+    transform: rotate(180deg);
+}
+#header .address-left:hover .menu-city{
+	display: block;
+}
+.menu-city li:hover{
+    background-color: #f1f1f1;
+}
+.menu-city li:hover a{
+	color: #cb1623;
+}
+/*导航右边*/
+.nav-right .drop{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;	
+}
+.nav-right .drop:hover{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;	
+}
+.nav-right .drop:hover .arrow{
+    transform: rotate(180deg);
+}
+.nav-right .drop:hover .phone{
+	background-position: 0 -25px;
 }

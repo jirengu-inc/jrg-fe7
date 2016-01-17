@@ -67,8 +67,8 @@
         overflow: hidden;/*内容会被修剪，但是浏览器不会显示供查看内容的滚动条。http://blog.sina.com.cn/s/blog_60b35e830100uw3z.html*/
         }
         .left-side:hover .ci-right{
-            transform: rotate(180deg); /*对元素进行移动、缩放、转动、拉长或拉伸*/
-            -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); /*对元素进行移动、缩放、转动、拉长或拉伸*/
+        -webkit-transform: rotate(180deg);
         }
         .left-side .ci-right s {
         position: relative;
@@ -109,7 +109,7 @@
         }
         /*去处除鼠标放置在下拉菜单时的边框，absolute脱离文档流，在这个元素随便写几个元素方便调试*/
         .left-side .list .dd-spacer{
-        width:100px;
+        width:98px;
         border-top:1px solid white;
         position:absolute;
         top: -1px;
@@ -134,9 +134,11 @@
         padding: 1px 0px 2px 20px;
         margin-right: 8px;
         }
-        .right-side .mobile:hover{
-        background-position: 4px -26px;
+        .right-side .mobile:hover{       
         color: red;
+        }
+        .right-side .app:hover .mobile{
+          background-position: 4px -26px;  
         }
         #nav .right-side .spec a{
         color: red;
@@ -220,7 +222,7 @@
         .form .hot a{
         color: #666;
         }
-         .form .hot a:hover{
+        .form .hot a:hover{
         color: red;
         }
         .form .hot a:first-of-type{
@@ -350,19 +352,19 @@
         }
         /*侧边栏具体商品分类*/
         .content .left-1{
-       /* border: 1px solid black;*/
+        /* border: 1px solid black;*/
         background-color: #b61d1d;
         width: 210px;
         position: relative;
         top: -26px;
         float: left;
         }
-        .content .left-1 ul li{
+        .content .left-1 .left-detail>.down-menu{
         line-height: 31px;
         position: relative;
         color: white;
         }
-        .content .left-1 ul li a{
+        .content .left-1 .left-detail>.down-menu>a{
         color: white;
         font-family: "microsoft yahei";
         font-size: 14px;
@@ -371,123 +373,281 @@
         border-left: 1px solid transparent;
         display: block;/*解决鼠标放置在其他位置链接颜色消失的问题*/
         }
-        .content .left-1 ul li i{
-            font: 400 9px/14px consolas;
-            color: #fff;
-            position: absolute;
-            width: 4px;
-            height: 14px;
-            top: 9px;
-            right: 14px;
+        .content .left-1 .left-detail>.down-menu>i{
+        font: 400 9px/14px consolas;
+        color: #fff;
+        position: absolute;
+        width: 4px;
+        height: 14px;
+        top: 9px;
+        right: 14px;
         }
-       
-        .content .left-1 ul li a:hover{
-            color: #B61D1D;
-            border-left: 1px solid #B61D1D;
-            background-color: white;
-              
+        
+        .content .left-1 .left-detail>.down-menu:hover>a{/*调整CSS伪类的位置解决，鼠标放在下拉菜单式。父元素效果消失的bug*/
+        color: #B61D1D;
+        border-left: 1px solid #B61D1D;
+        background-color: white;
+        
         }
-        .content .left-1 ul li:last-of-type a:hover{
-            border-bottom: 1px solid #B61D1D;  
+        .content .left-1 .left-detail>.down-menu:last-of-type>a:hover{
+        border-bottom: 1px solid #B61D1D;
         }
         .content .main{
-            float:left;
-            margin-left: 10px;
-            position: relative;
-            top: -15px;
-            left: 0px;
+        float:left;
+        margin-left: 10px;
+        position: relative;
+        top: -15px;
+        left: 0px;
+       
         }
         .content .main img{
-            width: 730px;
-            height: 454px;
+        width: 730px;
+        height: 454px;
         }
         .content .right-1 {
-            border: 1px solid #CAC3C3;
-            border-bottom: none;
-            float: right;
-            width: 248px;
-            position: relative;
-            top: -16px;
+        border: 1px solid #CAC3C3;
+        border-bottom: none;
+        float: right;
+        width: 246px;
+        position: relative;
+        top: -16px;
+        
         }
         .content .right-1 .news ul li{
-            line-height: 27px;
-            padding-left: 10px;
+        line-height: 27px;
+        padding-left: 10px;
         }
         .content .right-1 .news ul li a{
-            color: #666;
-            font: 12px/150% Arial,Verdana,"\5b8b\4f53"; 
+        color: #666;
+        font: 12px/150% Arial,Verdana,"\5b8b\4f53";
         }
-         .content .right-1 .news ul li span{
-             font-weight: 700;
-             font-family: "黑体";
+        .content .right-1 .news ul li span{
+        font-weight: 700;
+        font-family: "黑体";
         }
         .content .right-1 .news ul li a:hover{
-            color: red;
+        color: red;
         }
         .content .right-1 .news ul li:first-of-type{
-            border-bottom: 1px dotted #CAC3C3;
-            height: 43px;
-            line-height: 43px;
+        border-bottom: 1px dotted #CAC3C3;
+        height: 43px;
+        line-height: 43px;
         }
         .content .right-1 .news ul li:first-of-type span{
-            font-size: 16px;
-            font-family: "microsoft yahei";
-            font-weight: 400;
-            color: #666;
+        font-size: 16px;
+        font-family: "microsoft yahei";
+        font-weight: 400;
+        color: #666;
         }
-
         .content .right-1 .news ul li:first-of-type a{
-                 padding-left: 114px;
-                 font-family: consolas;
+        padding-left: 114px;
+        font-family: consolas;
         }
         
         .content .right-1 .news{
-            border-bottom: 1px dashed #CAC3C3;
+        border-bottom: 1px dashed #CAC3C3;
         }
         .content .right-1 .life div{
-            font-size: 16px;
-            font-family: "microsoft yahei";
-            font-weight: 400;
-            color: #666;
-            height: 43px;
-            line-height: 43px;
-            padding-left: 10px;
-         }
-         .content .right-1 .life .life-list{
-            border-top: 1px dashed #CAC3C3;
-         }
-         .content .right-1 .life .life-list li{
-                float: left; 
-                height: 62px;
-                width:82px;
-                border-bottom: 1px solid #CAC3C3;
-                text-align: center;
-         }
-
-        .content  .life .life-list li span:hover{
-             color: red;      
+        font-size: 16px;
+        font-family: "microsoft yahei";
+        font-weight: 400;
+        color: #666;
+        height: 43px;
+        line-height: 43px;
+        padding-left: 10px;
         }
-         .content .right-1 .life .life-list i{  
-            height: 28px;
-            width: 32px;
-            display: block;
-            border: 1px solid red;
-            margin: 5px auto 0px auto;
-         }
+        .content .right-1 .life .life-list{
+        border-top: 1px dashed #CAC3C3;
+        }
+        .content .right-1 .life .life-list li{
+        float: left;
+        height: 77px;
+        width: 61px;
+        padding: 10px;
+        border-bottom: 1px solid #CAC3C3;
+        text-align: center;
+        }
+        .content .life-list .kind a{
+        color: #666;
+        }
+        .content .life-list .kind a:hover{
+        color: red;
+        }
+        .content .right-1 .life .life-list i{
+        height: 27px;
+        width: 30px;
+        display: block;
+        border: 1px solid red;
+        margin: 5px auto 0px auto;
+        }
+        .content .right-1 .life .life-list .kind{
+        border-right: 1px solid #CAC3C3;
+        border-bottom: 1px solid #CAC3C3;
+        }
         .content .right-1 .life .life-list .b-r{
-            border-right: 1px solid #CAC3C3;
+        border-right: none;
         }
         .content .life .life-list span{
-           width: 36px;
-           height: 14px;
-           display: block;
-           border:1px solid black;
-           font:12px/150% Arial,Verdana,"\5b8b\4f53";
-           color: #666;
-           margin: 0 auto;
+        width: 36px;
+        height: 14px;
+        display: block;
+        border:1px solid black;
+        font:12px/150% Arial,Verdana,"\5b8b\4f53";
+        /* color: #666;应该设置a标签颜色，不然会影响hover效果*/
+        margin: 0 auto;
         }
-        .content .life-list li:first-of-type i{
-            background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") 4px 2px no-repeat;
+        .content .life-list li:nth-of-type(1) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -22px 2px no-repeat;
+        }
+        .content .life-list li:nth-of-type(2) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -24px -24px no-repeat;
+        }
+        .content .life-list li:nth-of-type(3) i{
+        background: url("http://img14.360buyimg.com/da/jfs/t1456/28/1208095754/7218/651e2541/55bf27beN7565bc0e.png") -23px -50px  no-repeat;
+        }
+        .content .life-list li:nth-of-type(4) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -25px -74px no-repeat;
+        }
+        .content .life-list li:nth-of-type(5) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png")-24px -50px no-repeat;
+        }
+        .content .life-list li:nth-of-type(6) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -24px -122px no-repeat;
+        }
+        .content .life-list li:nth-of-type(7) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -24px -149px no-repeat;
+        }
+        .content .life-list li:nth-of-type(8) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -24px -174px no-repeat;
+        }
+        .content .life-list li:nth-of-type(9) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png")-24px -248px no-repeat;
+        }
+        .content .life-list li:nth-of-type(10) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png") -24px -199px  no-repeat;
+        }
+        .content .life-list li:nth-of-type(11) i{
+        background: url("http://img14.360buyimg.com/da/jfs/t1456/28/1208095754/7218/651e2541/55bf27beN7565bc0e.png")5px -272px no-repeat;
+        }
+        .content .life-list li:nth-of-type(12) i{
+        background: url("http://misc.360buyimg.com/product/home/1.0.0/widget/lifeserv/i/icon_lifeserv.png")-24px -225px no-repeat;
+        }
+        .down-menu{
+        position: relative;
+        }
+        .down-menu .classfication{
+        display: none;
+        position: absolute;
+        top: -1px;
+        left: 210px;
+        width: 1000px;
+        height: 466px;
+        border: 1px solid #B61D1D;
+        border-left: none;
+        background-color: white;
+        z-index: 2;
+        }
+        .down-menu:hover .classfication{
+        display: block;
+        }
+        .down-menu .cheif{
+        margin: 10px;
+        /*border: 1px solid black;*/
+        }
+        /*.down-menu .header-list{
+        border: 1px solid red;
+        }*/
+        .down-menu .header-list .big{
+        float: left;
+        }
+        .content .down-menu .header-list .big a{
+        color: #fff;
+        display: block;
+        font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+        /*border: 1px solid green;*/
+        margin-right: 10px;
+        background: #7C7171;
+        padding: 0 0 0 8px;
+        }
+        .content .left-1 .header-list .big i{
+        font: 400 9px/24px consolas;
+        background: #5c5251;
+        padding: 5px;
+        margin-left: 5px;
+        }
+        .content .left-1 .header-list .big a:hover{
+        background-color: #C81623;
+        }
+        .content .left-1 .header-list .big a:hover i{
+        background-color: #B1191A;
+        }
+        .content .left-1 .list-1{
+        margin-top: 10px;
+        }
+        .content .left-1 .list-1 .spec{
+        /* margin-left: 7px;*/
+        padding-left: 13px;
+        }
+        .content .left-1 .list-1 .main-left a{
+        font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+        color: #666;
+        font-weight: 700;
+        display: block;
+        }
+        .content .left-1 .list-1 .main-left i{
+        font: 400 9px/14px consolas;
+        margin-left: 10px;
+        }
+        .content .left-1 .list-1 .main-left{
+        float: left;
+        margin-top: 7px;
+        /*border: 1px solid #333;*/
+        }
+        .content .left-1 .list-1 .main-left a:hover{
+        color: red;
+        }
+        .content .left-1 .list-1 .list-details li a{
+        font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+        color:#666;
+        border-left: 1px solid #CAC3C3;
+        padding: 0px 5px 0px 5px;
+        }
+        .content .left-1 .list-1 .list-details li a:hover{
+        color: red;
+        }
+        .content .left-1 .list-1 .list-details{
+        border-bottom: 1px solid #CAC3C3;
+        float: left;
+        margin-left: 9px;
+        width: 585px;
+        }
+        .content .list-1 .list-details ul li{
+        float: left;
+        }
+        .classfication .chief-left{
+        float: left;
+        }
+        .classfication .side-img{
+        float: right;
+        width: 172px;
+        /*border: 1px solid #444;*/
+        line-height: 0px;
+        }
+        .classfication .img-down{
+        float:right;
+        width: 172px;
+        line-height: 0px;
+        }
+        .classfication .side-img a{
+        display: inline-block;
+        /* border: 1px solid yellow;*/
+        margin-bottom: 3px;
+        margin-right: 3px;
+        /*height: 35px;*/
+        }
+        .classfication .img-down a{
+        display: inline-block;
+        margin-top: 3px;
         }
         </style>
     </head>
@@ -607,61 +767,206 @@
         <div class="c-b-line"></div>
         <div class="content clearfix">
             <div class="left-1">
-                <ul>
-                    <li><a href="#">家用电器</a><i>></i></li>
-                    <li><a href="#">手机、数码、京东通信</a><i>></i></li>
-                    <li><a href="#">电脑、办公</a><i>></i></li>
-                    <li><a href="#">家居、家具、家装、厨具</a><i>></i></li>
-                    <li><a href="#">男装、女装、内衣、珠宝</a><i>></i></li>
-                    <li><a href="#">个护化妆、清洁用品</a><i>></i></li>
-                    <li><a href="#">鞋靴、箱包、钟表、奢侈品</a><i>></i></li>
-                    <li><a href="#">运动户外</a><i>></i></li>
-                    <li><a href="#">汽车、汽车用品</a><i>></i></li>
-                    <li><a href="#">母婴、玩具乐器</a><i>></i></li>
-                    <li><a href="#">食品、酒类、生鲜、特产</a><i>></i></li>
-                    <li><a href="#">营养保健</a><i>></i></li>
-                    <li><a href="#">图书、音像、电子书</a><i>></i></li>
-                    <li><a href="#">彩票、旅行、充值、票务</a><i>></i></li>
-                    <li><a href="#">理财、众筹、白条、保险</a><i>></i></li>
-                </ul>
-            </div>
-            <div class="main">
-                <a href="#"><img src="http://img10.360buyimg.com/da/jfs/t2281/246/1848566257/103665/bfc8e80e/567a5d83N275728db.jpg" alt=""></a>
-            </div>
-            <div class="right-1">
-                <div class="news">
-                    <ul>
-                        <li><span>京东快报<a href="#">更多 ></a></span></li>
-                        <li><a href="#"><span>[特惠]</span>
-                            小家电2件99元 超值过圣诞</a></li>
-                        <li><a href="#"><span>[公告]</span>
-                            自贡大件运营中心正式投入运营</a></li>
-                        <li><a href="#"><span>[特惠]</span>
-                            买大酒享小酒自营郎酒专场</a></li>
-                        <li><a href="#"><span>[公告]</span>
-                            刘强东向习主席介绍智能物流</a></li>
-                        <li><a href="#"><span>[特惠]</span>
-                            直减200元 购机票</a></li>
-                    </ul>
-                </div>
-                <div class="life">
-                   <div>生活服务</div>
-                   <ul class="life-list clearfix">
-                          <li class="b-r"><a href="#"><i></i><span>话费</span></a></span></li>
-                          <li class="b-r"><a href="#"><i></i><span>机票</span></a></li>
-                          <li ><a href="#"><i></i><span>电影票</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>游戏</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>彩票</span></a></li>
-                          <li><a href="# "><i></i><span>团购</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>酒店</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>水电煤</span></a></li>
-                          <li><a href="#"><i></i><span>众筹</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>理财</span></a></li>
-                          <li class="b-r"><a href="#"><i></i><span>礼品卡</span></a></li>
-                          <li><a href="#"><i></i><span>白条</span></a></li>
-                    </ul>   
-                </div>
-            </div>
+                <ul class="left-detail">
+                    <li class="down-menu"><a href="#">家用电器</a><i>></i>
+                    <div class="classfication clearfix">
+                        <!-- <div class="dd-space"></div> -->
+                        <div class="cheif clearfix">
+                            <div class="chief-left">
+                                <div class="header-list clearfix">
+                                    <div class="big"><a href="#"><span>品牌日</span><i>></i></a></div>
+                                    <div class="big"><a href="#"><span>家电城</span><i>></i></a></div>
+                                    <div class="big"><a href="#"><span>智能生活馆</span><i>></i></a></div>
+                                    <div class="big"><a href="#"><span>京东净化馆</span><i>></i></a></div>
+                                    <div class="big"><a href="#"><span>京东帮服务店</span><i>></i></a></div>
+                                    <div class="big"><a href="#"><span>值得买精选</span><i>></i></a></div>
+                                </div>
+                                <div class="list-1 clearfix">
+                                    <div class="main-left spec"><a href="#">大家电<i>></i></a></div>
+                                    <div class="list-details clearfix">
+                                        <ul>
+                                            <li><a href="#">平板电视</a></li>
+                                            <li><a href="#">空调</a></li>
+                                            <li><a href="#">冰箱</a></li>
+                                            <li><a href="#">洗衣机</a></li>
+                                            <li><a href="#">家庭影院</a></li>
+                                            <li><a href="#">DVD</a></li>
+                                            <li><a href="#">迷你音响</a></li>
+                                            <li><a href="#">烟机/灶具</a></li>
+                                            <li><a href="#">热水器</a></li>
+                                            <li><a href="#">消毒柜/洗碗机</a></li>
+                                            <li><a href="#">冷柜冰箱</a></li>
+                                            <li><a href="#">酒柜</a></li>
+                                            <li><a href="#">家电配件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="list-1 clearfix">
+                                    <div class="main-left"><a href="#">生活电器<i>></i></a></div>
+                                    <div class="list-details clearfix">
+                                        <ul>
+                                            <li><a href="#">电风扇</a></li>
+                                            <li><a href="#">冷风扇</a></li>
+                                            <li><a href="#">净化器</a></li>
+                                            <li><a href="#">加湿器</a></li>
+                                            <li><a href="#">扫地机器人</a></li>
+                                            <li><a href="#">吸尘器</a></li>
+                                            <li><a href="#">挂烫/机熨斗</a></li>
+                                            <li><a href="#">插座</a></li>
+                                            <li><a href="#">电话机</a></li>
+                                            <li><a href="#">清洁机</a></li>
+                                            <li><a href="#">除湿机</a></li>
+                                            <li><a href="#">干衣机</a></li>
+                                            <li><a href="#">收录/音机</a></li>
+                                            1                         <li><a href="#">取暖电器</a></li>
+                                            <li><a href="#">其他生活电器</a></li>
+                                            <li><a href="#">生活电器配件</a></li>
+                                            <li><a href="#">净水设备</a></li>
+                                            <li><a href="#">饮水机</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="list-1 clearfix">
+                                    <div class="main-left"><a href="#">厨房电器<i>></i></a></div>
+                                    <div class="list-details clearfix">
+                                        <ul>
+                                            <li><a href="#">电压力锅</a></li>
+                                            <li><a href="#">电饭锅</a></li>
+                                            <li><a href="#">豆浆机</a></li>
+                                            <li><a href="#">面包机</a></li>
+                                            <li><a href="#">咖啡机</a></li>
+                                            <li><a href="#">微波炉</a></li>
+                                            <li><a href="#">料理榨汁机</a></li>
+                                            <li><a href="#">电烤箱</a></li>
+                                            <li><a href="#">电磁炉</a></li>
+                                            <li><a href="#">电饼铛/烧烤盘</a></li>
+                                            <li><a href="#">煮蛋器</a></li>
+                                            <li><a href="#">酸奶机</a></li>
+                                            <li><a href="#">电水壶/热水瓶</a></li>
+                                            <li><a href="#">电炖锅</a></li>
+                                            <li><a href="#">多用途锅</a></li>
+                                            <li><a href="#">果蔬解毒机</a></li>
+                                            <li><a href="#">养生壶/煎药壶</a></li>
+                                            <li><a href="#">电热饭盒</a></li>
+                                            <li><a href="#">其他生活电器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="list-1 clearfix">
+                                    <div class="main-left"><a href="#">个护健康<i>></i></a></div>
+                                    <div class="list-details clearfix">
+                                        <ul>
+                                            <li><a href="#">剃须刀</a></li>
+                                            <li><a href="#">剃/脱毛机</a></li>
+                                            <li><a href="#">口腔护理</a></li>
+                                            <li><a href="#">电吹风</a></li>
+                                            <li><a href="#">美容器</a></li>
+                                            <li><a href="#">理发器</a></li>
+                                            <li><a href="#">卷/直发器</a></li>
+                                            <li><a href="#">按摩椅</a></li>
+                                            <li><a href="#">按摩器</a></li>
+                                            <li><a href="#">足浴盆</a></li>
+                                            <li><a href="#">血压计</a></li>
+                                            <li><a href="#">健康秤/厨房秤</a></li>
+                                            <li><a href="#">血糖仪</a></li>
+                                            1                         <li><a href="#">体温计</a></li>
+                                            <li><a href="#">计步器脂肪检测仪</a></li>
+                                            <li><a href="#">其他健康电器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="list-1 clearfix">
+                                    <div class="main-left"><a href="#">五金家装<i>></i></a></div>
+                                    <div class="list-details clearfix">
+                                        <ul>
+                                            <li><a href="#">电动工具</a></li>
+                                            <li><a href="#">手动工具</a></li>
+                                            <li><a href="#">仪器仪表</a></li>
+                                            <li><a href="#">浴霸/排气扇</a></li>
+                                            <li><a href="#">灯具</a></li>
+                                            <li><a href="#">LED灯</a></li>
+                                            <li><a href="#">洁身器</a></li>
+                                            <li><a href="#">水槽</a></li>
+                                            <li><a href="#">龙头</a></li>
+                                            <li><a href="#">淋雨花洒</a></li>
+                                            <li><a href="#">厨卫五金</a></li>
+                                            <li><a href="#">家具五金</a></li>
+                                            <li><a href="#">门铃</a></li>
+                                            1                         <li><a href="#">电气开关</a></li>
+                                            <li><a href="#">插座</a></li>
+                                            <li><a href="#">电工电料</a></li>
+                                            <li><a href="#">监控安防</a></li>
+                                            <li><a href="#">电线/线缆</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-img">
+                                <a href="#"><img src="http://img10.360buyimg.com/vclist/jfs/t2176/358/849877519/2001/3cb2806f/562f4971Na5379aba.jpg"></a><a href="#"><img src="http://img11.360buyimg.com/vclist/jfs/t745/301/749830018/3039/9c96d09e/54d9eef9N5bb8d27f.jpg"></a>
+                                <a href="#"><img src="http://img12.360buyimg.com/vclist/jfs/t742/296/752313526/2128/67ff82d9/54d9ef02N99d26435.jpg"></a><a href="#"><img src="http://img13.360buyimg.com/vclist/jfs/t643/241/1441917153/1991/b7f68956/54d9ef10Nd206a236.jpg"></a>
+                                <a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t703/273/787686128/2436/5299f29d/54d9ef28N00328d44.jpg"></a><a href="#"><img src="http://img10.360buyimg.com/vclist/jfs/t820/181/3448454/2372/cbfc2389/54d9ef34N7cc61f4c.jpg"></a>
+                                <a href="#"><img src="http://img11.360buyimg.com/vclist/jfs/t475/29/1411508579/2230/64183923/54d9ef3eN99aef1f0.jpg"></a><a href="#"><img src="http://img12.360buyimg.com/vclist/jfs/t700/76/767891003/1472/c20aa630/54d9ef4cN4fe57f9b.jpg"></a>
+                            </div>
+                            <div class="img-down">
+                                <a href="#"><img src="http://img13.360buyimg.com/vclist/jfs/t1852/42/1776435736/5661/e35bdc33/5673a854N10856704.jpg"></a><a href="#"><img src="http://img14.360buyimg.com/vclist/jfs/t2533/343/1006203332/6236/2d1ee313/567d6acfN8bba5c2a.jpg"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="down-menu"><a href="#">手机、数码、京东通信</a><i>></i></li>
+                <li class="down-menu"><a href="#">电脑、办公</a><i>></i></li>
+                <li class="down-menu"><a href="#">家居、家具、家装、厨具</a><i>></i></li>
+                <li class="down-menu"><a href="#">男装、女装、内衣、珠宝</a><i>></i></li>
+                <li class="down-menu"><a href="#">个护化妆、清洁用品</a><i>></i></li>
+                <li class="down-menu"><a href="#">鞋靴、箱包、钟表、奢侈品</a><i>></i></li>
+                <li class="down-menu"><a href="#">运动户外</a><i>></i></li>
+                <li class="down-menu"><a href="#">汽车、汽车用品</a><i>></i></li>
+                <li class="down-menu"><a href="#">母婴、玩具乐器</a><i>></i></li>
+                <li class="down-menu"><a href="#">食品、酒类、生鲜、特产</a><i>></i></li>
+                <li class="down-menu"><a href="#">营养保健</a><i>></i></li>
+                <li class="down-menu"><a href="#">图书、音像、电子书</a><i>></i></li>
+                <li class="down-menu"><a href="#">彩票、旅行、充值、票务</a><i>></i></li>
+                <li class="down-menu"><a href="#">理财、众筹、白条、保险</a><i>></i></li>
+            </ul>
         </div>
-    </body>
+        <div class="main">
+            <a href="#"><img src="http://img10.360buyimg.com/da/jfs/t2281/246/1848566257/103665/bfc8e80e/567a5d83N275728db.jpg"></a>
+        </div>
+        <div class="right-1">
+            <div class="news">
+                <ul>
+                    <li><span>京东快报<a href="#">更多 ></a></span></li>
+                    <li><a href="#"><span>[特惠]</span>
+                小家电2件99元 超值过圣诞</a></li>
+                <li><a href="#"><span>[公告]</span>
+            自贡大件运营中心正式投入运营</a></li>
+            <li><a href="#"><span>[特惠]</span>
+        买大酒享小酒自营郎酒专场</a></li>
+        <li><a href="#"><span>[公告]</span>
+    刘强东向习主席介绍智能物流</a></li>
+    <li><a href="#"><span>[特惠]</span>
+直减200元 购机票</a></li>
+</ul>
+</div>
+<div class="life">
+<div>生活服务</div>
+<ul class="life-list clearfix">
+<li class="kind"><a href="#"><i></i><span>话费</span></a></li>
+<li class="kind"><a href="#"><i></i><span>机票</span></a></li>
+<li class="kind"><a href="#"><i></i><span>电影票</span></a></li>
+<li class="kind b-r"><a href="#"><i></i><span>游戏</span></a></li>
+<li class="kind"><a href="#"><i></i><span>彩票</span></a></li>
+<li class="kind"><a href="#"><i></i><span>团购</span></a></li>
+<li class="kind"><a href="#"><i></i><span>酒店</span></a></li>
+<li class="kind b-r"><a href="#"><i></i><span>水电煤</span></a></li>
+<li class="kind"><a href="#"><i></i><span>众筹</span></a></li>
+<li class="kind"><a href="#"><i></i><span>理财</span></a></li>
+<li class="kind"><a href="#"><i></i><span>礼品卡</span></a></li>
+<li class="kind b-r"><a href="#"><i></i><span>白条</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
 </html>

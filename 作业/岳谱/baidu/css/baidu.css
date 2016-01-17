@@ -1,0 +1,306 @@
+
+*{margin:0;
+ padding:0; 
+ font-size:13px; 
+ }
+ body{
+ 	position: relative;
+ 	text-align: center;
+ 	height: 100%;
+ }
+
+.head{
+	color: white;
+	margin: 19px 0 5px;
+	padding: 0 96px 0 0 ;
+	right:0;
+	top: 0;
+	position: absolute;
+	z-index:0;
+}
+.head a.nav{
+	color: #333;
+	float:left;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+
+   
+    
+}
+
+.head a.lg,.head a.set,.head{
+    color: #333;
+	float:left;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+
+}
+.head a.mor{
+	background: #38f none repeat;
+	border-bottom: 1px solid #38f;
+	color: white;
+	float: left;
+	height: 23px;
+	width: 60px;
+	margin-left: 19px;
+	margin-right: 2px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1px;
+	text-align: center;
+	text-decoration:none;
+}
+.head a.mor:hover{
+	color: white;
+	text-decoration:underline;
+}
+.head a:hover{
+	 color: #00c;
+	}
+
+#more_content{
+    display:none;
+	opacity: 1;
+	min-height: 600px;
+	background-color: #f9f9f9;
+	border-left: 1px solid #e7e7e7;
+	overflow: hidden;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 85px;
+	z-index: 2px;
+
+}
+#more_content .bd_more{
+	border-bottom: 1px solid #f0f0f0;
+	color: #333;
+	height: 43px;	
+	width: 66px;
+	line-height: 43px;
+	margin: 0 auto;
+	padding-top: 9px;
+	text-align: center;
+}
+#more_content .bd_ico a{
+	border-bottom: 1px solid #f0f0f0;
+	color: #666;
+	display: block;
+	height: 76px;
+	width: 66px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+
+}
+#more_content .bd_ico a:hover{
+	text-decoration: underline;
+}
+
+#more_content .bdmore a{
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 12px;
+	display: block;
+	height: 76px;
+	width: 66px;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 76px;
+}
+
+#more_content .bdmore a:hover,#more_content .bdmore a:visited{
+	color: #666;
+	text-decoration: underline;
+}
+#more_content .bd_ico span{
+	 background: url(../pic/bdbri_icons.png) no-repeat;
+	 width: 40px;
+	 display: block;
+	 height: 36px;
+	 margin: 10px auto 5px;
+	 width: 36px;
+}
+#more_content .bd_ico span.mp3 {
+	background-position: -72px 0 ;
+	width: 40px;
+}
+#more_content .bd_ico span.img {
+	background-position: -112px 0 ;
+}
+#more_content .bd_ico span.zhidao {
+	background-position: -36px 0;
+}
+#more_content .bd_ico span.wenku {
+	background-position: -148px 0;
+}
+#more_content .bd_ico span.bang {
+	background-position: -184px 0;
+}
+#more_content .bd_ico span.tuiguang {
+	background-position: -220px 0;
+}
+
+/*logo部分样式*/
+#content {
+	
+	position: relative;
+	top: 39px;
+}
+#content .logo img{
+	width: 270px;
+	height: 129px;
+
+}
+
+#content  .text_content{
+	margin:22px auto 0;
+	text-align: left;
+	width: 699px;
+    position: relative;
+    z-index: 100px;
+
+}
+
+.text_content  .text{
+	display: inline-block;
+	border-color: #b8b8b8 ;
+	border-style: solid;
+	border-width: 1px 0px 1px 1px;
+	overflow: hidden;
+	width: 539px;
+	height: 34px;
+    line-height: 34px;
+    margin-right: -3px;
+    vertical-align: top;
+
+
+}
+
+.in_text{
+    width:500px;
+    font:16px/18px arial;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    border:0 none;
+
+
+
+ }
+
+ 
+.text_content  .search{
+ 
+    height: auto;
+    width: auto;
+    vertical-align: top;
+    display: inline-block;
+    margin-left:-4px;
+}
+.ser_input{
+	background-color: #3385ff;
+	color: white;
+	border:0 none;
+	font-size: 15px;
+	height: 36px;
+	letter-spacing: 1px;
+	width: 100px;
+
+}
+.ser_input:hover{
+	background-color: #3385fe;
+	box-shadow: 1px 1px 1px #ccc;
+}
+
+/*最底部*/
+.ftCon{
+	
+	position: absolute;
+	bottom: -422px;/*此处有疑问，不知道为什么是负值*/
+	height: 100px;
+	width: 100%;
+    
+    overflow: hidden;
+    text-align: left;
+    z-index: 0;
+
+    
+}
+.footer{
+	margin:0 auto;
+	overflow: hidden;
+	text-align: center;
+	
+}
+ 
+.footer .item{
+	display: inline-block;
+}
+.item .qrcode-item{
+	float: left;
+} 
+.item .qrcode-item-2{
+	margin-left: 33px;
+}
+.item #qrcode-img{
+	float: left;
+	height: 60px;
+	width: 60px;
+}
+.item .qrcode-item-1 #qrcode-img{
+	background:url(../pic/phone_baidu.png ) no-repeat;
+
+}
+.item .qrcode-item-2 #qrcode-img{
+	background:url(../pic/nuomi_baidu.png ) no-repeat;
+
+}
+
+.item #qrcode-text{
+	color: #999;
+	float: left;
+	line-height: 23px;
+	margin:8px 0 0 10px;
+}
+ 
+ .item #qrcode-text p{
+ 	text-align: left;
+ }
+ .item #qrcode-text b{
+ 	color: #4c4c4c;
+ 	font-weight: bold;
+ }
+ .item #qrcode-text span{
+ 	letter-spacing: 1px;
+ }
+.Word{
+	 display: inline-block;
+    margin-left: 33px;
+    position: relative;
+    text-align: left;
+    top: -12px;
+}
+#lh{
+	margin:16px 0 5px;
+}
+#lh a {
+    color: #272727;
+    margin-right: 20px;
+}
+
+#copy a {
+    color: #666;
+}
+#copy .c-icon-icrlogo {
+    background:url(../pic/icons.png ) no-repeat -600px -96px;
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    position: relative;
+    top: 3px;
+    width: 14px;
+}

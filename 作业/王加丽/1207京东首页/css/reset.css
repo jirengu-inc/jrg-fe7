@@ -1,0 +1,21 @@
+@charset"UTF-8";
+
+html,body,ul,li,p,h1,h2,h3,h4,h5,dl,dd,ol,img{
+	margin: 0;
+	padding: 0;
+	
+}
+ol,ul{
+	list-style: none;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+}
+h2,h3{
+	font-family: "microsoft yahei";
+	font-weight: 400;
+}

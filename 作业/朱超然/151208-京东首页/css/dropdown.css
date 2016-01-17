@@ -1,3 +1,4 @@
+/*nav中下拉菜单*/
 .dropdown-box{
 	position:relative;
 	border-left:1px solid #f1f1f1;
@@ -20,7 +21,8 @@
 }
 
 .dropdown-box:hover .dropdown-menu{
-	display:block;	
+	display:block;
+	z-index:1;	
 }
 
 .dropdown-box:hover .hider{
@@ -33,7 +35,7 @@
 } 
 
 .hider {
-    height: 1px;
+    height: 4px;
     width: 100%;
     position: absolute;
     top:100%;
@@ -41,7 +43,7 @@
     background: #fff;
     opacity:0;
     margin-top: -1px;
-    z-index:1;
+    z-index:2;
 }
 
 .icon-arrow{
@@ -60,4 +62,36 @@
 	position:relative;
 	top:-7px;
 	text-decoration:none;
+}
+
+/*shopping－cart中下拉框*/
+.dropdown-btn{
+	position:relative;
+	border:1px solid #DFDFDF;
+	background: #F9F9F9;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:hover .dropdown-layer{
+	z-index:1;
+	background:#fff;
+	border:1px solid #ddd;
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.dropdown-btn:hover .dropdown-layer{
+	position:absolute;
+	top:100%;
+	margin-top:1px;
+	right:-1px;
+}
+
+.dropdown-btn:hover .space{
+	position:absolute;
+	height:7px;
+	width:100%;
+	top:100%;
+	margin-top:-4px;
+	z-index:2;
+	background:#fff;
 }

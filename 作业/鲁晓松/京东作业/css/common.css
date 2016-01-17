@@ -1,0 +1,40 @@
+/*common.css*/
+html,body,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,pre,form,th,td{
+	margin:0;
+	padding:0; 
+}
+body {
+	font: 12px/150% Arial,Verdana;
+	background: #fff;
+	overflow: scroll;
+}
+ul,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color: #C81623;
+}
+i,em{
+	font-style: normal;
+}
+.clearfix {
+	*zoom: 1; 
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden; 
+}
+.layout {
+	width: 1210px;
+	margin:0 auto;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
