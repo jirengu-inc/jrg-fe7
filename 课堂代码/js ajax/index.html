@@ -14,15 +14,23 @@
             var xmlhttp=new XMLHttpRequest();
             xmlhttp.onreadystatechange=function(){
                 if (xmlhttp.readyState==4 && xmlhttp.status==200){
-                    document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
-                    console.log(333);
+                    dealWith(xmlhttp.responseText);
+                    
+                    console.log('over...');
                 }
-                console.log(222);
+                console.log('readyState:', xmlhttp.readyState);
+                console.log('status:', xmlhttp.status);
+                console.log('responseText:', xmlhttp.responseText);
             }
             xmlhttp.open("GET","ajax_simple.php",true);
             xmlhttp.send();
-            console.log('1111')
+            console.log('start');
         });
+
+       function dealWith (str){
+            console.log('dealWith....');
+            document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
+       }
     </script>
 </fieldset>
 
