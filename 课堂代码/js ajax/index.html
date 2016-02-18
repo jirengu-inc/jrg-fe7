@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>ajax test</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+<fieldset>
+<legend>简单的GET</legend>
+    <div id="myDiv1"><h2>我的名字</h2></div>
+    <button id="btn1">修改内容</button>
+    <script>
+        document.getElementById("btn1").addEventListener('click', function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","ajax_simple.php",true);
+            xmlhttp.send();
+        });
+    </script>
+</fieldset>
+
+<fieldset>
+<legend>GET有参数异步</legend>
+    <div id="myDiv2"><h2>有参数的get</h2></div>
+    <button id="btn2">点击</button>
+    <script>
+        // document.getElementById("btn2").addEventListener('click', function(){
+        //     var xmlhttp=new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange=function(){
+        //         if (xmlhttp.readyState==4 && xmlhttp.status==200){
+        //             document.getElementById("myDiv2").innerHTML=xmlhttp.responseText;
+        //         }
+        //     }
+        //     xmlhttp.open("GET","ajax_input.php?name=kevin&age=100",true);
+        //     xmlhttp.send();
+        //     document.getElementById("myDiv2").innerHTML="数据来之前我先出现在这里";
+        // });
+
+
+        function ajax(url, param, callback){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                console.log(xmlhttp.status);
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    callback(xmlhttp.responseText);
+                    //doit(xmlhttp.responseText);
+                }
+                if(xmlhttp.status == 404){
+                    alert('网络链接失败');
+                }
+            }
+            xmlhttp.open("GET", url + "?" + param,true);
+            xmlhttp.send();    
+        }
+        function doit(data){
+            document.getElementById("myDiv2").innerHTML=data;
+        }
+        document.getElementById("btn2").addEventListener('click', function(){
+
+            ajax("http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/24-ajax/code/ajax_input.php", "name=kevin&age=100", doit);
+
+        });     
+
+    </script>
+</fieldset>
+
+<fieldset>
+<legend>GET有参数同步</legend>
+    <div id="myDiv3"><h2>同步获取</h2></div>
+    <button id="btn3">点击</button>
+    <script>
+        document.getElementById("btn3").addEventListener('click', function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("GET","ajax_input.php?name=kevin&age=100",false);
+            xmlhttp.send();
+            document.getElementById("myDiv3").innerHTML=xmlhttp.responseText;
+            alert("数据来之后我出现在这里");
+        });
+    </script>
+</fieldset>
+
+<fieldset>
+<legend>POST有参数</legend>
+    <div id="myDiv4"><h2>有参数的get</h2></div>
+    <button id="btn4">点击</button>
+    <script>
+        document.getElementById("btn4").addEventListener('click', function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    document.getElementById("myDiv4").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("POST","ajax_post.php",true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xmlhttp.send("name=kevin&age=100");
+        });
+    </script>
+</fieldset>
+
+<fieldset>
+<legend>查看返还状态</legend>
+    <div id="myDiv5"><h2>我的名字</h2></div>
+    <button id="btn5">修改内容</button>
+    <script>
+        document.getElementById("btn5").addEventListener('click', function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                console.log(xmlhttp.readyState);
+                console.log(xmlhttp.status);
+                console.log('--------');
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    document.getElementById("myDiv5").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","ajax_simple.php",true);
+            xmlhttp.send();
+        });
+    </script>
+</fieldset>
+</body>
+</html>

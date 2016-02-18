@@ -1,0 +1,26 @@
+<script>
+function fun(a,b) {
+	var obj = {
+		fun:function(c){
+			var obj2 = fun(c,a);
+			return obj2;
+		}
+	};
+	return obj;
+}
+console.log('ex1: ----------')
+var a = fun(0);   // undefined
+a.fun(1);   // 0
+a.fun(2);   // 0
+//a.fun(3);   //0
+
+//console.log('ex2: ----------')
+
+//var b = fun(0).fun(1).fun(2).fun(3); // undefined 0 1 2 
+
+//var c = fun(0).fun(1);  c.fun(2);  c.fun(3);//undefined,0 ,?,?
+
+
+
+
+</script>

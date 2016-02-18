@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>加载更多</title>
+  <style>
+  ul,li{
+  margin: 0;
+  padding: 0
+}
+#ct li{
+  list-style:none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  cursor:pointer;
+}
+#load-more{
+  margin-top: 10px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+<ul id="ct">
+  <li>0</li>
+  <li>1</li>
+</ul>
+  <button id="load-more">加载更多</button>
+</body>
+  
+  <script>
+    
+    /*1. 定义接口
+
+1) url:
+2) 入参: { start: 2, len: 6 }
+3) 回参: 
+{
+  status: 1, //1代表正常，0代表出错
+  data: [2,3,4,5,6,7]
+}
+*/
+
+var loadMore = document.getElementById('load-more'),
+    ct = document.getElementById('ct');
+
+var cur = 2; 
+
+var isLoading = false;
+    
+bind(loadMore, 'click', function(){
+  if(isLoading){
+    return;
+  }
+  isLoading = true;
+  loadMore.innerText = '加载中...';
+  ajax({
+    url: 'getMore.php',
+    data: {
+      start: cur,
+      len: 6
+    },
+    success: function(json){
+      isLoading = false;
+      loadMore.innerText = '加载更多';
+      if(json.status == 1){
+        append(json.data);
+        cur += 6;
+      }else{
+        alert('获取数据失败');
+      }
+    },
+    error: function(){
+      isLoading = false;
+      loadMore.innerText = '加载更多';
+      alert('系统异常');
+    }
+  });
+});
+
+function append(arr){
+  for(var i = 0;i<arr.length;i++){
+    var li = document.createElement('li');
+    li.innerText = arr[i];
+    ct.appendChild(li);
+  }
+}
+
+
+
+
+
+
+
+
+
+function ajax(opts){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function(){
+    if(xmlhttp.readyState === 4){
+      if(xmlhttp.status === 200){
+        opts.success( JSON.parse(xmlhttp.responseText) );
+      }else{
+        opts.error();
+      }
+    }
+  };
+  xmlhttp.open('get', opts.url + '?' + serialize(opts.data), true);
+  xmlhttp.send();
+}
+
+/**
+{a:1,b:2} -> a=1&b=2
+*/
+
+function serialize(data){
+  var str = '';
+  for(var key in data){
+    str += key + '=' + data[key] + '&';
+  }
+  str = str.slice(0, str.length-1);
+  return str;
+}
+
+function bind(el,type,handler){
+  if(el.addEventListener){
+    el.addEventListener(type,handler);
+  }else{
+    el.attachEvent("on"+type,function(){
+      handler.call(el);
+    });
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//接口：http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/29-jquery%20ajax/code/getMoreItem.php?start=28&len=3
+//页面:http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/24-ajax/code/getMore.html
+
+    
+    
+  </script>
+  
+  
+  
+</html>

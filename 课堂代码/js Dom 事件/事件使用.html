@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>事件</title>
+
+</head>
+<body>
+    <!--onclick -->
+    <p id="p1">我是p1</p>
+    <button id="btn1">点这里</button>
+    <script>
+        document.getElementById("btn1").onclick=function(){
+            document.getElementById("p1").innerHTML= new Date();
+        };
+    </script>
+
+    <hr/>
+    <!-- onchange -->
+
+    输入你的名字: <input type="text" id="input1" >
+    <p>当你离开输入框后，函数将被触发，将小写字母转为大写字母。</p>
+    <script type="text/javascript">
+        document.getElementById("input1").onchange=function(){
+            console.log(this);
+            this.value = this.value.toUpperCase();
+        }
+    </script>
+
+    <hr/>
+    mouseover,mouseout
+    <div id = "div1" style="background:red;">Mouse Over Me</div>
+    <script>
+    document.getElementById('div1').onmouseover=function(){
+        this.innerHTML="on me";
+    };
+    document.getElementById('div1').onmouseout=function(){
+        this.innerHTML="out me";
+    }
+    </script>
+
+    <hr/>
+    mouseenter,mouseleave
+    <div id="div3" style="width: 80px;height:80px;border:1px solid;">
+        <p style="background:yellow;">mouseenter</p>
+    </div>
+
+    <div id="div4" style="width: 80px;height:80px;border:1px solid;">
+        <p style="background:yellow;">mouseover</p>
+    </div>
+    <script type="text/javascript">
+        var i = 0, j=0;
+        document.getElementById('div3').onmouseenter=function(event) {
+            i++;
+            console.log(i);
+        };
+        document.getElementById('div4').onmouseover=function(event) {
+            j++;
+            console.log(j);
+        };
+    </script>
+
+
+    <hr/>
+    <div id="div2" style="background:yellow;">div2</div>
+    <script type="text/javascript">
+        document.getElementById('div2').onmousedown=function(){
+            this.innerHTML="鼠标按下了";
+        };
+        document.getElementById('div2').onmouseup=function(){
+            this.innerHTML="鼠标松开了";
+        }
+    </script>
+
+    <hr/>
+    resize事件
+    <p id = "p4">调整窗口大小</p>
+    <script type="text/javascript">
+        window.onresize=function(){
+            document.getElementById('p4').innerHTML='width:'+window.screen.width+",height:"+window.screen.height;
+        }
+    </script>
+
+    <hr/>
+    查看事件对象
+    <button id="btn5">按钮</button>
+    <script type="text/javascript">
+        document.getElementById("btn5").onclick=function(e){
+            console.log(arguments);
+            console.log(e);
+            console.log(e.target);
+            console.log(e.x);
+            console.log(e.type);
+            alert(1);
+        }
+        document.getElementById("btn5").onclick=function(e){
+            console.log(arguments);
+            console.log(e);
+            console.log(e.target);
+            console.log(e.x);
+            console.log(e.type);
+            alert(2);
+        }
+    </script>
+
+    <hr/>
+    事件绑定和解绑
+    <p>实例使用 addEventListener() 方法在同一个按钮中添加多个事件。</p>
+    <button id="myBtn">点我</button>
+
+    <p id="demo"></p>
+
+    <script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("mouseover", f1);
+    x.addEventListener("click", f2);
+    x.addEventListener("mouseout", f3);
+    x.addEventListener("click", function(evt){
+        console.log(evt);
+        console.log('click 2');
+    });
+
+    function f1() {
+        console.log('mouseover');
+    }
+
+    function f2() {
+        console.log('click 1');
+    }
+
+    function f3() {
+        console.log('mouseout');
+    }
+    </script>
+
+    <br/>
+    <hr/>
+    事件冒泡
+    <div id="div6" style="width:80px;height: 40px; background:red;">
+        <button id="btn6">按钮</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('div6').onclick=function(){
+            alert('div6 click');
+        }
+        document.getElementById('btn6').onclick=function(){
+            alert('btn6 click');
+        }
+    </script>
+
+    <br/>
+    <hr/>
+    事件捕获
+    <div id="div7" style="width:80px;height: 40px; background:red;">
+        <button id="btn7">按钮</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('div7').addEventListener('click', function(e){
+                //e.stopPropagation();
+            alert('div7 click');
+        }, true);
+        document.getElementById('btn7').addEventListener('click', function(e){
+            e.stopPropagation();
+            alert('btn7 click');
+        }, true);
+
+    </script>
+
+    <br/>
+    <hr/>
+    冒泡阻止
+    <div id="div8" style="width:80px;height: 40px; background:red;">
+        <button id="btn8">按钮</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('div8').onclick=function(){
+            alert('div8 click');
+        }
+        document.getElementById('btn8').onclick=function(evt){
+            evt.stopPropagation();
+            alert('btn8 click');
+        }
+    </script>
+
+    <br/>
+    <hr/>
+    取消默认事件
+    <a id="link" href="http://www.baidu.com">百度</a>
+    <script type="text/javascript">
+        document.getElementById('link').onclick=function(e){
+            e.preventDefault();
+            location.href="http://jirengu.com";
+        }
+
+    </script>
+
+</body>
+</html>
