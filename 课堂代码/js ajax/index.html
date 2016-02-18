@@ -15,10 +15,13 @@
             xmlhttp.onreadystatechange=function(){
                 if (xmlhttp.readyState==4 && xmlhttp.status==200){
                     document.getElementById("myDiv1").innerHTML=xmlhttp.responseText;
+                    console.log(333);
                 }
+                console.log(222);
             }
             xmlhttp.open("GET","ajax_simple.php",true);
             xmlhttp.send();
+            console.log('1111')
         });
     </script>
 </fieldset>
