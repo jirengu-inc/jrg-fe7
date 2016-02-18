@@ -26,7 +26,7 @@
                 	var json = JSON.parse(xmlhttp.responseText);
                 	opts.success(json);
                 }
-                if(xmlhttp.status == 404){
+                if(xmlhttp.readyState==4 && xmlhttp.status == 404){
                 	opts.error();
                 }
             }
