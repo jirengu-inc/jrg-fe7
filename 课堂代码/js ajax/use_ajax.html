@@ -11,6 +11,7 @@
 	</dl>
 
 	<input id="username2" type="text" placeholder="username">
+	<input  id="type" type="text" placeholer="type">
 	<button id="btn2">获取信息</button>
 
 
@@ -53,7 +54,7 @@
 
 			ajax({
 				url: 'use_ajax.php',
-				type: 'get',
+				type: document.getElementById('type').value || 'get',
 				data: {
 					username: document.getElementById('username2').value
 				},
