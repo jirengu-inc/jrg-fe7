@@ -7,10 +7,7 @@
 	<button id="btn">获取信息</button>
 
 	<dl id="ct">
-		<dt>性别:</dt>
-		<dd>男</dd>
-		<dt>年纪:</dt>
-		<dd>20</dd>
+
 	</dl>
 
 
@@ -34,7 +31,12 @@
 
        function dealWith (str){
        		var userInfo = JSON.parse(str);
-            console.log(userInfo);
+            var str = '<dt>性别：</dt>';
+            str +=    '<dd>'+userInfo.sex+'</dd>';
+            str +=    '<dt>年纪：</dt>';
+            str +=    '<dd>'+userInfo.age+'</dd>';
+
+            document.getElementById('ct').innerHTML = str;
        }
 
 	</script>
