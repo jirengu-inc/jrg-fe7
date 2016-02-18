@@ -18,26 +18,22 @@
 
 	<script type="text/javascript">
 
-        document.getElementById("btn1").addEventListener('click', function(){
+        document.getElementById("btn").addEventListener('click', function(){
+        	var username = document.getElementById('username').value;
+        	var url = 'use_ajax.php' + '?username='+username;
+
             var xmlhttp=new XMLHttpRequest();
             xmlhttp.onreadystatechange=function(){
                 if (xmlhttp.readyState==4 && xmlhttp.status==200){
                     dealWith(xmlhttp.responseText);
-                    
-                    console.log('over...');
                 }
-                console.log('readyState:', xmlhttp.readyState);
-                console.log('status:', xmlhttp.status);
-                console.log('responseText:', xmlhttp.responseText);
             }
-            xmlhttp.open("GET","use_ajax.php",true);
+            xmlhttp.open("GET",url,true);
             xmlhttp.send();
-            console.log('start');
         });
 
        function dealWith (str){
-            console.log('dealWith....');
-            document.getElementById("myDiv1").innerHTML = str;
+            console.log(str);
        }
 
 	</script>
