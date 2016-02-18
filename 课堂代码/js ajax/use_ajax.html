@@ -62,7 +62,7 @@
 					dealWith(data);
 				},
 				error: function(){
-					console.log('error');
+					onError();
 				}
 			});
 
@@ -85,6 +85,10 @@
             xmlhttp.open("GET",url,true);
             xmlhttp.send();
         });
+
+        function onError(){
+        	document.getElementById('ct').innerHTML = 'oh  出错了...';
+        }
 
        function dealWith (userInfo){
        		
