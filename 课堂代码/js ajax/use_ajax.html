@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<body>
+		
+	<input id="username" type="text" placeholder="username">
+	<button id="btn">获取信息</button>
+
+	<dl id="ct">
+		<dt>性别:</dt>
+		<dd>男</dd>
+		<dt>年纪:</dt>
+		<dd>20</dd>
+	</dl>
+
+
+
+
+	<script type="text/javascript">
+
+        document.getElementById("btn1").addEventListener('click', function(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    dealWith(xmlhttp.responseText);
+                    
+                    console.log('over...');
+                }
+                console.log('readyState:', xmlhttp.readyState);
+                console.log('status:', xmlhttp.status);
+                console.log('responseText:', xmlhttp.responseText);
+            }
+            xmlhttp.open("GET","use_ajax.php",true);
+            xmlhttp.send();
+            console.log('start');
+        });
+
+       function dealWith (str){
+            console.log('dealWith....');
+            document.getElementById("myDiv1").innerHTML = str;
+       }
+
+	</script>
+	</body>
+</html>
