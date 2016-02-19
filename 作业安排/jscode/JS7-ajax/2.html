@@ -68,7 +68,7 @@ loadMoreBtn.addEventListener('click', function(){
     return;
   }
   isLoading = true;
-  loadMore.innerHTML = '<img src="loading.gif" />';
+  loadMoreBtn.innerHTML = '<img src="loading.gif" />';
   ajax({
     url: '2.php',
     data: {
@@ -77,7 +77,7 @@ loadMoreBtn.addEventListener('click', function(){
     },
     success: function(json){
       isLoading = false;
-      loadMore.innerText = '加载更多';
+      loadMoreBtn.innerText = '加载更多';
       if(json.status == 1){
         append(json.data);
         cur += 6;
@@ -87,7 +87,7 @@ loadMoreBtn.addEventListener('click', function(){
     },
     error: function(){
       isLoading = false;
-      loadMore.innerText = '加载更多';
+      loadMoreBtn.innerText = '加载更多';
       alert('系统异常');
     }
   });
