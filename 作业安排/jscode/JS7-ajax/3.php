@@ -1,5 +1,5 @@
 <?php
-    $username = $_GET['username']; 
+    $username = $_POST['username']; 
     if($username === 'hunger'){
        $ret = array('status'=>1, 'msg_type'=>'USERNAME_EXIST'); 
    }else{
