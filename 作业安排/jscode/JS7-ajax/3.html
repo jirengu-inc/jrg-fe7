@@ -51,17 +51,17 @@ body {
 		<h3>注册</h3>
 		<form id="register-form" action="">
 			<dl class="register-ct">
-				<dt>用户名:</dt>
+				<dt>用户名</dt>
 				<dd>
-					<input id="username" type="text" placeholder="用户名">
+					<input id="username" type="text" placeholder="用户名(hunger被注册过)">
 				</dd>
-				<dd class="msg msg-un"></dd>
+				<dd class="msg msg-un">只能是字母、数字、下划线，3-10个字符</dd>
 
 				<dt>密码:</dt>
 				<dd>
 					<input type="password" id="password1" placehoder="密码">
 				</dd>
-				<dd class="msg msg-pwd1"></dd>
+				<dd class="msg msg-pwd1">大写字母、小写、数字、下划线最少两种，6-15个字符</dd>
 
 				<dt> 在输一次:</dt>
 				<dd>
@@ -114,7 +114,7 @@ body {
     	if( testUn() && testPwd1() && testPwd2() ){
     		testUnUseage(function(canUse){
     			if(canUse){
-    				console.log('ok')
+    				console.log('正在注册...')
     			}
     		})
     	}
