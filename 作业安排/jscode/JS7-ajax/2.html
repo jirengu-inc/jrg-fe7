@@ -64,14 +64,17 @@ var loadMoreBtn = document.getElementById('load-more'),
 
 var cur = 2; 
 
-var isLoading = false;
+var isLoading = false;  //设置一个状态锁，防止在加载的数据回来之前用户多次点击
     
-loadMoreBtn.addEventListener('click', function(){
+loadMoreBtn.addEventListener('click', function(e){
+	e.preventDefault();
+
   if(isLoading){
     return;
   }
   isLoading = true;
   loadMoreBtn.innerHTML = '<img src="loading.gif" />';
+
   ajax({
     url: '2.php',
     data: {
