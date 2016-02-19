@@ -1,6 +1,6 @@
 
 <?php
-	$username = $_GET['username'];
+	$username = $_GET['username'] || $_POST['username'];
 
 	if($username === 'kevin'){
 		$ret = array('sex'=>'男', 'age'=>18);
