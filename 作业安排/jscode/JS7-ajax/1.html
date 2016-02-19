@@ -1,18 +1,17 @@
 <!doctype html>
 <html>
-
+<head>
+    <title>封装一个ajax</title>
+</head>
 <body>
 		
 	<input id="username" type="text" placeholder="username">
+	<input id="type" type="text" placeholder="get or post">
 	<button id="btn">获取信息</button>
 
 	<dl id="ct">
 
 	</dl>
-
-	<input id="username2" type="text" placeholder="username">
-	<input  id="type" type="text" placeholer="type">
-	<button id="btn2">获取信息</button>
 
 
 	<script type="text/javascript">
@@ -50,43 +49,12 @@
 
 
 
-		document.getElementById('btn2').addEventListener('click', function(){
-
-			ajax({
-				url: 'use_ajaxa.php',
-				type: document.getElementById('type').value || 'get',
-				data: {
-					username: document.getElementById('username2').value
-				},
-				success: function(data){
-					dealWith(data);
-				},
-				error: function(){
-					onError();
-				}
-			});
-
-		});
-
-
 
 
         document.getElementById("btn").addEventListener('click', function(){
-        	// var username = document.getElementById('username').value;
-        	// var url = 'use_ajax.php' + '?username='+username;
-
-         //    var xmlhttp=new XMLHttpRequest();
-         //    xmlhttp.onreadystatechange=function(){
-         //        if (xmlhttp.readyState==4 && xmlhttp.status==200){
-         //        	var userInfo = JSON.parse(xmlhttp.responseText);
-         //            dealWith(userInfo);
-         //        }
-         //    }
-         //    xmlhttp.open("GET",url,true);
-         //    xmlhttp.send();
          
          	ajax({
-				url: 'use_ajax.php',
+				url: '1.php',
 				type: document.getElementById('type').value || 'get',
 				data: {
 					username: document.getElementById('username').value
@@ -105,7 +73,6 @@
         }
 
        function dealWith (userInfo){
-       		
             var str = '<dt>性别：</dt>';
             str +=    '<dd>'+userInfo.sex+'</dd>';
             str +=    '<dt>年纪：</dt>';

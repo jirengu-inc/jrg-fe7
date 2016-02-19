@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" >
+    <title>AJAX get</title>
+    <script type="text/javascript" src="http://kejian.jirengu.com/static/js/jquery-1.11.1.min.js"></script>
+    <style type="text/css">
+    .item {
+    border: 1px solid #CCC;
+    background: #F0F8FF;
+    padding: 5px;
+    margin-top: 5px;
+    }
+    .button {
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    background: #eee;
+    }
+    .button:hover{
+        background: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <div class="item">这是已有的内容0</div>
+        <div class="button add-more" >加载更多</div>
+    </div>
+
+<script type="text/javascript">
+$(function(){
+
+    /**
+     * 在写ajax之前，需要先和后端确定接口参数，即：要给后端发送哪些数据，后端返回的数据格式
+     */
+
+    var LEN = 3;
+    var ready = true;
+
+    $('.add-more').on('click', function(){
+        var me = this,
+            start = $(this).index();
+            if(!ready){
+                return;
+            }
+            ready = false;
+            $(me).text('loading...');
+        $.ajax({
+            url: 'getMoreItem.php',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                start: start,
+                len: LEN
+            },
+            success: function(data){
+            /**
+             *  data = {status: 'success', items: ['内容1','内容2','内容3']};
+             */
+                console.log(this);
+                if(data && data.status === 'success'){
+                    var items = data.items;
+                    for(var i=0; i<items.length; i++){
+                        $(me).before('<div class="item">' + items[i] + '</div>');
+                    }
+                }else{
+                    alert('error');
+                }
+
+            },
+            error: function(){
+                alert('error');
+            },
+            complete: function(){
+                ready = true;
+                $(me).text('加载更多');
+            }
+        });
+    });
+
+});
+
+</script>
+
+</body>
+</html>

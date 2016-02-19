@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" >
+    <title>ajax</title>
+    <script type="text/javascript" src="http://kejian.jirengu.com/static/js/jquery-1.11.1.min.js"></script>
+    <style type="text/css">
+    .item {
+    border: 1px solid #CCC;
+    background: #F0F8FF;
+    padding: 5px;
+    margin-top: 5px;
+    }
+    .button {
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    background: #eee;
+    }
+    .button:hover{
+        background: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <div class="item">这是已有的内容0</div>
+        <div class="button add-more" data-ready=1>加载更多</div>
+    </div>
+
+<script type="text/javascript">
+$(function(){
+
+
+
+    $('.add-more').on('click', function(){
+
+        var opts = {
+            url: 'getMoreItem.php',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+                name: 'xiaoming'
+            },
+            success: function(data){
+                console.log(data.items);
+            },
+            error: function(){
+                alert('error');
+            }
+        };
+        $.ajax(opts);
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
