@@ -48,7 +48,7 @@
   <script src="util-ajax.js"></script>
   <script>
     
-    /*1. 定义接口
+/*定义接口
 
 1) url:
 2) 入参: { start: 2, len: 6 }
@@ -67,7 +67,8 @@ var cur = 2;
 var isLoading = false;  //设置一个状态锁，防止在加载的数据回来之前用户多次点击
     
 loadMoreBtn.addEventListener('click', function(e){
-	e.preventDefault();
+
+  e.preventDefault();  //防止点击 a 链接页面跳到顶部
 
   if(isLoading){
     return;
@@ -82,22 +83,30 @@ loadMoreBtn.addEventListener('click', function(e){
       len: 6
     },
     success: function(json){
-      isLoading = false;
-      loadMoreBtn.innerText = '加载更多';
-      if(json.status == 1){
-        append(json.data);
-        cur += 6;
-      }else{
-        alert('获取数据失败');
-      }
+    	onSuccess(json);
     },
     error: function(){
-      isLoading = false;
-      loadMoreBtn.innerText = '加载更多';
-      alert('系统异常');
+    	onError();
     }
   });
 });
+
+function onSuccess (json){
+  isLoading = false;
+  loadMoreBtn.innerText = '加载更多';
+  if(json.status == 1){
+    append(json.data);
+    cur += 6;
+  }else{
+    alert('获取数据失败');
+  }
+}
+
+function onError(){
+  isLoading = false;
+  loadMoreBtn.innerText = '加载更多';
+  alert('系统异常');
+}
 
 function append(arr){
   for(var i = 0;i<arr.length;i++){
