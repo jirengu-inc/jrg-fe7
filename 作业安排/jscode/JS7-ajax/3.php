@@ -6,7 +6,4 @@
     $ret = array('status'=>0); 
    }
 
-    
-
-    sleep(1); //模拟网络延迟
     echo json_encode($ret);
