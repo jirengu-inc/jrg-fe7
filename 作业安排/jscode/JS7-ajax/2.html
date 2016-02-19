@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>加载更多</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<link href="" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>加载更多</title>
+  <style>
+  ul,li{
+  margin: 0;
+  padding: 0
+}
+#ct li{
+  list-style:none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  cursor:pointer;
+}
+#load-more{
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+#load-more img{
+	widght: 40px;
+	height: 40px;
+}
+.btn{
+	display: inline-block;
+	padding: 3px 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+}
+  </style>
 </head>
 <body>
-    
+<ul id="ct">
+  <li>0</li>
+  <li>1</li>
+</ul>
+  <a id="load-more" class="btn" href="#">加载更多</a>
 </body>
+  
+  <script>
+    
+    /*1. 定义接口
+
+1) url:
+2) 入参: { start: 2, len: 6 }
+3) 回参: 
+{
+  status: 1, //1代表正常，0代表出错
+  data: [2,3,4,5,6,7]
+}
+*/
+
+var loadMoreBtn = document.getElementById('load-more'),
+    ct = document.getElementById('ct');
+
+var cur = 2; 
+
+var isLoading = false;
+    
+loadMoreBtn.addEventListener('click', function(){
+  if(isLoading){
+    return;
+  }
+  isLoading = true;
+  loadMore.innerHTML = '<img src="loading.gif" />';
+  ajax({
+    url: '2.php',
+    data: {
+      start: cur,
+      len: 6
+    },
+    success: function(json){
+      isLoading = false;
+      loadMore.innerText = '加载更多';
+      if(json.status == 1){
+        append(json.data);
+        cur += 6;
+      }else{
+        alert('获取数据失败');
+      }
+    },
+    error: function(){
+      isLoading = false;
+      loadMore.innerText = '加载更多';
+      alert('系统异常');
+    }
+  });
+});
+
+function append(arr){
+  for(var i = 0;i<arr.length;i++){
+    var li = document.createElement('li');
+    li.innerText = arr[i];
+    ct.appendChild(li);
+  }
+}
+
+
+    
+  </script>
+  
+  
+  
 </html>
