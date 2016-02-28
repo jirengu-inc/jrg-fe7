@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+    <script>
+
+    $(document).ready(function() {
+    	// body...
+    	// 
+    	console.log($('#header'));
+    });
+
+    $(function(){
+    	console.log($('#header'));
+
+    	$('#btn').on('click', function(e){
+    		console.log(e);
+    		console.log(e.target)
+    		console.log(this);
+    		$(this).hide()
+    		$('.ct').hide();
+    	});
+
+    	$('#btn2').on('click', function(){
+    		$('.ct').show();
+    	})
+    })
+
+
+
+    </script>
+</head>
+<body>
+	<div id="header">header</div>
+	<div class="ct">
+		<div class="row">row1
+			<h1>title</h1>
+		</div>
+		<div class="row">row2</div>
+		<p>段落</p>
+		<div data-img="http//xxx.png"></div>
+	    <input type="checkbox" value=1>
+	    <input type="checkbox" value=2>	
+		
+	</div>
+
+	<button id="btn">点我hide</button>
+	<button id="btn2">点我show</button>
+
+
+
+
+    <div id="wrap">
+      <div class="d">Item 1</div>
+      <div class="d">Item 2</div>
+      <div class="d">Item 3</div>
+    </div>
+    <button id="btn3">添加</button>
+    <script>
+
+    $('#wrap').on('click', '.d', function(){
+        console.log($(this).html());
+    });
+
+    $('#btn3').on('click', function(){
+        $('#wrap').append( $('<div class="d">Item ...</div>')  );
+    });
+
+
+
+
+
+
+    // var $wrap = $('#wrap'),
+    //     $ds = $('#wrap .d'),
+    //     $link = $('#link');
+
+    // bind
+    
+    // $ds.bind('click', function(){
+    //     console.log("dom:" + this.innerHTML); //dom元素用dom属性
+    //     console.log("jquery:" + $(this).html()); //jquery元素用jquery方法
+    // })
+    // $ds.on('click', function(){
+    //     console.log("dom:" + this.innerHTML); //dom元素用dom属性
+    //     console.log("jquery:" + $(this).html()); //jquery元素用jquery方法
+    // })
+
+    // $wrap.delegate('.d','click', function(){
+    //     console.log("dom:" + this.innerHTML); //dom元素用dom属性
+    //     console.log("jquery:" + $(this).html()); //jquery元素用jquery方法
+    // })
+    // $wrap.on('click','.d', function(){
+    //     console.log("dom:" + this.innerHTML); //dom元素用dom属性
+    //     console.log("jquery:" + $(this).html()); //jquery元素用jquery方法
+    // })
+    // $('#btn3').bind('click', function(){
+    //     $wrap.append('<div class="d">Item4</div>');
+    // });
+
+
+    </script>
+
+</body>
+</html>

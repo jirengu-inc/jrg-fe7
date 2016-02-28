@@ -1,0 +1,21 @@
+<html>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+	<script>
+
+	var defaultOpts = {
+		name: 'hunger', 
+		age: 20
+	};
+	 function People(opts){
+	 	var opt={};
+	 	$.extend(opt, defaultOpts, opts);
+	 	console.log(opts);
+	 }	
+
+	 People({});
+	 People({name: 'valley'});
+	 People({age: 30,  sex:'nan'})
+
+
+	</script>
+</html>
