@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+	<title>3D效果轮换（海贼王）</title>
+</head>
+<style type="text/css">
+*{margin:0;padding: 0}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+
+body{
+	font:12px/1.5 Arial,Verdana,"\5b8b\4f53",serif;
+  	-webkit-font-smoothing: antialiased;/*矿锯齿*/
+  	/*font-size: 62.5%;16px*62.5%=10px  10px=1em*/
+  	background:url(bj.jpg);
+  	background-size: 100%; 
+  	background-repeat: no-repeat;
+}
+.wrap{
+	margin:0px auto;
+	position:relative;
+	width:1200px;
+	height:500px;
+}
+.wrap button{
+	position:absolute;
+	z-index: 1000;
+	width:40px;
+	height: 40px;
+	top:50%;
+	margin-top: -20px;
+	border:1px solid;
+	border-radius: 50%;
+	font-size: 24px;
+	text-align: center;
+	background-color:#fff;
+	color: #c11239;
+	outline: none;
+	cursor:pointer;
+}
+/*.icon-l{
+	display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 2px solid;
+    border-width: 15px;
+    border-color: transparent white transparent transparent;
+}
+.icon-r{
+	display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 2px solid;
+    border-width: 15px;
+    border-color: transparent transparent transparent white;
+}*/
+.wrap .btn1{left:0;}
+.wrap .btn2{right:0;}
+.wrap li img{
+	width:720px;
+	height: 430px;
+	display:block;
+}
+li{
+	-ms-transition:all 0.6s;
+	-webkit-transition:all 0.6s;
+	-o-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	transition:all 0.6s;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-filter: brightness(0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    margin-left: -360px;
+    margin-top: -215px;
+}
+li.current{/*中间*/
+	-webkit-filter:brightness(1);
+	z-index: 6;
+}
+li.current-r{/*中右*/
+	-webkit-filter:brightness(0.8);
+	z-index: 5;
+	-webkit-transform:scale(0.9);
+	-o-transform:scale(0.9);
+	-moz-transform:scale(0.9);
+	-ms-transform:scale(0.9);
+	transform:scale(0.9);
+	margin-left:-280px;
+}
+li.current-l{/*中左*/
+	-webkit-filter:brightness(0.8);
+	z-index: 4;
+	-webkit-transform:scale(0.9);
+	-o-transform:scale(0.9);
+	-moz-transform:scale(0.9);
+	-ms-transform:scale(0.9);
+	transform:scale(0.9);
+	margin-left:-440px;
+}
+li.next{/*偏右边*/
+	-webkit-filter:brightness(0.6);
+	z-index: 3;
+	-webkit-transform:scale(0.8);
+	-o-transform:scale(0.8);
+	-moz-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	transform:scale(0.8);
+	margin-left:-200px;
+}
+li.next-r{/*最右*/
+	-webkit-filter:brightness(0.4);
+	z-index: 2;
+	-webkit-transform:scale(0.7);
+	-o-transform:scale(0.7);
+	-moz-transform:scale(0.7);
+	-ms-transform:scale(0.7);
+	transform:scale(0.7);
+	margin-left:-120px;
+}
+li.prew{/*偏左边*/
+	-webkit-filter:brightness(0.6);
+	z-index: 1;
+	-webkit-transform:scale(0.8);
+	-o-transform:scale(0.8);
+	-moz-transform:scale(0.8);
+	-ms-transform:scale(0.8);
+	transform:scale(0.8);
+	margin-left:-520px;
+}
+li.prew-l{/*最左*/
+	-webkit-filter:brightness(0.4);
+	z-index: 0;
+	-webkit-transform:scale(0.7);
+	-o-transform:scale(0.7);
+	-moz-transform:scale(0.7);
+	-ms-transform:scale(0.7);
+	transform:scale(0.7);
+	margin-left:-600px;
+}
+
+
+</style>
+<body>
+	<div class="wrap">
+		<!-- <div class="button btn1"><div class="icon-l"></div></div> -->
+		<!-- <div class="button btn2"><div class="icon-r"></div></div> -->
+		<button class='btn1'>&lt</button>
+		<button class='btn2'>&gt</button>
+		<ul>
+			<li class="current"><img src="3.jpg" alt=""></li>
+			<li class="current-r"><img src="9.jpg" alt=""></li>
+			<li class="current-l"><img src="8.jpg" alt=""></li>
+			<li class="next"><img src="4.jpg" alt=""></li>
+			<li class="next-r"><img src="5.jpg" alt=""></li>
+			<li class="prew"><img src="6.jpg" alt=""></li>
+			<li class="prew-l"><img src="7.jpeg" alt=""></li>
+		</ul>
+	</div>
+</body>
+	
+<script>
+//图片一直轮换，但是class类型
+	var $current = $('.current'),
+		$ul = $('ul'),
+		$list = $('ul').children();
+		//console.log($list)
+	var	$prew = $('.btn1'),
+		$next = $('.btn2');
+		
+	var arr = ['current','current-r','next','next-r','prew-l','prew','current-l'];//细节点：这里的数组排序要看图片的位置
+			//   中间		中右	  偏右 	  最右	   最左 	偏左	中左
+			
+	$next.on('click',function(){
+		var item = arr.shift()//数组的首位移除
+			arr.push(item)//在数组的末尾添加xxx
+		for (var i=0; i<arr.length; i++) {
+		//console.log(i)
+		//console.log(item[i])
+		$list[i].className = arr[i]
+		}
+	})
+	
+	$prew.on('click',function(){
+		var item = arr.pop()//数组的末尾最后一位移除
+			arr.unshift(item)//在数组的首位添加一位
+		for(var i=0; i<arr.length; i++){
+			$list[i].className = arr[i]
+		}
+	})
+</script>
+</html>

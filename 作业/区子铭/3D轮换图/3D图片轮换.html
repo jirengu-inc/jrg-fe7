@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D图片轮换</title>
+</head>
+<body>
+  <style>	
+	*{margin:0;padding:0;list-style:none;}
+	.main{width: 1200px;
+			height: 460px;
+			position: relative;
+			margin: 50px auto;}
+		.main button{
+			width: 35px;
+			border:0;
+			height: 35px;
+			top: 50%;
+			margin-top: -16px;
+			display: block;
+			position: absolute;
+			background: url(http://heart.woniu.com/static/web20151014/src/images/graduation_dir.png) no-repeat;
+			outline:none;
+			cursor:pointer;
+		}
+		
+		.main .btn1 {
+			left: 0;
+			background-position: 0 0;
+		}
+		
+		.main .btn2 {
+			right: 0;
+			background-position: 0 -33px;
+		}
+		.main li{
+			-ms-transition:all 0.6s;
+			-webkit-transition:all 0.6s;
+			-o-transition:all 0.6s;
+			-moz-transition:all 0.6s;
+			transition:all 0.6s;
+			position:absolute;
+			left:50%;
+			box-shadow:0 10px 20px rgba(0,0,0,.2);
+			-webkit-filter:brightness(0.5);
+			top:50%;
+			margin-top:-220px;
+		}
+		.main li img{width:100%;display:block;}
+		.main li.current{
+			-webkit-filter:brightness(1);
+			margin-left:-360px;
+			z-index:3;
+			box-shadow:0 20px 30px rgba(0,0,0,.4);
+		}
+		.main li.next,.main li.pre{
+			margin-left:-440px;
+			z-index:2;
+			-webkit-transform:scale(0.9);
+			-o-transform:scale(0.9);
+			-moz-transform:scale(0.9);
+			-ms-transform:scale(0.9);
+			transform:scale(0.9);
+		}
+		.main li.pre{margin-left:-280px;}
+		.main li.next-r,.main li.pre-l{
+			margin-left:-520px;
+			z-index:1;
+			-webkit-transform:scale(0.8);
+			-o-transform:scale(0.8);
+			-moz-transform:scale(0.8);
+			-ms-transform:scale(0.8);
+			transform:scale(0.8);
+		}
+		.main li.pre-l{margin-left:-200px;}
+
+  </style>
+</head>
+<body>
+  <div class="main">
+	  	<button  class="btn1"></button>
+	  	<button class="btn2"></button>
+	  <ul>
+			<li class="current"><img src="http://heart.woniu.com/static/web20151014/src/images/img1.jpg" alt=""></li>
+			<li class="next"><img src="http://heart.woniu.com/static/web20151014/src/images/img2.jpg" alt=""></li>
+			<li class="next-r"><img src="http://heart.woniu.com/static/web20151014/src/images/img3.jpg" alt=""></li>
+			<li class="pre-l"><img src="http://heart.woniu.com/static/web20151014/src/images/img5.jpg" alt=""></li>
+			<li class="pre"><img src="http://heart.woniu.com/static/web20151014/src/images/img4.jpg" alt=""></li>
+		</ul>
+  </div>
+
+  <script>
+  (function(){
+  	var btn1=document.querySelector('.btn1');
+  	var btn2=document.querySelector('.btn2');
+  	var oLi=document.querySelectorAll('.main li');
+  	console.log(oLi)
+  	var arr=['current','next','next-r','pre-l','pre'];
+  	console.log(arr)
+  	btn1.onclick=function(){
+  		var cl=arr.shift();//数组的首位移除
+  		arr.push(cl);//在数组的末尾添加xxx
+  		arr.forEach(function(el,index,arr){
+  			oLi[index].className=el;
+  		})
+  	}
+  	btn2.onclick=function(){
+  		var cl=arr.pop();
+  		arr.unshift(cl);
+  		arr.forEach(function(el,index,arr){
+  			oLi[index].className=el;
+  		})
+  	}
+  })()
+
+
+ 
+	// var arryAll = [];  
+	// arryAll.push(1);  
+	// arryAll.push(2);  
+	// arryAll.push(3);  
+	// arryAll.push(4);  
+	  
+	// arryAll.forEach(function(e){  
+	//     console.log(e);  
+	// })  
+  	
+ //  	console.log(arryAll)
+
+ //  	var a =1
+ //  /*	function fff(){
+ //  		console.log(a)
+ //  	}*/
+
+ //  	function f(){
+ //  		var a =2
+ //  		function fff(){
+ //  			console.log(a)
+ //  		}
+ //  		fff()
+ //  	}
+
+ //  	f()
+  </script>
+</body>
+</html>
